@@ -16,7 +16,7 @@ export default class HTML extends Component {
             id='___gatsby'
             dangerouslySetInnerHTML={{__html: this.props.body}}
           />
-          {this.props.postBodyComponents}test
+          {this.props.postBodyComponents}
         </body>
       </html>
     )

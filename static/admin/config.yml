@@ -15,6 +15,7 @@ collections:
         name: "home"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "home-page"}
+          - {label: Header Image, name: header_image, widget: image}
           - {label: Title, name: title, widget: string}
           - {label: Heading, name: heading, widget: string}
           - {label: Description, name: description, widget: string}
