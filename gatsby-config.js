@@ -49,8 +49,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Poppins`,
-          `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
+          `Poppins\:300,400,500,700`
         ]
       }
     },
@@ -91,13 +90,6 @@ module.exports = {
       resolve: `gatsby-source-instagram`,
       options: {
         username: `tboutiquehotel`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-nprogress`,
-      options: {
-        color: config.themeColor,
-        showSpinner: false,
       },
     },
     {

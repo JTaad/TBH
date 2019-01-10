@@ -9,12 +9,19 @@ import GlobalStyles from '../layouts/globalStyles'
 class TemplateWrapper extends Component {
   constructor (props) {
     super(props)
-    this.state = {isActive: false}
+    this.state = {
+      isActive: false,
+      navToggle: false
+    }
     this.toggleNavbar = this.toggleNavbar.bind(this) 
   }
 
   toggleNavbar () {
     this.setState({isActive: !this.state.isActive})
+  }
+
+  toggleNavbarMain () {
+    this.setState({navToggle: !this.state.navToggle})
   }
 
   render () {
@@ -25,7 +32,12 @@ class TemplateWrapper extends Component {
           <meta name='description' content={config.siteDescription} />
         </Helmet>
           <GlobalStyles />
-        <NavBar isActive={this.state.isActive} toggleNavbar={() => this.toggleNavbar()} />
+        <NavBar 
+          isActive={this.state.isActive} 
+          navToggle={this.state.navToggle} 
+          toggleNavbarMain={() => this.toggleNavbarMain()}
+          toggleNavbar={() => this.toggleNavbar()} 
+        />
         <div>{this.props.children}</div>
         <Footer />
       </div>
