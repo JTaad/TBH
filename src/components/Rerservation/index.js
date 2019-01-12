@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import bulmaCalendar from 'bulma-calendar'
 
 
 class Rerservation extends Component {
