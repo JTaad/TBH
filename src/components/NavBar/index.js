@@ -8,7 +8,7 @@ import logo_nav_header from '../../assets/img/logos/logo_navbar_4k_tbh.png'
 const NavBar = ({toggleNavbarMain, navToggle}) => (
   <div>
       <nav id="nav_norm" className={navToggle ? 'nav-on' : 'nav-off'} aria-label='main navigation'>
-        <div  id="navMain" className='container is-fluid'>
+        <div  id="navMain" className='container is-fixed-top'>
             <div className="column-nav-left">
                   <div id="contentNavNorm" className=''>
                     <div id="contentNavNormTopLeft">
@@ -64,24 +64,24 @@ const NavBar = ({toggleNavbarMain, navToggle}) => (
       </nav>
 
 
-      <div id='nav_header' className="container is-fluid">
+      <div id='nav_header' className="container navbar is-fixed-top">
       
-        <div id="navHeader" className='columns' >
-            <div className='column'>
-                <div id='navButton' onClick={toggleNavbarMain}>
-                    <div></div>
-                    <div></div>
+            <div id="navHeader" >
+                <div>
+                    <div id='navButton' onClick={toggleNavbarMain}>
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
-            </div>
-            <div className='column'>
-            <Link className='' to='/'>
-               <img className='center' src={logo_nav_header} style={{ display: "block", width: '45px', marginLeft: 'auto', marginRight: 'auto' }} alt="T Boutique Hôtel" />
-            </Link>
-            </div>
-             
-            <div id="navHeaderRight" className='column'>
-               <a className='title is-5' href="https://secure.reservit.com/fo/booking/2/10768/dates?specialMode=default&langcode=FR&partid=0&custid=2&hotelid=10768&m=booking" target="_blank">RÉSERVER</a>
-             </div>         
+                <div id="test">
+                    <Link className='' to='/'>
+                        <img className='center' src={logo_nav_header} style={{ display: "block", width: '45px', marginLeft: 'auto', marginRight: 'auto' }} alt="T Boutique Hôtel" />
+                    </Link>
+                </div>
+                
+                <div id="navHeaderRight">
+                    <a className='title is-5' href="https://secure.reservit.com/fo/booking/2/10768/dates?specialMode=default&langcode=FR&partid=0&custid=2&hotelid=10768&m=booking" target="_blank">RÉSERVER</a>
+                </div>         
           </div>
       </div>
 

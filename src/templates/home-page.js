@@ -36,9 +36,6 @@ export default HomePage
 
 export const pageQuery = graphql`
   query IndexPage($id: String!) {
-    header_image: file(relativePath: { eq: "header_home_tbh.jpg" }) {
-        ...fluidImage
-    }
     allInstaNode {
       edges {
         node {
@@ -49,7 +46,7 @@ export const pageQuery = graphql`
           timestamp
           localFile {
             childImageSharp {
-                fluid(maxWidth: 200) {
+                fluid(maxWidth: 250) {
                     ...GatsbyImageSharpFluid
               }
             }

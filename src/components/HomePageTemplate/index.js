@@ -1,10 +1,12 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Offerings from '../Offerings'
+import Rerservation from '../Rerservation'
 import Instagram from '../Instagram'
 import Testimonials from '../Testimonials'
 import PropTypes from 'prop-types'
-import Img from "gatsby-image"
+import headerImage from '../../assets/img/header_home_tbh.jpg'
+import nousTrouver from '../../assets/img/illu_hotel_tbh.png'
 
 const HomePageTemplate = ({
   title,
@@ -14,22 +16,46 @@ const HomePageTemplate = ({
   meta_title,
   meta_description,
   testimonials,
-  header_image,
   posts_instagram,
 }) => (
   <div>
     <Helmet>
       <title>{meta_title}</title>
-      <meta name='description' content={meta_description} />
+      <meta name='description' content={meta_description} />  
     </Helmet>
 
+    <div className='headerHome' style={{backgroundImage: `url(${headerImage})`}}>
+        <Rerservation />
+    </div>
 
-    <Img  fluid={header_image.childImageSharp.fluid} />
+    <div className='titleTbh  title'>
+      <span className='titleTbhEmpty'>Bienvenue au</span> <span className='titleTbhFull'>T_</span>
+    </div>
 
+
+    <div className='container'>
+        <div className='section is-marginless'>
+            <div id='nousTrouver' className='columns is-vcentered  '>
+                <div className='column is-half has-text-centered'>
+                    <span className=' title is-2 center'>_Nous&nbsp;&nbsp;&nbsp;<br/>Trouver</span>
+                </div>
+                <div className='column is-half'>
+                    <img src={nousTrouver} />
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div className='titleTbh  title'>
+      <span className='titleTbhEmpty'>Comme chez </span> <span className='titleTbhFull'>vous_</span>
+    </div>
+    
+    <div className='titleTbh  title'>
+      <span className='titleTbhFull'>Mieux</span> <span className='titleTbhEmpty'>qu'au bureau_</span>
+    </div>
     <Instagram gridItems={posts_instagram} />
 
-
-    <section className='section section--gradient'>
+    <section className='section section--gradient' style={{display:'none'}}>
       <div className='container'>
 
         <div className='section'>
@@ -64,7 +90,6 @@ HomePageTemplate.propTypes = {
     blurbs: PropTypes.array,
   }),
   testimonials: PropTypes.array,
-  header_image: PropTypes.string,
   posts_instagram: PropTypes.array,
 
 }

@@ -1,4 +1,7 @@
 
+@charset "utf-8"
+
+
 
 $primary: #00d1b2
 $primary-invert: #ffffff
@@ -11,9 +14,40 @@ $fontCorps: "Poppins"
 $indexMax: 9999999999
 $indexMidl: 99999999
 $footer-background-color: $blue
+$navbar-background-color: transparent
+$fontShadowWhite : $white 1px 1px, $white -1px 1px, $white -1px -1px, $white 1px -1px
+$fontShadowBlue : $blue 1px 1px, $blue -1px 1px, $blue -1px -1px, $blue 1px -1px
+
+$calendar-days-background-color: $blue
+$calendar-date-hover-border:  .1rem solid $blue 
+$calendar-today-color: $blue
+
 
   
-@import "~bulma"
+// Import Bulma core
+@import '~bulma'
+
+// Import Bulma Extensions
+@import "~bulma-calendar/dist/css/bulma-calendar"
+ 
+ 
+.bulma-datepicker
+  *
+    font-family: $fontCorps
+  .datepicker-nav
+    font-family: $fontTitle
+    background-color: $blue
+    color: $white
+  .datepicker-body
+    .datepicker-dates
+      .datepicker-days
+        .datepicker-date
+          .date-item
+            .is-active
+              background-color: $blue  
+              color: red
+  .bulma-datepicker-selection-day
+    color: red
 
 .footer
   * 
@@ -22,18 +56,90 @@ $footer-background-color: $blue
 .title
   font-weight: normal
 
+.arrowTop
+  font-family: $fontTitle
+  position: fixed
+
+
+.headerHome
+  position: relative
+  min-height: 80vh
+  background-position: top
+  background-repeat: no-repeat
+  background-size: cover 
+
+#blocResa
+  display: flex
+  flex: 1 1 auto
+  text-align: center
+  width: 700px
+  margin-left: auto
+  margin-right: auto
+  position: absolute
+  color:#fff
+  top: 50%
+  left: 50%
+  -ms-transform: translateX(-50%) translateY(-50%)
+  -webkit-transform: translate(-50%,-50%)
+  transform: translate(-50%,-50%)
+  .blocResaDiv
+    display: flex
+    justify-content: center
+    flex-grow: 1
+    margin: 0
+    padding: 0
+    background-color: $black
+    color: $white
+    padding-top: 18px
+    padding-bottom: 18px
+    font-family: $fontTitle
+    margin-left: 1px
+    .blocResaArrow
+        transform: rotate(45deg)
+
+.titleTbh    
+  padding-top: 18px
+  padding-bottom: 18px
+  border-top: 1px solid $blue
+  border-bottom: 1px solid $blue
+  text-align: center
+  font-family: $fontTitle
+  font-size: 4.2rem  
+  .titleTbhEmpty
+    text-shadow: $fontShadowBlue
+    color: $white
+  .titleTbhFull
+    color: $blue
+
+#nousTrouver
+  font-family: $fontTitle
+  color: $blue
+
+#instagram 
+  border-top: 1px solid $blue
+  border-bottom: 1px solid $blue
+  .column 
+    border-left: 1px solid $blue
+    &:last-of-type
+      border-right: 1px solid $blue
 
 //NAV
 
 #navHeader 
+  display: flex
+  flex-direction: row 
+  justify-content: space-between
   z-index: $indexMidl
   width: 100%
   position: absolute
-  justify-content: center
   align-items: center
   margin-top: 20px
-  .column
+  div
     padding: 0
+    flex-grow: 1
+    width: 20%
+  #test
+    flex-grow: 2
   #navHeaderRight 
     text-align: right
     a 
@@ -103,24 +209,19 @@ $footer-background-color: $blue
       font-family: $fontTitle
       &:hover 
         color: $blue
-        text-shadow: $white 1px 1px, $white -1px 1px, $white -1px -1px, $white 1px -1px
+        text-shadow: $fontShadowWhite
 
 
+  
+.footer
+  ul 
+    padding: 0
+    margin: 0
+    list-style-type: none
+    li 
+      text-transform: uppercase
+      font-family: $fontCorps
 
-.content .taglist
-  list-style: none
-  margin-bottom: 0
-  margin-left: 0
-  margin-right: 1.5rem
-  margin-top: 1.5rem
-  display: flex
-  flex-wrap: wrap
-  justify-content: left
-  align-items: center
-  li
-    padding: 0 2rem 1rem 0
-    margin-bottom: 1.5rem
-    margin-top: 0
 
 .margin-top-0
   margin-top: 0 !important

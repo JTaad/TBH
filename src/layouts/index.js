@@ -2,9 +2,13 @@ import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
+import { animateScroll as scroll } from 'react-scroll'
 import '../assets/sass/styles.sass'
 import config from '../../data/config'
 import GlobalStyles from '../layouts/globalStyles'
+
+
+
 
 class TemplateWrapper extends Component {
   constructor (props) {
@@ -14,6 +18,7 @@ class TemplateWrapper extends Component {
       navToggle: false
     }
     this.toggleNavbar = this.toggleNavbar.bind(this) 
+    this.toggleNavbarMain = this.toggleNavbarMain.bind(this) 
   }
 
   toggleNavbar () {
@@ -22,6 +27,10 @@ class TemplateWrapper extends Component {
 
   toggleNavbarMain () {
     this.setState({navToggle: !this.state.navToggle})
+  }
+
+  scrollToTop () {
+    scroll.scrollToTop();
   }
 
   render () {
@@ -38,8 +47,13 @@ class TemplateWrapper extends Component {
           toggleNavbarMain={() => this.toggleNavbarMain()}
           toggleNavbar={() => this.toggleNavbar()} 
         />
-        <div>{this.props.children}</div>
-        <Footer />
+       
+        <div>
+          {this.props.children}
+        </div>
+        <Footer 
+          scrollTop={() => this.scrollToTop()}
+        />
       </div>
     )
   }
