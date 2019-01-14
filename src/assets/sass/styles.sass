@@ -29,7 +29,10 @@ $calendar-today-color: $blue
 
 // Import Bulma Extensions
  
- 
+.center-v
+  display: flex
+  align-items: center
+  
 .bulma-datepicker
   *
     font-family: $fontCorps
@@ -54,6 +57,33 @@ $calendar-today-color: $blue
 
 .title
   font-weight: normal
+
+.arrow-r
+  font-family: $fontTitle
+  display: inline-block
+  transform: rotate(-45deg)
+.arrow-l
+  font-family: $fontTitle
+  display: inline-block
+  transform: rotate(45deg)
+  
+.button
+  border: 1px solid $black
+  border-radius: 0
+  font-family: $fontTitle
+  color: $black
+
+.boldTitle
+  font-family: $fontTitleBold
+
+p 
+  color: $black
+  font-family: Poppins
+
+.subtitle
+  font-family: $fontTitle
+  color: $black
+
 
 .arrowTop
   font-family: $fontTitle
@@ -148,10 +178,10 @@ $calendar-today-color: $blue
 
 .nav-on 
   top: 0vh
-  opacity: 1
+  right: 0
 .nav-off
-  top: 100vh
-  opacity: 0
+  top: 0vh
+  right: -100vw
 
 #navButton
   cursor: pointer

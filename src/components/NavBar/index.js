@@ -12,8 +12,8 @@ const NavBar = ({toggleNavbarMain, navToggle}) => (
             <div className="column-nav-left">
                   <div id="contentNavNorm" className=''>
                     <div id="contentNavNormTopLeft">
-                      <ul>
-                        <li className='title is-2'><Link className='' to='/'>
+                      <ul onClick={toggleNavbarMain}>
+                        <li className='title is-2'><Link to='/'>
                                         Accueil
                         </Link></li>
                         <li className='title is-2'><Link className='' to='/chambres'>

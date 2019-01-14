@@ -18,7 +18,8 @@ const HomePage = ({data}) => {
       description={frontmatter.description}
       offerings={frontmatter.offerings}
       testimonials={frontmatter.testimonials}
-      header_image={data.header_image}
+      espace_pro={data.espacePro}
+      bienvenue={data.bienvenue}
       posts_instagram={postsInstagram}
     />
   )
@@ -36,6 +37,16 @@ export default HomePage
 
 export const pageQuery = graphql`
   query IndexPage($id: String!) {
+    espacePro: file(relativePath: { eq: "home/espacePro_tbh.jpg" }) {
+      ...fluidImage
+    }
+    bienvenue: file(relativePath: { eq: "home/bienvenue_tbh.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     allInstaNode {
       edges {
         node {
@@ -46,7 +57,7 @@ export const pageQuery = graphql`
           timestamp
           localFile {
             childImageSharp {
-                fluid(maxWidth: 250) {
+                fluid(maxWidth: 220, maxHeight: 210) {
                     ...GatsbyImageSharpFluid
               }
             }
