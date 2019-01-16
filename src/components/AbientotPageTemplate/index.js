@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import headerImage from '../../assets/img/contact/header_contact_tbh.jpg'
+import SimpleMap from '../components/SimpleMap'
 
 const AbientotPageTemplate = ({
   title,
@@ -20,8 +21,10 @@ const AbientotPageTemplate = ({
 
     <div className='headerHome' style={{backgroundImage: `url(${headerImage})`}}>
        
+    test
     </div>
 
+    <SimpleMap /> 
 
 
     <div className='section is-marginless is-paddingless'>

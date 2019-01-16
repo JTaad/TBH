@@ -20,7 +20,7 @@ const NavBar = ({toggleNavbarMain, navToggle}) => (
                                         Chambres
                         </Link></li>
                         <li className='title is-2'><Link activeClassName='navFocus' className='' to='/business'>
-                                        Business
+                                        Business 
                         </Link></li>
                         <li className='title is-2'><Link activeClassName='navFocus' className='' to='/tboutique'>
                                         Le "T" Boutique

@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import headerImage from '../../assets/img/contact/header_contact_tbh.jpg'
+import SimpleMap from '../SimpleMap'
 
 const ContactPageTemplate = ({
   title,
@@ -22,13 +23,13 @@ const ContactPageTemplate = ({
          
       </div>
   
-  
-  
       <div className='section is-marginless is-paddingless'>
           <div className='titleTbh  title'>
             <span className='titleTbhEmpty'>Notre</span> <span className='titleTbhFull'>Emplacement_</span>
           </div>
       </div>
+      <SimpleMap />
+  
   
       </div>
   )
