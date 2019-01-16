@@ -13,19 +13,19 @@ const NavBar = ({toggleNavbarMain, navToggle}) => (
                   <div id="contentNavNorm" className=''>
                     <div id="contentNavNormTopLeft">
                       <ul onClick={toggleNavbarMain}>
-                        <li className='title is-2'><Link to='/'>
+                        <li className='title is-2'><Link activeClassName='navFocus' to='/'>
                                         Accueil
                         </Link></li>
-                        <li className='title is-2'><Link className='' to='/chambres'>
+                        <li className='title is-2'><Link activeClassName='navFocus' className='' to='/chambres'>
                                         Chambres
                         </Link></li>
-                        <li className='title is-2'><Link className='' to='/business'>
+                        <li className='title is-2'><Link activeClassName='navFocus' className='' to='/business'>
                                         Business
                         </Link></li>
-                        <li className='title is-2'><Link className='' to='/tboutique'>
+                        <li className='title is-2'><Link activeClassName='navFocus' className='' to='/tboutique'>
                                         Le "T" Boutique
                         </Link></li>
-                        <li className='title is-2'><Link className='' to='/contact'>
+                        <li className='title is-2'><Link activeClassName='navFocus' className='' to='/contact'>
                                         À Bientôt
                         </Link></li>
                       </ul>

@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import {graphql} from 'gatsby'
+import {HTMLContent} from '../components/Content'
+import BusinessPageTemplate from '../components/BusinessPageTemplate'
 
 const BusinessPages = ({data}) => {
   const {markdownRemark: post} = data
@@ -12,6 +14,11 @@ const BusinessPages = ({data}) => {
         <title>{post.frontmatter.meta_title}</title>
         <meta name='description' content={post.frontmatter.meta_description} />
       </Helmet>
+      <BusinessPageTemplate
+        contentComponent={HTMLContent}
+        title={post.frontmatter.title}
+        content={post.html}
+      />
     </div>
   )
 }

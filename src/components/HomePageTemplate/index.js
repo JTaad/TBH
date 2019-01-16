@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Img from "gatsby-image"
+import CarouselC from '../CarouselC'
 import Offerings from '../Offerings'
 import Rerservation from '../Rerservation'
 import Instagram from '../Instagram'
@@ -75,6 +76,34 @@ const HomePageTemplate = ({
         </div>
     </div>
     
+
+    <div className='section  is-paddingless is-marginless'>
+        <div className='columns is-paddingless is-marginless'>
+            <div  className='column  is-4  is-offset-2  center-v'>
+                <div className='section'>
+                    <div className="arrow-l title is-2 is-marginless is-paddingless">→</div>
+                    <br/>
+                    <span className='subtitle is-2'>Les chambres</span>
+                    <br/>
+                    <br/>
+                    <p>
+                      Le T Boutique Hôtel vous propose une expérience 3 étoiles, à la fois unique et multiple, à Arcachon. Ici la convivialité se mêle au chic, la décontraction au design et la singularité au partage.
+                        <br/>  <br/> 
+                      Entièrement rénové, notre hôtel est pensé pour être avant tout le vôtre. Appropriez-vous chacun des espaces, comme à la maison.
+                    </p>
+
+                    <br/>
+                    <br/>
+                    <Link className='button is-outlined title is-5' to='/tboutique'>
+                       <span className='boldTitle'>+</span>&nbsp;d'infos
+                    </Link>
+                </div>
+            </div>
+            <div className='column is-half is-paddingless is-marginless'>
+                <CarouselC />
+            </div>
+        </div>
+    </div>
 
 
     <div className='section is-marginless is-paddingless'>

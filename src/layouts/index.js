@@ -15,7 +15,7 @@ class TemplateWrapper extends Component {
     super(props)
     this.state = {
       isActive: false,
-      navToggle: false
+      navToggle: false,
     }
     this.toggleNavbar = this.toggleNavbar.bind(this) 
     this.toggleNavbarMain = this.toggleNavbarMain.bind(this) 

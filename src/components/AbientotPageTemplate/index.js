@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import headerImage from '../../assets/img/contact/header_contact_tbh.jpg'
 
-const ContactPageTemplate = ({
+const AbientotPageTemplate = ({
   title,
   subtitle,
   meta_title,
@@ -18,23 +18,23 @@ const ContactPageTemplate = ({
       </Helmet>
       
 
-      <div className='headerHome' style={{backgroundImage: `url(${headerImage})`}}>
-         
-      </div>
-  
-  
-  
-      <div className='section is-marginless is-paddingless'>
-          <div className='titleTbh  title'>
-            <span className='titleTbhEmpty'>Notre</span> <span className='titleTbhFull'>Emplacement_</span>
-          </div>
-      </div>
-  
-      </div>
+    <div className='headerHome' style={{backgroundImage: `url(${headerImage})`}}>
+       
+    </div>
+
+
+
+    <div className='section is-marginless is-paddingless'>
+        <div className='titleTbh  title'>
+          <span className='titleTbhFull'>Notre emplacement</span>
+        </div>
+    </div>
+
+    </div>
   )
 }
 
-ContactPageTemplate.propTypes = {
+AbientotPageTemplate.propTypes = {
   title: PropTypes.string,
   subtitle: PropTypes.string,
   meta_title: PropTypes.string,
@@ -43,4 +43,4 @@ ContactPageTemplate.propTypes = {
 
 }
 
-export default ContactPageTemplate
+export default AbientotPageTemplate
