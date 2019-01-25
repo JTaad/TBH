@@ -100,6 +100,12 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+          endpoint: 'https://faakpaat.us10.list-manage.com/subscribe/post?u=e6260e9428f386b090809e69a&amp;id=872c00aa85', 
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: config.siteTitle,

@@ -4,10 +4,24 @@ import Helmet from 'react-helmet'
 import {graphql} from 'gatsby'
 import {HTMLContent} from '../components/Content'
 import ChambresPageTemplate from '../components/ChambresPageTemplate'
+import standard1 from '../assets/img/chambres/01_standard_chambres.jpg'
+import standard2 from '../assets/img/chambres/01_luxe_chambres.jpg'
+
+
 
 
 const ChambresPages = ({data}) => {
   const {markdownRemark: post} = data
+  const standard = [
+    standard1,
+    standard2
+  ];
+  const luxe = [
+    '../../assets/img/chambres/01_luxe_chambres.jpg'
+  ];
+  const suite = [
+    '../../assets/img/chambres/01_suite_chambres.jpg'
+  ];
 
   return (
     <div>
@@ -19,6 +33,7 @@ const ChambresPages = ({data}) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
+        standard={standard}
       />
     </div>
   )

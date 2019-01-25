@@ -2,6 +2,7 @@ import React from 'react'
 import {Link} from 'gatsby'
 import config from '../../../data/config'
 import { FaInstagram, FaFacebook } from 'react-icons/fa';
+import Mailchimp from '../Mailchimp'
 import logo_footer from '../../assets/img/logos/logo_nav_tbh.png'
 
 const Footer = ({ scrollTop }) => {
@@ -28,6 +29,7 @@ const Footer = ({ scrollTop }) => {
                             <div className="control">
                             <label>Newsletter</label>
                               <input className="input is-medium" type="text" placeholder="Votre adresse e-mail"/>
+                            
                             </div>
                           </div>
                           </div>

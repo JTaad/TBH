@@ -18,6 +18,9 @@ const tBoutiquePages = ({data}) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
+        concept={data.concept}
+        histoire={data.histoire}
+        boutique={data.boutique}
       />
     </div>
   )
@@ -26,6 +29,27 @@ export default tBoutiquePages
 
 export const tBoutiquePageQuery = graphql`
   query TBoutiquePage($id: String!) {
+    concept: file(relativePath: { eq: "tboutique/leconcept.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+  }
+  histoire: file(relativePath: { eq: "tboutique/lhistoire.jpg" }) {
+    childImageSharp {
+      fluid(maxWidth: 2000) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+}
+boutique: file(relativePath: { eq: "tboutique/laboutique.jpg" }) {
+  childImageSharp {
+    fluid(maxWidth: 2000) {
+      ...GatsbyImageSharpFluid
+    }
+  }
+}
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {

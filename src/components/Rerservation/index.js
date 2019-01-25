@@ -1,32 +1,36 @@
-import React, { Component } from 'react'
-
-
-class Rerservation extends Component {
-
-  constructor (props) {
-    super(props)
+import React from "react";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+ 
+// CSS Modules, react-datepicker-cssmodules.css
+// import 'react-datepicker/dist/react-datepicker-cssmodules.css';
+ 
+class Reservation extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      startDate: new Date()
+    };
+    this.handleChange = this.handleChange.bind(this);
   }
-
-/* 
-  componentDidMount() {
-    var date = new bulmaCalendar(document.querySelector('.chooseDate'), {
-      startDate: '2018-12-31',
-      displayMode: "dialog",
-      closeOnSelect: true,
-      showFooter: false,
-      dateFormat: 'DD/MM/YYYY',
+ 
+  handleChange(date) {
+    this.setState({
+      startDate: date
     });
-      <input id='date-picker-arrivee' className='chooseDate' type="date"/>
-  
-}
- */
-
-
-  render () {
+  }
+ 
+  render() {
     return (
       <div>
         <div id='blocResa'>
             <div className='blocResaDiv'>
+            <DatePicker
+              locale="fr-FR"
+              dateFormat="DD/MM/YYYY"
+              selected={this.state.startDate}
+              onChange={this.handleChange}
+            />
                 <div className='blocResaArrow'>→</div>  <div style={{marginLeft: "10px"}}>Arrivée ?</div>
             </div>
             <div className='blocResaDiv'>
@@ -37,10 +41,9 @@ class Rerservation extends Component {
             </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default Rerservation
 
-
+export default Reservation

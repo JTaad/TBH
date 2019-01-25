@@ -18,6 +18,8 @@ const BusinessPages = ({data}) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
+        vos_espaces={data.vosEspaces}
+        vos_evenements={data.vosEvent}
       />
     </div>
   )
@@ -26,6 +28,20 @@ export default BusinessPages
 
 export const businessPageQuery = graphql`
   query BusinessPages($id: String!) {
+    vosEspaces: file(relativePath: { eq: "business/vosespaces.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+  }
+  vosEvent: file(relativePath: { eq: "business/vosevenements.jpg" }) {
+    childImageSharp {
+      fluid(maxWidth: 2000) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+}
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
@@ -34,5 +50,5 @@ export const businessPageQuery = graphql`
         meta_description
       }
     }
-  }
+}
 `

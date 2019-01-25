@@ -28,10 +28,90 @@ const ContactPageTemplate = ({
             <span className='titleTbhEmpty'>Notre</span> <span className='titleTbhFull'>Emplacement_</span>
           </div>
       </div>
-      <SimpleMap />
-  
-  
+
+
+
+    <div className='container'>
+        <div className='section'>
+                <div className='columns is-vcentered  '>
+                        <div className='column is-12 '>
+                           <SimpleMap />
+                        </div>
+                </div>
+                <div className='columns is-vcentered  '>
+                        <div className='column is-4'>
+                            82 Boulevard de la Plage,<br/>
+                            33120 Arcachon
+                        </div>
+                        <div className='column is-4'>
+                           (+33)5.56.83.67.70
+                        </div>
+                        <div className='column is-4'>
+                            hello@tboutiquehotel.fr
+                        </div>
+                </div>
+        </div>
+    </div>
+
+
+      <div className='section is-marginless is-paddingless'>
+          <div className='titleTbh  title'>
+            <h1><span className='titleTbhEmpty'>Accès</span><span className='titleTbhFull'>_</span></h1>
+          </div>
       </div>
+  
+
+    <div className='container'>
+                <div className='section columns'>
+                        <div className='column is-10 is-offset-1'>
+                                    <div className='columns is-12 is-vcentered  '>
+                                            <div className='column is-12 '>
+                                            Rejoignez facilement le T Boutique Hôtel en train ou en taxi depuis l’aéroport de Bordeaux. L'hôtel est situé à deux pas de la gare d'Arcachon
+                                            </div>
+                                    </div>
+                    
+
+
+                            <div className='blocWithArrow'>
+                                <div className='arrowText title is-2'>→&nbsp;</div>
+                                <h2 className='title is-2'>de l’aéroport de bordeaux</h2>
+                            </div>
+                                <p>BUS / TRAIN — 1h20min.  15€</p>
+
+                            <div className='blocWithArrow'>
+                                <div className='arrowText title is-2'>→&nbsp;</div>
+                                <h2 className='title is-2'>de la gare d’arcachon</h2>
+                            </div>
+                            <div className='columns'>
+                                <p className='column  is-3'>TAXI — 5min.  4€</p>
+                                <p className='column is-3'>BUS — 10min.  4€</p>
+                                <p className='column is-3'>A PIED — 12min.  4€</p>
+                            </div>
+                            </div>
+                        </div>
+                </div>
+
+
+
+                <div className='section is-marginless is-paddingless'>
+                    <div className='titleTbh  title' style={{height: 'auto', fontSize: 'inherit', textAlign: 'left'}}>
+                        <div className='container'>
+                             <div className='section columns'>
+                                 <div className='column is-10 is-offset-1'>
+                                        <div className='blocWithArrow'>
+                                            <div className='arrowText title is-2'>→&nbsp;</div>
+                                            <h3 className='title is-2'>Parking</h3>
+                                        </div>
+                                        <p>Parking Municipal du Marché</p>
+                                        <p>ZONES DE STATIONNEMENT GRATUIT</p>
+                                 </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
   )
 }
 
