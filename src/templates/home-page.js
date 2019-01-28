@@ -47,6 +47,23 @@ export const pageQuery = graphql`
         }
       }
     }
+    allInstaNode {
+      edges {
+        node {
+          id
+          likes
+          comments
+          original
+          localFile {
+            childImageSharp {
+                fluid(maxWidth: 220, maxHeight: 210) {
+                    ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
