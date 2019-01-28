@@ -54,6 +54,7 @@ export const pageQuery = graphql`
           likes
           comments
           original
+          timestamp
           localFile {
             childImageSharp {
                 fluid(maxWidth: 220, maxHeight: 210) {
