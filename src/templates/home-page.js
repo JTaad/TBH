@@ -57,7 +57,7 @@ export const pageQuery = graphql`
           timestamp
           localFile {
             childImageSharp {
-                fluid(maxWidth: 220, maxHeight: 210) {
+                fluid(maxWidth: 1000) {
                     ...GatsbyImageSharpFluid
               }
             }
