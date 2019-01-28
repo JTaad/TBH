@@ -89,7 +89,7 @@ module.exports = {
     {
       resolve: `gatsby-source-instagram`,
       options: {
-        username: `tboutiquehotel`,
+        username: `41w.shop`,
       },
     },
     {
