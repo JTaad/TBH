@@ -34,6 +34,14 @@ const ChambresPages = ({data}) => {
         title={post.frontmatter.title}
         content={post.html}
         standard={standard}
+        petitDej={data.petitDej}
+        icon_clim={data.clim}
+        icon_coffre={data.coffre}
+        icon_douche={data.douche}
+        icon_secheCheveux={data.secheCheveux}
+        icon_telephone={data.telephone}
+        icon_tele={data.tele}
+        icon_wifi={data.wifi}
       />
     </div>
   )
@@ -48,6 +56,62 @@ export const chambresPageQuery = graphql`
         title
         meta_title
         meta_description
+      }
+    }
+    petitDej: file(relativePath: { eq: "chambres/petit_dejeuner.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    clim: file(relativePath: { eq: "icons/clim_4K_2x.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 70) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    coffre: file(relativePath: { eq: "icons/coffre_4K_2x.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 70) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    secheCheveux: file(relativePath: { eq: "icons/hothair_4K_2x.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 70) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    telephone: file(relativePath: { eq: "icons/phone_4K_2x.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 70) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    tele: file(relativePath: { eq: "icons/tv_4K_2x.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 70) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    wifi: file(relativePath: { eq: "icons/WIFI_4K_2x.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 70) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    douche: file(relativePath: { eq: "icons/shower_4K_2x.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 70) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
   }

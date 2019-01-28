@@ -1,26 +1,28 @@
 import React from 'react'
+import {Link} from 'gatsby'
 
 const NotFoundPage = () => (
   <div>
-    <section className='hero is-primary is-bold is-large'>
-      <div className='hero-body'>
         <div className='container'>
           <div className='columns'>
-            <div className='column is-10 is-offset-1'>
-              <div className='section is-centered'>
-                <h1 className='title'>
-                                    404: NOT FOUND
-                </h1>
-                <h2 className='subtitle'>
-                                    You just hit a route that doesn&#39;t exist... the
-                                    sadness.
-                </h2>
-              </div>
+            <div className='column is-5' style={{marginTop: "160px",marginBottom: "160px"}}>
+                <div className='section'>
+                <div className='titleTbh  title' style={{height: "auto", border: "0", textAlign: 'left'}}>
+                  <span className='titleTbhEmpty'>Mauvaise</span> <span className='titleTbhFull'>Route_</span>
+                </div>
+                <p>
+                Vous pouvez retourner à la page d'accueil ou nous écrire si vous ne trouvez pas ce que vous recherchez.
+                </p>
+                <br/>
+                <br/>
+                 <Link to='/'>
+                    <div className="arrow-l title is-2 is-marginless is-paddingless">→</div>
+                    <span className='subtitle is-2'>Accueil</span>
+                </Link>
+                </div>
             </div>
           </div>
-        </div>
       </div>
-    </section>
   </div>
 )
 

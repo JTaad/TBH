@@ -10,6 +10,7 @@ $white: #FFF
 $black: #000
 $fontTitle: "MonoramaRegular"
 $fontTitleBold: "MonoramaBold"
+$fontTitleSemiBold: "MonoramaSemiBold"
 $fontCorps: "Poppins"
 $indexMax: 9999999999
 $indexMidl: 99999999
@@ -31,8 +32,31 @@ $column-gap: 3rem
 @import '~bulma'
 
 
-// Import Bulma Extensions
- 
+// Import Bulma Extensions 
+
+* 
+  color: $blue
+
+
+.hero.is-primary 
+  .subtitle
+    color: $blue
+  .title
+    color: $blue
+
+.semiBold
+  font-weight: 600
+.marquee
+  font-size: 14px
+  font-family: $fontTitle
+  color: $blue
+  line-height: 18px
+  z-index: 9999999
+  position: relative
+  background: #FFF
+  span 
+    margin-right: 5px
+    
 .center-v
   display: flex
   align-items: center
@@ -96,6 +120,7 @@ $column-gap: 3rem
 
 .title
   font-weight: normal
+  color: $blue
 
 .arrow-r
   font-family: $fontTitle
@@ -131,7 +156,7 @@ p
 
 .headerHome
   position: relative
-  min-height: calc(100vh - 101px)
+  min-height: calc(100vh - 121px)
   background-position: top
   background-repeat: no-repeat
   background-size: cover 
@@ -165,6 +190,8 @@ p
     margin-left: 1px
     .blocResaArrow
         transform: rotate(45deg)
+    *
+      color: $white
 
 .blocWithArrow
   cursor: pointer
@@ -175,7 +202,17 @@ p
   font-family: $fontTitle
   .arrowText
     transform: rotate(45deg)
-    
+  
+.is-vcenter
+  display: flex
+  align-items: center
+
+.petitPlus
+  font-family: $fontTitle
+  color: $blue
+  .petitPlusBorder
+    border-bottom: 1px solid $blue
+
 .titleTbh    
   height: 100px
   border-top: 1px solid $blue
@@ -211,7 +248,7 @@ p
   width: 100%
   position: absolute
   align-items: center
-  margin-top: 20px
+  margin-top: 45px
   div
     padding: 0
     flex-grow: 1

@@ -38,7 +38,7 @@ const ContactPageTemplate = ({
                            <SimpleMap />
                         </div>
                 </div>
-                <div className='columns is-vcentered  '>
+                <div className='columns is-vcentered  semiBold'>
                         <div className='column is-4'>
                             82 Boulevard de la Plage,<br/>
                             33120 Arcachon
@@ -77,15 +77,15 @@ const ContactPageTemplate = ({
                                 <h2 className='title is-2'>de l’aéroport de bordeaux</h2>
                             </div>
                                 <p>BUS / TRAIN — 1h20min.  15€</p>
-
+                                <br/>
                             <div className='blocWithArrow'>
                                 <div className='arrowText title is-2'>→&nbsp;</div>
                                 <h2 className='title is-2'>de la gare d’arcachon</h2>
                             </div>
                             <div className='columns'>
-                                <p className='column  is-3'>TAXI — 5min.  4€</p>
-                                <p className='column is-3'>BUS — 10min.  4€</p>
-                                <p className='column is-3'>A PIED — 12min.  4€</p>
+                                <p className='column  is-4'>TAXI — 5min.  4€</p>
+                                <p className='column is-4'>BUS — 10min.  4€</p>
+                                <p className='column is-4'>A PIED — 12min.  4€</p>
                             </div>
                             </div>
                         </div>

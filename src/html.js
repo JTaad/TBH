@@ -19,6 +19,6 @@ export default class HTML extends Component {
           {this.props.postBodyComponents}
         </body>
       </html>
-    )
+    ) 
   }
 }
