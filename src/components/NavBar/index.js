@@ -43,7 +43,7 @@ const NavBar = ({toggleNavbarMain, navToggle}) => (
                         </div>
                     </div>
             </div>
-
+ 
 
               <div className='column-nav-right section'>
                     <div id="contentNavNormTopRight" className='title is-4'>
