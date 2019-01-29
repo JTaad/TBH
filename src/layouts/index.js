@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
-import Marquee from '../components/Marquee'
 import { animateScroll as scroll } from 'react-scroll'
 import '../assets/sass/styles.sass'
 import config from '../../data/config'
@@ -43,7 +42,6 @@ class TemplateWrapper extends Component {
         </Helmet>
           <GlobalStyles />
 
-        <Marquee />
         <NavBar 
           isActive={this.state.isActive} 
           navToggle={this.state.navToggle} 
