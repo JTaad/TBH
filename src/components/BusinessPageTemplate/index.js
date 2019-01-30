@@ -3,13 +3,13 @@ import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import Img from "gatsby-image"
 import { Link } from 'gatsby'
-import headerImage from '../../assets/img/business/header_business_tbh.jpg'
 
 const BusinessPageTemplate = ({
   title,
   subtitle,
   meta_title,
   meta_description,
+  background_header,
   contacts,
   vos_espaces,
   vos_evenements,
@@ -22,9 +22,13 @@ const BusinessPageTemplate = ({
       </Helmet>
       
 
-    <div className='headerHome' style={{backgroundImage: `url(${headerImage})`}}>
-       
-    </div>
+
+      <div className='headerHome'>
+          <Img  
+            style={{ position: 'absolute', left: '0', top: "0", width: "100%", height: "100%" }} 
+            fluid={background_header.childImageSharp.fluid} 
+          />
+      </div>
 
 
 
@@ -39,10 +43,13 @@ const BusinessPageTemplate = ({
 
     <div className='section  is-paddingless is-marginless'>
         <div className='columns is-paddingless is-marginless'>
-            <div className='column is-half is-paddingless is-marginless' style={{ textAlign: 'left' }}>
-               <Img fluid={vos_espaces.childImageSharp.fluid}/>
+            <div className='column is-half is-paddingless is-marginless imgContent' style={{ textAlign: 'left' }}>
+               <Img 
+                  style={{ position: 'absolute', left: '0', top: "0", width: "100%", height: "100%" }} 
+                  fluid={vos_espaces.childImageSharp.fluid}
+                  />
             </div>
-            <div  className='column is-5  center-v'>
+            <div  className='column is-5  center-v paddinglessTB'>
                 <div className='section'>
                     <div className="arrow-r title is-2 is-marginless is-paddingless">←</div>
                     <br/>

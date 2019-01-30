@@ -19,6 +19,7 @@ const ContactPage = ({data}) => {
           contentComponent={HTMLContent}
           title={post.frontmatter.title}
           content={post.html}
+          background_header={data.background_header}
         />
     </div>
   )
@@ -36,6 +37,13 @@ export default ContactPage
 
 export const contactPageQuery = graphql`
   query ContactPage($id: String!) {
+    background_header: file(relativePath: { eq: "contact/header_contact_tbh.jpg" }) {
+      childImageSharp{
+        fluid(maxWidth: 2000) {
+           ...GatsbyImageSharpFluid
+        }
+      }
+    }
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {

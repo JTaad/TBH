@@ -47,8 +47,8 @@ class CarouselHome extends Component {
     
 
       <div className='section  is-paddingless is-marginless'>
-          <div className='columns is-paddingless is-marginless'>
-              <div  className='column  is-5  is-offset-1  center-v'>
+          <div className='columns is-paddingless is-marginless is-paddinglessTB'>
+              <div  className='column  is-5  is-offset-1  center-v is-paddinglessTB'>
                   <div className='section'>
                       <div className="arrow-l title is-2 is-marginless is-paddingless">→</div>
                       <br/>

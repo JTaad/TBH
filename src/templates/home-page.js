@@ -21,6 +21,7 @@ const HomePage = ({data}) => {
       espace_pro={data.espacePro}
       bienvenue={data.bienvenue}
       posts_instagram={postsInstagram}
+      background_header={data.background_header}
     />
   )
 }
@@ -37,6 +38,14 @@ export default HomePage
 
 export const pageQuery = graphql`
   query IndexPage($id: String!) {
+    background_header: file(relativePath: { eq: "home/header_tbh.jpg" }) {
+      childImageSharp{
+        fluid(maxWidth: 2000) {
+           ...GatsbyImageSharpFluid
+        }
+
+      }
+    }
     espacePro: file(relativePath: { eq: "home/espacePro_tbh.jpg" }) {
       ...fluidImage
     }

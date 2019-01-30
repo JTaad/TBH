@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import headerImage from '../../assets/img/contact/header_contact_tbh.jpg'
 import SimpleMap from '../SimpleMap'
+import Img from "gatsby-image"
 
 const ContactPageTemplate = ({
   title,
@@ -10,6 +11,7 @@ const ContactPageTemplate = ({
   meta_title,
   meta_description,
   contacts,
+  background_header,
 }) => {
   return (
     <div>
@@ -19,8 +21,12 @@ const ContactPageTemplate = ({
       </Helmet>
       
 
-      <div className='headerHome' style={{backgroundImage: `url(${headerImage})`}}>
-         
+
+      <div className='headerHome'>
+          <Img
+            style={{ position: 'absolute', left: '0', top: "0", width: "100%", height: "100%" }} 
+            fluid={background_header.childImageSharp.fluid} 
+          />
       </div>
   
       <div className='section is-marginless is-paddingless'>

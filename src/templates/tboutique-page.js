@@ -18,6 +18,7 @@ const tBoutiquePages = ({data}) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
+        background_header={data.background_header}
         concept={data.concept}
         histoire={data.histoire}
         boutique={data.boutique}
@@ -29,6 +30,13 @@ export default tBoutiquePages
 
 export const tBoutiquePageQuery = graphql`
   query TBoutiquePage($id: String!) {
+    background_header: file(relativePath: { eq: "tboutique/header_tboutique_tbh.jpg" }) {
+      childImageSharp{
+        fluid(maxWidth: 2000) {
+           ...GatsbyImageSharpFluid
+        }
+      }
+    }
     concept: file(relativePath: { eq: "tboutique/leconcept.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 2000) {

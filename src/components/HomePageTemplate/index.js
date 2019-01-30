@@ -22,6 +22,7 @@ const HomePageTemplate = ({
   posts_instagram,
   espace_pro,
   bienvenue,
+  background_header,
 }) => (
   <div> 
     <Helmet>
@@ -29,9 +30,13 @@ const HomePageTemplate = ({
       <meta name='description' content={meta_description} />  
     </Helmet>
 
-    <div className='headerHome' style={{backgroundImage: `url(${headerImage})`}}>
-        <Rerservation />
-    </div>
+      <div className='headerHome' >
+          <Img 
+            style={{ position: 'absolute', left: '0', top: "0", width: "100%", height: "100%" }} 
+            fluid={background_header.childImageSharp.fluid}
+          />
+              <Rerservation />
+      </div>
 
 
 
@@ -44,12 +49,14 @@ const HomePageTemplate = ({
 
     <div className='section  is-paddingless is-marginless'>
         <div className='columns is-paddingless is-marginless'>
-            <div className='column is-half is-paddingless is-marginless' style={{ textAlign: 'left' }}>
-                <Img fluid={bienvenue.childImageSharp.fluid}/>
+            <div className='column is-half is-paddingless is-marginless imgContent'  style={{ textAlign: 'left' }}>
+                <Img 
+                  style={{ position: 'absolute', left: '0', top: "0", width: "100%", height: "100%" }} 
+                  fluid={bienvenue.childImageSharp.fluid}/>
             </div>
-            <div  className='column is-5 center-v'>
+            <div  className='column is-5 center-v is-paddinglessTB'>
                 <div className='section'>
-                    <div className="arrow-r title is-2 is-marginless is-paddingless">←</div>
+                    <div className="arrow-r title is-2 is-marginless ">←</div>
                     <br/>
                     <span className='subtitle is-2'>Le concept</span>
                     <br/>

@@ -3,7 +3,6 @@ import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import CarouselChambre from '../CarouselChambre'
 import {Link} from 'gatsby'
-import headerImage from '../../assets/img/chambres/header_chambres_tbh.jpg'
 import Img from "gatsby-image"
 
 
@@ -14,6 +13,7 @@ const ChambresPageTemplate = ({
   meta_title,
   meta_description,
   contacts,
+  background_header,
   standard,
   petitDej,
   icon_clim,
@@ -22,7 +22,7 @@ const ChambresPageTemplate = ({
   icon_secheCheveux,
   icon_telephone,
   icon_tele,
-  icon_wifi,
+  icon_wifi, 
 }) => {
   return (
     <div>
@@ -32,9 +32,16 @@ const ChambresPageTemplate = ({
       </Helmet>
       
 
-    <div className='headerHome' style={{backgroundImage: `url(${headerImage})`}}>
+
+      <div className='headerHome'>
+          <Img  
+            style={{ position: 'absolute', left: '0', top: "0", width: "100%", height: "100%" }} 
+            fluid={background_header.childImageSharp.fluid} 
+          />
+
+
        
-        <div className='container' style={{height: `calc(100vh - 100px)`}}>
+     {/*    <div className='container' style={{height: `calc(100vh - 100px)`}}>
                 
                 <div className='columns center-v'  style={{height: `100%`}}>
                     <div className='column  '>
@@ -55,9 +62,9 @@ const ChambresPageTemplate = ({
                 </div>
         </div>
        
-    </div>
+    */}
 
-
+ </div>
 
     <div className='section is-marginless is-paddingless'>
         <div className='titleTbh  title'>
@@ -69,11 +76,11 @@ const ChambresPageTemplate = ({
 
     <div className='section  is-paddingless is-marginless'>
         <div className='columns is-paddingless is-marginless'>
-            <div className='column is-half is-paddingless is-marginless' style={{ textAlign: 'left' }}>
+            <div className='column is-half is-paddingless is-marginless ' style={{ textAlign: 'left' }}>
                 <CarouselChambre imgs={standard} />
             </div>
             <div  className='column is-5  center-v'>
-                <div className='section'>
+                <div className='section is-paddinglessTB'>
                     <div className="arrow-r title is-2 is-marginless is-paddingless">←</div>
                     <br/>
                     <span className='subtitle is-2'>Standard</span>
@@ -98,7 +105,7 @@ Il ne vous reste plus qu’à profiter, le temps d’une nuit et plus si affinit
 
       <div className='section  is-paddingless is-marginless'>
           <div className='columns is-paddingless is-marginless'>
-              <div  className='column  is-5  is-offset-1  center-v'>
+              <div  className='column  is-5  is-offset-1  center-v is-paddinglessTB'>
                   <div className='section'>
                       <div className="arrow-l title is-2 is-marginless is-paddingless">→</div>
                       <br/>
@@ -136,7 +143,7 @@ Il ne vous reste plus qu’à profiter, le temps d’une nuit et plus si affinit
             <div className='column is-half is-paddingless is-marginless' style={{ textAlign: 'left' }}>
                 <CarouselChambre  />
             </div>
-            <div  className='column is-5 center-v'>
+            <div  className='column is-5 center-v is-paddinglessTB'>
                 <div className='section'>
                     <div className="arrow-r title is-2 is-marginless is-paddingless">←</div>
                     <br/>
@@ -168,7 +175,7 @@ Il ne vous reste plus qu’à profiter, le temps d’une nuit et plus si affinit
 </div>
 
 <div className='petitPlus title is-3'>
-    <div className='columns petitPlusBorder  is-vcenter '>
+    <div className='columns petitPlusBorder  is-vcenter is-paddinglessTB'>
         <div className='column is-centered' >
                 <div className="columns is-mobile is-centered is-vcentered is-gapless" style={{justifyContent: 'center'}}>
                     <div className="column is-paddingless" >

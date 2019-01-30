@@ -16,6 +16,7 @@ const BusinessPages = ({data}) => {
       </Helmet>
       <BusinessPageTemplate
         contentComponent={HTMLContent}
+        background_header={data.background_header}
         title={post.frontmatter.title}
         content={post.html}
         vos_espaces={data.vosEspaces}
@@ -28,6 +29,13 @@ export default BusinessPages
 
 export const businessPageQuery = graphql`
   query BusinessPages($id: String!) {
+    background_header: file(relativePath: { eq: "business/header_business_tbh.jpg" }) {
+      childImageSharp{
+        fluid(maxWidth: 2000) {
+           ...GatsbyImageSharpFluid
+        }
+      }
+    }
     vosEspaces: file(relativePath: { eq: "business/vosespaces.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 2000) {

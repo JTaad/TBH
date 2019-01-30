@@ -33,6 +33,7 @@ const ChambresPages = ({data}) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
+        background_header={data.background_header}
         standard={standard}
         petitDej={data.petitDej}
         icon_clim={data.clim}
@@ -49,13 +50,20 @@ const ChambresPages = ({data}) => {
 export default ChambresPages
 
 export const chambresPageQuery = graphql`
-  query ChambrePage($id: String!) {
+  query ChambrePage($id: String!) { 
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
         title
         meta_title
         meta_description
+      }
+    }
+    background_header: file(relativePath: { eq: "chambres/header_chambres_tbh.jpg" }) {
+      childImageSharp{
+        fluid(maxWidth: 2000) {
+           ...GatsbyImageSharpFluid
+        }
       }
     }
     petitDej: file(relativePath: { eq: "chambres/petit_dejeuner.jpg" }) {

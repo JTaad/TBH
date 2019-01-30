@@ -39,7 +39,7 @@ class CarouselHome extends Component {
     return (
     
                   
-                <div style={{ width: "100%" }}>
+                <div>
                 <Carousel
                   renderCenterLeftControls={({ previousSlide }) => (
                     <button onClick={previousSlide}>←</button>
