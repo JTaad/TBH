@@ -5,6 +5,15 @@ import { FaInstagram, FaFacebook } from 'react-icons/fa';
 import Mailchimp from '../Mailchimp'
 import logo_footer from '../../assets/img/logos/logo_nav_tbh.png'
 
+const lambdaURL =
+  process.env === 'production' ? '/.netlify/functions' : '/localhost:8000'
+
+fetch(`${lambdaURL}/hello`)
+  .then(res => res.json())
+  .then(data => console.log(data))
+  .catch(err => console.error(err))
+
+  
 const Footer = ({ scrollTop }) => {
   return (
     <footer className='footer'>
