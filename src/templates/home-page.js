@@ -39,22 +39,13 @@ export default HomePage
 export const pageQuery = graphql`
   query IndexPage($id: String!) {
     background_header: file(relativePath: { eq: "home/header_tbh.jpg" }) {
-      childImageSharp{
-        fluid(maxWidth: 2000) {
-           ...GatsbyImageSharpFluid
-        }
-
-      }
+      ...fluidImage
     }
     espacePro: file(relativePath: { eq: "home/espacePro_tbh.jpg" }) {
       ...fluidImage
     }
     bienvenue: file(relativePath: { eq: "home/bienvenue_tbh.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 2000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
+      ...fluidImage
     }
     allInstaNode {
       edges {
