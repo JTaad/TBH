@@ -1,7 +1,8 @@
 import Mailchimp from 'mailchimp-api-v3'
 import md5 from 'md5'
+require('dotenv').config()
 
-const mailchimp = new Mailchimp('5ee62a5b72056875082e791847412359-us10')
+const mailchimp = new Mailchimp(process.env.MAILCHIMP_API)
 
 
 export async function handler (event, context, callback) {
