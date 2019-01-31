@@ -2,6 +2,7 @@ import React from 'react';
 
 import addToMailchimp from 'gatsby-plugin-mailchimp'
 
+const email = "julien@taddei.com"
 
 export default class MyGatsbyComponent extends React.Component {
   // Since `addToMailchimp` returns a promise, you
@@ -14,7 +15,7 @@ export default class MyGatsbyComponent extends React.Component {
   // 1. via `.then`
   _handleSubmit = e => {
     e.preventDefault;
-    addToMailchimp(email, listFields) // listFields are optional if you are only capturing the email address.
+    addToMailchimp(email) // listFields are optional if you are only capturing the email address.
     .then(data => {
       // I recommend setting data to React state
       // but you can do whatever you want (including ignoring this `then()` altogether)
@@ -30,14 +31,14 @@ export default class MyGatsbyComponent extends React.Component {
   // 2. via `async/await`
   _handleSubmit = async (e) => {
     e.preventDefault;
-    const result = await addToMailchimp(email, listFields)
+    const result = await addToMailchimp(email)
     // I recommend setting `result` to React state
     // but you can do whatever you want
   }
 
   render () {
     return (
-      <form onSubmit={this._handleSubmit(email, {listFields})}>
+      <form onSubmit={this._handleSubmit(email)}>
         ...
       </form>
     )

@@ -1,0 +1,91 @@
+$black: #000000
+$white: #FFFFFF
+
+.DateRangePickerInput
+  display: flex
+  text-align: center
+  background-color: transparent!important
+  color:#fff
+  top: 50%
+  .DateInput_input
+        background-color: #000
+        color: #FFF
+        text-align: center
+        padding: 0
+        cursor: pointer
+        border: 0
+        &:hover
+            cursor: pointer
+            background-color: $white
+            color: $black
+            ::placeholder
+                background-color: $white
+                color: $black
+  .DateInput
+    width: 50%
+    padding-top: 0
+    padding-bottom: 0
+    padding: 0
+    color: #FFF
+    display: flex
+    justify-content: center
+    flex-grow: 1
+    margin: 0
+    padding: 0
+    background-color: #000
+    padding-top: 13px
+    padding-bottom: 13px
+    margin-left: 1px
+    cursor: pointer
+    &:hover
+        cursor: pointer
+        background-color: $white
+        color: $black
+        ::placeholder
+            background-color: $white
+            color: $black
+    .blocResaArrow
+        transform: rotate(45deg)
+
+.DateRangePickerInput_arrow
+    display: none
+.DateRangePickerInput__withBorder
+    border: 0px
+
+
+input
+  font-family: "MonoramaRegular"  
+  color: #FFF
+
+.CalendarDay
+  line-height: 35px 
+
+.DayPicker_weekHeader_li
+  font-family: Poppins
+
+.DayPicker_transitionContainer
+  font-family: MonoramaRegular
+
+input::placeholder
+  color: #FFF
+  opacity: 1
+
+.DateInput_fangStroke
+    fill: #000
+
+
+
+    // Will edit everything selected including everything between a range of dates
+.CalendarDay__selected_span 
+  background: $black //background
+  color: white //text
+  border: 1px solid $black //default styles include a border
+
+// Will edit selected date or the endpoints of a range of dates
+.CalendarDay__selected 
+  background: $black
+  color: white
+
+.DayPickerKeyboardShortcuts_show__bottomRight::before
+    display: none
+

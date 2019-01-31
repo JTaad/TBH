@@ -32,12 +32,14 @@ $column-gap: 3rem
 @import '~bulma'
 
 
+
 // Import Bulma Extensions 
 
 * 
   color: $blue
 
 
+ 
 .is-paddinglessTB
   padding-top: 0
   padding-bottom: 0
@@ -177,15 +179,10 @@ p
   flex: 1 1 auto
   text-align: center
   width: 700px
-  margin-left: auto
-  margin-right: auto
   position: absolute
   color:#fff
   top: 50%
-  left: 50%
-  -ms-transform: translateX(-50%) translateY(-50%)
-  -webkit-transform: translate(-50%,-50%)
-  transform: translate(-50%,-50%)
+  left: calc(50% - 350px)
   .blocResaDiv
     cursor: pointer
     display: flex
@@ -199,6 +196,9 @@ p
     padding-bottom: 13px
     font-family: $fontTitle
     margin-left: 1px
+    &:hover
+       background-color: $white
+       color: $black
     .blocResaArrow
         transform: rotate(45deg)
     *

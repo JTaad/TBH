@@ -29,7 +29,17 @@ const Footer = ({ scrollTop }) => {
                             <div className="control">
                             <label>Newsletter</label>
                               <input className="input is-medium" type="text" placeholder="Votre adresse e-mail"/>
-                            
+                              <form name="contact" netlify>
+  <p>
+    <label>Name <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Email <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
                             </div>
                           </div>
                           </div>

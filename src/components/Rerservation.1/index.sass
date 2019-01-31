@@ -1,0 +1,99 @@
+$black: #000000
+$white: #FFFFFF
+
+.DateRangePickerInput
+  display: flex
+  flex: 1 1 auto
+  text-align: center
+  width: 700px
+  position: absolute
+  background-color: transparent!important
+  color:#fff
+  top: 50%
+  .DateInput_input
+        background-color: #000
+        color: #FFF
+        text-align: center
+        padding: 0
+        border: 0
+  .DateInput
+    padding-top: 0
+    padding-bottom: 0
+    padding: 0
+    color: #FFF
+    cursor: pointer
+    display: flex
+    justify-content: center
+    flex-grow: 1
+    margin: 0
+    padding: 0
+    background-color: #000
+    padding-top: 13px
+    padding-bottom: 13px
+    margin-left: 1px
+    .blocResaArrow
+        transform: rotate(45deg)
+
+.DateRangePickerInput_arrow
+    display: none
+.DateRangePickerInput__withBorder
+    border: 0px
+
+.DateInput_input__focused
+    border: 0px
+
+input
+  font-family: "MonoramaRegular"  
+  color: #FFF
+
+
+input::placeholder
+  color: #FFF
+  opacity: 1
+
+.DateInput_fangStroke
+    fill: #000
+
+.CalendarDay__selected
+    background: $black
+    border: 1px double $black
+    &hover
+      background: $black
+      border: 1px double $black
+    &active
+        background: $black
+        border: 1px double $black
+
+
+    // Will edit everything selected including everything between a range of dates
+.CalendarDay__selected_span 
+  background: $black //background
+  color: white //text
+  border: 1px solid $black //default styles include a border
+
+// Will edit selected date or the endpoints of a range of dates
+.CalendarDay__selected 
+  background: $black
+  color: white
+
+
+// Will edit when hovered over. _span style also has this property
+.CalendarDay__selected
+    &hover
+      background: $black
+      color: white
+    &active
+      background: $black
+      border: 1px double $black
+
+
+// Will edit when the second date (end date) in a range of dates
+// is not yet selected. Edits the dates between your mouse and said date
+.CalendarDay__hovered_span:hover,
+.CalendarDay__hovered_span 
+  background: $black
+  color: $white
+
+.DayPickerKeyboardShortcuts_show__bottomRight::before
+    display: none
+
