@@ -1,46 +1,45 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-import addToMailchimp from 'gatsby-plugin-mailchimp'
 
-const email = "julien@taddei.com"
+class Mailchimp extends Component {
 
-export default class MyGatsbyComponent extends React.Component {
-  // Since `addToMailchimp` returns a promise, you
-  // can handle the response in two different ways:
-
-  // Note that you need to send an email & optionally, listFields
-  // these values can be pulled from React state, form fields,
-  // or wherever.  (Personally, I recommend storing in state).
-
-  // 1. via `.then`
-  _handleSubmit = e => {
-    e.preventDefault;
-    addToMailchimp(email) // listFields are optional if you are only capturing the email address.
-    .then(data => {
-      // I recommend setting data to React state
-      // but you can do whatever you want (including ignoring this `then()` altogether)
-      console.log(data)
-    })
-    .catch(() => {
-      // unnecessary because Mailchimp only ever
-      // returns a 200 status code
-      // see below for how to handle errors
-    })
+  state = {
+    email: '',
+    msg: ''
   }
 
-  // 2. via `async/await`
-  _handleSubmit = async (e) => {
-    e.preventDefault;
-    const result = await addToMailchimp(email)
-    // I recommend setting `result` to React state
-    // but you can do whatever you want
+  handleChange = e => {
+    const email = e.target.value
+    this.setState({ email })
   }
+
+  handleSubmit = async e => {
+    e.preventDefault();
+    const email = this.state.email
+
+    const mailchimp = await fetch('/.netlify/functions/mailchimp', {
+      method: 'POST',
+      body: JSON.stringify({ email })
+    })
+
+    const res = await mailchimp.json()
+    const msg = res.msg
+
+    this.setState({ msg })
+  }
+
 
   render () {
     return (
-      <form onSubmit={this._handleSubmit(email)}>
-        ...
+      <form onSubmit={this.handleSubmit} >
+        <label htmlFor='email'>Email: </label>
+        <input id='email' type='email' value={this.state.email} onChange={this.handleChange} />
+        <button type='submit'>Go</button>
+        <p>{this.state.msg}</p>
       </form>
     )
   }
+
 }
+
+export default Mailchimp
