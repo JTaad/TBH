@@ -78,6 +78,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/preset-typescript": "^7.1.0",
     "babel-eslint": "^9.0.0",
     "eslint": "^4.19.1",
     "eslint-config-standard": "^11.0.0",
