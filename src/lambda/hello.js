@@ -1,4 +1,4 @@
-const sayHello = require('./modules')
+const sayHello = import('./modules')
 
 exports.handler = function handler(event, context, callback) {
   callback(null, {
