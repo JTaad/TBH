@@ -21,13 +21,6 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-styled-components',
     {
-      resolve: `gatsby-plugin-netlify-functions`,
-      options: {
-        functionsSrc: `${__dirname}/src/lambda`,
-        functionsOutput: `${__dirname}/functions`,
-      },
-    },
-    {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -50,6 +43,13 @@ module.exports = {
       options: {
         path: `${__dirname}/src/assets/img`,
         name: 'images',
+      },
+    },
+    {
+      resolve: `gatsby-plugin-netlify-functions`,
+      options: {
+        functionsSrc: `${__dirname}/src/lambda`,
+        functionsOutput: `${__dirname}/functions`,
       },
     },
     {

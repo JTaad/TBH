@@ -13,6 +13,7 @@
     "clean": "rm -rf public/ .cache/"
   },
   "dependencies": {
+    "@babel/core": "^7.0.0",
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^2.1.1",
     "babel-plugin-styled-components": "^1.10.0",
     "bulma": "^0.7.2",
@@ -74,7 +75,7 @@
     ]
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.2",
+    "babel-eslint": "^9.0.0",
     "eslint": "^4.19.1",
     "eslint-config-standard": "^11.0.0",
     "eslint-config-standard-react": "^6.0.0",
