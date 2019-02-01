@@ -127,7 +127,6 @@ const HomePageTemplate = ({
       </div>
     </div>
 
-    <div className='container is-fullhd is-borderHome'>
         <div className='section '>
             <div id="notes" className='columns is-vcentered is-centered'>
                 <div className='column is-4 has-text-centered is-paddingless'>
@@ -141,7 +140,6 @@ const HomePageTemplate = ({
                 </div>
             </div>
           </div>
-    </div>
 
     
     <section className='section section--gradient' style={{display:'none'}}>

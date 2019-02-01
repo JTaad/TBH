@@ -1,4 +1,5 @@
 const config = require('./data/config')
+var proxy = require('http-proxy-middleware')
 
 const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
 
