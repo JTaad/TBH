@@ -12,7 +12,7 @@ export async function handler (event, context, callback) {
     const emailHash = md5(email)
 
     await mailchimp.put(
-        `/lists/872c00aa85/membres/${emailHash}`,
+        '/lists/872c00aa85/membres/' + emailHash,
         {
             email_address: email,
             status: 'subscribed'
@@ -21,6 +21,6 @@ export async function handler (event, context, callback) {
 
     callback(null, {
       statusCode: 200,
-      body: JSON.stringify({msg:  `📩 Votre e-mail ${email} a bien été enregistré` })
+      body: JSON.stringify({msg:  '📩 Votre e-mail '+ email +' a bien été enregistré' })
     })
   }
