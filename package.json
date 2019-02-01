@@ -8,10 +8,10 @@
     "develop": "gatsby develop",
     "start": "run-p start:**",
     "start:app": "npm run develop",
-    "start:lambda": "netlify-lambda serve src/lambda",
+    "start:server": "netlify-lambda serve functions -c ./webpack.config.js",
     "build": "run-p build:**",
     "build:app": "gatsby build",
-    "build:lambda": "netlify-lambda build src/lambda",
+    "build:functions": "netlify-lambda build functions -c ./webpack.config.js",
     "serve": "gatsby serve",
     "lint": "eslint --ext js,jsx --ignore-path .gitignore . --fix",
     "clean": "rm -rf public/ .cache/"
