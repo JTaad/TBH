@@ -5,13 +5,13 @@ require('dotenv').config()
 const mailchimp = new Mailchimp(process.env.MAILCHIMP_API)
 
 
-export async function handler (event, context, callback) {
+exports.handler = function(event, context, callback) {
     console.log('ok')
     const data = JSON.parse(event.body)
     const email = data.email
     const emailHash = md5(email)
 
-    await mailchimp.put(
+    mailchimp.put(
         `/lists/872c00aa85/membres/${emailHash}`,
         {
             email_address: email,
