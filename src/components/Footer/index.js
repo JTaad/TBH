@@ -25,14 +25,7 @@ const Footer = ({ scrollTop }) => {
 
                           </div>
                           <div className='column is-two-thirds'>
-                          
-                          <div className="field">
-                            <div className="control">
-                            <label>Newsletter</label>
-                              <input className="input is-medium" type="text" placeholder="Votre adresse e-mail"/>
                               <Mailchimp />
-                            </div>
-                          </div>
                           </div>
                     </div>
                     

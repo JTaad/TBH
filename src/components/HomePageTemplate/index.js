@@ -118,6 +118,30 @@ const HomePageTemplate = ({
     <Instagram gridItems={posts_instagram} />
 
 
+    <div className='container'>
+        <div className='section is-paddingless  '>
+           <div className='titleTbh  subtitle is-1 ' style={{border: "0px"}}>
+               <div className=' is-vcentered'>Sans fausses notes</div>
+           </div>
+
+      </div>
+    </div>
+
+    <div className='container is-fullhd is-borderHome'>
+        <div className='section '>
+            <div id="notes" className='columns is-vcentered is-centered'>
+                <div className='column is-4 has-text-centered is-paddingless'>
+                    <div><span className="noteCount subtitle is-1">9/10</span>&nbsp;&nbsp;&nbsp;Booking</div>
+                </div>
+                <div className='column is-4 has-text-centered is-paddingless'>
+                  <div><span className="noteCount subtitle is-1">4.5/5</span>&nbsp;&nbsp;&nbsp;Trip Advisor</div>
+                </div>
+                <div className='column is-4 has-text-centered is-paddingless'>
+                   <div><span className="noteCount subtitle is-1">4.1/5</span>&nbsp;&nbsp;&nbsp;Google</div>
+                </div>
+            </div>
+          </div>
+    </div>
 
     
     <section className='section section--gradient' style={{display:'none'}}>

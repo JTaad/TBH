@@ -32,10 +32,17 @@ class Mailchimp extends Component {
   render () {
     return (
       <form onSubmit={this.handleSubmit} >
-        <label htmlFor='email'>Email: </label>
-        <input id='email' type='email' value={this.state.email} onChange={this.handleChange} />
-        <button type='submit'>Go</button>
-        <p>{this.state.msg}</p>
+          <div className="field has-addons">
+            <div className="control" style={{width: "100%"}}>
+              <input id="email" style={{color: '#111344'}}className="input is-medium is-radiusless" type="email" placeholder="Votre adresse e-mail" value={this.state.email} onChange={this.handleChange} />
+            </div>
+            <div className="control">
+              <button className="button   is-primary is-inverted is-outlined is-radiusless is-medium">
+                S'inscrire
+              </button>
+            </div>
+            <p>{this.state.msg}</p>
+          </div>
       </form>
     )
   }
