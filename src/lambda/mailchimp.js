@@ -1,11 +1,8 @@
-
-const Mailchimpreq = require('./mailchimp-api-v3');
-const md5 = require('./md5');
+import Mailchimp from 'mailchimp-api-v3'
+import md5 from 'md5'
 require('dotenv').config()
 
-
-
-const mailchimp = new Mailchimpreq(process.env.MAILCHIMP_API)
+const mailchimp = new Mailchimp(process.env.MAILCHIMP_API)
 
 
 export async function handler (event, context, callback) {
@@ -15,7 +12,7 @@ export async function handler (event, context, callback) {
     const emailHash = md5(email)
 
     await mailchimp.put(
-        '/lists/872c00aa85/membres/' + emailHash,
+        `/lists/872c00aa85/membres/${emailHash}`,
         {
             email_address: email,
             status: 'subscribed'
@@ -24,6 +21,6 @@ export async function handler (event, context, callback) {
 
     callback(null, {
       statusCode: 200,
-      body: JSON.stringify({msg:  '📩 Votre e-mail '+ email +' a bien été enregistré' })
+      body: JSON.stringify({msg:  `📩 Votre e-mail ${email} a bien été enregistré` })
     })
   }
