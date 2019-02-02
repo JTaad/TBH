@@ -6,12 +6,13 @@
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
+    "develop:lambda": "netlify-lambda serve src/lambda",
     "start": "run-p start:**",
     "start:app": "npm run develop",
     "start:server": "netlify-lambda serve src/lambda -c ./webpack.config.js",
     "build": "run-p build:**",
     "build:app": "gatsby build",
-    "build:functions": "netlify-lambda build src/lambda -c ./webpack.config.js",
+    "build:lambda": "netlify-lambda build src/lambda",
     "serve": "gatsby serve",
     "lint": "eslint --ext js,jsx --ignore-path .gitignore . --fix",
     "clean": "rm -rf public/ .cache/"
