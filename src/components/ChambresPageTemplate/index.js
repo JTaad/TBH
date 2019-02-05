@@ -67,23 +67,23 @@ const ChambresPageTemplate = ({
  </div>
 
     <div className='section is-marginless is-paddingless'>
-        <div className='titleTbh  title'>
+        <div className='titleTbhFirst titleTbh title is-size-3-mobile is-size-1-tablet is-size-1-desktop'>
           <span className='titleTbhEmpty'>Les</span> <span className='titleTbhFull'>Chambres_</span>
         </div>
     </div>
 
 
 
-    <div className='section  is-paddingless is-marginless'>
+    <div id="standard" className='section  is-paddingless is-marginless'>
         <div className='columns is-paddingless is-marginless'>
             <div className='column is-half is-paddingless is-marginless ' style={{ textAlign: 'left' }}>
                 <CarouselChambre imgs={standard} />
             </div>
             <div  className='column is-5  center-v'>
                 <div className='section is-paddinglessTB'>
-                    <div className="arrow-r title is-2 is-marginless is-paddingless">←</div>
+                    <div className="arrow-r subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">←</div>
                     <br/>
-                    <span className='subtitle is-2'>Standard</span>
+                    <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>Standard</span>
                     <br/>
                     <br/>
                     <p>
@@ -93,9 +93,9 @@ Il ne vous reste plus qu’à profiter, le temps d’une nuit et plus si affinit
 
                     <br/>
                     <br/>
-                    <Link className='button is-outlined title is-5' to='/tboutique'>
+                    <a className='button is-outlined title is-5' target="_blank" href='https://secure.reservit.com/fo/booking/2/10768/dates?specialMode=default&langcode=FR&partid=0&custid=2&hotelid=10768&m=booking'>
                        Réserver
-                    </Link>
+                    </a>
                 </div>
             </div>
         </div>
@@ -103,13 +103,13 @@ Il ne vous reste plus qu’à profiter, le temps d’une nuit et plus si affinit
 
 
 
-      <div className='section  is-paddingless is-marginless'>
+      <div  id="luxe" className='section  is-paddingless is-marginless'>
           <div className='columns is-paddingless is-marginless'>
               <div  className='column  is-5  is-offset-1  center-v is-paddinglessTB'>
                   <div className='section'>
-                      <div className="arrow-l title is-2 is-marginless is-paddingless">→</div>
+                      <div className="arrow-l subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">→</div>
                       <br/>
-                      <span className='subtitle is-2'>Luxe</span>
+                      <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>Luxe</span>
                       <br/>
                       <br/>
                       <p>
@@ -120,9 +120,9 @@ Il ne vous reste plus qu’à profiter, le temps d’une nuit et plus si affinit
   
                       <br/>
                       <br/>
-                    <Link className='button is-outlined title is-5' to='/tboutique'>
+                    <a className='button is-outlined title is-5' target="_blank" href='https://secure.reservit.com/fo/booking/2/10768/dates?specialMode=default&langcode=FR&partid=0&custid=2&hotelid=10768&m=booking'>
                        Réserver
-                    </Link>
+                    </a>
                   </div>
               </div>
               <div className='column is-half is-paddingless is-marginless'>
@@ -138,16 +138,16 @@ Il ne vous reste plus qu’à profiter, le temps d’une nuit et plus si affinit
 
 
 
-    <div className='section  is-paddingless is-marginless'>
+    <div id="suite" className='section  is-paddingless is-marginless'>
         <div className='columns is-paddingless is-marginless'>
             <div className='column is-half is-paddingless is-marginless' style={{ textAlign: 'left' }}>
                 <CarouselChambre  />
             </div>
             <div  className='column is-5 center-v is-paddinglessTB'>
                 <div className='section'>
-                    <div className="arrow-r title is-2 is-marginless is-paddingless">←</div>
+                    <div className="arrow-r subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">←</div>
                     <br/>
-                    <span className='subtitle is-2'>Suite</span>
+                    <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>Suite</span>
                     <br/>
                     <br/>
                     <p>
@@ -157,9 +157,9 @@ Il ne vous reste plus qu’à profiter, le temps d’une nuit et plus si affinit
 
                     <br/>
                     <br/>
-                    <Link className='button is-outlined title is-5' to='/tboutique'>
+                    <a className='button is-outlined title is-5' target="_blank" href='https://secure.reservit.com/fo/booking/2/10768/dates?specialMode=default&langcode=FR&partid=0&custid=2&hotelid=10768&m=booking'>
                        Réserver
-                    </Link>
+                    </a>
                 </div>
             </div>
         </div>
@@ -169,92 +169,63 @@ Il ne vous reste plus qu’à profiter, le temps d’une nuit et plus si affinit
 
 
 <div className='section is-marginless is-paddingless'>
-    <div className='titleTbh  title'>
+    <div className='titleTbh title is-size-3-mobile is-size-1-tablet is-size-1-desktop'>
       <span className='titleTbhEmpty'>Vos</span> <span className='titleTbhFull'>petits +_</span>
     </div>
 </div>
 
-<div className='petitPlus title is-3'>
-    <div className='columns petitPlusBorder  is-vcenter is-paddinglessTB'>
-        <div className='column is-centered' >
-                <div className="columns is-mobile is-centered is-vcentered is-gapless" style={{justifyContent: 'center'}}>
-                    <div className="column is-paddingless" >
-                    <Img className='image is-64x64' fluid={icon_wifi.childImageSharp.fluid}/>
-                    </div>
-                    <div className="column is-paddingless">
-                        <span>Wifi</span>
-                    </div>
-                </div>
+<div className="container-fullhd">
+    <div className='petitPlus title is-3'>
+        <div className='petitPlusBorder is-paddinglessTB'>
+            <div className='petitPlusItem has-text-centered'>
+                    <span><Img className='image is-64x64' fluid={icon_wifi.childImageSharp.fluid}/></span>
+                    <span>WIFI_</span>
             </div>
-        <div className='column has-text-centered'>
-            <span>
-                <Img className='image is-64x64' fluid={icon_telephone.childImageSharp.fluid}/>
-                <span>TELEPHONE_</span>
-            </span>
-        </div>
-        <div className='column has-text-centered'>
-            <span>
-                <Img className='image is-64x64' fluid={icon_tele.childImageSharp.fluid}/>
-                <span>TV_</span>
-            </span>
-        </div>
-        <div className='column has-text-centered'>
-            <span>
-                <Img className='image is-64x64' fluid={icon_douche.childImageSharp.fluid}/>
-                <span>DOUCHE MODERNE_</span>
-            </span>
-        </div>
+            <div className='petitPlusItem has-text-centered'>
+                    <span><Img className='image is-64x64' fluid={icon_telephone.childImageSharp.fluid}/></span>
+                    <span>TELEPHONE_</span>
+            </div>
+            <div className='petitPlusItem has-text-centered'>
+                    <span><Img className='image is-64x64' fluid={icon_tele.childImageSharp.fluid}/></span>
+                    <span>TV_</span>
+            </div>
+            <div className='petitPlusItem has-text-centered'>
+                    <span><Img className='image is-64x64' fluid={icon_douche.childImageSharp.fluid}/></span>
+                    <span>DOUCHE MODERNE_</span>
+            </div>
+            <div className='petitPlusItem has-text-centered'>
+                    <span><Img className='image is-64x64' fluid={icon_secheCheveux.childImageSharp.fluid}/></span>
+                    <span>Sèche Cheveux_</span>
+            </div>
+            <div className='petitPlusItem has-text-centered'>
+                    <span><Img className='image is-64x64' fluid={icon_clim.childImageSharp.fluid}/></span>
+                    <span>Climatisation Réversible_</span>
+            </div>
+            <div className='petitPlusItem has-text-centered'>
+                    <span><Img className='image is-64x64' fluid={icon_coffre.childImageSharp.fluid}/> </span>
+                    <span>Coffre-fort_</span>
+            </div>
+            <div className='petitPlusItem has-text-centered'>
+                    <span>Machine Nespresso_</span>
+            </div>
+            <div className='petitPlusItem has-text-centered'>
+                <span>
+                    <span>Bouteille d'eau_</span>
+                </span>
+            </div>
+            <div className='petitPlusItem has-text-centered'>
+                    <span>Petit-Déjeuner inclus_</span>
+            </div>
+            <div className='petitPlusItem has-text-centered'>
+                    <span>Produits caudalie_</span>
+            </div>
     </div>
-    <div className='columns petitPlusBorder'>
-        <div className='column has-text-centered'>
-            <span>
-                <Img className='image is-64x64' fluid={icon_secheCheveux.childImageSharp.fluid}/>
-                <span>Sèche Cheveux_</span>
-            </span>
-        </div>
-        <div className='column has-text-centered'>
-            <span>
-                <Img className='image is-64x64' fluid={icon_clim.childImageSharp.fluid}/>
-                <span>Climatisation Réversible_</span>
-            </span>
-        </div>
-    </div>
-    <div className='columns petitPlusBorder'>
-        <div className='column has-text-centered'>
-            <span>
-                <Img className='image is-64x64' fluid={icon_coffre.childImageSharp.fluid}/>
-                <span>Coffre-fort_</span>
-            </span>
-        </div>
-        <div className='column has-text-centered'>
-            <span>
-                <span>Machine Nespresso_</span>
-            </span>
-        </div>
-        <div className='column has-text-centered'>
-            <span>
-                <span>Bouteille d'eau_</span>
-            </span>
-        </div>
-    </div>
-    <div className='columns petitPlusBorder'>
-        <div className='column has-text-centered'>
-            <span>
-                <span>Petit-Déjeuner inclus_</span>
-            </span>
-        </div>
-        <div className='column has-text-centered'>
-            <span>
-                <span>Produits caudalie_</span>
-            </span>
-        </div>
-    </div>
+</div>
 </div>
 
 
-
 <div className='section is-marginless is-paddingless'>
-    <div className='titleTbh  title'>
+    <div className='titleTbh title is-size-3-mobile is-size-1-tablet is-size-1-desktop' style={{borderTop: '0px'}}>
       <span className='titleTbhEmpty'>Le petit-</span><span className='titleTbhFull'>Déjeuner_</span>
     </div>
 </div>
@@ -271,9 +242,9 @@ Il ne vous reste plus qu’à profiter, le temps d’une nuit et plus si affinit
             </div>
             <div  className='column is-half center-v'>
                 <div className='section marginless is-paddingless'>
-                    <div className="arrow-r title is-2 is-marginless is-paddingless">←</div>
+                    <div className="arrow-r subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">←</div>
                     <br/>
-                    <span className='subtitle is-2'>
+                    <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>
                         Une belle journée commence par un bon petit-déjeuner, servi au lit ou au buffet". 
                     </span>
                 </div>

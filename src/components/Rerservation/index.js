@@ -116,7 +116,7 @@ handleSubmitForm = () => {
   render() {
 
     return (
-      <div id='blocResa'>
+      <div id='blocResa' className='is-hidden-mobile'> 
         <form id="form_reservit" action="http://hotel.reservit.com/reservit/reserhotel.php" target="frami" method="get"> 
             <input type="hidden" value="FR" name="lang" id="lang"/>
             <input type="hidden" value="10768" name="hotelid" id="hotelid"/>

@@ -5,8 +5,8 @@ import { FaInstagram } from 'react-icons/fa';
 
 const Instagram = ({ gridItems }) => (
   <section id='instagram' className='section  is-paddingless'>
-      <div className='columns is-paddingless is-marginless is-centered'>
-          <div  className='column is-2 is-paddingless is-marginless' style={{ display: "flex", flexDirection: 'column', justifyContent: 'center', textAlign: 'center' }}>
+      <div className='columns is-mobile is-paddingless is-marginless is-centered'>
+          <div  className='column is-2 is-3-touch is-paddingless is-marginless' style={{ display: "flex", flexDirection: 'column', justifyContent: 'center', textAlign: 'center' }}>
               <a href="https://www.instagram.com/tboutiquehotel/">
                 <div>
                    <FaInstagram size={25} />
@@ -17,7 +17,11 @@ const Instagram = ({ gridItems }) => (
               </a>
           </div>
         {gridItems.map(item => (
-          <div key={item.node.id} className='column is-2 is-paddingless is-marginless' >
+          <div key={item.node.id} className='
+          column is-2 
+          is-3-touch
+          is-hidden-touch
+          is-paddingless is-marginless' >
               <a target='_blank' rel="noopener"href={'https://www.instagram.com/p/'+item.node.id}>
                   <Img fluid={item.node.localFile.childImageSharp.fluid}/>
               </a>

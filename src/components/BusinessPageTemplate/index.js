@@ -13,6 +13,8 @@ const BusinessPageTemplate = ({
   contacts,
   vos_espaces,
   vos_evenements,
+  icon_wifi, 
+  icon_tele, 
 }) => {
   return (
     <div>
@@ -33,7 +35,7 @@ const BusinessPageTemplate = ({
 
 
     <div className='section is-marginless is-paddingless'>
-        <div className='titleTbh  title'>
+        <div className='titleTbhFirst titleTbh title is-size-3-mobile is-size-1-tablet is-size-1-desktop'>
           <span className='titleTbhEmpty'>Pour les</span> <span className='titleTbhFull'>professionnels_</span>
         </div>
     </div>
@@ -51,9 +53,9 @@ const BusinessPageTemplate = ({
             </div>
             <div  className='column is-5  center-v paddinglessTB'>
                 <div className='section'>
-                    <div className="arrow-r title is-2 is-marginless is-paddingless">←</div>
+                    <div className="arrow-r subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">←</div>
                     <br/>
-                    <span className='subtitle is-2'>Vos espaces</span>
+                    <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>Vos espaces</span>
                     <br/>
                     <br/>
                     <p>
@@ -80,9 +82,9 @@ const BusinessPageTemplate = ({
           <div className='columns is-paddingless is-marginless'>
               <div  className='column  is-half  center-v'>
                   <div className='section'>
-                      <div className="arrow-l title is-2 is-marginless is-paddingless">→</div>
+                      <div className="arrow-l subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">→</div>
                       <br/>
-                      <span className='subtitle is-2'>VOS événements</span>
+                      <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>VOS événements</span>
                       <br/>
                       <br/>
                       <p>
@@ -106,11 +108,45 @@ const BusinessPageTemplate = ({
 
 
     <div className='section is-marginless is-paddingless'>
-        <div className='titleTbh  title'>
+        <div className='titleTbh title is-size-3-mobile is-size-1-tablet is-size-1-desktop'>
           <span className='titleTbhEmpty'>Nos </span> <span className='titleTbhFull'>petits +_</span>
         </div>
     </div>
     
+<div className="container-fullhd">
+    <div className='petitPlus title is-3'>
+        <div className='petitPlusBorder is-paddinglessTB'>
+            <div className='petitPlusItem has-text-centered'>
+                    <span><Img className='image is-64x64' fluid={icon_wifi.childImageSharp.fluid}/></span>
+                    <span>WIFI_</span>
+            </div>
+            <div className='petitPlusItem has-text-centered'>
+                    <span><Img className='image is-64x64' fluid={icon_tele.childImageSharp.fluid}/></span>
+                    <span>THÉ & CAFÉ_</span>
+            </div>
+            <div className='petitPlusItem has-text-centered'>
+                    <span><Img className='image is-64x64' fluid={icon_tele.childImageSharp.fluid}/></span>
+                    <span>TV_</span>
+            </div>
+            <div className='petitPlusItem has-text-centered'>
+                    <span><Img className='image is-64x64' fluid={icon_tele.childImageSharp.fluid}/></span>
+                    <span>RÉTROPROJECTEUR_</span>
+            </div>
+            <div className='petitPlusItem has-text-centered'>
+                    <span><Img className='image is-64x64' fluid={icon_tele.childImageSharp.fluid}/></span>
+                    <span>LUMIÈRE DU JOUR_</span>
+            </div>
+            <div className='petitPlusItem has-text-centered'>
+                    <span><Img className='image is-64x64' fluid={icon_tele.childImageSharp.fluid}/></span>
+                    <span>TABLEAU_</span>
+            </div>
+            <div className='petitPlusItem has-text-centered'>
+                    <span><Img className='image is-64x64' fluid={icon_tele.childImageSharp.fluid}/></span>
+                    <span>IMPRIMANTE_</span>
+            </div>
+    </div>
+</div>
+</div>
 
 
    

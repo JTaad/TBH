@@ -47,7 +47,7 @@ export const pageQuery = graphql`
     bienvenue: file(relativePath: { eq: "home/bienvenue_tbh.jpg" }) {
       ...fluidImage
     }
-    allInstaNode {
+    allInstaNode(limit:3) {
       edges {
         node {
           id
@@ -55,9 +55,9 @@ export const pageQuery = graphql`
           comments
           original
           timestamp
-          localFile {
+          localFile { 
             childImageSharp {
-                fluid(maxWidth: 220, maxHeight: 210) {
+                fluid(maxWidth: 220, maxHeight: 210, quality: 100) {
                     ...GatsbyImageSharpFluid
               }
             }
@@ -87,9 +87,9 @@ export const pageQuery = graphql`
   }
 `
 export const fluidImage = graphql`
-fragment fluidImage on File {
+fragment fluidImage on File { 
   childImageSharp {
-    fluid(maxWidth: 2000) {
+    fluid(maxWidth: 2000, quality: 80) {
       ...GatsbyImageSharpFluid
     }
   }

@@ -23,10 +23,10 @@ $calendar-days-background-color: $blue
 $calendar-date-hover-border:  .1rem solid $blue 
 $calendar-today-color: $blue
 
+$size-1: 4.2rem
+$column-gap: 2.5rem
 
-$column-gap: 3rem
-
-
+$title-line-height: 1.125
   
 // Import Bulma core
 @import '~bulma'
@@ -36,10 +36,27 @@ $column-gap: 3rem
 // Import Bulma Extensions 
 
 * 
-  color: $blue
+  color: $blue 
 
-
- 
+.slider
+  .slider-control-centerleft
+    top: 70%
+  button
+    font-family: $fontTitle
+    background-color: transparent!important
+    outline: none
+    border: 0px
+    font-size: 2rem
+    cursor: pointer
+    margin-left: 40px
+    margin-right: 40px
+    &:hover
+      color: $white!important
+    
+.carouselAll 
+  padding-bottom: 33px
+  padding-top: 33px
+  
 .is-paddinglessTB
   padding-top: 0
   padding-bottom: 0
@@ -92,6 +109,8 @@ $column-gap: 3rem
   background-color: $blue
   color: $white  
   border: 1px solid $blue
+  span
+    color: $white  
 
 .carouselAll
   button
@@ -136,6 +155,9 @@ $column-gap: 3rem
   display: inline-block
   transform: rotate(45deg)
   
+a.title 
+  padding-bottom: 10px
+
 .button
   border: 1px solid $black
   border-radius: 0
@@ -162,10 +184,6 @@ p
     border-right: 1px solid $blue
 
 
-.arrowTop
-  font-family: $fontTitle
-  position: fixed
-
 .imgContent
   position: relative
   height: 80vh
@@ -181,6 +199,8 @@ p
   background-position: top
   background-repeat: no-repeat
   background-size: cover 
+  @include until($tablet)
+    height: calc(100vh - 67px)
 
 #blocResa
   display: flex
@@ -212,6 +232,9 @@ p
     *
       color: $white
 
+.DateInput_input
+  font-family: $fontTitle
+  
 .blocWithArrow
   cursor: pointer
   display: flex
@@ -231,6 +254,26 @@ p
   color: $blue
   .petitPlusBorder
     border-bottom: 1px solid $blue
+    display: flex
+    justify-content: center
+    align-content: space-around
+    flex-wrap: wrap
+    .petitPlusItem
+      flex: 1 1 auto
+      border-bottom: 1px solid $blue
+      margin-bottom: -1px
+      display: flex
+      justify-content: center
+      align-items: center
+      padding: 10px
+      span
+        margin: 5px
+
+
+.titleNote
+  line-height: 90px
+  border-bottom: 1px solid $blue
+  border-top: 0px!important
 
 .titleTbh    
   height: 100px
@@ -238,13 +281,21 @@ p
   border-bottom: 1px solid $blue
   text-align: center
   font-family: $fontTitle
-  font-size: 4.2rem  
+  @include until($tablet)
+    height: auto!important
+    padding-top: 15px
+    padding-bottom: 22px
   .titleTbhEmpty
     text-shadow: $fontShadowBlue
     color: $white
   .titleTbhFull
     color: $blue
 
+.titleTbhFirst
+   @include until($tablet)
+     height: 50px!important
+     padding: 0
+    
 #nousTrouver
   font-family: $fontTitle
   color: $blue
@@ -252,8 +303,13 @@ p
 #instagram 
   border-top: 1px solid $blue
   border-bottom: 1px solid $blue
+  @include from($tablet)
+    padding-top: 20px
+    padding-bottom: 20px
   .column 
     border-left: 1px solid $blue
+    @include from($tablet)
+      border: 0px
     &:last-of-type
       border-right: 1px solid $blue
 
@@ -268,6 +324,9 @@ p
   position: absolute
   align-items: center
   margin-top: 45px
+  @include until($desktop)
+    padding-left: 25px
+    padding-right: 25px
   div
     padding: 0
     flex-grow: 1
@@ -297,7 +356,7 @@ p
     border-radius: 5px
 
 #nav_norm 
-  transition: all .5s ease;
+  transition: all .5s ease
   height: 100vh
   width: 100vw
   position: fixed
@@ -308,8 +367,12 @@ p
   padding-bottom: 40px
   #navMain 
     display: flex
-    justify-content: space-between
     height: 100%
+    @include from($desktop)
+      justify-content: space-between
+    @include until($desktop)
+      align-items: center
+      justify-content: center
     .navTel
       font-family: $fontCorps
       font-weight: normal
@@ -326,11 +389,20 @@ p
        font-family: $fontTitle
        font-weight: 200
        cursor: pointer
+    #contentNavArrowCloseResp
+      div
+       transform: rotate(45deg)
+       font-weight: 200
+       cursor: pointer
+       font-family: $fontTitle
     .column-nav-left, 
     .column-nav-right
-      display: flex
       flex-direction: column
       justify-content: space-between
+    .column-nav-left
+      @include until($desktop)
+       text-align: center
+
   *
     color: $white
     font-family: $fontCorps
@@ -351,6 +423,10 @@ p
       
   
 .footer
+  #arrowTop
+    font-family: $fontTitle
+    position: fixed 
+    color: $white!important
   ul 
     padding: 0
     margin: 0
@@ -358,6 +434,7 @@ p
     li 
       text-transform: uppercase
       font-family: $fontCorps
+
 
 
 .margin-top-0

@@ -21,6 +21,8 @@ const BusinessPages = ({data}) => {
         content={post.html}
         vos_espaces={data.vosEspaces}
         vos_evenements={data.vosEvent}
+        icon_wifi={data.wifi}
+        icon_tele={data.tele}
       />
     </div>
   )
@@ -33,6 +35,20 @@ export const businessPageQuery = graphql`
       childImageSharp{
         fluid(maxWidth: 2000) {
            ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    wifi: file(relativePath: { eq: "icons/WIFI_4K_2x.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 70) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    tele: file(relativePath: { eq: "icons/tv_4K_2x.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 70) {
+          ...GatsbyImageSharpFluid
         }
       }
     }

@@ -10,6 +10,8 @@ import PropTypes from 'prop-types'
 import headerImage from '../../assets/img/home/header_tbh.jpg'
 import nousTrouver from '../../assets/img/home/illuHotel_tbh.png'
 import {Link} from 'gatsby'
+import { Spring, Parallax, ParallaxLayer  } from 'react-spring'
+
 
 const HomePageTemplate = ({
   title,
@@ -35,30 +37,37 @@ const HomePageTemplate = ({
             style={{ position: 'absolute', left: '0', top: "0", width: "100%", height: "100%" }} 
             fluid={background_header.childImageSharp.fluid}
           />
-              <Rerservation />
+          <Spring config={{ duration: 2000 }} from={{ opacity: 0 }} to={{ opacity: 1 }}>
+              {props => <div style={props}> <Rerservation /></div> }
+           </Spring>
       </div>
 
 
 
     <div className='section is-marginless is-paddingless'>
-        <div className='titleTbh  title'>
-          <span className='titleTbhEmpty'>Bienvenue au</span> <span className='titleTbhFull'>T_</span>
+        <div className='titleTbhFirst titleTbh title is-size-3-mobile is-size-1-tablet is-size-1-desktop'>
+        <Spring config={{ duration: 2000 }} from={{ opacity: 0 }} to={{ opacity: 1 }}>
+        {props => <div style={props}> <span className='titleTbhEmpty'>Bienvenue au</span> <span className='titleTbhFull'>T_</span>  </div>}
+        </Spring>
+         
         </div>
     </div>
     
 
     <div className='section  is-paddingless is-marginless'>
         <div className='columns is-paddingless is-marginless'>
-            <div className='column is-half is-paddingless is-marginless imgContent'  style={{ textAlign: 'left' }}>
+            <div className='column is-full-mobile is-half-tablet is-half-desktop is-paddingless is-marginless imgContent'  style={{ textAlign: 'left' }}>
                 <Img 
                   style={{ position: 'absolute', left: '0', top: "0", width: "100%", height: "100%" }} 
                   fluid={bienvenue.childImageSharp.fluid}/>
             </div>
-            <div  className='column is-5 center-v is-paddinglessTB'>
+            <div  className='column center-v is-paddinglessTB 
+            is-5
+            is-half-tablet'>
                 <div className='section'>
-                    <div className="arrow-r title is-2 is-marginless ">←</div>
+                    <div className="arrow-r title is-size-3-mobile is-size-2-tablet is-size-2-desktop is-marginless ">←</div>
                     <br/>
-                    <span className='subtitle is-2'>Le concept</span>
+                    <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>Le concept</span>
                     <br/>
                     <br/>
                     <p>
@@ -78,7 +87,7 @@ const HomePageTemplate = ({
     </div>
 
     <div className='section is-marginless is-paddingless'>
-        <div className='titleTbh  title'>
+        <div className=' titleTbh title is-size-3-mobile is-size-1-tablet is-size-1-desktop'>
           <span className='titleTbhEmpty'>Comme chez </span> <span className='titleTbhFull'>vous_</span>
         </div>
     </div>
@@ -89,7 +98,7 @@ const HomePageTemplate = ({
 
 
     <div className='section is-marginless is-paddingless'>
-        <div className='titleTbh  title is-marginless'>
+        <div className=' titleTbh title is-size-3-mobile is-size-1-tablet is-size-1-desktop is-marginless'>
             <span className='titleTbhFull'>Mieux</span> <span className='titleTbhEmpty'>qu'au bureau_</span>
         </div>
         <Link to='/business'>
@@ -103,7 +112,7 @@ const HomePageTemplate = ({
             <Link to='/contact'>
                 <div id='nousTrouver' className='columns is-vcentered  '>
                         <div className='column is-half has-text-centered'>
-                            <span className=' title is-2 center'>_Nous&nbsp;&nbsp;&nbsp;<br/>Trouver</span>
+                            <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>_Nous&nbsp;&nbsp;&nbsp;<br/>Trouver</span>
                         </div>
                         <div className='column is-half'>
                             <img src={nousTrouver} />
@@ -118,28 +127,30 @@ const HomePageTemplate = ({
     <Instagram gridItems={posts_instagram} />
 
 
-    <div className='container'>
+    <div className='container-fullhd'>
         <div className='section is-paddingless  '>
-           <div className='titleTbh  subtitle is-1 ' style={{border: "0px"}}>
+           <div className='titleNote titleTbh title is-size-3-mobile is-size-1-tablet is-size-1-desktop'>
                <div className=' is-vcentered'>Sans fausses notes</div>
            </div>
 
       </div>
     </div>
 
+    <div className='container-fullhd'>
         <div className='section '>
             <div id="notes" className='columns is-vcentered is-centered'>
                 <div className='column is-4 has-text-centered is-paddingless'>
-                    <div><span className="noteCount subtitle is-1">9/10</span>&nbsp;&nbsp;&nbsp;Booking</div>
+                    <div><span className="noteCount subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop">9/10</span>&nbsp;&nbsp;&nbsp;Booking</div>
                 </div>
                 <div className='column is-4 has-text-centered is-paddingless'>
-                  <div><span className="noteCount subtitle is-1">4.5/5</span>&nbsp;&nbsp;&nbsp;Trip Advisor</div>
+                  <div><span className="noteCount subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop">4.5/5</span>&nbsp;&nbsp;&nbsp;Trip Advisor</div>
                 </div>
                 <div className='column is-4 has-text-centered is-paddingless'>
-                   <div><span className="noteCount subtitle is-1">4.1/5</span>&nbsp;&nbsp;&nbsp;Google</div>
+                   <div><span className="noteCount subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop">4.1/5</span>&nbsp;&nbsp;&nbsp;Google</div>
                 </div>
             </div>
           </div>
+    </div>
 
     
     <section className='section section--gradient' style={{display:'none'}}>

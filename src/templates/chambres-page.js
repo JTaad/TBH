@@ -61,7 +61,7 @@ export const chambresPageQuery = graphql`
     }
     background_header: file(relativePath: { eq: "chambres/header_chambres_tbh.jpg" }) {
       childImageSharp{
-        fluid(maxWidth: 2000) {
+        fluid(maxWidth: 2000, quality: 100) {
            ...GatsbyImageSharpFluid
         }
       }

@@ -30,7 +30,7 @@ const ContactPageTemplate = ({
       </div>
   
       <div className='section is-marginless is-paddingless'>
-          <div className='titleTbh  title'>
+          <div className='titleTbhFirst titleTbh title is-size-3-mobile is-size-1-tablet is-size-1-desktop'>
             <span className='titleTbhEmpty'>Notre</span> <span className='titleTbhFull'>Emplacement_</span>
           </div>
       </div>
@@ -61,7 +61,7 @@ const ContactPageTemplate = ({
 
 
       <div className='section is-marginless is-paddingless'>
-          <div className='titleTbh  title'>
+          <div className='titleTbh title is-size-3-mobile is-size-1-tablet is-size-1-desktop'>
             <h1><span className='titleTbhEmpty'>Accès</span><span className='titleTbhFull'>_</span></h1>
           </div>
       </div>
@@ -79,14 +79,14 @@ const ContactPageTemplate = ({
 
 
                             <div className='blocWithArrow'>
-                                <div className='arrowText title is-2'>→&nbsp;</div>
-                                <h2 className='title is-2'>de l’aéroport de bordeaux</h2>
+                                <div className='arrowText subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>→&nbsp;</div>
+                                <h2 className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>de l’aéroport de bordeaux</h2>
                             </div>
                                 <p>BUS / TRAIN — 1h20min.  15€</p>
                                 <br/>
                             <div className='blocWithArrow'>
-                                <div className='arrowText title is-2'>→&nbsp;</div>
-                                <h2 className='title is-2'>de la gare d’arcachon</h2>
+                                <div className='arrowText subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>→&nbsp;</div>
+                                <h2 className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>de la gare d’arcachon</h2>
                             </div>
                             <div className='columns'>
                                 <p className='column  is-4'>TAXI — 5min.  4€</p>
@@ -105,8 +105,8 @@ const ContactPageTemplate = ({
                              <div className='section columns'>
                                  <div className='column is-10 is-offset-1'>
                                         <div className='blocWithArrow'>
-                                            <div className='arrowText title is-2'>→&nbsp;</div>
-                                            <h3 className='title is-2'>Parking</h3>
+                                            <div className='arrowText subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>→&nbsp;</div>
+                                            <h3 className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>Parking</h3>
                                         </div>
                                         <p>Parking Municipal du Marché</p>
                                         <p>ZONES DE STATIONNEMENT GRATUIT</p>
