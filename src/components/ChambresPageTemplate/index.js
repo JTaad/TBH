@@ -4,7 +4,10 @@ import PropTypes from 'prop-types'
 import CarouselChambre from '../CarouselChambre'
 import {Link} from 'gatsby'
 import Img from "gatsby-image"
+var Scroll = require('react-scroll');
 
+var LinkScroll = Scroll.Link;
+var Element = Scroll.Element;
 
 
 const ChambresPageTemplate = ({
@@ -86,13 +89,23 @@ const ChambresPageTemplate = ({
                     <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>Standard</span>
                     <br/>
                     <br/>
+                      <div className='sub-p is-size-5'><p>Pour une bonne nuit</p></div>
+                    <br/>
                     <p>
-                    La Standard est le refuge idéal pour se (re)poser après une longue journée. Chaque mètre carré est optimisé pour transformer l’espace en joli nid douillet. 
-Il ne vous reste plus qu’à profiter, le temps d’une nuit et plus si affinités...
+                        La Standard est le refuge idéal pour se (re)poser après une longue journée. Chaque mètre carré est optimisé pour transformer l’espace en joli nid douillet. 
+                    </p>
+                    <br/>
+                    <p>
+                    Il ne vous reste plus qu’à profiter, le temps d’une nuit et plus si affinités...
                     </p>
 
                     <br/>
                     <br/>
+
+                    <LinkScroll to="lesplus" spy={true} smooth={true} >
+                        <span>les +</span>
+                    </LinkScroll>
+                   
                     <a className='button is-outlined title is-5' target="_blank" href='https://secure.reservit.com/fo/booking/2/10768/dates?specialMode=default&langcode=FR&partid=0&custid=2&hotelid=10768&m=booking'>
                        Réserver
                     </a>
@@ -110,13 +123,15 @@ Il ne vous reste plus qu’à profiter, le temps d’une nuit et plus si affinit
                       <div className="arrow-l subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">→</div>
                       <br/>
                       <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>Luxe</span>
-                      <br/>
-                      <br/>
+                    <br/>
+                    <br/>
+                      <div className='sub-p is-size-5'><p>POUR UN BON MOMENT</p></div>
+                    <br/>
                       <p>
-                        Le T Boutique Hôtel vous propose une expérience 3 étoiles, à la fois unique et multiple, à Arcachon. Ici la convivialité se mêle au chic, la décontraction au design et la singularité au partage.
-                          <br/>  <br/> 
-                        Entièrement rénové, notre hôtel est pensé pour être avant tout le vôtre. Appropriez-vous chacun des espaces, comme à la maison.
+                        La Luxe est une zone de confort dans laquelle on lâche prise. Certaines chambres ont un balcon, d’autres sont côté cours ou offrent un aperçu sur le Bassin. Toutes ont le nécessaire pour votre bien-être.
                       </p>
+                      <br/>
+                      <p>Oubliez tout, ne pensez qu’à vous !</p>
   
                       <br/>
                       <br/>
@@ -150,10 +165,13 @@ Il ne vous reste plus qu’à profiter, le temps d’une nuit et plus si affinit
                     <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>Suite</span>
                     <br/>
                     <br/>
+                      <div className='sub-p is-size-5'><p>POUR UNE BELLE EXPÉRIENCE</p></div>
+                    <br/>
                     <p>
-                    La Standard est le refuge idéal pour se (re)poser après une longue journée. Chaque mètre carré est optimisé pour transformer l’espace en joli nid douillet. 
-Il ne vous reste plus qu’à profiter, le temps d’une nuit et plus si affinités...
-                    </p>
+                    La Suite est un espace sur-mesure pour une escale à deux, en famille ou entre amis. Prenez vos aises, étalez vos affaires, glânez sur la terrasse... bref faites ce qui vous plait.
+                    </p>  
+                    <br/>
+                    <p>Idéal pour un séjour “wahou” qu’on n’oublie pas !</p>  
 
                     <br/>
                     <br/>
@@ -167,15 +185,16 @@ Il ne vous reste plus qu’à profiter, le temps d’une nuit et plus si affinit
 
 
 
-
-<div className='section is-marginless is-paddingless'>
-    <div className='titleTbh title is-size-3-mobile is-size-1-tablet is-size-1-desktop'>
-      <span className='titleTbhEmpty'>Vos</span> <span className='titleTbhFull'>petits +_</span>
+<Element name="lesplus" >
+    <div className='section is-marginless is-paddingless'>
+        <div className='titleTbh title is-size-3-mobile is-size-1-tablet is-size-1-desktop'>
+        <span className='titleTbhEmpty'>Vos</span> <span className='titleTbhFull'>petits +_</span>
+        </div>
     </div>
-</div>
+</Element>
 
 <div className="container-fullhd">
-    <div className='petitPlus title is-3'>
+    <div className='petitPlus title is-size-5-mobile is-size-4-tablet is-size-3-desktop'>
         <div className='petitPlusBorder is-paddinglessTB'>
             <div className='petitPlusItem has-text-centered'>
                     <span><Img className='image is-64x64' fluid={icon_wifi.childImageSharp.fluid}/></span>

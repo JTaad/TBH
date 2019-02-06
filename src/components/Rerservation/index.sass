@@ -74,12 +74,30 @@ input::placeholder
     fill: #000
 
 
+.CalendarDay__hovered_span,
+.CalendarDay__hovered_span:hover
+  border: 1px double #CCC
+  background: #000
+  color: #FFF
+
+
+.CalendarDay__selected_span:active, 
+.CalendarDay__selected_span:hover
+  border: 1px double #FFF
+  background: #B8B8B8
+
+
+.CalendarDay__selected,
+.CalendarDay__selected:active,
+.CalendarDay__selected:hover
+  border: 1px double #FFF
+  background: #B8B8B8
 
     // Will edit everything selected including everything between a range of dates
 .CalendarDay__selected_span 
   background: $black //background
   color: white //text
-  border: 1px solid $black //default styles include a border
+  border: 1px solid #FFF //default styles include a border
 
 // Will edit selected date or the endpoints of a range of dates
 .CalendarDay__selected 
@@ -89,3 +107,7 @@ input::placeholder
 .DayPickerKeyboardShortcuts_show__bottomRight::before
     display: none
 
+.DateInput:hover
+  *
+    background-color: #FFF
+    color: #000

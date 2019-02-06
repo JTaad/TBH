@@ -77,6 +77,8 @@ const HomePageTemplate = ({
                     </p>
 
                     <br/>
+                    <div className='sub-p is-size-5'><p>On vous fait visiter<br/>l’hôtel ? →</p></div>
+                    <br/>
                     <br/>
                     <Link className='button is-outlined title is-5' to='/tboutique'>
                        <span className='boldTitle'>+</span>&nbsp;d'infos
@@ -114,7 +116,7 @@ const HomePageTemplate = ({
                         <div className='column is-half has-text-centered'>
                             <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>_Nous&nbsp;&nbsp;&nbsp;<br/>Trouver</span>
                         </div>
-                        <div className='column is-half'>
+                        <div className='column is-half has-text-centered'>
                             <img src={nousTrouver} />
                         </div>
                 </div>

@@ -73,10 +73,11 @@ class CarouselHome extends Component {
                       <br/>
                       <br/>
                       <p>
-                        Le T Boutique Hôtel vous propose une expérience 3 étoiles, à la fois unique et multiple, à Arcachon. Ici la convivialité se mêle au chic, la décontraction au design et la singularité au partage.
-                          <br/>  <br/> 
-                        Entièrement rénové, notre hôtel est pensé pour être avant tout le vôtre. Appropriez-vous chacun des espaces, comme à la maison.
+                        Nos chambres sont de jolis cocons où il fait bon se lover. Décoration soignée, choix minutieux des matières, des couleurs, des équipements, petits plus en bonus… nous avons pris soin de nous occuper de tout, pour que vous vous sentiez comme chez vous. Sans parler du petit-déjeuner … !
                       </p>
+
+                      <br/>
+                      <div className='sub-p is-size-5'><p>On vous montre<br/>votre chambre ? </p></div>
   
                       <br/>
                       <br/>

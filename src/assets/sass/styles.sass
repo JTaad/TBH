@@ -139,8 +139,27 @@ $title-line-height: 1.125
   
   
 .footer
+  #arrowTop
+    font-family: $fontTitle
+    color: $white!important
+    &:hover
+      color:#B8B8B8!important
+  ul 
+    padding: 0
+    margin: 0
+    list-style-type: none
+    li 
+      text-transform: uppercase
+      font-family: $fontCorps
   * 
     color: $white
+    a
+      &:hover
+        color:#B8B8B8
+    .button.is-primary.is-inverted.is-outlined:hover,
+    .button.is-primary.is-inverted.is-outlined:focus
+      &:hover
+        color:#B8B8B8
 
 .title
   font-weight: normal
@@ -174,6 +193,11 @@ p
 .subtitle
   font-family: $fontTitle
   color: $blue
+
+.sub-p
+  font-family: $fontCorps
+  font-weight: 500
+  text-transform: uppercase
 
 .is-borderHome
   border-top: 1px solid $blue
@@ -308,8 +332,10 @@ p
     padding-bottom: 20px
   .column 
     border-left: 1px solid $blue
-    @include from($tablet)
+    @include until($tablet)
       border: 0px
+      padding-top: 20px
+      padding-bottom: 20px
     &:last-of-type
       border-right: 1px solid $blue
 
@@ -421,20 +447,6 @@ p
 
 
       
-  
-.footer
-  #arrowTop
-    font-family: $fontTitle
-    position: fixed 
-    color: $white!important
-  ul 
-    padding: 0
-    margin: 0
-    list-style-type: none
-    li 
-      text-transform: uppercase
-      font-family: $fontCorps
-
 
 
 .margin-top-0

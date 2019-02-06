@@ -58,10 +58,10 @@ const BusinessPageTemplate = ({
                     <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>Vos espaces</span>
                     <br/>
                     <br/>
+                      <div className='sub-p is-size-5'><p>APPROPRIEZ-VOUS LES LIEUX</p></div>
+                    <br/>
                     <p>
-                      Le T Boutique Hôtel vous propose une expérience 3 étoiles, à la fois unique et multiple, à Arcachon. Ici la convivialité se mêle au chic, la décontraction au design et la singularité au partage.
-                        <br/>  <br/> 
-                      Entièrement rénové, notre hôtel est pensé pour être avant tout le vôtre. Appropriez-vous chacun des espaces, comme à la maison.
+                    Nous vous choyons aussi lors de vos escales professionnelles. Des espaces dédiés, fonctionnels et esthétiques, sont mis à votre disposition. Notre salle, pouvant accueillir jusqu’à 30 personnes, est idéale pour se réunir. Le patio et le salon bibliothèque sont quant à eux parfaits pour des moments d’échange et de pause. Sans oublier nos 27 chambres et nos 3 suites, que vous aurez plaisir à retrouver une fois la nuit tombée !
                     </p>
 
                     <br/>
@@ -85,12 +85,14 @@ const BusinessPageTemplate = ({
                       <div className="arrow-l subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">→</div>
                       <br/>
                       <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>VOS événements</span>
-                      <br/>
-                      <br/>
+                        <br/>
+                        <br/>
+                        <div className='sub-p is-size-5'><p>Clef-en-main</p></div>
+                        <br/>
                       <p>
-                        Le T Boutique Hôtel vous propose une expérience 3 étoiles, à la fois unique et multiple, à Arcachon. Ici la convivialité se mêle au chic, la décontraction au design et la singularité au partage.
+                      Pour que vos ateliers de quelques heures ou vos séminairse de plusieurs jours soient de bons moments, nous vous accompagnons dans l’organisation de vos évènements. Des activités aux restaurants, dites-nous ce que vous voulez, nous nous occupons du reste.
                           <br/>  <br/> 
-                        Entièrement rénové, notre hôtel est pensé pour être avant tout le vôtre. Appropriez-vous chacun des espaces, comme à la maison.
+                          N’hésitez pas à nous envoyer vos souhaits pour obtenir un devis personnalisé. 
                       </p>
                   </div>
               </div>
@@ -148,40 +150,66 @@ const BusinessPageTemplate = ({
 </div>
 </div>
 
-
+<div className='container'>
+      <div className='section  is-paddingless is-marginless'>
+          <div className='columns is-paddingless is-marginless'>
+              <div  className='column  is-full is-paddinglessTB'>
+                  <div className='section is-paddinglessTB'>
+                  <br/><br/>
+                        <div className="arrow-l subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">→</div>
+                        <br/>
+                        <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>
+                Des forfaits sur-mesure<br/>
+                pour vos évènements :</span>
+                    </div>
+                </div>
+            </div>
+      </div>
+</div>
    
 
 <div className='container'>
       <div className='section  is-paddingless is-marginless'>
           <div className='columns is-paddingless is-marginless'>
-              <div  className='column  is-half  center-v'>
+              <div  className='column  is-half '>
                   <div className='section'>
-                  résidentiel
-
-chambre, petit déjeuner, déjeuner, diner, location de salle et pauses
-
-                  </div>
+                    <div className='sub-p is-size-5'>RÉSIDENTIEL</div>
+                    <br/>
+                            <p>chambre, petit déjeuner, déjeuner, diner, location de salle et pauses</p>
+                            <br/><br/>
+                    <div className='sub-p is-size-5'>JOURNÉE D'ÉTUDE</div>
+                    <br/>
+                            <p>location de la salle avec pauses et déjeuner</p>
+                    </div>
               </div>
-              <div className='column is-half is-paddingless is-marginless center-v'>
-              résidentiel
-
-chambre, petit déjeuner, déjeuner, diner, location de salle et pauses
-
+              <div className='column is-half'>
+                  <div className='section'>
+                    <div className='sub-p is-size-5'>SEMI RÉSIDENTIEL</div>
+                    <br/>
+                            <p>chambre, petit déjeuner, déjeuner ou diner, location de salle et pauses.</p>
+                            <br/><br/>
+                    <div className='sub-p is-size-5'>DEMI JOURNÉE D'ÉTUDE</div>
+                    <br/>
+                            <p>location de salle 1/2 journée avec pause et déjeuner</p>
+                  </div>
               </div>
           </div>
       </div>
 
 
-      <div className='section'>
-
+      <div className='section is-paddinglessTB'>
+          <div className='columns is-paddingless is-marginless'>
+              <div  className='column  is-full is-paddinglessTB'>
                     <a className='button is-outlined title is-5' href='mailto:hello@tboutiquehotel.fr'>
                       Demander nous un devis
                     </a>
-                    &nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <a className='button is-outlined title is-5' href='tel:(+33)556836770'>
                      Appellez-nous
                     </a>
-
+                 </div>
+            </div>
+            <br/><br/>
       </div>
    </div>
 

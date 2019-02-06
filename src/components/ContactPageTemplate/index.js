@@ -44,7 +44,7 @@ const ContactPageTemplate = ({
                            <SimpleMap />
                         </div>
                 </div>
-                <div className='columns is-vcentered  semiBold'>
+                <div className='columns  semiBold'>
                         <div className='column is-4'>
                             82 Boulevard de la Plage,<br/>
                             33120 Arcachon
