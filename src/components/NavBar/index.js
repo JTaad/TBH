@@ -63,7 +63,7 @@ const NavBar = ({toggleNavbarMain, navToggle}) => (
                     <div id="contentNavNormMiddleRight" className='title is-2'>
                         <div onClick={toggleNavbarMain}>→</div>
                     </div>
-                    <div id="contentNavNormBotRight" className='is-hidden-touch'>
+                    <div id="contentNavNormBotRight" className='is-hidden-touch is-size-7'>
                         <a className="navTel" href="tel:(+33)556836770">(+33) 5 56 83 67 70</a>
                         <br/>
                         <a className="navMail" href="mailto:hello@tboutiquehotel.fr">hello@tboutiquehotel.fr</a>

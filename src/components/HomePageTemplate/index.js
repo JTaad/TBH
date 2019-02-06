@@ -7,11 +7,9 @@ import Rerservation from '../Rerservation'
 import Instagram from '../Instagram'
 import Testimonials from '../Testimonials'
 import PropTypes from 'prop-types'
-import headerImage from '../../assets/img/home/header_tbh.jpg'
 import nousTrouver from '../../assets/img/home/illuHotel_tbh.png'
 import {Link} from 'gatsby'
-import { Spring, Parallax, ParallaxLayer  } from 'react-spring'
-
+import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons.cjs'
 
 const HomePageTemplate = ({
   title,
@@ -37,18 +35,16 @@ const HomePageTemplate = ({
             style={{ position: 'absolute', left: '0', top: "0", width: "100%", height: "100%" }} 
             fluid={background_header.childImageSharp.fluid}
           />
-          <Spring config={{ duration: 2000 }} from={{ opacity: 0 }} to={{ opacity: 1 }}>
-              {props => <div style={props}> <Rerservation /></div> }
-           </Spring>
+             <Rerservation />
       </div>
-
 
 
     <div className='section is-marginless is-paddingless'>
         <div className='titleTbhFirst titleTbh title is-size-3-mobile is-size-1-tablet is-size-1-desktop'>
-        <Spring config={{ duration: 2000 }} from={{ opacity: 0 }} to={{ opacity: 1 }}>
-        {props => <div style={props}> <span className='titleTbhEmpty'>Bienvenue au</span> <span className='titleTbhFull'>T_</span>  </div>}
-        </Spring>
+        <Parallax>
+        <ParallaxLayer offset={1} speed={1} style={{ backgroundColor: '#805E73' }} />
+        </Parallax>
+       <span className='titleTbhEmpty'>Bienvenue au</span> <span className='titleTbhFull'>T_</span> 
          
         </div>
     </div>
@@ -131,7 +127,7 @@ const HomePageTemplate = ({
 
     <div className='container-fullhd'>
         <div className='section is-paddingless  '>
-           <div className='titleNote titleTbh title is-size-3-mobile is-size-1-tablet is-size-1-desktop'>
+           <div className='titleNote titleTbh title is-size-3-mobile is-size-2-tablet is-size-2-desktop'>
                <div className=' is-vcentered'>Sans fausses notes</div>
            </div>
 

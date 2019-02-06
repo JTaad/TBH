@@ -103,9 +103,9 @@ const ChambresPageTemplate = ({
                     <br/>
 
                     <LinkScroll to="lesplus" spy={true} smooth={true} >
-                        <span>les +</span>
+                        <span style={{ lineHeight: '40px'}} className='subtitle'>les <span className="is-size-3" style={{fontWeight: 'bold'}}>+</span></span>
                     </LinkScroll>
-                   
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <a className='button is-outlined title is-5' target="_blank" href='https://secure.reservit.com/fo/booking/2/10768/dates?specialMode=default&langcode=FR&partid=0&custid=2&hotelid=10768&m=booking'>
                        Réserver
                     </a>
@@ -135,6 +135,11 @@ const ChambresPageTemplate = ({
   
                       <br/>
                       <br/>
+
+                    <LinkScroll to="lesplus" spy={true} smooth={true} >
+                        <span style={{ lineHeight: '40px'}} className='subtitle'>les <span className="is-size-3" style={{fontWeight: 'bold'}}>+</span></span>
+                    </LinkScroll>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <a className='button is-outlined title is-5' target="_blank" href='https://secure.reservit.com/fo/booking/2/10768/dates?specialMode=default&langcode=FR&partid=0&custid=2&hotelid=10768&m=booking'>
                        Réserver
                     </a>
@@ -175,6 +180,11 @@ const ChambresPageTemplate = ({
 
                     <br/>
                     <br/>
+
+                    <LinkScroll to="lesplus" spy={true} smooth={true} >
+                        <span style={{ lineHeight: '40px'}} className='subtitle'>les <span className="is-size-3" style={{fontWeight: 'bold'}}>+</span></span>
+                    </LinkScroll>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <a className='button is-outlined title is-5' target="_blank" href='https://secure.reservit.com/fo/booking/2/10768/dates?specialMode=default&langcode=FR&partid=0&custid=2&hotelid=10768&m=booking'>
                        Réserver
                     </a>

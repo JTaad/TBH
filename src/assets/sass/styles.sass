@@ -38,6 +38,12 @@ $title-line-height: 1.125
 * 
   color: $blue 
 
+.image
+  .is-64x64
+    @include until($tablet)
+      height: 32px!important
+      width: 32px!important
+
 .slider
   .slider-control-centerleft
     top: 70%

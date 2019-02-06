@@ -116,7 +116,7 @@ const BusinessPageTemplate = ({
     </div>
     
 <div className="container-fullhd">
-    <div className='petitPlus title is-3'>
+    <div className='petitPlus title  is-size-5-mobile is-size-4-tablet is-size-3-desktop'>
         <div className='petitPlusBorder is-paddinglessTB'>
             <div className='petitPlusItem has-text-centered'>
                     <span><Img className='image is-64x64' fluid={icon_wifi.childImageSharp.fluid}/></span>
