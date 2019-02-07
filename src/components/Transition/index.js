@@ -4,23 +4,23 @@ import {
   Transition as ReactTransition,
 } from "react-transition-group"
 
-const timeout = 1
+const timeout = .3
 const getTransitionStyles = {
   entering: {
     position: `relative`,
-    //left: '-100vw',
+    left: '-100vw',
     opacity: 0,
   },
   entered: { 
     position: `relative`,
     transition: `all ${timeout}s ease-in-out`,
-    //left: 0,
+    left: 0,
     opacity: 1,
   },
   exiting: {
     position: `relative`,
     transition: `all ${timeout}s ease-in-out`,
-    //left: '-100vw',
+    left: '-100vw',
     opacity: 0,
   },
 }
