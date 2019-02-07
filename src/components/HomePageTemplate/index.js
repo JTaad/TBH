@@ -9,7 +9,7 @@ import Testimonials from '../Testimonials'
 import PropTypes from 'prop-types'
 import nousTrouver from '../../assets/img/home/illuHotel_tbh.png'
 import {Link} from 'gatsby'
-import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons.cjs'
+
 
 const HomePageTemplate = ({
   title,
@@ -41,12 +41,8 @@ const HomePageTemplate = ({
 
     <div className='section is-marginless is-paddingless'>
         <div className='titleTbhFirst titleTbh title is-size-3-mobile is-size-1-tablet is-size-1-desktop'>
-        <Parallax>
-        <ParallaxLayer offset={1} speed={1} style={{ backgroundColor: '#805E73' }} />
-        </Parallax>
        <span className='titleTbhEmpty'>Bienvenue au</span> <span className='titleTbhFull'>T_</span> 
-         
-        </div>
+       </div>
     </div>
     
 

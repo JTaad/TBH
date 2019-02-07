@@ -7,6 +7,7 @@ import { animateScroll as scroll } from 'react-scroll'
 import '../assets/sass/styles.sass'
 import config from '../../data/config'
 import GlobalStyles from '../layouts/globalStyles'
+import Transition from "../components/Transition"
 
 
 
@@ -51,8 +52,9 @@ class TemplateWrapper extends Component {
           toggleNavbar={() => this.toggleNavbar()} 
         />
        
-        <div>
-          {this.props.children}
+        <div  id="bgTrans" className={this.state.navToggle ? 'bg-on' : 'bg-off'}>
+         <Transition location={location}>{this.props.children}</Transition>
+        
         </div>
         <Footer 
           scrollTop={() => this.scrollToTop()}
