@@ -52,7 +52,7 @@ class TemplateWrapper extends Component {
           toggleNavbar={() => this.toggleNavbar()} 
         />
        
-         <Transition>{this.props.children}</Transition>
+         <div>{this.props.children}</div>
         
         <Footer 
           scrollTop={() => this.scrollToTop()}
