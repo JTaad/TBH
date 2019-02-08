@@ -25,6 +25,9 @@ const NavBar = ({toggleNavbarMain, navToggle}) => (
                             <li className='title is-2 is-size-3-touch'><Link activeClassName='navFocus' className='' to='/tboutique'>
                                             Le "T" Boutique
                             </Link></li>
+                            <li className='title is-2 is-size-3-touch'><Link activeClassName='navFocus' className='' to='/bassin'>
+                                            Le Bassin
+                            </Link></li>
                             <li className='title is-2 is-size-3-touch'><Link activeClassName='navFocus' className='' to='/contact'>
                                             À Bientôt
                             </Link></li>

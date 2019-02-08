@@ -34,7 +34,6 @@ class TemplateWrapper extends Component {
   scrollToTop () {
     scroll.scrollToTop();
   }
-
   render () {
     return (
       <div>

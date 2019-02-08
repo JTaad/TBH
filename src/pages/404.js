@@ -7,7 +7,7 @@ const NotFoundPage = () => (
           <div className='columns'>
             <div className='column is-5' style={{marginTop: "160px",marginBottom: "160px"}}>
                 <div className='section'>
-                <div className='titleTbh  title' style={{height: "auto", border: "0", textAlign: 'left'}}>
+                <div className='titleTbh title is-size-3-mobile is-size-1-tablet is-size-1-desktop' style={{height: "auto", border: "0", textAlign: 'left'}}>
                   <span className='titleTbhEmpty'>Mauvaise</span> <span className='titleTbhFull'>Route_</span>
                 </div>
                 <p>
