@@ -79,7 +79,7 @@ export const businessPageQuery = graphql`
         ...GatsbyImageSharpFluid
       }
     }
-}
+  }
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {

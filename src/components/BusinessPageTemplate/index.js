@@ -123,7 +123,7 @@ const BusinessPageTemplate = ({
                 <li>
                  <div className='is-bg-vert forfaits-bg'>
                         <Img  
-                            fluid={forfaitone.childImageSharp.fluid} 
+                            fluid={vos_evenements.childImageSharp.fluid} 
                         />
                        <div className='forfaits-title'>
                             <div>
@@ -140,7 +140,7 @@ const BusinessPageTemplate = ({
                 <li>
                  <div className='is-bg-rose forfaits-bg'>
                         <Img  
-                            fluid={forfaittwo.childImageSharp.fluid} 
+                            fluid={vos_evenements.childImageSharp.fluid} 
                         />
                         <div className='forfaits-title'>
                             <div>
@@ -158,7 +158,7 @@ const BusinessPageTemplate = ({
                 <li>
                  <div className='is-bg-grey forfaits-bg'>
                         <Img  
-                            fluid={forfaitthree.childImageSharp.fluid} 
+                            fluid={vos_evenements.childImageSharp.fluid} 
                         />
                         <div className='forfaits-title'>
                             <div>
@@ -175,7 +175,7 @@ const BusinessPageTemplate = ({
                 <li>
                  <div className='is-bg-orange forfaits-bg'>
                         <Img  
-                            fluid={forfaitfour.childImageSharp.fluid} 
+                            fluid={vos_evenements.childImageSharp.fluid} 
                         />
                        <div className='forfaits-title'>
                             <div>
