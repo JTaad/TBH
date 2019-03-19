@@ -82,10 +82,12 @@ const BusinessPageTemplate = ({
 
 
 
-<div className='container-full is-bg-vert'>
+    <div className='container-full is-bg-vert'>
+        <div className='container'>
+
       <div className='section  is-paddingless is-marginless'>
           <div className='columns is-paddingless is-marginless '>
-              <div  className='column  is-half  center-v'>
+              <div  className='column  is-5 is-offset-1  center-v'>
                   <div className='section'>
                       <div className="arrow-l subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">→</div>
                       <br/>
@@ -111,7 +113,7 @@ const BusinessPageTemplate = ({
           </div>
       </div>
    </div>
-
+</div>
 
 <div className='container'>
 
@@ -202,7 +204,7 @@ const BusinessPageTemplate = ({
     </div>
     
 <div className="container-fullhd">
-    <div className='petitPlus title  is-size-5-mobile is-size-4-tablet is-size-3-desktop'>
+    <div className='petitPlus title  is-size-5-mobile is-size-4-tablet is-size-4-desktop'>
         <div className='petitPlusBorder is-paddinglessTB'>
             <div className='petitPlusItem has-text-centered'>
                     <span><Img className='image is-64x64' fluid={icon_wifi.childImageSharp.fluid}/></span>
@@ -240,16 +242,20 @@ const BusinessPageTemplate = ({
 <div className='container'>
 
 
-      <div className='section is-paddinglessTB'>
-          <div className='columns is-paddingless is-marginless'>
-              <div  className='column  is-full is-paddinglessTB'>
-                    <a className='button is-outlined title is-5' href='mailto:hello@tboutiquehotel.fr'>
-                      Demander nous un devis
+      <div className='section business-call' style={{paddingBottom: '0'}}>
+          <div className='columns '>
+              <div  className='column  is-full'>
+              <div style={{display: 'flex', justifyContent: 'center', }}>
+                    <a className='title is-4' href='mailto:hello@tboutiquehotel.fr' style={{margin: '0', padding: '0'}}>
+                      DEMANDER NOUS UN DEVIS
                     </a>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a className='button is-outlined title is-5' href='tel:(+33)556836770'>
-                     Appellez-nous
+                    <p className='title is-5' style={{marginTop: "5px"}}>
+                    &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                    </p>
+                    <a className='title is-4' href='tel:(+33)556836770' style={{margin: '0', padding: '0'}}>
+                     APPELLEZ-NOUS
                     </a>
+               </div>
                  </div>
             </div>
             <br/><br/>

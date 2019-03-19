@@ -105,10 +105,6 @@ const ChambresPageTemplate = ({
                     <LinkScroll to="lesplus" spy={true} smooth={true} >
                         <span style={{ lineHeight: '40px'}} className='subtitle'>les <span className="is-size-3" style={{fontWeight: 'bold'}}>+</span></span>
                     </LinkScroll>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a className='button is-outlined title is-5' target="_blank" href='https://secure.reservit.com/fo/booking/2/10768/dates?specialMode=default&langcode=FR&partid=0&custid=2&hotelid=10768&m=booking'>
-                       Réserver
-                    </a>
                 </div>
             </div>
         </div>
@@ -139,10 +135,6 @@ const ChambresPageTemplate = ({
                     <LinkScroll to="lesplus" spy={true} smooth={true} >
                         <span style={{ lineHeight: '40px'}} className='subtitle'>les <span className="is-size-3" style={{fontWeight: 'bold'}}>+</span></span>
                     </LinkScroll>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a className='button is-outlined title is-5' target="_blank" href='https://secure.reservit.com/fo/booking/2/10768/dates?specialMode=default&langcode=FR&partid=0&custid=2&hotelid=10768&m=booking'>
-                       Réserver
-                    </a>
                   </div>
               </div>
               <div className='column is-half is-paddingless is-marginless'>
@@ -184,10 +176,6 @@ const ChambresPageTemplate = ({
                     <LinkScroll to="lesplus" spy={true} smooth={true} >
                         <span style={{ lineHeight: '40px'}} className='subtitle'>les <span className="is-size-3" style={{fontWeight: 'bold'}}>+</span></span>
                     </LinkScroll>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a className='button is-outlined title is-5' target="_blank" href='https://secure.reservit.com/fo/booking/2/10768/dates?specialMode=default&langcode=FR&partid=0&custid=2&hotelid=10768&m=booking'>
-                       Réserver
-                    </a>
                 </div>
             </div>
         </div>
@@ -269,14 +257,14 @@ const ChambresPageTemplate = ({
             <div className='column is-half is-paddingless is-marginless' style={{ textAlign: 'left' }}>
                 <Img fluid={petitDej.childImageSharp.fluid}/>
             </div>
-            <div  className='column is-5 center-v'>
+            <div  className='column is-4 center-v'>
                 <div className='section marginless is-paddingless'>
                     <div className="arrow-r subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">←</div>
                     <br/>
                     <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>LE PETIT<br/>déjeuner</span>
                     <br/>
                     <br/>
-                      <div className='sub-p is-size-5'><p>“Une belle journée commence par un bon petit-déjeuner, servi au lit ou au buffet". </p></div>
+                      <div className='is-size-5'><p>“Une belle journée commence par un bon petit-déjeuner, servi au lit ou au buffet". </p></div>
                    
                 </div>
             </div>

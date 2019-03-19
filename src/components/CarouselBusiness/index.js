@@ -55,15 +55,20 @@ class CarouselBusiness extends Component {
 
   moveSlide(slideIndex) {
     let urlLink = null
-    if(slideIndex == 0) {
-      urlLink = 'conference' 
+
+    switch(slideIndex) {
+      case 0:
+        urlLink = 'conference' 
+        break;
+      case 1:
+        urlLink = 'theatre' 
+        break;
+      default:
+        urlLink = 'enu'
+        break;
     }
-    else if (slideIndex == 1) {
-      urlLink = 'theatre' 
-    }
-    else {
-      urlLink = 'enu'
-    }
+
+
     this.setState({ slideIndex:slideIndex, urlLink: urlLink })
   }
 
@@ -158,7 +163,7 @@ class CarouselBusiness extends Component {
                           classNames="messageout"
                           style={{position: 'absolute'}}
                         >
-                        <div  className='carouselNumber is-pulled-left is-hidden-touch'>
+                        <div  className='carouselNumber is-pulled-left is-hidden-touch is-font-rose'>
                          0{this.state.slideIndex + 1}
                          </div>
                         </CSSTransition>

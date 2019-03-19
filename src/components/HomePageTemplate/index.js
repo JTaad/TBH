@@ -122,7 +122,7 @@ const HomePageTemplate = ({
     </div>
 
 
-    <div className='container-full is-bg-grey'>
+    <div className='container-full is-bg-jaune'>
         <div className='section'>
             <Link to='/contact'>
                 <div id='nousTrouver' className='columns is-vcentered  '>
@@ -155,13 +155,13 @@ const HomePageTemplate = ({
         <div className='section '>
             <div id="notes" className='columns is-vcentered is-centered'>
                 <div className='column is-4 has-text-centered is-paddingless'>
-                    <div><span className="noteCount subtitle is-size-3-mobile is-size-2-tablet is-size-2-desktop">9/10</span>&nbsp;&nbsp;&nbsp;Booking</div>
+                    <div><span className="noteCount subtitle is-size-3-mobile is-size-2-tablet is-size-1-desktop">9/10</span>&nbsp;&nbsp;&nbsp;Booking</div>
                 </div>
                 <div className='column is-4 has-text-centered is-paddingless'>
-                  <div><span className="noteCount subtitle is-size-3-mobile is-size-2-tablet is-size-2-desktop">4.5/5</span>&nbsp;&nbsp;&nbsp;Trip Advisor</div>
+                  <div><span className="noteCount subtitle is-size-3-mobile is-size-2-tablet is-size-1-desktop">4.5/5</span>&nbsp;&nbsp;&nbsp;Trip Advisor</div>
                 </div>
                 <div className='column is-4 has-text-centered is-paddingless'>
-                   <div><span className="noteCount subtitle is-size-3-mobile is-size-2-tablet is-size-2-desktop">4.1/5</span>&nbsp;&nbsp;&nbsp;Google</div>
+                   <div><span className="noteCount subtitle is-size-3-mobile is-size-2-tablet is-size-1-desktop">4.1/5</span>&nbsp;&nbsp;&nbsp;Google</div>
                 </div>
             </div>
           </div>

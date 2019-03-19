@@ -61,7 +61,8 @@ const ContactPageTemplate = ({
 
 
       <div className='section is-marginless is-paddingless'>
-          <div className='titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop is-bg-white' style={{'position': 'relative', 'zIndex': '999'}}>
+      <div className='titleTbhFirst titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop is-bg-white'  style={{'position': 'relative', 'zIndex': '999'}}>
+
             <h1><span className='titleTbhEmpty'>Accès</span><span className='titleTbhFull'>_</span></h1>
           </div>
       </div>
@@ -91,11 +92,11 @@ const ContactPageTemplate = ({
          </div>
 
     </div>
-    <div className='container-full is-bg-grey'>
+    <div className='container-full is-bg-grey titleTbh'>
         <div className='container'>
 
                 <div className='section is-marginless is-paddingless'>
-                    <div className='titleTbh  title' style={{height: 'auto', fontSize: 'inherit', textAlign: 'left'}}>
+                    <div className='  title' style={{height: 'auto', fontSize: 'inherit', textAlign: 'left'}}>
                         <div className='container'>
                              <div className='section columns'>
                                  <div className='column is-10 is-offset-1'>

@@ -23,10 +23,11 @@ class CarouselHome extends Component {
       withoutControls: false,
       urlLink: 'standard',
       colorBg: 'is-bg-orange',
+      colorFont: 'is-font-orange',
       items: [
-        { slideIndex: 0, titre: "STANDARD", image: image1, urlLink: 'standard' , colorBg: 'is-bg-orange'},
-        { slideIndex: 1, titre: "SUITE", image: image1, urlLink: 'suite', colorBg: 'is-bg-vert'  },
-        { slideIndex: 2, titre: "LUXE", image: image1, urlLink: 'luxe', colorBg: 'is-bg-jaune' },
+        { slideIndex: 0, titre: "STANDARD", image: image1, urlLink: 'standard' , colorBg: 'is-bg-orange', colorFont: 'is-font-orange'},
+        { slideIndex: 1, titre: "SUITE", image: image1, urlLink: 'suite', colorBg: 'is-bg-vert', colorFont: 'is-font-vert'  },
+        { slideIndex: 2, titre: "LUXE", image: image1, urlLink: 'luxe', colorBg: 'is-bg-jaune', colorFont: 'is-font-jaune' },
       ], 
     };
 
@@ -51,15 +52,22 @@ class CarouselHome extends Component {
 
   moveSlide(slideIndex) {
     let urlLink = null
-    if(slideIndex == 0) {
-      urlLink = 'standard' 
+
+    switch(slideIndex) {
+      case 0:
+        urlLink = 'standard' 
+        break;
+      case 1:
+        urlLink = 'suite' 
+        break;
+      case 2:
+        urlLink = 'luxe'
+        break;
+      default:
+        urlLink = 'standard' 
     }
-    else if (slideIndex == 1) {
-      urlLink = 'suite' 
-    }
-    else {
-      urlLink = 'luxe'
-    }
+
+
     this.setState({ slideIndex:slideIndex, urlLink: urlLink })
   }
 
@@ -73,7 +81,7 @@ class CarouselHome extends Component {
               <div  className='column center-v is-paddinglessTB 
                is-full-tablet
                is-5-desktop 
-               is-offset-1-desktop '>
+               is-offset-1-desktop 'style={{position: 'relative'}}>
                   <div className='section'>
                       <div className="arrow-l title is-2 is-marginless is-paddingless">→</div>
                       <br/>
@@ -101,7 +109,7 @@ class CarouselHome extends Component {
                           classNames="messageout"
                           style={{position: 'absolute'}}
                         >
-                        <div  className='carouselNumber  is-hidden-touch'>
+                        <div  className={`carouselNumberHome  is-hidden-touch  ${this.state.colorFont}`}>
                          0{this.state.slideIndex + 1}
                          </div>
                         </CSSTransition>
@@ -141,8 +149,8 @@ class CarouselHome extends Component {
                 </Carousel> 
 
                 <div className='carouselAll ' style={{ display: "flex", justifyContent: "flex-start" }}>
-                    {this.state.items.map(({ titre, capacite, urlLink, slideIndex, colorBg }) => (
-                      <button className={ this.state.slideIndex == slideIndex ? 'carouselActive' : 'carouselNotActive' } onClick={() => this.setState({ slideIndex, urlLink, capacite, titre, colorBg})}>{titre}</button>
+                    {this.state.items.map(({ titre, capacite, urlLink, slideIndex, colorBg, colorFont }) => (
+                      <button className={ this.state.slideIndex == slideIndex ? 'carouselActive' : 'carouselNotActive' } onClick={() => this.setState({ slideIndex, urlLink, capacite, titre, colorBg, colorFont})}>{titre}</button>
                     ))}  
                 </div>
 
