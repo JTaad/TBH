@@ -11,7 +11,6 @@ import Transition from "../components/Transition"
 
 
 
-
 class TemplateWrapper extends Component {
   constructor (props) {
     super(props)
@@ -35,6 +34,7 @@ class TemplateWrapper extends Component {
     scroll.scrollToTop();
   }
   render () {
+    const { location } = this.props
     return (
       <div>
         <Helmet>
