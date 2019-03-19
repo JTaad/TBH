@@ -3,12 +3,28 @@ import PropTypes from 'prop-types'
 import {graphql} from 'gatsby'
 import HomePageTemplate from '../components/HomePageTemplate'
 
+function sortNumber(a,b) {
+  return a - b;
+}
+
 const HomePage = ({data}) => {
   const {frontmatter} = data.markdownRemark
 
 
-  const postsInstagram = data.allInstaNode.edges.slice(0, 3)
+  var postsInstagram = data.allInstaNode.edges
+
+
+  function compare(a,b) {
+    if (a.node.timestamp < b.node.timestamp)
+      return -1;
+    if (a.node.timestamp > b.node.timestamp)
+      return 1;
+    return 0;
+  }
   
+  postsInstagram = postsInstagram.sort(compare).reverse().slice(0, 3)
+  
+
   return (
     <HomePageTemplate
       title={frontmatter.title}
@@ -47,7 +63,7 @@ export const pageQuery = graphql`
     bienvenue: file(relativePath: { eq: "home/bienvenue_tbh.jpg" }) {
       ...fluidImage
     }
-    allInstaNode(limit:3) {
+    allInstaNode {
       edges {
         node {
           id

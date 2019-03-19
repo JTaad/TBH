@@ -21,8 +21,15 @@ const BusinessPages = ({data}) => {
         content={post.html}
         vos_espaces={data.vosEspaces}
         vos_evenements={data.vosEvent}
+        forfait1={data.vosEvent}
+        forfait2={data.vosEvent}
+        forfait3={data.vosEvent}
+        forfait4={data.vosEvent}
         icon_wifi={data.wifi}
         icon_tele={data.tele}
+        slider1={data.slider1}
+        slider2={data.slider1}
+        slider3={data.slider1}
       />
     </div>
   )
@@ -32,6 +39,13 @@ export default BusinessPages
 export const businessPageQuery = graphql`
   query BusinessPages($id: String!) {
     background_header: file(relativePath: { eq: "business/header_business_tbh.jpg" }) {
+      childImageSharp{
+        fluid(maxWidth: 2000) {
+           ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    slider1: file(relativePath: { eq: "business/plans_seminaire_1.jpg" }) {
       childImageSharp{
         fluid(maxWidth: 2000) {
            ...GatsbyImageSharpFluid

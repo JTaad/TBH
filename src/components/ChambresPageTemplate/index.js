@@ -70,7 +70,7 @@ const ChambresPageTemplate = ({
  </div>
 
     <div className='section is-marginless is-paddingless'>
-        <div className='titleTbhFirst titleTbh title is-size-3-mobile is-size-1-tablet is-size-1-desktop'>
+        <div className='titleTbhFirst titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop'>
           <span className='titleTbhEmpty'>Les</span> <span className='titleTbhFull'>Chambres_</span>
         </div>
     </div>
@@ -78,7 +78,7 @@ const ChambresPageTemplate = ({
 
 
     <div id="standard" className='section  is-paddingless is-marginless'>
-        <div className='columns is-paddingless is-marginless'>
+        <div className='columns is-paddingless is-marginless is-bg-orange'>
             <div className='column is-half is-paddingless is-marginless ' style={{ textAlign: 'left' }}>
                 <CarouselChambre imgs={standard} />
             </div>
@@ -117,7 +117,7 @@ const ChambresPageTemplate = ({
 
 
       <div  id="luxe" className='section  is-paddingless is-marginless'>
-          <div className='columns is-paddingless is-marginless'>
+          <div className='columns is-paddingless is-marginless is-bg-jaune'>
               <div  className='column  is-5  is-offset-1  center-v is-paddinglessTB'>
                   <div className='section'>
                       <div className="arrow-l subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">→</div>
@@ -159,7 +159,7 @@ const ChambresPageTemplate = ({
 
 
     <div id="suite" className='section  is-paddingless is-marginless'>
-        <div className='columns is-paddingless is-marginless'>
+        <div className='columns is-paddingless is-marginless is-bg-vert'>
             <div className='column is-half is-paddingless is-marginless' style={{ textAlign: 'left' }}>
                 <CarouselChambre  />
             </div>
@@ -197,7 +197,7 @@ const ChambresPageTemplate = ({
 
 <Element name="lesplus" >
     <div className='section is-marginless is-paddingless'>
-        <div className='titleTbh title is-size-3-mobile is-size-1-tablet is-size-1-desktop'>
+        <div className='titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop'>
         <span className='titleTbhEmpty'>Vos</span> <span className='titleTbhFull'>petits +_</span>
         </div>
     </div>
@@ -254,7 +254,7 @@ const ChambresPageTemplate = ({
 
 
 <div className='section is-marginless is-paddingless'>
-    <div className='titleTbh title is-size-3-mobile is-size-1-tablet is-size-1-desktop' style={{borderTop: '0px'}}>
+    <div className='titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop' style={{borderTop: '0px'}}>
       <span className='titleTbhEmpty'>Le petit-</span><span className='titleTbhFull'>Déjeuner_</span>
     </div>
 </div>
@@ -265,17 +265,19 @@ const ChambresPageTemplate = ({
 
 
     <div className='section  is-paddingless is-marginless'>
-        <div className='columns is-paddingless is-marginless'>
+        <div className='columns is-paddingless is-marginless is-bg-vert'>
             <div className='column is-half is-paddingless is-marginless' style={{ textAlign: 'left' }}>
                 <Img fluid={petitDej.childImageSharp.fluid}/>
             </div>
-            <div  className='column is-half center-v'>
+            <div  className='column is-5 center-v'>
                 <div className='section marginless is-paddingless'>
                     <div className="arrow-r subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">←</div>
                     <br/>
-                    <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>
-                        Une belle journée commence par un bon petit-déjeuner, servi au lit ou au buffet". 
-                    </span>
+                    <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>LE PETIT<br/>déjeuner</span>
+                    <br/>
+                    <br/>
+                      <div className='sub-p is-size-5'><p>“Une belle journée commence par un bon petit-déjeuner, servi au lit ou au buffet". </p></div>
+                   
                 </div>
             </div>
         </div>

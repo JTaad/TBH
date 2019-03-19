@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import Carousel from 'nuka-carousel';
-import headerImage from '../../assets/img/home/chambre_1.jpg'
+import image1 from '../../assets/img/home/chambre_1.jpg'
 import {Link} from 'gatsby'
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 
 class CarouselHome extends Component {
@@ -20,7 +21,13 @@ class CarouselHome extends Component {
       autoplay: true,
       autoplayInterval: 3000,
       withoutControls: false,
-      urlLink: 'standard'
+      urlLink: 'standard',
+      colorBg: 'is-bg-orange',
+      items: [
+        { slideIndex: 0, titre: "STANDARD", image: image1, urlLink: 'standard' , colorBg: 'is-bg-orange'},
+        { slideIndex: 1, titre: "SUITE", image: image1, urlLink: 'suite', colorBg: 'is-bg-vert'  },
+        { slideIndex: 2, titre: "LUXE", image: image1, urlLink: 'luxe', colorBg: 'is-bg-jaune' },
+      ], 
     };
 
     this.handleImageClick = this.handleImageClick.bind(this);
@@ -61,6 +68,7 @@ class CarouselHome extends Component {
     
 
       <div className='section  is-paddingless is-marginless'>
+      <div className={this.state.colorBg}>
           <div className='columns is-paddingless is-marginless is-paddinglessTB '>
               <div  className='column center-v is-paddinglessTB 
                is-full-tablet
@@ -85,9 +93,19 @@ class CarouselHome extends Component {
                          <span className='boldTitle'>+</span>&nbsp;d'infos
                       </Link>
  
-                      <div className='carouselNumber is-pulled-right is-hidden-touch'>
+ 
+                      <TransitionGroup  className="is-pulled-right" style={{display: "block", height:"140px"}}>
+                        <CSSTransition
+                          key={this.state.slideIndex}
+                          timeout={1000}
+                          classNames="messageout"
+                          style={{position: 'absolute'}}
+                        >
+                        <div  className='carouselNumber  is-hidden-touch'>
                          0{this.state.slideIndex + 1}
-                      </div>
+                         </div>
+                        </CSSTransition>
+                      </TransitionGroup>
                   </div>
               </div>
               <div className='column 
@@ -116,22 +134,19 @@ class CarouselHome extends Component {
                   autoplayInterval={this.state.autoplayInterval}
                   initialSlideHeight='720px'
                 >
-                <img src={headerImage} 
-                      onClick={this.handleImageClick}/>
-                      
-                      <img src={headerImage} 
-                            onClick={this.handleImageClick}/>
-                      
-                            <img src={headerImage} 
-                                  onClick={this.handleImageClick}/>
+                {this.state.items.map(({image }) => (
+                  <img src={image} 
+                        onClick={this.handleImageClick}/>
+                ))}
                 </Carousel> 
 
                 <div className='carouselAll ' style={{ display: "flex", justifyContent: "flex-start" }}>
-                      <button className={ this.state.slideIndex == 0 ? 'carouselActive' : 'carouselNotActive' } onClick={() => this.setState({ slideIndex: 0, urlLink: 'standard' })}>Standard</button>
-                      <button className={ this.state.slideIndex  == 1 ? 'carouselActive' : 'carouselNotActive' } onClick={() => this.setState({ slideIndex: 1, urlLink: 'suite' })}>Suite</button>
-                      <button className={ this.state.slideIndex  == 2 ? 'carouselActive' : 'carouselNotActive' } onClick={() => this.setState({ slideIndex: 2, urlLink: 'luxe' })}>Luxe</button>
+                    {this.state.items.map(({ titre, capacite, urlLink, slideIndex, colorBg }) => (
+                      <button className={ this.state.slideIndex == slideIndex ? 'carouselActive' : 'carouselNotActive' } onClick={() => this.setState({ slideIndex, urlLink, capacite, titre, colorBg})}>{titre}</button>
+                    ))}  
                 </div>
 
+              </div>
               </div>
               </div>
           </div>

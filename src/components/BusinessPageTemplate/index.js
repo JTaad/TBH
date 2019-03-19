@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import Img from "gatsby-image"
+import CarouselBusiness from '../CarouselBusiness'
 import { Link } from 'gatsby'
 
 const BusinessPageTemplate = ({
@@ -15,6 +16,10 @@ const BusinessPageTemplate = ({
   vos_evenements,
   icon_wifi, 
   icon_tele, 
+  forfait1, 
+  forfait2, 
+  forfait3, 
+  forfait4, 
 }) => {
   return (
     <div>
@@ -35,7 +40,7 @@ const BusinessPageTemplate = ({
 
 
     <div className='section is-marginless is-paddingless'>
-        <div className='titleTbhFirst titleTbh title is-size-3-mobile is-size-1-tablet is-size-1-desktop'>
+        <div className=' titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop'>
           <span className='titleTbhEmpty'>Pour les</span> <span className='titleTbhFull'>professionnels_</span>
         </div>
     </div>
@@ -77,9 +82,9 @@ const BusinessPageTemplate = ({
 
 
 
-<div className='container'>
+<div className='container-full is-bg-vert'>
       <div className='section  is-paddingless is-marginless'>
-          <div className='columns is-paddingless is-marginless'>
+          <div className='columns is-paddingless is-marginless '>
               <div  className='column  is-half  center-v'>
                   <div className='section'>
                       <div className="arrow-l subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">→</div>
@@ -108,9 +113,90 @@ const BusinessPageTemplate = ({
    </div>
 
 
+<div className='container'>
+
+<div className='section'>
+   <div className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-centered' style={{textAlign:'center'}}>Des forfaits sur-mesure<br/>pour vos évènements_</div>
+</div>
+    <div className='section'>
+        <ul id='forfaits' className=" is-variable is-1" >
+                <li>
+                 <div className='is-bg-vert forfaits-bg'>
+                        <Img  
+                            fluid={forfait1.childImageSharp.fluid} 
+                        />
+                       <div className='forfaits-title'>
+                            <div>
+                                <div className="arrow-l subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">→</div>
+                                <br/>
+                                <span  className='subtitle is-size-4-mobile is-size-3-tablet is-size-4-desktop'>Résidentiel</span>
+                            </div>
+                        </div>   
+                            <p>
+                            Chambre, petit déjeuner, déjeuner, diner, location de salle et pauses
+                            </p>
+                  </div>
+                </li>
+                <li>
+                 <div className='is-bg-rose forfaits-bg'>
+                        <Img  
+                            fluid={forfait2.childImageSharp.fluid} 
+                        />
+                        <div className='forfaits-title'>
+                            <div>
+                                <div className="arrow-l subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">→</div>
+                                <br/>
+                                <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-4-desktop'>Semi Résidentiel</span>
+                            </div>
+                        </div>
+                            <p>
+                            Chambre, petit déjeuner, déjeuner, diner, location de salle et pauses
+                            </p>
+                    </div>
+                </li>
+
+                <li>
+                 <div className='is-bg-grey forfaits-bg'>
+                        <Img  
+                            fluid={forfait3.childImageSharp.fluid} 
+                        />
+                        <div className='forfaits-title'>
+                            <div>
+                                <div className="arrow-l subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">→</div>
+                                <br/>
+                                <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-4-desktop'>Demi journée<br/>d'étude</span>
+                            </div>    
+                        </div>
+                            
+                            <p>Location de salle 1/2 journée avec pause et déjeuner</p>
+                 </div>
+                </li>
+
+                <li>
+                 <div className='is-bg-orange forfaits-bg'>
+                        <Img  
+                            fluid={forfait4.childImageSharp.fluid} 
+                        />
+                       <div className='forfaits-title'>
+                            <div>
+                                <div className="arrow-l subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">→</div>
+                                <br/>
+                                <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-4-desktop'>Journée d'étude</span>
+                            </div>
+                        </div>
+                        
+                        <p>Location de la salle avec pauses et déjeuner</p>
+                   </div>
+                </li>
+        </ul>
+    </div>
+</div>
+
+<CarouselBusiness />
+
 
     <div className='section is-marginless is-paddingless'>
-        <div className='titleTbh title is-size-3-mobile is-size-1-tablet is-size-1-desktop'>
+        <div className='titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop'>
           <span className='titleTbhEmpty'>Nos </span> <span className='titleTbhFull'>petits +_</span>
         </div>
     </div>
@@ -149,52 +235,9 @@ const BusinessPageTemplate = ({
     </div>
 </div>
 </div>
-
-<div className='container'>
-      <div className='section  is-paddingless is-marginless'>
-          <div className='columns is-paddingless is-marginless'>
-              <div  className='column  is-full is-paddinglessTB'>
-                  <div className='section is-paddinglessTB'>
-                  <br/><br/>
-                        <div className="arrow-l subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">→</div>
-                        <br/>
-                        <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>
-                Des forfaits sur-mesure<br/>
-                pour vos évènements :</span>
-                    </div>
-                </div>
-            </div>
-      </div>
-</div>
    
 
 <div className='container'>
-      <div className='section  is-paddingless is-marginless'>
-          <div className='columns is-paddingless is-marginless'>
-              <div  className='column  is-half '>
-                  <div className='section'>
-                    <div className='sub-p is-size-5'>RÉSIDENTIEL</div>
-                    <br/>
-                            <p>chambre, petit déjeuner, déjeuner, diner, location de salle et pauses</p>
-                            <br/><br/>
-                    <div className='sub-p is-size-5'>JOURNÉE D'ÉTUDE</div>
-                    <br/>
-                            <p>location de la salle avec pauses et déjeuner</p>
-                    </div>
-              </div>
-              <div className='column is-half'>
-                  <div className='section'>
-                    <div className='sub-p is-size-5'>SEMI RÉSIDENTIEL</div>
-                    <br/>
-                            <p>chambre, petit déjeuner, déjeuner ou diner, location de salle et pauses.</p>
-                            <br/><br/>
-                    <div className='sub-p is-size-5'>DEMI JOURNÉE D'ÉTUDE</div>
-                    <br/>
-                            <p>location de salle 1/2 journée avec pause et déjeuner</p>
-                  </div>
-              </div>
-          </div>
-      </div>
 
 
       <div className='section is-paddinglessTB'>

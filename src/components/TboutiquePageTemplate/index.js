@@ -31,7 +31,7 @@ const TboutiquePageTemplate = ({
       </div>
 
     <div className='section is-marginless is-paddingless'>
-        <div className='titleTbhFirst titleTbh title is-size-3-mobile is-size-1-tablet is-size-1-desktop'>
+        <div className='titleTbhFirst titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop'>
           <span className='titleTbhFull'>Concept_</span>
         </div>
     </div>
@@ -63,7 +63,7 @@ const TboutiquePageTemplate = ({
     </div>
     <div className='container'>
     <div className='section  is-paddingless is-marginless'>
-                <div className='columns'>
+                <div className='columns is-bg-orange'>
                   <div  className='column is-5 is-offset-1'>
                     <div className="arrow-l subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">→</div>
                           <br/>
@@ -74,24 +74,9 @@ const TboutiquePageTemplate = ({
                            </p>   <br/> 
                              <p> Bienvenue dans un hôtel comme à la maison, chic et design à la fois, avec du confort et des prestations 3 étoiles. 
                           </p>
-                          <br/>
-                          <br/>
-                    <div className="arrow-l subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">→</div>
-                          <br/>
-                          <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>La boutique</span>
-                          <br/>
-                          <p>
-                          Une boutique a pris ses quartiers dans l’entrée de l’hôtel. Nous aimons chiner et trouver de jolies choses au gré des saisons, des tendances, des modes. Sélection d’articles, d’objets, de créations, mise en avant d’artistes et de jeunes créateurs, collaborations... c’est au T que vous les découvrirez ! 
-                          </p> <br/> 
-                          <p>
-                          On vous a dit que vous pouviez aussi acheter le mobilier de la salle de déjeuner ?
-                          </p>
-                  </div>
+                      </div>
 
                     <div  className='column is-5 '>
-                      <Img fluid={boutique.childImageSharp.fluid}/>
-                      <br/>
-                      <br/>
                       <Img fluid={histoire.childImageSharp.fluid}/>
                   </div>
               </div>
@@ -99,9 +84,33 @@ const TboutiquePageTemplate = ({
   </div>
  
 
+    <div className='section  is-paddingless is-marginless'>
+        <div className='columns is-paddingless is-marginless'>
+            <div className='column is-half is-paddingless is-marginless imgContent' style={{ textAlign: 'left' }}>
+               <Img 
+                  style={{ position: 'relative', left: '0', top: "0", width: "100%", height: "100%" }} 
+                  fluid={boutique.childImageSharp.fluid}
+                /> 
+            </div>
+            <div  className='column is-5 center-v '>
+                <div className='section '>
+                    <div className="arrow-r subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">←</div>
+                    <br/>
+                    <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>La boutique</span>
+                          <br/>
+                          <p>
+                          Une boutique a pris ses quartiers dans l’entrée de l’hôtel. Nous aimons chiner et trouver de jolies choses au gré des saisons, des tendances, des modes. Sélection d’articles, d’objets, de créations, mise en avant d’artistes et de jeunes créateurs, collaborations... c’est au T que vous les découvrirez ! 
+                          </p> <br/> 
+                          <p>
+                          On vous a dit que vous pouviez aussi acheter le mobilier de la salle de déjeuner ?</p>
+                </div>
+            </div>
+    </div>
+    </div>
+
 
     <div className='section is-marginless is-paddingless'>
-        <div className='titleTbh title is-size-3-mobile is-size-1-tablet is-size-1-desktop'>
+        <div className='titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop'>
            <span className='titleTbhEmpty'>L'histoire </span> <span className='titleTbhFull'>du T_</span>
         </div>
     </div>

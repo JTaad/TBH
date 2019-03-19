@@ -5,9 +5,10 @@
 
 $primary: #00d1b2
 $primary-invert: #ffffff
-$blue: #111344
+$blue: #00165F
 $white: #FFF
 $black: #000
+$brown: #CE6621
 $fontTitle: "MonoramaRegular"
 $fontTitleBold: "MonoramaBold"
 $fontTitleSemiBold: "MonoramaSemiBold"
@@ -25,7 +26,8 @@ $calendar-today-color: $blue
 
 $size-1: 4.2rem
 $column-gap: 2.5rem
-
+$button-background-color : 'transparent'
+$button-color: $blue
 $title-line-height: 1.125
   
 // Import Bulma core
@@ -37,6 +39,19 @@ $title-line-height: 1.125
 
 * 
   color: $blue 
+
+.is-bg-white
+  background-color: $white
+.is-bg-grey
+  background-color: #E2E4E8
+.is-bg-rose
+  background-color: #FBEBE4
+.is-bg-jaune
+  background-color: #F8F7D6
+.is-bg-orange
+  background-color: #F8EAD6
+.is-bg-vert
+  background-color: #DBE0DC
 
 .image
   .is-64x64
@@ -117,12 +132,88 @@ $title-line-height: 1.125
   border: 1px solid $blue
   span
     color: $white  
+#email.input::placeholder
+  color: $white
+  background-color: $blue
+#email.input
+  background-color: $blue
+  color: $white
+  &:focus
+    color: $white
+    background-color: $blue
+    border: 1px solid $white
+  &:hover
+    color: $white
+    background-color: $blue
+    border: 1px solid $white
+
+.fadeInUp
+  opacity: 0
+  animation-name: fadeInUp
+.fadeInLeft
+  opacity: 0
+  animation-name: fadeInLeft
+
+
+@keyframes fadeInLeft 
+    0%
+      opacity: 0
+      margin-left: -40px
+    100%
+      opacity: 1
+      margin-left: 0px
+
+@keyframes fadeInUp 
+    0%
+      opacity: 0
+      margin-top: 40px
+    100%
+      opacity: 1
+      margin-top: 0px
+    
+
+#carousel-business
+  button
+    &:hover
+      opacity: 0.6
+  .carouselActive
+    p
+     color: $brown
+
+/* starting ENTER animation */
+.messageout-enter 
+  opacity: 0.01
+  margin-top: -20px
+
+
+/* ending ENTER animation */
+.messageout-enter-active 
+  display: inline-block
+  opacity: 1
+  margin-top: 0px
+  transition: all 1000ms ease
+
+
+/* starting EXIT animation */
+.messageout-exit   
+  display: inline-block
+  opacity: 0
+  margin-top: 20px
+  transition: all 600ms ease
+
+
+/* ending EXIT animation */
+.messageout-exit-active 
+  opacity: 0
+  margin-top: 20px
+  transition: all 200ms ease
+
 
 .carouselAll
   button
     border: 0
     font-family: $fontTitle
-    background-color: $white
+    background-color: transparent
     cursor: pointer
     font-size: 1.5rem
     color: rgba( $blue, .4 )
@@ -133,7 +224,7 @@ $title-line-height: 1.125
   font-family: $fontTitle
   text-shadow: $fontShadowBlue
   color: $white
-  font-size: 7rem
+  font-size: 6rem
 
 .chambreNum
   font-family: $fontTitle
@@ -208,10 +299,19 @@ p
 .is-borderHome
   border-top: 1px solid $blue
 #notes
+  @include until($desktop)
+    height: auto
+  @include from($desktop)
+    height: 100px
   .noteCount
     font-family: $fontTitle
   .column
+    display: flex
+    height: calc(100% + 16px)
     border-right: 1px solid $blue
+    align-items: center
+    div
+      width: 100%
 
 
 .imgContent
@@ -249,7 +349,7 @@ p
     font-size: 1.125rem
     margin: 0
     padding: 0
-    background-color: $black
+    background-color: $blue
     color: $white
     padding-top: 11px
     padding-bottom: 12px
@@ -257,7 +357,7 @@ p
     margin-left: 1px
     &:hover
        background-color: $white
-       color: $black
+       color: $blue
     .blocResaArrow
         transform: rotate(45deg)
     *
@@ -324,7 +424,7 @@ p
 
 .titleTbhFirst
    @include until($tablet)
-     height: 50px!important
+     height: 55px!important
      padding: 0
     
 #nousTrouver
@@ -371,7 +471,35 @@ p
     a 
      font-family: $fontTitle
      color: $blue
-     
+
+#forfaits 
+  display: flex
+  flex-wrap: wrap
+  li
+    display: flex
+    padding: 1px
+    width: 25%
+    @include from($tablet)
+      width: 25%
+    @include until($tablet)
+      width: 100%
+    .forfaits-bg
+      width: 100%
+      flex-direction: column
+      display: flex
+      .forfaits-title
+        flex: 1 0 auto
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        padding-left: 15px
+        padding-right: 15px
+        padding-bottom: 10px
+      p
+        padding-left: 15px
+        padding-right: 15px
+        padding-bottom: 15px
+
 .nav-on 
   top: 0vh
   right: 0
@@ -391,7 +519,7 @@ p
   div
     width: 26px
     height: 3px
-    background-color: $black
+    background-color: $blue
     margin: 4px 0
     border-radius: 5px
 
@@ -469,3 +597,44 @@ p
 
 .margin-top-0
   margin-top: 0 !important
+
+.video-background
+    height: 100%
+    background: #000
+    position: relative
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    z-index: -99
+    &::after
+        display: block
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        z-index: 1
+        
+.video-foreground,
+.video-background iframe 
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    pointer-events: none
+
+
+@media (min-aspect-ratio: 16/9) 
+    .video-foreground 
+      height: 300%
+      top: -100%
+      position: relative
+
+@media (max-aspect-ratio: 16/9)
+    .video-foreground
+      width: 300%
+      left: -100%
+      position: relative

@@ -30,7 +30,7 @@ const ContactPageTemplate = ({
       </div>
   
       <div className='section is-marginless is-paddingless'>
-          <div className='titleTbhFirst titleTbh title is-size-3-mobile is-size-1-tablet is-size-1-desktop'>
+          <div className=' titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop'>
             <span className='titleTbhEmpty'>Notre</span> <span className='titleTbhFull'>Emplacement_</span>
           </div>
       </div>
@@ -61,23 +61,16 @@ const ContactPageTemplate = ({
 
 
       <div className='section is-marginless is-paddingless'>
-          <div className='titleTbh title is-size-3-mobile is-size-1-tablet is-size-1-desktop'>
+          <div className='titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop is-bg-white' style={{'position': 'relative', 'zIndex': '999'}}>
             <h1><span className='titleTbhEmpty'>Accès</span><span className='titleTbhFull'>_</span></h1>
           </div>
       </div>
   
 
-    <div className='container'>
+    <div className='container-full is-bg-jaune'>
+        <div className='container'>
                 <div className='section columns'>
                         <div className='column is-10 is-offset-1'>
-                                    <div className='columns is-12 is-vcentered  '>
-                                            <div className='column is-12 '>
-                                            Rejoignez facilement le T Boutique Hôtel en train ou en taxi depuis l’aéroport de Bordeaux. L'hôtel est situé à deux pas de la gare d'Arcachon
-                                            </div>
-                                    </div>
-                    
-
-
                             <div className='blocWithArrow'>
                                 <div className='arrowText subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>→&nbsp;</div>
                                 <h2 className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>de l’aéroport de bordeaux</h2>
@@ -89,15 +82,17 @@ const ContactPageTemplate = ({
                                 <h2 className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>de la gare d’arcachon</h2>
                             </div>
                             <div className='columns'>
-                                <p className='column  is-4'>TAXI — 5min.  4€</p>
-                                <p className='column is-4'>BUS — 10min.  4€</p>
-                                <p className='column is-4'>A PIED — 12min.  4€</p>
+                                <p className='column  is-4'>TAXI — 5min.</p>
+                                <p className='column is-4'>BUS — 10min.</p>
+                                <p className='column is-4'>A PIED — 12min.</p>
                             </div>
                             </div>
-                        </div>
-                </div>
+                     </div>
+         </div>
 
-
+    </div>
+    <div className='container-full is-bg-grey'>
+        <div className='container'>
 
                 <div className='section is-marginless is-paddingless'>
                     <div className='titleTbh  title' style={{height: 'auto', fontSize: 'inherit', textAlign: 'left'}}>
@@ -110,12 +105,14 @@ const ContactPageTemplate = ({
                                         </div>
                                         <p>Parking Municipal du Marché</p>
                                         <p>ZONES DE STATIONNEMENT GRATUIT</p>
-                                 </div>
-                             </div>
-                        </div>
+                                    </div>
+                                     </div>
+                                  </div>
+                              </div>
+                         </div>
                     </div>
-                </div>
         </div>
+    </div>
 
 
   )
