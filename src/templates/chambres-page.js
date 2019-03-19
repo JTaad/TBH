@@ -62,63 +62,63 @@ export const chambresPageQuery = graphql`
     background_header: file(relativePath: { eq: "chambres/header_chambres_tbh.jpg" }) {
       childImageSharp{
         fluid(maxWidth: 2000, quality: 100) {
-           ...GatsbyImageSharpFluid
+           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     petitDej: file(relativePath: { eq: "chambres/petit_dejeuner.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 2000) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     clim: file(relativePath: { eq: "icons/clim_4K_2x.png" }) {
       childImageSharp {
         fluid(maxWidth: 70) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     coffre: file(relativePath: { eq: "icons/coffre_4K_2x.png" }) {
       childImageSharp {
         fluid(maxWidth: 70) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     secheCheveux: file(relativePath: { eq: "icons/hothair_4K_2x.png" }) {
       childImageSharp {
         fluid(maxWidth: 70) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     telephone: file(relativePath: { eq: "icons/phone_4K_2x.png" }) {
       childImageSharp {
         fluid(maxWidth: 70) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     tele: file(relativePath: { eq: "icons/tv_4K_2x.png" }) {
       childImageSharp {
         fluid(maxWidth: 70) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     wifi: file(relativePath: { eq: "icons/WIFI_4K_2x.png" }) {
       childImageSharp {
         fluid(maxWidth: 70) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     douche: file(relativePath: { eq: "icons/shower_4K_2x.png" }) {
       childImageSharp {
         fluid(maxWidth: 70) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }

@@ -41,42 +41,42 @@ export const businessPageQuery = graphql`
     background_header: file(relativePath: { eq: "business/header_business_tbh.jpg" }) {
       childImageSharp{
         fluid(maxWidth: 2000) {
-           ...GatsbyImageSharpFluid
+           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     slider1: file(relativePath: { eq: "business/plans_seminaire_1.jpg" }) {
       childImageSharp{
         fluid(maxWidth: 2000) {
-           ...GatsbyImageSharpFluid
+           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     wifi: file(relativePath: { eq: "icons/WIFI_4K_2x.png" }) {
       childImageSharp {
         fluid(maxWidth: 70) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     tele: file(relativePath: { eq: "icons/tv_4K_2x.png" }) {
       childImageSharp {
         fluid(maxWidth: 70) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     vosEspaces: file(relativePath: { eq: "business/vosespaces.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 2000) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
   }
   vosEvent: file(relativePath: { eq: "business/vosevenements.jpg" }) {
     childImageSharp {
       fluid(maxWidth: 2000) {
-        ...GatsbyImageSharpFluid
+        ...GatsbyImageSharpFluid_withWebp_tracedSVG
       }
     }
   }

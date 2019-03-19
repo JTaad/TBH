@@ -40,7 +40,7 @@ export const contactPageQuery = graphql`
     background_header: file(relativePath: { eq: "contact/header_contact_tbh.jpg" }) {
       childImageSharp{
         fluid(maxWidth: 2000) {
-           ...GatsbyImageSharpFluid
+           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }

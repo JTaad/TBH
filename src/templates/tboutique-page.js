@@ -33,28 +33,28 @@ export const tBoutiquePageQuery = graphql`
     background_header: file(relativePath: { eq: "tboutique/header_tboutique_tbh.jpg" }) {
       childImageSharp{
         fluid(maxWidth: 2000) {
-           ...GatsbyImageSharpFluid
+           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     concept: file(relativePath: { eq: "tboutique/leconcept.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 2000) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
   }
   histoire: file(relativePath: { eq: "tboutique/lhistoire.jpg" }) {
     childImageSharp {
       fluid(maxWidth: 2000) {
-        ...GatsbyImageSharpFluid
+        ...GatsbyImageSharpFluid_withWebp_tracedSVG
       }
     }
 }
 boutique: file(relativePath: { eq: "tboutique/laboutique.jpg" }) {
   childImageSharp {
     fluid(maxWidth: 2000) {
-      ...GatsbyImageSharpFluid
+      ...GatsbyImageSharpFluid_withWebp_tracedSVG
     }
   }
 }
