@@ -21,10 +21,10 @@ const BusinessPages = ({data}) => {
         content={post.html}
         vos_espaces={data.vosEspaces}
         vos_evenements={data.vosEvent}
-        forfait1={data.vosEvent}
-        forfait2={data.vosEvent}
-        forfait3={data.vosEvent}
-        forfait4={data.vosEvent}
+        forfaitone={data.vosEvent}
+        forfaittwo={data.vosEvent}
+        forfaitthree={data.vosEvent}
+        forfaitfour={data.vosEvent}
         icon_wifi={data.wifi}
         icon_tele={data.tele}
         slider1={data.slider1}
