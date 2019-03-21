@@ -11,8 +11,6 @@ class Disqus extends Component {
 
   
   _onReady(event) {
-    // access to player in all event handlers via event.target
-    // event.target.mute();
   }
   
   _onEnd(event) {
@@ -26,6 +24,7 @@ class Disqus extends Component {
       playerVars: { // https://developers.google.com/youtube/player_parameters
         autoplay: 1,
         controls: 0,
+        mute: 1,
         rel: 0,
         showinfo: 0
       }
@@ -35,7 +34,7 @@ class Disqus extends Component {
       <div className="video-background">
         <div className="video-foreground">
           <YouTube
-            videoId="Z6FPJOgfCkc"
+            videoId="Dac4UA7ojbU"
             opts={videoOptions}
             className="video-iframe"
             onReady={this._onReady}

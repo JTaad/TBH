@@ -191,7 +191,7 @@ const ChambresPageTemplate = ({
     </div>
 </Element>
 
-<div className="container-fullhd">
+<div className="container-fullhd is-bg-rose" >
     <div className='petitPlus title is-size-5-mobile is-size-4-tablet is-size-3-desktop'>
         <div className='petitPlusBorder is-paddinglessTB'>
             <div className='petitPlusItem has-text-centered'>

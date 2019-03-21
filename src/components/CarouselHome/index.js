@@ -3,6 +3,8 @@ import Carousel from 'nuka-carousel';
 import image1 from '../../assets/img/home/chambre_1.jpg'
 import {Link} from 'gatsby'
 import { CSSTransition, TransitionGroup } from "react-transition-group";
+import Fade from 'react-reveal/Fade';
+import Reveal from 'react-reveal/Reveal';
 
 
 class CarouselHome extends Component {
@@ -83,23 +85,33 @@ class CarouselHome extends Component {
                is-5-desktop 
                is-offset-1-desktop 'style={{position: 'relative'}}>
                   <div className='section'>
-                      <div className="arrow-l title is-2 is-marginless is-paddingless">→</div>
+
+                   <Fade duration={1000}>
+                      <div>
+                        <div className="arrow-l title is-2 is-marginless is-paddingless">→</div>
+                        <br/>
+                        <span className='subtitle is-size-3-mobile is-size-2-tablet is-size-2-desktop'>Les chambres</span>
+                      </div>
+                    </Fade>
                       <br/>
-                      <span className='subtitle is-size-3-mobile is-size-2-tablet is-size-2-desktop'>Les chambres</span>
                       <br/>
-                      <br/>
+                    <Fade  duration={1000}>
                       <p>
                         Nos chambres sont de jolis cocons où il fait bon se lover. Décoration soignée, choix minutieux des matières, des couleurs, des équipements, petits plus en bonus… nous avons pris soin de nous occuper de tout, pour que vous vous sentiez comme chez vous. Sans parler du petit-déjeuner … !
                       </p>
+                    </Fade>
 
                       <br/>
-                      <div className='sub-p is-size-5'><p>On vous montre<br/>votre chambre ? </p></div>
-  
+                      <Reveal effect="fadeInLeft"  duration={1000} >
+                          <div className='sub-p is-size-5'><p>On vous montre<br/>votre chambre ? </p></div>
+                      </Reveal>
                       <br/>
                       <br/>
-                      <Link className='button is-outlined title is-5' to={`chambres#${this.state.urlLink}`}>
-                         <span className='boldTitle'>+</span>&nbsp;d'infos
-                      </Link>
+                      <Reveal effect="fadeInLeft"  duration={1000} >
+                        <Link className='button is-outlined title is-5' to={`chambres#${this.state.urlLink}`}>
+                          <span className='boldTitle'>+</span>&nbsp;d'infos
+                        </Link>
+                      </Reveal>
  
  
                       <TransitionGroup  className="is-pulled-right" style={{display: "block", height:"140px"}}>

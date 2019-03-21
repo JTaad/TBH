@@ -4,6 +4,9 @@ import PropTypes from 'prop-types'
 import Img from "gatsby-image"
 import CarouselBusiness from '../CarouselBusiness'
 import { Link } from 'gatsby'
+import { ParallaxProvider } from 'react-scroll-parallax';
+import { Parallax } from 'react-scroll-parallax';
+
 
 const BusinessPageTemplate = ({
   title,
@@ -38,7 +41,6 @@ const BusinessPageTemplate = ({
       </div>
 
 
-
     <div className='section is-marginless is-paddingless'>
         <div className=' titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop'>
           <span className='titleTbhEmpty'>Pour les</span> <span className='titleTbhFull'>professionnels_</span>
@@ -48,7 +50,7 @@ const BusinessPageTemplate = ({
 
 
 
-    <div className='section  is-paddingless is-marginless'>
+    <div className='section  is-paddingless is-marginless' style={{zIndex: "9999", position:"relative"}}>
         <div className='columns is-paddingless is-marginless'>
             <div className='column is-half is-paddingless is-marginless imgContent' style={{ textAlign: 'left' }}>
                <Img 
@@ -82,7 +84,9 @@ const BusinessPageTemplate = ({
 
 
 
-    <div className='container-full is-bg-vert'>
+<ParallaxProvider>
+    <Parallax  className='container-full ' y={[-10, 10]}>
+        <div className='is-bg-vert'>
         <div className='container'>
 
       <div className='section  is-paddingless is-marginless'>
@@ -112,9 +116,12 @@ const BusinessPageTemplate = ({
               </div>
           </div>
       </div>
-   </div>
 </div>
+</div>
+    </Parallax>
+</ParallaxProvider>
 
+{/* 
 <div className='container'>
 
 <div className='section'>
@@ -193,7 +200,7 @@ const BusinessPageTemplate = ({
         </ul>
     </div>
 </div>
-
+*/}
 <CarouselBusiness />
 
 
@@ -203,7 +210,7 @@ const BusinessPageTemplate = ({
         </div>
     </div>
     
-<div className="container-fullhd">
+<div className="container-fullhd is-bg-orange">
     <div className='petitPlus title  is-size-5-mobile is-size-4-tablet is-size-4-desktop'>
         <div className='petitPlusBorder is-paddinglessTB'>
             <div className='petitPlusItem has-text-centered'>

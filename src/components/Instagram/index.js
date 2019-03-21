@@ -2,10 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Img from "gatsby-image"
 import { FaInstagram } from 'react-icons/fa';
+import Fade from 'react-reveal/Fade';
+import Reveal from 'react-reveal/Reveal';
 
 const Instagram = ({ gridItems }) => (
   <section id='instagram' className='section  is-paddingless'>
+  <Fade cascade >
       <div className='columns is-mobile is-paddingless is-marginless is-centered'>
+        
           <div  className=' is-one-third-mobile column  is-2-desktop  is-paddingless is-marginless' style={{ display: "flex", flexDirection: 'column', justifyContent: 'center', textAlign: 'center' }}>
               <a href="https://www.instagram.com/tboutiquehotel/">
                 <div>
@@ -27,6 +31,7 @@ const Instagram = ({ gridItems }) => (
           </div>
         ))}
       </div>
+        </Fade>
   </section>
 )
 
