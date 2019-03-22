@@ -54,7 +54,7 @@ export const businessPageQuery = graphql`
         }
       }
     }
-    iconWifi: file(relativePath: { eq: "icons/Wifi_HDx2.png" }) {
+    iconWifi: file(relativePath: { eq: "icons/Wifi1_HDx2.png" }) {
       childImageSharp {
         fluid(maxWidth: 50) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG

@@ -8,7 +8,7 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 import { Parallax } from 'react-scroll-parallax';
 import Fade from 'react-reveal/Fade';
 import Reveal from 'react-reveal/Reveal';
-
+ 
 
 const BusinessPageTemplate = ({
   title,
