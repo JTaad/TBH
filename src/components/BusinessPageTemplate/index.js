@@ -8,6 +8,14 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 import { Parallax } from 'react-scroll-parallax';
 import Fade from 'react-reveal/Fade';
 import Reveal from 'react-reveal/Reveal';
+import icon_wifi1 from '../../assets/img/icons/Wifi1_HDx2.png'
+import icon_tableau from '../../assets/img/icons/Board_HDx2.png'
+import icon_imprimante from '../../assets/img/icons/Printer_HDx2.png'
+import icon_theCafe from '../../assets/img/icons/TeaCoffee_HDx2.png'
+import icon_lumiere from '../../assets/img/icons/SunLight_HDx2.png'
+import icon_clim from '../../assets/img/icons/Clim_HDx2.png'
+import icon_retro from '../../assets/img/icons/Retro_HDx2.png'
+import icon_patio from '../../assets/img/icons/Patio_HDx2.png'
  
 
 const BusinessPageTemplate = ({
@@ -19,14 +27,6 @@ const BusinessPageTemplate = ({
   contacts,
   vos_espaces,
   vos_evenements,
-  icon_wifi1,
-  icon_tableau,
-  icon_imprimante,
-  icon_theCafe,
-  icon_lumiere,
-  icon_clim,
-  icon_retro,
-  icon_patio,
 }) => { 
   return (
     <div>
@@ -141,35 +141,35 @@ const BusinessPageTemplate = ({
     <div className='petitPlus title  is-size-5-mobile is-size-4-tablet is-size-4-desktop'>
         <div className='petitPlusBorder is-paddinglessTB'>
             <div className='petitPlusItem has-text-centered'>
-                    <span><Img className='image is-48x48' fluid={icon_wifi1.childImageSharp.fluid}/></span>
+                    <span><img className='image is-48x48' src={icon_wifi1}/></span>
                     <span className='petitPlusItemTitle'>WIFI_</span>
             </div>
             <div className='petitPlusItem has-text-centered'>
-                    <span><Img className='image is-48x48' fluid={icon_tableau.childImageSharp.fluid}/></span>
+                    <span><img className='image is-48x48' src={icon_tableau}/></span>
                     <span className='petitPlusItemTitle'>TABEAU_</span>
             </div>
             <div className='petitPlusItem has-text-centered'>
-                    <span><Img className='image is-48x48' fluid={icon_imprimante.childImageSharp.fluid}/></span>
+                    <span><img className='image is-48x48' src={icon_imprimante}/></span>
                     <span className='petitPlusItemTitle'>IMPRIMANTE_</span>
             </div>
             <div className='petitPlusItem has-text-centered'>
-                    <span><Img className='image is-48x48' fluid={icon_theCafe.childImageSharp.fluid}/></span>
+                    <span><img className='image is-48x48' src={icon_theCafe}/></span>
                     <span className='petitPlusItemTitle'>THÉ & CAFÉ_</span>
             </div>
             <div className='petitPlusItem has-text-centered'>
-                    <span><Img className='image is-48x48' fluid={icon_lumiere.childImageSharp.fluid}/></span>
+                    <span><img className='image is-48x48' src={icon_lumiere}/></span>
                     <span className='petitPlusItemTitle'>LUMIÈRE DU JOUR_</span>
             </div>
             <div className='petitPlusItem has-text-centered'>
-                    <span><Img className='image is-48x48' fluid={icon_clim.childImageSharp.fluid}/></span>
+                    <span><img className='image is-48x48' src={icon_clim}/></span>
                     <span className='petitPlusItemTitle'>CLIMATISATION_</span>
             </div>
             <div className='petitPlusItem has-text-centered'>
-                    <span><Img className='image is-48x48' fluid={icon_retro.childImageSharp.fluid}/></span>
+                    <span><img className='image is-48x48' src={icon_retro}/></span>
                     <span className='petitPlusItemTitle'>RÉTROPROJECTEUR_</span>
             </div>
             <div className='petitPlusItem has-text-centered'>
-                    <span><Img className='image is-48x48' fluid={icon_patio.childImageSharp.fluid}/></span>
+                    <span><img className='image is-48x48' src={icon_patio}/></span>
                     <span className='petitPlusItemTitle'>PATIO_</span>
             </div>
     </div>
