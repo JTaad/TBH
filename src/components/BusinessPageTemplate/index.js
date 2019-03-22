@@ -50,7 +50,7 @@ const BusinessPageTemplate = ({
           <span className='titleTbhEmpty'>Pour les</span> <span className='titleTbhFull'>professionnels_</span>
         </div>
     </div>
-
+ 
 
 
 
