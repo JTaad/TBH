@@ -121,7 +121,7 @@ const BusinessPageTemplate = ({
                       <Reveal effect="fadeStrech"  duration={1000} >
                             <Img fluid={vos_evenements.childImageSharp.fluid}/>
                       </Reveal>
-
+  
               </div>
               </div>
           </div>
