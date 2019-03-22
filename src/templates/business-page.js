@@ -21,10 +21,6 @@ const BusinessPages = ({data}) => {
         content={post.html}
         vos_espaces={data.vosEspaces}
         vos_evenements={data.vosEvent}
-        forfaitone={data.vosEvent}
-        forfaittwo={data.vosEvent}
-        forfaitthree={data.vosEvent}
-        forfaitfour={data.vosEvent}
         icon_wifi={data.iconWifi}
         icon_tableau={data.iconTableau}
         icon_imprimante={data.iconImprimante}

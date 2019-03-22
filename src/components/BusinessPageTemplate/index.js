@@ -27,10 +27,6 @@ const BusinessPageTemplate = ({
   icon_clim,
   icon_retro,
   icon_patio,
-  forfaitone, 
-  forfaittwo, 
-  forfaitthree, 
-  forfaitfour, 
 }) => {
   return (
     <div>
@@ -131,86 +127,7 @@ const BusinessPageTemplate = ({
     </Parallax>
 </ParallaxProvider>
 
-{/* 
-<div className='container'>
 
-<div className='section'>
-   <div className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-centered' style={{textAlign:'center'}}>Des forfaits sur-mesure<br/>pour vos évènements_</div>
-</div>
-    <div className='section'>
-        <ul id='forfaits' className=" is-variable is-1" >
-                <li>
-                 <div className='is-bg-vert forfaits-bg'>
-                        <Img  
-                            fluid={vos_evenements.childImageSharp.fluid} 
-                        />
-                       <div className='forfaits-title'>
-                            <div>
-                                <div className="arrow-l subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">→</div>
-                                <br/>
-                                <span  className='subtitle is-size-4-mobile is-size-3-tablet is-size-4-desktop'>Résidentiel</span>
-                            </div>
-                        </div>   
-                            <p>
-                            Chambre, petit déjeuner, déjeuner, diner, location de salle et pauses
-                            </p>
-                  </div>
-                </li>
-                <li>
-                 <div className='is-bg-rose forfaits-bg'>
-                        <Img  
-                            fluid={vos_evenements.childImageSharp.fluid} 
-                        />
-                        <div className='forfaits-title'>
-                            <div>
-                                <div className="arrow-l subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">→</div>
-                                <br/>
-                                <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-4-desktop'>Semi Résidentiel</span>
-                            </div>
-                        </div>
-                            <p>
-                            Chambre, petit déjeuner, déjeuner, diner, location de salle et pauses
-                            </p>
-                    </div>
-                </li>
-
-                <li>
-                 <div className='is-bg-grey forfaits-bg'>
-                        <Img  
-                            fluid={vos_evenements.childImageSharp.fluid} 
-                        />
-                        <div className='forfaits-title'>
-                            <div>
-                                <div className="arrow-l subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">→</div>
-                                <br/>
-                                <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-4-desktop'>Demi journée<br/>d'étude</span>
-                            </div>    
-                        </div>
-                            
-                            <p>Location de salle 1/2 journée avec pause et déjeuner</p>
-                 </div>
-                </li>
-
-                <li>
-                 <div className='is-bg-orange forfaits-bg'>
-                        <Img  
-                            fluid={vos_evenements.childImageSharp.fluid} 
-                        />
-                       <div className='forfaits-title'>
-                            <div>
-                                <div className="arrow-l subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">→</div>
-                                <br/>
-                                <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-4-desktop'>Journée d'étude</span>
-                            </div>
-                        </div>
-                        
-                        <p>Location de la salle avec pauses et déjeuner</p>
-                   </div>
-                </li>
-        </ul>
-    </div>
-</div>
-*/}
 <CarouselBusiness />
 
 
