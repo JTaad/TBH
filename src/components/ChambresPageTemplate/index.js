@@ -14,12 +14,7 @@ import icon_eau from '../../assets/img/icons/Water_HDx2.png'
 import icon_phone from '../../assets/img/icons/Phone_HDx2.png'
 import icon_tv from '../../assets/img/icons/TV_HDx2.png'
 import icon_douche from '../../assets/img/icons/Shower_HDx2.png'
-var Scroll = require('react-scroll');
 
-var LinkScroll = Scroll.Link;
-var Element = Scroll.Element;
-
- 
 const ChambresPageTemplate = ({
   title,
   subtitle,
@@ -87,9 +82,9 @@ const ChambresPageTemplate = ({
             </div>
             <div  className='column is-5  center-v'>
                 <div className='section is-paddinglessTB'>
-                    <div className="arrow-r subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">←</div>
+                    <div className="arrow-r subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless">←</div>
                     <br/>
-                    <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>Standard</span>
+                    <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>Standard</span>
                     <br/>
                     <br/>
                       <div className='sub-p is-size-5'><p>Pour une bonne nuit</p></div>
@@ -101,13 +96,22 @@ const ChambresPageTemplate = ({
                     <p>
                     Il ne vous reste plus qu’à profiter, le temps d’une nuit et plus si affinités...
                     </p>
-
-                    <br/>
-                    <br/>
-
-                    <LinkScroll to="lesplus" spy={true} smooth={true} >
-                        <span style={{ lineHeight: '40px'}} className='subtitle'>les <span className="is-size-3" style={{fontWeight: 'bold'}}>+</span></span>
-                    </LinkScroll>
+                    <div className='columns'>
+                        <div className='column is-half'>
+                            <div className='subtitle is-size-6'>LA CHAMBRE</div>
+                            16 m2 en moyenne
+                        </div>
+                        <div className='column is-half'>
+                            LA LITERIE
+                            Queen Size twin ou double
+                        </div>
+                    </div>
+                    <div className='columns'>
+                        <div className='column is-half'>
+                            LA CAPACITÉ
+                            2 personnes
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -119,9 +123,9 @@ const ChambresPageTemplate = ({
           <div className='columns is-paddingless is-marginless is-bg-jaune'>
               <div  className='column  is-5  is-offset-1  center-v is-paddinglessTB'>
                   <div className='section'>
-                      <div className="arrow-l subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">→</div>
+                      <div className="arrow-l subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless">→</div>
                       <br/>
-                      <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>Luxe</span>
+                      <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>Luxe</span>
                     <br/>
                     <br/>
                       <div className='sub-p is-size-5'><p>POUR UN BON MOMENT</p></div>
@@ -132,12 +136,6 @@ const ChambresPageTemplate = ({
                       <br/>
                       <p>Oubliez tout, ne pensez qu’à vous !</p>
   
-                      <br/>
-                      <br/>
-
-                    <LinkScroll to="lesplus" spy={true} smooth={true} >
-                        <span style={{ lineHeight: '40px'}} className='subtitle'>les <span className="is-size-3" style={{fontWeight: 'bold'}}>+</span></span>
-                    </LinkScroll>
                   </div>
               </div>
               <div className='column is-half is-paddingless is-marginless'>
@@ -160,9 +158,9 @@ const ChambresPageTemplate = ({
             </div>
             <div  className='column is-5 center-v is-paddinglessTB'>
                 <div className='section'>
-                    <div className="arrow-r subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">←</div>
+                    <div className="arrow-r subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless">←</div>
                     <br/>
-                    <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>Suite</span>
+                    <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>Suite</span>
                     <br/>
                     <br/>
                       <div className='sub-p is-size-5'><p>POUR UNE BELLE EXPÉRIENCE</p></div>
@@ -173,26 +171,16 @@ const ChambresPageTemplate = ({
                     <br/>
                     <p>Idéal pour un séjour “wahou” qu’on n’oublie pas !</p>  
 
-                    <br/>
-                    <br/>
-
-                    <LinkScroll to="lesplus" spy={true} smooth={true} >
-                        <span style={{ lineHeight: '40px'}} className='subtitle'>les <span className="is-size-3" style={{fontWeight: 'bold'}}>+</span></span>
-                    </LinkScroll>
                 </div>
             </div>
         </div>
     </div>
 
-
-
-<Element name="lesplus" >
     <div className='section is-marginless is-paddingless'>
         <div className='titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop'>
         <span className='titleTbhEmpty'>Vos</span> <span className='titleTbhFull'>petits +_</span>
         </div>
     </div>
-</Element>
 
 <div className="container-fullhd is-bg-rose" >
     <div className='petitPlus  is-size-5-mobile is-size-4-tablet is-size-4-desktop'>
@@ -260,9 +248,9 @@ const ChambresPageTemplate = ({
             </div>
             <div  className='column is-4 center-v'>
                 <div className='section marginless is-paddingless'>
-                    <div className="arrow-r subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">←</div>
+                    <div className="arrow-r subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless">←</div>
                     <br/>
-                    <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>LE PETIT<br/>déjeuner</span>
+                    <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>LE PETIT<br/>déjeuner</span>
                     <br/>
                     <br/>
                       <div className='is-size-5'><p>“Une belle journée commence par un bon petit-déjeuner, servi au lit ou au buffet". </p></div>

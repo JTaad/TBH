@@ -4,8 +4,6 @@ import PropTypes from 'prop-types'
 import Img from "gatsby-image"
 import CarouselBusiness from '../CarouselBusiness'
 import { Link } from 'gatsby'
-import { ParallaxProvider } from 'react-scroll-parallax';
-import { Parallax } from 'react-scroll-parallax';
 import Fade from 'react-reveal/Fade';
 import Reveal from 'react-reveal/Reveal';
 import icon_wifi1 from '../../assets/img/icons/Wifi1_HDx2.png'
@@ -64,9 +62,9 @@ const BusinessPageTemplate = ({
             </div>
             <div  className='column is-5  center-v paddinglessTB'>
                 <div className='section'>
-                    <div className="arrow-r subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">←</div>
+                    <div className="arrow-r subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless">←</div>
                     <br/>
-                    <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>Vos espaces</span>
+                    <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>Vos espaces</span>
                     <br/>
                     <br/>
                       <div className='sub-p is-size-5'><p>APPROPRIEZ-VOUS LES LIEUX</p></div>
@@ -88,18 +86,17 @@ const BusinessPageTemplate = ({
 
 
 
-<ParallaxProvider>
-    <Parallax  className='container-full ' y={[-10, 10]}>
+    <div  className='container-full '>
         <div className='is-bg-vert'>
         <div className='container'>
 
       <div className='section  is-paddingless is-marginless'>
           <div className='columns is-paddingless is-marginless '>
-              <div  className='column  is-5 is-offset-1  center-v'>
+              <div  className='column  is-5   center-v'>
                   <div className='section'>
-                      <div className="arrow-l subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">→</div>
+                      <div className="arrow-l subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless">→</div>
                       <br/>
-                      <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>VOS événements</span>
+                      <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>VOS événements</span>
                         <br/>
                         <br/>
                         <div className='sub-p is-size-5'><p>Clef-en-main</p></div>
@@ -111,10 +108,10 @@ const BusinessPageTemplate = ({
                       </p>
                   </div>
               </div>
-              <div className='column is-half is-paddingless is-marginless center-v'>
+              <div className='column is-6  is-offset-1  is-paddingless  center-v'>
                   
                 <div style={{ width: "100%" }}>
-                      <Reveal effect="fadeStrech"  duration={1000} >
+                      <Reveal effect="fadeInUp"  duration={1400} >
                             <Img fluid={vos_evenements.childImageSharp.fluid}/>
                       </Reveal>
   
@@ -124,8 +121,7 @@ const BusinessPageTemplate = ({
       </div>
 </div> 
 </div>
-    </Parallax>
-</ParallaxProvider>
+    </div>
 
 
 <CarouselBusiness />

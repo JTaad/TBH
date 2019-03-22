@@ -73,14 +73,14 @@ const ContactPageTemplate = ({
                 <div className='section columns'>
                         <div className='column is-10 is-offset-1'>
                             <div className='blocWithArrow'>
-                                <div className='arrowText subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>→&nbsp;</div>
-                                <h2 className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>de l’aéroport de bordeaux</h2>
+                                <div className='arrowText subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>→&nbsp;</div>
+                                <h2 className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>de l’aéroport de bordeaux</h2>
                             </div>
                                 <p>BUS / TRAIN — 1h20min.  15€</p>
                                 <br/>
                             <div className='blocWithArrow'>
-                                <div className='arrowText subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>→&nbsp;</div>
-                                <h2 className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>de la gare d’arcachon</h2>
+                                <div className='arrowText subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>→&nbsp;</div>
+                                <h2 className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>de la gare d’arcachon</h2>
                             </div>
                             <div className='columns'>
                                 <p className='column  is-4'>TAXI — 5min.</p>
@@ -101,8 +101,8 @@ const ContactPageTemplate = ({
                              <div className='section columns'>
                                  <div className='column is-10 is-offset-1'>
                                         <div className='blocWithArrow'>
-                                            <div className='arrowText subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>→&nbsp;</div>
-                                            <h3 className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>Parking</h3>
+                                            <div className='arrowText subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>→&nbsp;</div>
+                                            <h3 className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>Parking</h3>
                                         </div>
                                         <p>Parking Municipal du Marché</p>
                                         <p>ZONES DE STATIONNEMENT GRATUIT</p>

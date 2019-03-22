@@ -165,6 +165,9 @@ $title-line-height: 1.125
 .fadeInUp
   opacity: 0
   animation-name: fadeInUp
+.fadeInDown
+  opacity: 0
+  animation-name: fadeInDown
 .fadeInLeft
   opacity: 0
   animation-name: fadeInLeft
@@ -177,32 +180,35 @@ $title-line-height: 1.125
 
 @keyframes fadeInLeft 
     0%
+      transform: scaleX(1.2) translateX(-5rem)
       opacity: 0
-      margin-left: -40px
+      transition: opacity .4s transform 0s .4s
     100%
-      opacity: 1
-      margin-left: 0px
+      transform: scaleX(1) translateX(0)
+      opacity: 1 
 
 @keyframes fadeInRight 
     0%
+      transform: scaleX(1.2) translateX(5rem)
       opacity: 0
-      margin-left: 40px
+      transition: opacity .4s transform 0s .4s
     100%
-      opacity: 1
-      margin-left: 0px
+      transform: scaleX(1) translateX(0)
+      opacity: 1 
 
 @keyframes fadeInUp 
     0%
+      transform: scaleY(1.2) translateY(5rem)
       opacity: 0
-      margin-top: 40px
+      transition: opacity .4s transform 0s .4s
     100%
-      opacity: 1
-      margin-top: 0px
+      transform: scaleY(1) translateY(0)
+      opacity: 1 
     
 
-@keyframes fadeStretch
+@keyframes fadeInDown
     0%
-      transform: scaleY(1.2) translateY(5rem)
+      transform: scaleY(1.2) translateY(-5rem)
       opacity: 0
       transition: opacity .4s transform 0s .4s
     100% 

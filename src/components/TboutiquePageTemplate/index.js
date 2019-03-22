@@ -3,8 +3,6 @@ import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import Img from "gatsby-image"
 import { Link } from 'gatsby'
-import { ParallaxProvider } from 'react-scroll-parallax';
-import { Parallax } from 'react-scroll-parallax';
 
 const TboutiquePageTemplate = ({
   title,
@@ -49,9 +47,9 @@ const TboutiquePageTemplate = ({
             </div>
             <div  className='column is-5 center-v '>
                 <div className='section '>
-                    <div className="arrow-r subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">←</div>
+                    <div className="arrow-r subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless">←</div>
                     <br/>
-                    <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>Le concept</span>
+                    <h1 className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>Le concept</h1>
                     <br/>
                     <br/>
                     <p>
@@ -64,16 +62,15 @@ const TboutiquePageTemplate = ({
     </div>
     </div>
     </div>
-<ParallaxProvider>
-    <Parallax className="container-full" y={[-10, 10]}>
+    <div className="container-full">
     <div className=" is-bg-orange">
     <div className='container'>
     <div className='section  is-paddingless is-marginless'>
                 <div className='columns '>
                   <div  className='column is-5 is-offset-1'>
-                    <div className="arrow-l subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">→</div>
+                    <div className="arrow-l subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless">→</div>
                           <br/>
-                          <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>L'hôtel</span>
+                          <h2 className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>L'hôtel</h2>
                           <br/>
                           <p>
                           Le T renouvelle les codes de l’hôtellerie pour vous proposer une expérience plus conviviale, plus authentique, plus mémorable aussi. À ceci s’ajoute le lieu, le cadre et le décor. Un architecte et une décoratrice ont aménagé chaque espace, dans son moindre détail.
@@ -89,8 +86,7 @@ const TboutiquePageTemplate = ({
     </div>
   </div>
   </div>
-    </Parallax>
-</ParallaxProvider>
+    </div>
  
 
 <div className="container-full">
@@ -104,9 +100,9 @@ const TboutiquePageTemplate = ({
             </div>
             <div  className='column is-5 center-v '>
                 <div className='section '>
-                    <div className="arrow-r subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">←</div>
+                    <div className="arrow-r subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless">←</div>
                     <br/>
-                    <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>La boutique</span>
+                    <h3 className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>La boutique</h3>
                           <br/>
                           <p>
                           Une boutique a pris ses quartiers dans l’entrée de l’hôtel. Nous aimons chiner et trouver de jolies choses au gré des saisons, des tendances, des modes. Sélection d’articles, d’objets, de créations, mise en avant d’artistes et de jeunes créateurs, collaborations... c’est au T que vous les découvrirez ! 
@@ -137,9 +133,9 @@ const TboutiquePageTemplate = ({
             </div>
             <div  className='column is-5  center-v is-paddinglessTB'>
                 <div className='section'>
-                    <div className="arrow-r subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">←</div>
+                    <div className="arrow-r subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless">←</div>
                     <br/>
-                    <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>Family story</span>
+                    <h4 className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>Family story</h4>
                     <br/>
                     <br/>
                     <p>

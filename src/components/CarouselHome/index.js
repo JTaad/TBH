@@ -86,28 +86,28 @@ class CarouselHome extends Component {
                is-offset-1-desktop 'style={{position: 'relative'}}>
                   <div className='section'>
 
-                   <Fade duration={1000}>
+                    <Reveal effect="fadeInUp"  duration={2000} >
                       <div>
-                        <div className="arrow-l title is-2 is-marginless is-paddingless">→</div>
+                        <div className="arrow-l title is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless">→</div>
                         <br/>
-                        <span className='subtitle is-size-3-mobile is-size-2-tablet is-size-2-desktop'>Les chambres</span>
+                        <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>Les chambres</span>
                       </div>
-                    </Fade>
+                    </Reveal>
                       <br/>
                       <br/>
-                    <Fade  duration={1000}>
+                    <Reveal effect="fadeInUp"  duration={2000} >
                       <p>
                         Nos chambres sont de jolis cocons où il fait bon se lover. Décoration soignée, choix minutieux des matières, des couleurs, des équipements, petits plus en bonus… nous avons pris soin de nous occuper de tout, pour que vous vous sentiez comme chez vous. Sans parler du petit-déjeuner … !
                       </p>
-                    </Fade>
+                    </Reveal>
 
                       <br/>
-                      <Reveal effect="fadeInLeft"  duration={1000} >
+                      <Reveal effect="fadeInUp"  duration={2000} >
                           <div className='sub-p is-size-5'><p>On vous montre<br/>votre chambre ? </p></div>
                       </Reveal>
                       <br/>
                       <br/>
-                      <Reveal effect="fadeInLeft"  duration={1000} >
+                      <Reveal effect="fadeInUp"  duration={2000} >
                         <Link className='button is-outlined title is-5' to={`chambres#${this.state.urlLink}`}>
                           <span className='boldTitle'>+</span>&nbsp;d'infos
                         </Link>

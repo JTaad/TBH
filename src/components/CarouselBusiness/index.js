@@ -79,7 +79,7 @@ class CarouselBusiness extends Component {
     
     
       <div className='section' style={{paddingBottom: "0px"}}>
-        <div className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-centered' style={{textAlign:'center'}}>NOS PLANS DE SALLES_</div>
+        <div className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-centered' style={{textAlign:'center'}}>NOS PLANS DE SALLES_</div>
       
         <div id="carousel-business" className='carouselAll ' style={{ display: "flex", justifyContent: "space-evenly" }}>
             {this.state.items.map(({ titre, capacite, urlLink, slideIndex }) => (
@@ -129,9 +129,9 @@ class CarouselBusiness extends Component {
                is-full-tablet
                is-5-desktop  '>
                   <div className='section'>
-                      <div className="arrow-r title is-2 is-marginless is-paddingless">←</div>
+                      <div className="arrow-r title is-3 is-marginless is-paddingless">←</div>
                       <br/>
-                      <span className='subtitle is-size-3-mobile is-size-2-tablet is-size-2-desktop'>
+                      <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>
                
                            {this.state.titre}
                       </span>
