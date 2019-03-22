@@ -36,13 +36,16 @@ const ChambresPages = ({data}) => {
         background_header={data.background_header}
         standard={standard}
         petitDej={data.petitDej}
-        icon_clim={data.clim}
-        icon_coffre={data.coffre}
-        icon_douche={data.douche}
-        icon_secheCheveux={data.secheCheveux}
-        icon_telephone={data.telephone}
-        icon_tele={data.tele}
-        icon_wifi={data.wifi}
+        icon_wifi={data.iconWifi}
+        icon_phone={data.iconPhone}
+        icon_tv={data.iconTv}
+        icon_douche={data.iconDouche}
+        icon_secheCheveux={data.iconSecheCheveux}
+        icon_clim={data.iconClim}
+        icon_coffre={data.iconCoffre}
+        icon_cafe={data.iconCafe}
+        icon_caudalie={data.iconCaudalie}
+        icon_eau={data.iconEau}
       />
     </div>
   )
@@ -73,51 +76,72 @@ export const chambresPageQuery = graphql`
         }
       }
     }
-    clim: file(relativePath: { eq: "icons/clim_4K_2x.png" }) {
+    iconWifi: file(relativePath: { eq: "icons/Wifi_HDx2.png" }) {
       childImageSharp {
-        fluid(maxWidth: 70) {
+        fluid(maxWidth: 50) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
-    coffre: file(relativePath: { eq: "icons/coffre_4K_2x.png" }) {
+    iconPhone: file(relativePath: { eq: "icons/Phone_HDx2.png" }) {
       childImageSharp {
-        fluid(maxWidth: 70) {
+        fluid(maxWidth: 50) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
-    secheCheveux: file(relativePath: { eq: "icons/hothair_4K_2x.png" }) {
+    iconTv: file(relativePath: { eq: "icons/TV_HDx2.png" }) {
       childImageSharp {
-        fluid(maxWidth: 70) {
+        fluid(maxWidth: 50) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
-    telephone: file(relativePath: { eq: "icons/phone_4K_2x.png" }) {
+    iconDouche: file(relativePath: { eq: "icons/Shower_HDx2.png" }) {
       childImageSharp {
-        fluid(maxWidth: 70) {
+        fluid(maxWidth: 50) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
-    tele: file(relativePath: { eq: "icons/tv_4K_2x.png" }) {
+    iconSecheCheveux: file(relativePath: { eq: "icons/HotHair_HDx2.png" }) {
       childImageSharp {
-        fluid(maxWidth: 70) {
+        fluid(maxWidth: 50) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
-    wifi: file(relativePath: { eq: "icons/WIFI_4K_2x.png" }) {
+    iconClim: file(relativePath: { eq: "icons/Clim_HDx2.png" }) {
       childImageSharp {
-        fluid(maxWidth: 70) {
+        fluid(maxWidth: 50) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
-    douche: file(relativePath: { eq: "icons/shower_4K_2x.png" }) {
+    iconCoffre: file(relativePath: { eq: "icons/Lock_HDx2.png" }) {
       childImageSharp {
-        fluid(maxWidth: 70) {
+        fluid(maxWidth: 50) {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
+    iconCafe: file(relativePath: { eq: "icons/Coffee_HDx2.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 50) {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
+    iconCaudalie: file(relativePath: { eq: "icons/Beauty_HDx2.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 50) {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
+    iconEau: file(relativePath: { eq: "icons/Water_HDx2.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 50) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }

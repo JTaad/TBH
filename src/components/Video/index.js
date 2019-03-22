@@ -1,16 +1,36 @@
 import React, {Component} from 'react'
 import YouTube from 'react-youtube';
 
-class Disqus extends Component {
+class Video extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      
+      onLoad: false
     }
+
+    this._onReady = this._onReady.bind(this)
   }
 
   
+  _onPlay(event) {
+  }
   _onReady(event) {
+    event.target.pauseVideo();
+    setTimeout(
+      function() {
+        event.target.playVideo();
+      }
+      .bind(this),
+      200
+  );
+  setTimeout(
+    function() {
+      this.setState({ onLoad: true })
+    }
+    .bind(this),
+    2000
+);
+    
   }
   
   _onEnd(event) {
@@ -32,8 +52,15 @@ class Disqus extends Component {
 
     return (
       <div className="video-background">
+      <div
+        className={ this.state.onLoad == true ? 'loadVideoTrue' : 'loadVideoFalse' }  
+        style={{ width: '100%', height: '100%', position: 'absolute', zIndex: '99999'}}
+      >
+        
+      </div>
         <div className="video-foreground">
           <YouTube
+            onPlay={this.onPlay}
             videoId="Dac4UA7ojbU"
             opts={videoOptions}
             className="video-iframe"
@@ -46,4 +73,4 @@ class Disqus extends Component {
   }
 }
 
-export default Disqus
+export default Video

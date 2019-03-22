@@ -19,13 +19,16 @@ const ChambresPageTemplate = ({
   background_header,
   standard,
   petitDej,
-  icon_clim,
-  icon_coffre,
+  icon_wifi,
+  icon_phone,
+  icon_tv,
   icon_douche,
   icon_secheCheveux,
-  icon_telephone,
-  icon_tele,
-  icon_wifi, 
+  icon_clim,
+  icon_coffre,
+  icon_cafe,
+  icon_caudalie,
+  icon_eau
 }) => {
   return (
     <div>
@@ -192,49 +195,47 @@ const ChambresPageTemplate = ({
 </Element>
 
 <div className="container-fullhd is-bg-rose" >
-    <div className='petitPlus title is-size-5-mobile is-size-4-tablet is-size-3-desktop'>
+    <div className='petitPlus  is-size-5-mobile is-size-4-tablet is-size-3-desktop'>
         <div className='petitPlusBorder is-paddinglessTB'>
             <div className='petitPlusItem has-text-centered'>
-                    <span><Img className='image is-64x64' fluid={icon_wifi.childImageSharp.fluid}/></span>
-                    <span>WIFI_</span>
+                    <span><Img className='image is-48x48' fluid={icon_wifi.childImageSharp.fluid}/></span>
+                    <span className='petitPlusItemTitle'>WIFI_</span>
             </div>
             <div className='petitPlusItem has-text-centered'>
-                    <span><Img className='image is-64x64' fluid={icon_telephone.childImageSharp.fluid}/></span>
-                    <span>TELEPHONE_</span>
+                    <span><Img className='image is-48x48' fluid={icon_phone.childImageSharp.fluid}/></span>
+                    <span className='petitPlusItemTitle'>TELEPHONE_</span>
             </div>
             <div className='petitPlusItem has-text-centered'>
-                    <span><Img className='image is-64x64' fluid={icon_tele.childImageSharp.fluid}/></span>
-                    <span>TV_</span>
+                    <span><Img className='image is-48x48' fluid={icon_tv.childImageSharp.fluid}/></span>
+                    <span className='petitPlusItemTitle'>TV_</span>
             </div>
             <div className='petitPlusItem has-text-centered'>
-                    <span><Img className='image is-64x64' fluid={icon_douche.childImageSharp.fluid}/></span>
-                    <span>DOUCHE MODERNE_</span>
+                    <span><Img className='image is-48x48' fluid={icon_douche.childImageSharp.fluid}/></span>
+                    <span className='petitPlusItemTitle'>DOUCHE MODERNE_</span>
             </div>
             <div className='petitPlusItem has-text-centered'>
-                    <span><Img className='image is-64x64' fluid={icon_secheCheveux.childImageSharp.fluid}/></span>
-                    <span>Sèche Cheveux_</span>
+                    <span><Img className='image is-48x48' fluid={icon_secheCheveux.childImageSharp.fluid}/></span>
+                    <span className='petitPlusItemTitle'>SÈCHE CHEVEUX_</span>
             </div>
             <div className='petitPlusItem has-text-centered'>
-                    <span><Img className='image is-64x64' fluid={icon_clim.childImageSharp.fluid}/></span>
-                    <span>Climatisation Réversible_</span>
+                    <span><Img className='image is-48x48' fluid={icon_clim.childImageSharp.fluid}/></span>
+                    <span className='petitPlusItemTitle'>CLIMATISATION RÉVERSIBLE_</span>
             </div>
             <div className='petitPlusItem has-text-centered'>
-                    <span><Img className='image is-64x64' fluid={icon_coffre.childImageSharp.fluid}/> </span>
-                    <span>Coffre-fort_</span>
+                    <span><Img className='image is-48x48' fluid={icon_coffre.childImageSharp.fluid}/></span>
+                    <span className='petitPlusItemTitle'>COFFRE-FORT_</span>
             </div>
             <div className='petitPlusItem has-text-centered'>
-                    <span>Machine Nespresso_</span>
+                    <span><Img className='image is-48x48' fluid={icon_cafe.childImageSharp.fluid}/></span>
+                    <span className='petitPlusItemTitle'>MACHINE NESPRESSO_</span>
             </div>
             <div className='petitPlusItem has-text-centered'>
-                <span>
-                    <span>Bouteille d'eau_</span>
-                </span>
+                    <span><Img className='image is-48x48' fluid={icon_caudalie.childImageSharp.fluid}/></span>
+                    <span className='petitPlusItemTitle'>PRODUITS CAUDALIE_</span>
             </div>
             <div className='petitPlusItem has-text-centered'>
-                    <span>Petit-Déjeuner inclus_</span>
-            </div>
-            <div className='petitPlusItem has-text-centered'>
-                    <span>Produits caudalie_</span>
+                    <span><Img className='image is-48x48' fluid={icon_eau.childImageSharp.fluid}/></span>
+                    <span className='petitPlusItemTitle'>BOUTEILLE D'EAU_</span>
             </div>
     </div>
 </div>

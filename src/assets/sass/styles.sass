@@ -25,6 +25,8 @@ $calendar-date-hover-border:  .1rem solid $blue
 $calendar-today-color: $blue
 
 $size-1: 4.2rem
+$size-2: 3.7rem
+$size-3: 2.5rem
 $column-gap: 2.5rem
 $button-background-color : 'transparent'
 $button-color: $blue
@@ -169,6 +171,8 @@ $title-line-height: 1.125
 .fadeInRight
   opacity: 0
   animation-name: fadeInRight
+.fadeStrech
+  animation-name: fadeStretch
 
 
 @keyframes fadeInLeft 
@@ -195,6 +199,16 @@ $title-line-height: 1.125
       opacity: 1
       margin-top: 0px
     
+
+@keyframes fadeStretch
+    0%
+      transform: scaleY(1.2) translateY(5rem)
+      opacity: 0
+      transition: opacity .4s transform 0s .4s
+    100% 
+      transform: scaleY(1) translateY(0)
+      opacity: 1 
+
 .business-call
   a 
     font-family: $fontTitle
@@ -422,7 +436,7 @@ p
     border-bottom: 1px solid $blue
     display: flex
     justify-content: center
-    align-content: space-around
+    align-content: center
     flex-wrap: wrap
     .petitPlusItem
       flex: 1 1 auto
@@ -432,6 +446,8 @@ p
       justify-content: center
       align-items: center
       padding: 10px
+      .petitPlusItemTitle
+        margin-top: -2px
       span
         margin: 5px
 
@@ -632,6 +648,31 @@ p
 
 .margin-top-0
   margin-top: 0 !important
+
+.loadVideoTrue
+  animation-duration: 2s
+  animation-name: loadVideoTrue
+  background-color: #F8F7D6
+  opacity: 0
+  
+.loadVideoFalse
+  background-color: #F8F7D6
+
+
+
+.fadeInRight
+  opacity: 0
+  animation-name: fadeInRight
+
+
+@keyframes loadVideoTrue 
+    0%
+      opacity: 1
+    100%
+      opacity: 0
+
+
+
 
 .video-background
     height: 100%

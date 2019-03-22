@@ -25,8 +25,14 @@ const BusinessPages = ({data}) => {
         forfaittwo={data.vosEvent}
         forfaitthree={data.vosEvent}
         forfaitfour={data.vosEvent}
-        icon_wifi={data.wifi}
-        icon_tele={data.tele}
+        icon_wifi={data.iconWifi}
+        icon_tableau={data.iconTableau}
+        icon_imprimante={data.iconImprimante}
+        icon_theCafe={data.iconTheCafe}
+        icon_lumiere={data.iconLumiere}
+        icon_clim={data.iconClim}
+        icon_retro={data.iconRetro}
+        icon_patio={data.iconPatio}
         slider1={data.slider1}
         slider2={data.slider1}
         slider3={data.slider1}
@@ -52,16 +58,58 @@ export const businessPageQuery = graphql`
         }
       }
     }
-    wifi: file(relativePath: { eq: "icons/WIFI_4K_2x.png" }) {
+    iconWifi: file(relativePath: { eq: "icons/Wifi_HDx2.png" }) {
       childImageSharp {
-        fluid(maxWidth: 70) {
+        fluid(maxWidth: 50) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
-    tele: file(relativePath: { eq: "icons/tv_4K_2x.png" }) {
+    iconTableau: file(relativePath: { eq: "icons/Board_HDx2.png" }) {
       childImageSharp {
-        fluid(maxWidth: 70) {
+        fluid(maxWidth: 50) {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
+    iconImprimante: file(relativePath: { eq: "icons/Printer_HDx2.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 50) {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
+    iconTheCafe: file(relativePath: { eq: "icons/TeaCoffee_HDx2.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 50) {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
+    iconLumiere: file(relativePath: { eq: "icons/SunLight_HDx2.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 50) {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
+    iconClim: file(relativePath: { eq: "icons/Clim_HDx2.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 50) {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
+    iconRetro: file(relativePath: { eq: "icons/Retro_HDx2.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 50) {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
+    iconPatio: file(relativePath: { eq: "icons/Patio_HDx2.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 50) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }

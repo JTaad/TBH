@@ -6,6 +6,8 @@ import CarouselBusiness from '../CarouselBusiness'
 import { Link } from 'gatsby'
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { Parallax } from 'react-scroll-parallax';
+import Fade from 'react-reveal/Fade';
+import Reveal from 'react-reveal/Reveal';
 
 
 const BusinessPageTemplate = ({
@@ -17,8 +19,14 @@ const BusinessPageTemplate = ({
   contacts,
   vos_espaces,
   vos_evenements,
-  icon_wifi, 
-  icon_tele, 
+  icon_wifi,
+  icon_tableau,
+  icon_imprimante,
+  icon_theCafe,
+  icon_lumiere,
+  icon_clim,
+  icon_retro,
+  icon_patio,
   forfaitone, 
   forfaittwo, 
   forfaitthree, 
@@ -110,7 +118,9 @@ const BusinessPageTemplate = ({
               <div className='column is-half is-paddingless is-marginless center-v'>
                   
                 <div style={{ width: "100%" }}>
-                  <Img fluid={vos_evenements.childImageSharp.fluid}/>
+                      <Reveal effect="fadeStrech"  duration={1000} >
+                            <Img fluid={vos_evenements.childImageSharp.fluid}/>
+                      </Reveal>
 
               </div>
               </div>
@@ -214,32 +224,36 @@ const BusinessPageTemplate = ({
     <div className='petitPlus title  is-size-5-mobile is-size-4-tablet is-size-4-desktop'>
         <div className='petitPlusBorder is-paddinglessTB'>
             <div className='petitPlusItem has-text-centered'>
-                    <span><Img className='image is-64x64' fluid={icon_wifi.childImageSharp.fluid}/></span>
-                    <span>WIFI_</span>
+                    <span><Img className='image is-48x48' fluid={icon_wifi.childImageSharp.fluid}/></span>
+                    <span className='petitPlusItemTitle'>WIFI_</span>
             </div>
             <div className='petitPlusItem has-text-centered'>
-                    <span><Img className='image is-64x64' fluid={icon_tele.childImageSharp.fluid}/></span>
-                    <span>THÉ & CAFÉ_</span>
+                    <span><Img className='image is-48x48' fluid={icon_tableau.childImageSharp.fluid}/></span>
+                    <span className='petitPlusItemTitle'>TABEAU_</span>
             </div>
             <div className='petitPlusItem has-text-centered'>
-                    <span><Img className='image is-64x64' fluid={icon_tele.childImageSharp.fluid}/></span>
-                    <span>TV_</span>
+                    <span><Img className='image is-48x48' fluid={icon_imprimante.childImageSharp.fluid}/></span>
+                    <span className='petitPlusItemTitle'>IMPRIMANTE_</span>
             </div>
             <div className='petitPlusItem has-text-centered'>
-                    <span><Img className='image is-64x64' fluid={icon_tele.childImageSharp.fluid}/></span>
-                    <span>RÉTROPROJECTEUR_</span>
+                    <span><Img className='image is-48x48' fluid={icon_theCafe.childImageSharp.fluid}/></span>
+                    <span className='petitPlusItemTitle'>THÉ & CAFÉ_</span>
             </div>
             <div className='petitPlusItem has-text-centered'>
-                    <span><Img className='image is-64x64' fluid={icon_tele.childImageSharp.fluid}/></span>
-                    <span>LUMIÈRE DU JOUR_</span>
+                    <span><Img className='image is-48x48' fluid={icon_lumiere.childImageSharp.fluid}/></span>
+                    <span className='petitPlusItemTitle'>LUMIÈRE DU JOUR_</span>
             </div>
             <div className='petitPlusItem has-text-centered'>
-                    <span><Img className='image is-64x64' fluid={icon_tele.childImageSharp.fluid}/></span>
-                    <span>TABLEAU_</span>
+                    <span><Img className='image is-48x48' fluid={icon_clim.childImageSharp.fluid}/></span>
+                    <span className='petitPlusItemTitle'>CLIMATISATION_</span>
             </div>
             <div className='petitPlusItem has-text-centered'>
-                    <span><Img className='image is-64x64' fluid={icon_tele.childImageSharp.fluid}/></span>
-                    <span>IMPRIMANTE_</span>
+                    <span><Img className='image is-48x48' fluid={icon_retro.childImageSharp.fluid}/></span>
+                    <span className='petitPlusItemTitle'>RÉTROPROJECTEUR_</span>
+            </div>
+            <div className='petitPlusItem has-text-centered'>
+                    <span><Img className='image is-48x48' fluid={icon_patio.childImageSharp.fluid}/></span>
+                    <span className='petitPlusItemTitle'>PATIO_</span>
             </div>
     </div>
 </div>

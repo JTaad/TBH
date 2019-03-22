@@ -71,7 +71,7 @@ const HomePageTemplate = ({
                   </Fade>
                     <br/>
                     <br/>
-                  <Fade  duration={2000}>
+                      <Reveal effect="fadeStrech"  duration={1000} >
                     <div>
                         <p>
                           Le T Boutique Hôtel vous propose une expérience 3 étoiles, à la fois unique et multiple, à Arcachon. Ici la convivialité se mêle au chic, la décontraction au design et la singularité au partage.</p>
@@ -80,7 +80,7 @@ const HomePageTemplate = ({
                           Entièrement rénové, notre hôtel est pensé pour être avant tout le vôtre. Appropriez-vous chacun des espaces, comme à la maison.
                         </p>
                     </div>
-                  </Fade>
+                  </Reveal>
                     <br/>
                   <Reveal effect="fadeInLeft"  duration={2000} >
                     <div className='sub-p is-size-5'><p>On vous fait visiter<br/>l’hôtel ? →</p></div>
@@ -131,15 +131,15 @@ const HomePageTemplate = ({
     <div className='container-full is-bg-jaune'>
         <div className='section'>
             <Link to='/contact'>
-                <div id='nousTrouver' className='columns is-vcentered  '>
-                        <div className='column is-half has-text-centered'>
+                <div id='nousTrouver' className='columns is-vcentered   is-centered'>
+                        <div className='is-full-mobile column  is-4-desktop '>
                             <Reveal effect="fadeInLeft"  duration={2000} >
                               <div>
-                                 <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-1-desktop'>_Nous&nbsp;&nbsp;&nbsp;<br/>Trouver</span>
+                                 <span style={{lineHeight: '1'}} className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>_Nous&nbsp;&nbsp;&nbsp;<br/>Trouver</span>
                                </div>
                             </Reveal>
                         </div>
-                        <div className='column is-half has-text-centered'>
+                        <div className='is-full-mobile column  is-4-desktop'>
                             <Reveal effect="fadeInRight"  duration={2000} >
                                   <img src={nousTrouver} />
                             </Reveal>
@@ -156,7 +156,7 @@ const HomePageTemplate = ({
 
     <div className='container-fullhd'>
         <div className='section is-paddingless  '>
-           <div className='titleNote titleTbh title is-size-3-mobile is-size-2-tablet is-size-1-desktop'>
+           <div className='titleNote titleTbh title is-size-4-mobile is-size-3-tablet is-size-2-desktop'>
                
         <Fade  duration={2000}>
             <div className=' is-vcentered'>Sans fausses notes</div>
@@ -172,17 +172,17 @@ const HomePageTemplate = ({
             <div id="notes" className='columns is-vcentered is-centered'>
                 <div className='column is-4 has-text-centered is-paddingless'> 
                 <Fade bottom>
-                    <div><span className="noteCount subtitle is-size-3-mobile is-size-2-tablet is-size-1-desktop">9/10</span>&nbsp;&nbsp;&nbsp;Booking</div>
+                    <div><span className="noteCount subtitle is-size-3-mobile is-size-2-tablet is-size-1-desktop" style={{lineHeight: '.8'}}>9/10</span>&nbsp;&nbsp;&nbsp;Booking</div>
                 </Fade>
                 </div>
                 <div className='column is-4 has-text-centered is-paddingless'>
                 <Fade bottom delay={300}>
-                  <div><span className="noteCount subtitle is-size-3-mobile is-size-2-tablet is-size-1-desktop">4.5/5</span>&nbsp;&nbsp;&nbsp;Trip Advisor</div>
+                  <div><span className="noteCount subtitle is-size-3-mobile is-size-2-tablet is-size-1-desktop"  style={{lineHeight: '.8'}}>4.5/5</span>&nbsp;&nbsp;&nbsp;Trip Advisor</div>
                 </Fade>
                 </div>
                 <div className='column is-4 has-text-centered is-paddingless'>
                 <Fade bottom delay={600}>
-                   <div><span className="noteCount subtitle is-size-3-mobile is-size-2-tablet is-size-1-desktop">4.1/5</span>&nbsp;&nbsp;&nbsp;Google</div>
+                   <div><span className="noteCount subtitle is-size-3-mobile is-size-2-tablet is-size-1-desktop"  style={{lineHeight: '.8'}}>4.1/5</span>&nbsp;&nbsp;&nbsp;Google</div>
                  </Fade>
                 </div>
             </div>

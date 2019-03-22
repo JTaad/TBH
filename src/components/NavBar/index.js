@@ -13,22 +13,22 @@ const NavBar = ({toggleNavbarMain, navToggle}) => (
                     <div id="contentNavNorm" className=''>
                         <div id="contentNavNormTopLeft">
                         <ul className='section' onClick={toggleNavbarMain}>
-                            <li className='title is-2 is-size-3-touch'><Link activeClassName='navFocus' to='/'>
+                            <li className='title is-3 is-size-3-touch'><Link activeClassName='navFocus' to='/'>
                                             Accueil
                             </Link></li>
-                            <li className='title is-2 is-size-3-touch'><Link activeClassName='navFocus' className='' to='/chambres'>
+                            <li className='title is-3 is-size-3-touch'><Link activeClassName='navFocus' className='' to='/chambres'>
                                             Chambres
                             </Link></li>
-                            <li className='title is-2 is-size-3-touch'><Link activeClassName='navFocus' className='' to='/business'>
+                            <li className='title is-3 is-size-3-touch'><Link activeClassName='navFocus' className='' to='/business'>
                                             Business 
                             </Link></li> 
-                            <li className='title is-2 is-size-3-touch'><Link activeClassName='navFocus' className='' to='/tboutique'>
+                            <li className='title is-3 is-size-3-touch'><Link activeClassName='navFocus' className='' to='/tboutique'>
                                             Le "T" Boutique
                             </Link></li>
-                            <li className='title is-2 is-size-3-touch'><Link activeClassName='navFocus' className='' to='/bassin'>
+                            <li className='title is-3 is-size-3-touch'><Link activeClassName='navFocus' className='' to='/bassin'>
                                             Le Bassin
                             </Link></li>
-                            <li className='title is-2 is-size-3-touch'><Link activeClassName='navFocus' className='' to='/contact'>
+                            <li className='title is-3 is-size-3-touch'><Link activeClassName='navFocus' className='' to='/contact'>
                                             À Bientôt
                             </Link></li>
                             <li style={{marginTop: "20px",marginBottom: "20px"}}>
