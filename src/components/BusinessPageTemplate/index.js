@@ -27,7 +27,7 @@ const BusinessPageTemplate = ({
   icon_clim,
   icon_retro,
   icon_patio,
-}) => {
+}) => { 
   return (
     <div>
       <Helmet>
