@@ -120,7 +120,7 @@ const BusinessPageTemplate = ({
   
               </div>
               </div>
-          </div>
+          </div> 
       </div>
 </div>
 </div>
