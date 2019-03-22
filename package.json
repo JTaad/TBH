@@ -16,7 +16,7 @@
     "serve": "gatsby serve",
     "lint": "eslint --ext js,jsx --ignore-path .gitignore . --fix",
     "clean": "rm -rf public/ .cache/"
-  },
+  }, 
   "dependencies": {
     "@babel/core": "^7.0.0",
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^2.1.1",
