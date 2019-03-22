@@ -19,7 +19,7 @@ const BusinessPageTemplate = ({
   contacts,
   vos_espaces,
   vos_evenements,
-  icon_wifi,
+  icon_wifi1,
   icon_tableau,
   icon_imprimante,
   icon_theCafe,
@@ -141,7 +141,7 @@ const BusinessPageTemplate = ({
     <div className='petitPlus title  is-size-5-mobile is-size-4-tablet is-size-4-desktop'>
         <div className='petitPlusBorder is-paddinglessTB'>
             <div className='petitPlusItem has-text-centered'>
-                    <span><Img className='image is-48x48' fluid={icon_wifi.childImageSharp.fluid}/></span>
+                    <span><Img className='image is-48x48' fluid={icon_wifi1.childImageSharp.fluid}/></span>
                     <span className='petitPlusItemTitle'>WIFI_</span>
             </div>
             <div className='petitPlusItem has-text-centered'>

@@ -21,7 +21,7 @@ const BusinessPages = ({data}) => {
         content={post.html}
         vos_espaces={data.vosEspaces}
         vos_evenements={data.vosEvent}
-        icon_wifi={data.iconWifi}
+        icon_wifi1={data.iconWifi}
         icon_tableau={data.iconTableau}
         icon_imprimante={data.iconImprimante}
         icon_theCafe={data.iconTheCafe}
