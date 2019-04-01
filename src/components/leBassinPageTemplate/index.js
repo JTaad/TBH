@@ -12,9 +12,13 @@ const BassinPageTemplate = ({
   meta_title,
   meta_description,
   background_header,
-  contacts,
-  vos_espaces,
-  vos_evenements,
+  cabanes,
+  petittrain,
+  criee,
+  lemarche,
+  dune,
+  pinasse,
+  moulleau
 }) => { 
   return (
     <div>
@@ -68,7 +72,7 @@ const BassinPageTemplate = ({
             <div className='column is-half is-paddingless is-marginless imgContent' style={{ textAlign: 'left' }}>
                <Img 
                   style={{ position: 'absolute', left: '0', top: "0", width: "100%", height: "100%" }} 
-                  fluid={vos_espaces.childImageSharp.fluid}
+                  fluid={criee.childImageSharp.fluid}
                   />
             </div>
             <div  className='column is-5  center-v paddinglessTB'>
@@ -137,7 +141,7 @@ const BassinPageTemplate = ({
               
             <div style={{ width: "100%" }}>
                   <Reveal effect="fadeInUp"  duration={1400} >
-                        <Img fluid={vos_evenements.childImageSharp.fluid}/>
+                        <Img fluid={petittrain.childImageSharp.fluid}/>
                   </Reveal>
 
           </div>
@@ -165,7 +169,7 @@ const BassinPageTemplate = ({
 
             <div style={{ width: "100%" }}>
                   <Reveal effect="fadeInUp"  duration={1400} >
-                        <Img fluid={vos_evenements.childImageSharp.fluid}/>
+                        <Img fluid={lemarche.childImageSharp.fluid}/>
                   </Reveal>
 
             </div>
@@ -240,7 +244,7 @@ const BassinPageTemplate = ({
               
             <div style={{ width: "100%" }}>
                   <Reveal effect="fadeInUp"  duration={1400} >
-                        <Img fluid={vos_evenements.childImageSharp.fluid}/>
+                        <Img fluid={cabanes.childImageSharp.fluid}/>
                   </Reveal>
 
           </div>
@@ -266,7 +270,7 @@ const BassinPageTemplate = ({
 
             <div style={{ width: "100%" }}>
                   <Reveal effect="fadeInUp"  duration={1400} >
-                        <Img fluid={vos_evenements.childImageSharp.fluid}/>
+                        <Img fluid={pinasse.childImageSharp.fluid}/>
                   </Reveal>
 
             </div>
@@ -339,7 +343,7 @@ const BassinPageTemplate = ({
               
             <div style={{ width: "100%" }}>
                   <Reveal effect="fadeInUp"  duration={1400} >
-                        <Img fluid={vos_evenements.childImageSharp.fluid}/>
+                        <Img fluid={dune.childImageSharp.fluid}/>
                   </Reveal>
 
           </div>
@@ -365,7 +369,7 @@ const BassinPageTemplate = ({
 
             <div style={{ width: "100%" }}>
                   <Reveal effect="fadeInUp"  duration={1400} >
-                        <Img fluid={vos_evenements.childImageSharp.fluid}/>
+                        <Img fluid={moulleau.childImageSharp.fluid}/>
                   </Reveal>
 
             </div>
