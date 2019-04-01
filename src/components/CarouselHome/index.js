@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Carousel from 'nuka-carousel';
-import image1 from '../../assets/img/home/chambre_1.jpg'
+import imageStandard from '../../assets/img/home/home_ch_standard.jpg'
+import imageLuxe from '../../assets/img/home/home_ch_luxe.jpg'
+import imageSuite from '../../assets/img/home/home_ch_suite.jpg'
 import {Link} from 'gatsby'
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Fade from 'react-reveal/Fade';
@@ -27,9 +29,9 @@ class CarouselHome extends Component {
       colorBg: 'is-bg-orange',
       colorFont: 'is-font-orange',
       items: [
-        { slideIndex: 0, titre: "STANDARD", image: image1, urlLink: 'standard' , colorBg: 'is-bg-orange', colorFont: 'is-font-orange'},
-        { slideIndex: 1, titre: "SUITE", image: image1, urlLink: 'suite', colorBg: 'is-bg-vert', colorFont: 'is-font-vert'  },
-        { slideIndex: 2, titre: "LUXE", image: image1, urlLink: 'luxe', colorBg: 'is-bg-jaune', colorFont: 'is-font-jaune' },
+        { slideIndex: 0, titre: "STANDARD", image: imageStandard, urlLink: 'standard' , colorBg: 'is-bg-orange', colorFont: 'is-font-orange'},
+        { slideIndex: 1, titre: "SUITE", image: imageLuxe, urlLink: 'suite', colorBg: 'is-bg-vert', colorFont: 'is-font-vert'  },
+        { slideIndex: 2, titre: "LUXE", image: imageSuite, urlLink: 'luxe', colorBg: 'is-bg-jaune', colorFont: 'is-font-jaune' },
       ], 
     };
 
@@ -54,23 +56,29 @@ class CarouselHome extends Component {
 
   moveSlide(slideIndex) {
     let urlLink = null
+    let colorBg = null
+    let colorFont = null
 
     switch(slideIndex) {
       case 0:
+        colorBg = 'is-bg-orange'
+        colorFont = 'is-font-orange'
         urlLink = 'standard' 
         break;
       case 1:
+        colorBg = 'is-bg-vert'
+        colorFont = 'is-font-vert'
         urlLink = 'suite' 
         break;
       case 2:
-        urlLink = 'luxe'
-        break;
-      default:
+        colorBg = 'is-bg-jaune'
+        colorFont = 'is-font-jaune'
         urlLink = 'standard' 
+        break;
     }
 
 
-    this.setState({ slideIndex:slideIndex, urlLink: urlLink })
+    this.setState({ slideIndex:slideIndex, urlLink: urlLink, colorBg, colorFont })
   }
 
   render () {

@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import headerImage from '../../assets/img/contact/header_contact_tbh.jpg'
 import SimpleMap from '../SimpleMap'
 import Img from "gatsby-image"
+import Reveal from 'react-reveal/Reveal';
 
 const ContactPageTemplate = ({
   title,
@@ -41,20 +42,28 @@ const ContactPageTemplate = ({
         <div className='section'>
                 <div className='columns is-vcentered  '>
                         <div className='column is-12 '>
+                        <Reveal effect="fadeInUp"  duration={1400} >
                            <SimpleMap />
+                        </Reveal>
                         </div>
                 </div>
                 <div className='columns  semiBold'>
-                        <div className='column is-4'>
-                            82 Boulevard de la Plage,<br/>
-                            33120 Arcachon
-                        </div>
-                        <div className='column is-4'>
-                           (+33)5.56.83.67.70
-                        </div>
-                        <div className='column is-4'>
-                            hello@tboutiquehotel.fr
-                        </div>
+                        <Reveal effect="fadeInUp"  duration={1400} >
+                            <div className='column is-4'>
+                                82 Boulevard de la Plage,<br/>
+                                33120 Arcachon
+                            </div>
+                        </Reveal>
+                        <Reveal effect="fadeInUp"  duration={1400} >
+                            <div className='column is-4'>
+                            (+33)5.56.83.67.70
+                            </div>
+                        </Reveal>
+                        <Reveal effect="fadeInUp"  duration={1400} >
+                            <div className='column is-4'>
+                                hello@tboutiquehotel.fr
+                            </div>
+                        </Reveal>
                 </div>
         </div>
     </div>
@@ -72,27 +81,36 @@ const ContactPageTemplate = ({
         <div className='container'>
                 <div className='section columns'>
                         <div className='column is-10 is-offset-1'>
+                                <Reveal effect="fadeInUp"  duration={1400} >
                             <div className='blocWithArrow'>
-                                <div className='arrowText subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>→&nbsp;</div>
-                                <h2 className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>de l’aéroport de bordeaux</h2>
+                                        <div className='arrowText subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>→&nbsp;</div>
+                                        <h2 className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>de l’aéroport de bordeaux</h2>
+                          
                             </div>
+                                </Reveal>
+                                <Reveal effect="fadeInUp"  duration={1400} >
                                 <p>BUS / TRAIN — 1h20min.  15€</p>
+                                </Reveal>
                                 <br/>
+                                <Reveal effect="fadeInUp"  duration={1400} >
                             <div className='blocWithArrow'>
                                 <div className='arrowText subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>→&nbsp;</div>
                                 <h2 className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>de la gare d’arcachon</h2>
                             </div>
+                                </Reveal>
                             <div className='columns'>
-                                <p className='column  is-4'>TAXI — 5min.</p>
-                                <p className='column is-4'>BUS — 10min.</p>
-                                <p className='column is-4'>A PIED — 12min.</p>
+                                <Reveal effect="fadeInUp"  duration={1400} >
+                                <p className='column  is-3'>TAXI — 5min.</p>
+                                <p className='column is-3'>BUS — 10min.</p>
+                                <p className='column is-3'>A PIED — 12min.</p>
+                                </Reveal>
                             </div>
                             </div>
                      </div>
          </div>
 
     </div>
-    <div className='container-full is-bg-grey titleTbh'>
+    <div className='container-full is-bg-grey titleTbh' style={{height: 'auto'}}>
         <div className='container'>
 
                 <div className='section is-marginless is-paddingless'>
@@ -100,12 +118,27 @@ const ContactPageTemplate = ({
                         <div className='container'>
                              <div className='section columns'>
                                  <div className='column is-10 is-offset-1'>
-                                        <div className='blocWithArrow'>
-                                            <div className='arrowText subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>→&nbsp;</div>
-                                            <h3 className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>Parking</h3>
-                                        </div>
-                                        <p>Parking Municipal du Marché</p>
-                                        <p>ZONES DE STATIONNEMENT GRATUIT</p>
+                                        <Reveal effect="fadeInUp"  duration={1400} >
+                                            <div className='blocWithArrow'>
+                                                <div className='arrowText subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>→&nbsp;</div>
+                                                <h3 className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>Parking</h3>
+                                            </div>
+                                        </Reveal>
+                                        <Reveal effect="fadeInUp"  duration={1400} >
+                                        <p style={{fontWeight: 'bold'}}>L"hôtel ne dispose pas de parking</p>
+                                        </Reveal>
+                                        <br/>
+                                        <br/>
+                                        <Reveal effect="fadeInUp"  duration={1400} >
+                                            <div>
+                                                <p>Parking du petit port à 50m</p>
+                                                <p>Zone de stationnement sur le boulevard de la Plage</p>
+                                                <p>-> Payant de de juin à septembre, gratuit le reste de l’année.</p>
+                                                <br/>
+                                                <p>Parking Municipal du Marché</p>
+                                                <p>VOIR LES ZONES DE STATIONNEMENT GRATUIT</p>
+                                            </div>
+                                        </Reveal>
                                     </div>
                                      </div>
                                   </div>

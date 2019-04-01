@@ -12,6 +12,7 @@ import nousTrouver from '../../assets/img/home/illuHotel_tbh.png'
 import {Link} from 'gatsby'
 import Fade from 'react-reveal/Fade';
 import Reveal from 'react-reveal/Reveal';
+import espace_pro from '../../assets/img/home/home_espacepro.jpg'
 
 const HomePageTemplate = ({
   title,
@@ -22,7 +23,6 @@ const HomePageTemplate = ({
   meta_description,
   testimonials,
   posts_instagram,
-  espace_pro,
   bienvenue,
   background_header,
 }) => (
@@ -42,22 +42,23 @@ const HomePageTemplate = ({
     <div className='section is-marginless is-paddingless'>
         <div className='titleTbhFirst titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop'>
        
-        <Fade  duration={1400}>
           <div>
             <span className='titleTbhEmpty'>Bienvenue au</span> <span className='titleTbhFull'>T_</span> 
          </div>
-       </Fade>
        </div>
     </div>
  
     <div className='section  is-paddingless is-marginless'>
         <div className='columns is-paddingless is-marginless is-bg-grey'>
-            <div className='column is-full-mobile is-half-tablet is-half-desktop is-paddingless is-marginless imgContent'  style={{ textAlign: 'left' }}>
-               
-             <Img 
-                  style={{ position: 'absolute', left: '0', top: "0", width: "100%", height: "100%" }} 
-                  fluid={bienvenue.childImageSharp.fluid}/>
-            </div>
+           <Reveal effect="fadeInUp"  duration={1400} >
+              <div className='column is-full-mobile is-half-tablet is-half-desktop is-paddingless is-marginless imgContent'  style={{ textAlign: 'left' }}>
+                
+              <Img 
+                    style={{ position: 'absolute', left: '0', top: "0", width: "100%", height: "100%" }} 
+                    fluid={bienvenue.childImageSharp.fluid}/>
+                  
+              </div> 
+            </Reveal>
             <div  className='column center-v is-paddinglessTB 
             is-5
             is-half-tablet'>
@@ -100,39 +101,47 @@ const HomePageTemplate = ({
     <div className='section is-marginless is-paddingless'>
         <div className=' titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop'>
       
-        <Fade  duration={1400}>
           <div>
               <span className='titleTbhEmpty'>Comme chez </span> <span className='titleTbhFull'>vous_</span>
           </div>
-        </Fade>
         </div>
     </div>
     
 
-
+   <Reveal effect="fadeInUp"  duration={1400} >
      <CarouselHome />
+   </Reveal>
 
 
     <div className='section is-marginless is-paddingless'>
         <div className=' titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop is-marginless'>
             
-        <Fade  duration={1400}>
           <div>
             <span className='titleTbhFull'>Mieux</span> <span className='titleTbhEmpty'>qu'au bureau_</span>
           </div>
-        </Fade>
         </div>
-        <Link to='/business'>
-            <Img fluid={espace_pro.childImageSharp.fluid}/>
-        </Link>
     </div>
+
+   <Reveal effect="fadeInUp"  duration={1400} >
+    <section className="hero is-large has-bg-img" style={{backgroundImage: `url('${espace_pro}')`, backgroundPosition: 'center center'}}> 
+      <div className="hero-body"> 
+        <div className="container has-text-centered"> 
+           <Reveal effect="fadeInUp"  duration={1400} >
+              <Link className="button-espacePro-home is-size-3" to='/business'>
+                Espace Pro
+              </Link>
+           </Reveal>
+        </div> 
+      </div> 
+    </section>
+   </Reveal>
 
 
     <div className='container-full is-bg-jaune'>
         <div className='section'>
             <Link to='/contact'>
                 <div id='nousTrouver' className='columns is-vcentered   is-centered'>
-                        <div className='is-full-mobile column  is-4-desktop '>
+                        <div className='is-full-mobile column  is-3-desktop '>
                             <Reveal effect="fadeInLeft"  duration={1400} >
                               <div>
                                  <span style={{lineHeight: '1'}} className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>_Nous&nbsp;&nbsp;&nbsp;<br/>Trouver</span>
@@ -158,9 +167,7 @@ const HomePageTemplate = ({
         <div className='section is-paddingless  '>
            <div className='titleNote titleTbh title is-size-4-mobile is-size-3-tablet is-size-2-desktop'>
                
-        <Fade  duration={1400}>
             <div className=' is-vcentered'>Sans fausses notes</div>
-        </Fade>
            </div>
 
       </div>

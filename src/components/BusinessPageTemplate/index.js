@@ -54,30 +54,42 @@ const BusinessPageTemplate = ({
 
     <div className='section  is-paddingless is-marginless' style={{zIndex: "9999", position:"relative"}}>
         <div className='columns is-paddingless is-marginless'>
-            <div className='column is-half is-paddingless is-marginless imgContent' style={{ textAlign: 'left' }}>
-               <Img 
-                  style={{ position: 'absolute', left: '0', top: "0", width: "100%", height: "100%" }} 
-                  fluid={vos_espaces.childImageSharp.fluid}
-                  />
-            </div>
+            <Reveal effect="fadeInUp"  duration={1400} >
+                <div className='column is-half is-paddingless is-marginless imgContent' style={{ textAlign: 'left' }}>
+                <Img 
+                    style={{ position: 'absolute', left: '0', top: "0", width: "100%", height: "100%" }} 
+                    fluid={vos_espaces.childImageSharp.fluid}
+                    />
+                </div>
+            </Reveal>
             <div  className='column is-5  center-v paddinglessTB'>
                 <div className='section'>
-                    <div className="arrow-r subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless">←</div>
+                    <Reveal effect="fadeInUp"  duration={1400} >
+                        <div>
+                            <div className="arrow-r subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless">←</div>
+                            <br/>
+                            <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>Vos espaces</span>
+                        </div>
+                    </Reveal>
                     <br/>
-                    <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>Vos espaces</span>
                     <br/>
-                    <br/>
+                    <Reveal effect="fadeInUp"  duration={1400} >
                       <div className='sub-p is-size-5'><p>APPROPRIEZ-VOUS LES LIEUX</p></div>
+                    </Reveal>
                     <br/>
+                    <Reveal effect="fadeInUp"  duration={1400} >
                     <p>
                     Nous vous choyons aussi lors de vos escales professionnelles. Des espaces dédiés, fonctionnels et esthétiques, sont mis à votre disposition. Notre salle, pouvant accueillir jusqu’à 30 personnes, est idéale pour se réunir. Le patio et le salon bibliothèque sont quant à eux parfaits pour des moments d’échange et de pause. Sans oublier nos 27 chambres et nos 3 suites, que vous aurez plaisir à retrouver une fois la nuit tombée !
                     </p>
+                    </Reveal>
 
                     <br/>
                     <br/>
-                    <Link className='button is-outlined title is-5' to='/tboutique'>
-                      Forfaits
-                    </Link>
+                    <Reveal effect="fadeInUp"  duration={1400} >
+                        <Link className='button is-outlined title is-5' to='/tboutique'>
+                        Forfaits
+                        </Link>
+                    </Reveal>
                 </div>
             </div>
         </div>
@@ -92,20 +104,28 @@ const BusinessPageTemplate = ({
 
       <div className='section  is-paddingless is-marginless'>
           <div className='columns is-paddingless is-marginless '>
-              <div  className='column  is-5   center-v'>
+              <div  className='column  is-6   center-v'>
                   <div className='section'>
-                      <div className="arrow-l subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless">→</div>
-                      <br/>
-                      <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>VOS événements</span>
+                    <Reveal effect="fadeInUp"  duration={1400} >
+                        <div>
+                            <div className="arrow-l subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless">→</div>
+                            <br/>
+                            <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>VOS événements</span>
+                        </div>
+                    </Reveal>
                         <br/>
                         <br/>
-                        <div className='sub-p is-size-5'><p>Clef-en-main</p></div>
+                        <Reveal effect="fadeInUp"  duration={1400} >
+                            <div className='sub-p is-size-5'><p>Clef-en-main</p></div>
+                        </Reveal>
                         <br/>
+                        <Reveal effect="fadeInUp"  duration={1400} >
                       <p>
                       Pour que vos ateliers de quelques heures ou vos séminairse de plusieurs jours soient de bons moments, nous vous accompagnons dans l’organisation de vos évènements. Des activités aux restaurants, dites-nous ce que vous voulez, nous nous occupons du reste.
                           <br/>  <br/> 
                           N’hésitez pas à nous envoyer vos souhaits pour obtenir un devis personnalisé. 
                       </p>
+                      </Reveal>
                   </div>
               </div>
               <div className='column is-6  is-offset-1  is-paddingless  center-v'>
@@ -180,15 +200,17 @@ const BusinessPageTemplate = ({
           <div className='columns '>
               <div  className='column  is-full'>
               <div style={{display: 'flex', justifyContent: 'center', }}>
-                    <a className='title is-4' href='mailto:hello@tboutiquehotel.fr' style={{margin: '0', padding: '0'}}>
-                      DEMANDER NOUS UN DEVIS
-                    </a>
-                    <p className='title is-5' style={{marginTop: "5px"}}>
-                    &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
-                    </p>
-                    <a className='title is-4' href='tel:(+33)556836770' style={{margin: '0', padding: '0'}}>
-                     APPELLEZ-NOUS
-                    </a>
+                    <Reveal effect="fadeInUp"  duration={1400} >
+                        <a className='title is-4' href='mailto:hello@tboutiquehotel.fr' style={{margin: '0', padding: '0'}}>
+                        DEMANDER NOUS UN DEVIS
+                        </a>
+                        <p className='title is-5' style={{marginTop: "5px"}}>
+                        &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                        </p>
+                        <a className='title is-4' href='tel:(+33)556836770' style={{margin: '0', padding: '0'}}>
+                        APPELLEZ-NOUS
+                        </a>
+                    </Reveal>
                </div>
                  </div>
             </div>

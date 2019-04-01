@@ -22,6 +22,7 @@ const tBoutiquePages = ({data}) => {
         concept={data.concept}
         histoire={data.histoire}
         boutique={data.boutique}
+        family={data.family}
       />
     </div>
   )
@@ -30,30 +31,37 @@ export default tBoutiquePages
 
 export const tBoutiquePageQuery = graphql`
   query TBoutiquePage($id: String!) {
-    background_header: file(relativePath: { eq: "tboutique/header_tboutique_tbh.jpg" }) {
+    background_header: file(relativePath: { eq: "tboutique/let_header.jpg" }) {
       childImageSharp{
-        fluid(maxWidth: 2000) {
+        fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }) {
            ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
-    concept: file(relativePath: { eq: "tboutique/leconcept.jpg" }) {
+    concept: file(relativePath: { eq: "tboutique/let_let.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 2000) {
+        fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
   }
   histoire: file(relativePath: { eq: "tboutique/lhistoire.jpg" }) {
     childImageSharp {
-      fluid(maxWidth: 2000) {
+      fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }) {
         ...GatsbyImageSharpFluid_withWebp_tracedSVG
       }
     }
 }
-boutique: file(relativePath: { eq: "tboutique/laboutique.jpg" }) {
+boutique: file(relativePath: { eq: "tboutique/let_laboutique.jpg" }) {
   childImageSharp {
-    fluid(maxWidth: 2000) {
+    fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }) {
+      ...GatsbyImageSharpFluid_withWebp_tracedSVG
+    }
+  }
+}
+family: file(relativePath: { eq: "tboutique/let_family.jpg" }) {
+  childImageSharp {
+    fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }) {
       ...GatsbyImageSharpFluid_withWebp_tracedSVG
     }
   }

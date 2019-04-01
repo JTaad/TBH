@@ -39,6 +39,16 @@ $title-line-height: 1.125
 
 // Import Bulma Extensions 
 
+
+.button-espacePro-home
+  background-color: $white
+  color: $blue
+  font-family:  $fontTitle
+  padding: 25px
+  padding-bottom: 32px
+
+
+
 * 
   color: $blue 
 
@@ -88,7 +98,10 @@ $title-line-height: 1.125
     margin-right: 40px
     &:hover
       color: $white!important
-    
+
+
+body p
+  font-weight: 500    
 .carouselAll 
   padding-bottom: 33px
   padding-top: 33px
@@ -281,6 +294,11 @@ $title-line-height: 1.125
   line-height: 7rem
   right: 10px
 
+
+.subtitle-chambres
+  font-weight: lighter
+  font-family: $fontCorps!important
+
 .chambreNum
   font-family: $fontTitle
   text-align: center
@@ -348,7 +366,7 @@ p
 
 .sub-p
   font-family: $fontCorps
-  font-weight: 500
+  font-weight: 600!important
   text-transform: uppercase
 
 .is-borderHome
@@ -422,7 +440,6 @@ p
   font-family: $fontTitle
   
 .blocWithArrow
-  cursor: pointer
   display: flex
   flex-grow: 1
   margin: 0
@@ -511,6 +528,7 @@ p
   justify-content: space-between
   z-index: $indexMidl
   width: 100%
+  z-index: 99999999
   position: absolute
   align-items: center
   margin-top: 45px
@@ -580,6 +598,9 @@ p
     margin: 4px 0
     border-radius: 5px
 
+.is-fixed-top
+  z-index: 999999999999999
+
 #bgTrans
   transition: all .5s ease-in-out
   position: relative
@@ -590,7 +611,7 @@ p
   width: 100vw
   position: fixed
   background-color: $blue
-  z-index: $indexMax
+  z-index: 999999999999
   font-family: Poppins
   padding-top: 40px
   padding-bottom: 40px
@@ -656,13 +677,14 @@ p
   margin-top: 0 !important
 
 .loadVideoTrue
-  animation-duration: 2s
+  animation-duration: 10s
   animation-name: loadVideoTrue
   background-color: #F8F7D6
   opacity: 0
   
 .loadVideoFalse
   background-color: #F8F7D6
+  opacity: .9
 
 
 
@@ -673,7 +695,7 @@ p
 
 @keyframes loadVideoTrue 
     0%
-      opacity: 1
+      opacity: .9
     100%
       opacity: 0
 

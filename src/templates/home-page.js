@@ -35,7 +35,7 @@ const HomePage = ({data}) => {
       offerings={frontmatter.offerings}
       testimonials={frontmatter.testimonials}
       espace_pro={data.espacePro}
-      bienvenue={data.bienvenue}
+      bienvenue={data.concept}
       posts_instagram={postsInstagram}
       background_header={data.background_header}
     />
@@ -57,11 +57,15 @@ export const pageQuery = graphql`
     background_header: file(relativePath: { eq: "home/header_tbh.jpg" }) {
       ...fluidImage
     }
-    espacePro: file(relativePath: { eq: "home/espacePro_tbh.jpg" }) {
+    espacePro: file(relativePath: { eq: "home/home_espacepro.jpg" }) {
       ...fluidImage
     }
-    bienvenue: file(relativePath: { eq: "home/bienvenue_tbh.jpg" }) {
-      ...fluidImage
+    concept: file(relativePath: { eq: "home/home_concept.jpg" }) {
+      childImageSharp{
+        fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }) {
+           ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
     }
     allInstaNode {
       edges {
@@ -105,7 +109,7 @@ export const pageQuery = graphql`
 export const fluidImage = graphql`
 fragment fluidImage on File { 
   childImageSharp {
-    fluid(maxWidth: 2000, quality: 80) {
+    fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }) {
       ...GatsbyImageSharpFluid_withWebp_tracedSVG
     }
   }

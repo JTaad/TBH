@@ -5,8 +5,10 @@ import { FaInstagram } from 'react-icons/fa';
 import Fade from 'react-reveal/Fade';
 import Reveal from 'react-reveal/Reveal';
 
+
 const Instagram = ({ gridItems }) => (
   <section id='instagram' className='section  is-paddingless'>
+  {console.log(gridItems)}
   <Fade cascade >
       <div className='columns is-mobile is-paddingless is-marginless is-centered'>
         

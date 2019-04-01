@@ -3,18 +3,19 @@ import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import Img from "gatsby-image"
 import { Link } from 'gatsby'
+import Reveal from 'react-reveal/Reveal';
+ 
 
-const leBassinPageTemplate = ({
+const BassinPageTemplate = ({
   title,
   subtitle,
   meta_title,
   meta_description,
-  contacts,
   background_header,
-  concept,
-  boutique,
-  histoire,
-}) => {
+  contacts,
+  vos_espaces,
+  vos_evenements,
+}) => { 
   return (
     <div>
       <Helmet>
@@ -23,6 +24,7 @@ const leBassinPageTemplate = ({
       </Helmet>
       
 
+
       <div className='headerHome'>
           <Img  
             style={{ position: 'absolute', left: '0', top: "0", width: "100%", height: "100%" }} 
@@ -30,121 +32,379 @@ const leBassinPageTemplate = ({
           />
       </div>
 
+
     <div className='section is-marginless is-paddingless'>
-        <div className='titleTbhFirst titleTbh title is-size-3-mobile is-size-1-tablet is-size-1-desktop'>
-          <span className='titleTbhFull'>Concept_</span>
+        <div className=' titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop'>
+          <span className='titleTbhFull'>Le bassin_</span>
         </div>
     </div>
-
-
-    <div className='section  is-paddingless is-marginless'>
-        <div className='columns is-paddingless is-marginless'>
-            <div className='column is-half is-paddingless is-marginless imgContent' style={{ textAlign: 'left' }}>
-               <Img 
-                  style={{ position: 'relative', left: '0', top: "0", width: "100%", height: "100%" }} 
-                  fluid={concept.childImageSharp.fluid}
-                /> 
-            </div>
-            <div  className='column is-5 center-v '>
-                <div className='section '>
-                    <div className="arrow-r subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">←</div>
-                    <br/>
-                    <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>Le concept</span>
-                    <br/>
-                    <br/>
-                    <p>
-                    Le T est un boutique-hôtel à Arcachon.          Et même un peu plus.                                         Notre hôtel est une invitation à partager de l’émotion dans de beaux lieux de vie et de nuit. À vivre au rythme du Bassin d’Arcachon, ses particuliarités, ses activités et sa beauté. À profiter d’une expérience personnalisée dans une ambiance décontractée. À découvrir de belles choses et de jolis objets. 
-                    </p>
-                    <br/>
-                      <div className='sub-p is-size-5'><p>À prendre du bon temps<br/>finalement !</p></div>
+ 
+    
+    <div className='section is-bg-jaune'>
+        <div className='columns'>
+            <div className="column is-6 is-offset-3 has-text-centered">
+               <Reveal effect="fadeInUp"  duration={1400} >
+                <p>
+                Nous on l'aime pour son caractère, son authenticité, son nuancier de bleu et son dégradé de pastel. Aussi pour sa douceur de vivre, sa chillance à outrance et cette vague sensation de vacances.
+                </p>
+                </Reveal>
+                <br/>
+                <div className='columns'>
+                    <div className="column is-10 is-offset-1">
+               <Reveal effect="fadeInUp"  duration={1400} >
+                         <p style={{fontWeight: '600', textTransform: 'uppercase'}}>Ces quelques idées pour vivre l'expérience et l’ambiance de notre Bassin adoré:</p>
+                   
+                </Reveal>
+                 </div>
                 </div>
             </div>
-    </div>
-    </div>
-    <div className='container'>
-    <div className='section  is-paddingless is-marginless'>
-                <div className='columns'>
-                  <div  className='column is-5 is-offset-1'>
-                    <div className="arrow-l subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">→</div>
-                          <br/>
-                          <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>L'hôtel</span>
-                          <br/>
-                          <p>
-                          Le T renouvelle les codes de l’hôtellerie pour vous proposer une expérience plus conviviale, plus authentique, plus mémorable aussi. À ceci s’ajoute le lieu, le cadre et le décor. Un architecte et une décoratrice ont aménagé chaque espace, dans son moindre détail.
-                           </p>   <br/> 
-                             <p> Bienvenue dans un hôtel comme à la maison, chic et design à la fois, avec du confort et des prestations 3 étoiles. 
-                          </p>
-                          <br/>
-                          <br/>
-                    <div className="arrow-l subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">→</div>
-                          <br/>
-                          <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>La boutique</span>
-                          <br/>
-                          <p>
-                          Une boutique a pris ses quartiers dans l’entrée de l’hôtel. Nous aimons chiner et trouver de jolies choses au gré des saisons, des tendances, des modes. Sélection d’articles, d’objets, de créations, mise en avant d’artistes et de jeunes créateurs, collaborations... c’est au T que vous les découvrirez ! 
-                          </p> <br/> 
-                          <p>
-                          On vous a dit que vous pouviez aussi acheter le mobilier de la salle de déjeuner ?
-                          </p>
-                  </div>
-
-                    <div  className='column is-5 '>
-                      <Img fluid={boutique.childImageSharp.fluid}/>
-                      <br/>
-                      <br/>
-                      <Img fluid={histoire.childImageSharp.fluid}/>
-                  </div>
-              </div>
-    </div>
-  </div>
- 
-
-
-    <div className='section is-marginless is-paddingless'>
-        <div className='titleTbh title is-size-3-mobile is-size-1-tablet is-size-1-desktop'>
-           <span className='titleTbhEmpty'>L'histoire </span> <span className='titleTbhFull'>du T_</span>
         </div>
-    </div>
+        </div>
 
 
 
-    <div className='section  is-paddingless is-marginless'>
+    <div className='section  is-paddingless is-marginless' style={{zIndex: "9999", position:"relative"}}>
         <div className='columns is-paddingless is-marginless'>
             <div className='column is-half is-paddingless is-marginless imgContent' style={{ textAlign: 'left' }}>
                <Img 
                   style={{ position: 'absolute', left: '0', top: "0", width: "100%", height: "100%" }} 
-                  fluid={histoire.childImageSharp.fluid}
-                  /> 
+                  fluid={vos_espaces.childImageSharp.fluid}
+                  />
             </div>
-            <div  className='column is-5  center-v is-paddinglessTB'>
+            <div  className='column is-5  center-v paddinglessTB'>
                 <div className='section'>
-                    <div className="arrow-r subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop is-marginless is-paddingless">←</div>
+                    <Reveal effect="fadeInUp"  duration={1400} >
+                        <div>
+                            <div className="arrow-r subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless">←</div>
+                            <br/>
+                            <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>6H30</span>
+                        </div>
+                    </Reveal>
                     <br/>
-                    <span className='subtitle is-size-4-mobile is-size-2-tablet is-size-2-desktop'>Family story</span>
                     <br/>
+                    <Reveal effect="fadeInUp"  duration={1400} >
+                      <div className='sub-p is-size-5'><p>LA Criée d’arcachon</p></div>
+                    </Reveal>
                     <br/>
-                    <p>
-                    Le T est avant tout l’histoire d’une famille. Celle d’un père qui découvre un jour l’hôtellerie et s’éprend du métier. Puis celle de sa fille, Mathilde, qui décide de bousculer son destin pour reprendre le flambeau familial.
-                     </p>   <br/>  
-                     <p>
-                     À sa façon, avec sa vision et après 9 mois de rénovation.
-                    </p>
-
-                    <br/>
-                    
-                      <div className='sub-p is-size-5'><p>On vous montre le résultat ?</p></div>
-                    
+                    <Reveal effect="fadeInUp"  duration={1400} >
+                        <p>
+                        Notre programme démarre à 6h30, à la Criée d’Arcachon. Une fois que les pêcheurs du coin ont entassé leurs prises dans des casiers, la vente peut commencer.  Vous verrez défiler de nombreuses espèces de poissons, coquillages et crustacés et vous assisterez à la vente, aux enchères s’il vous plaît, de ces beaux produits. Une vraie expérience !
+                        </p>
+                    </Reveal>
                 </div>
             </div>
         </div>
     </div>
 
+
+
+
+<div  className='container-full ' style={{marginTop: '-100px'}}>
+    <div className='is-bg-grey'>
+    <div className='container'>
+
+  <div className='section  is-paddingless is-marginless'>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+      <div className='columns is-paddingless is-marginless '>
+          <div  className='column  is-5   center-v'>
+              <div className='section'>
+                  <Reveal effect="fadeInUp"  duration={1400} >
+                    <div>
+                        <div className="arrow-l subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless">→</div>
+                        <br/>
+                        <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>9H00</span>
+                    </div>
+                  </Reveal>
+                    <br/>
+                    <br/>
+                  <Reveal effect="fadeInUp"  duration={1400} >
+                    <div className='sub-p is-size-5'><p>LE PETIT TRAIN</p></div>
+                  </Reveal>
+                    <br/>
+                  <Reveal effect="fadeInUp"  duration={1400} >
+                  <p>
+                  Il est 9h, soit l’heure idéale pour faire un tour de petit train... Oui, ça fait longtemps que vous n’êtes pas montés à bord d’un tel engin. Donc c’est le moment, ou jamais ! 
+<br/><br/>Profitez des lueurs matinales pour découvrir le quartier de la ville d’hiver d’Arcachon et ses somptueuses villas du XIXème siècle.
+<br/><br/>Le tout en étant confortablement installés et agréablement bercés. Merci le petit train !
+                  </p>
+                  </Reveal>
+              </div>
+          </div>
+          <div className='column is-6  is-offset-1  is-paddingless  center-v'>
+              
+            <div style={{ width: "100%" }}>
+                  <Reveal effect="fadeInUp"  duration={1400} >
+                        <Img fluid={vos_evenements.childImageSharp.fluid}/>
+                  </Reveal>
+
+          </div>
+          </div>
+      </div> 
+  </div>
+</div> 
+</div>
+</div>
+
+
+
+
+<div  className='container-full'>
+    <div className=''>
+    <div className='container'>
+
+  <div className='section  is-paddingless is-marginless'>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+      <div className='columns is-paddingless is-marginless '>
+          <div  className='column  is-6   center-v'>
+
+            <div style={{ width: "100%" }}>
+                  <Reveal effect="fadeInUp"  duration={1400} >
+                        <Img fluid={vos_evenements.childImageSharp.fluid}/>
+                  </Reveal>
+
+            </div>
+
+          </div>
+          <div className='column is-5  is-offset-1  is-paddingless  center-v'>
+              
+              <div className='section'>
+                  <Reveal effect="fadeInUp"  duration={1400} >
+                    <div>
+                        <div className="arrow-r subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless">←</div>
+                        <br/>
+                        <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>11H00</span>
+                    </div>
+                  </Reveal>
+                    <br/>
+                    <br/>
+                  <Reveal effect="fadeInUp"  duration={1400} >
+                    <div className='sub-p is-size-5'><p>LE MARCHé</p></div>
+                  </Reveal>
+                    <br/>
+                  <Reveal effect="fadeInUp"  duration={1400} >
+                  <p>
+                  En fin de matinée (à l’heure que vous vous voudrez), une petite halte au marché n’est jamais une mauvaise idée. Les Halles vous attendent au coeur du centre ville d’Arcachon.
+<br/><br/>Entre les produits du terroir, les producteurs locaux, les nombreuses boutiques, bars et restaurants, le plus dur sera de choisir. Ou le mieux sera de goûter à tout ! À vous de voir !
+                  </p>
+                  </Reveal>
+              </div>
+
+          </div>
+      </div> 
+  </div>
+</div> 
+</div>
+</div>
+
+
+
+<div  className='container-full ' style={{marginTop: '-100px'}}>
+    <div className='is-bg-rose'>
+    <div className='container'>
+
+  <div className='section  is-paddingless is-marginless'>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+      <div className='columns is-paddingless is-marginless '>
+          <div  className='column  is-5   center-v'>
+              <div className='section'>
+                  <Reveal effect="fadeInUp"  duration={1400} >
+                    <div>
+                        <div className="arrow-l subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless">→</div>
+                        <br/>
+                        <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>12H00</span>
+                    </div>
+                  </Reveal>
+                    <br/>
+                    <br/>
+                  <Reveal effect="fadeInUp"  duration={1400} >
+                    <div className='sub-p is-size-5'><p>Cabanes ostréicoles</p></div>
+                  </Reveal>
+                    <br/>
+                  <Reveal effect="fadeInUp"  duration={1400} >
+                  <p>
+                  À l'heure du déjeuner (là aussi vous choisirez), la dégustation d’huîtres est incontournable. Direction les cabanes d’ostréiculteurs, au décor traditionnel et à l’atmosphère décontracté. L’Aiguillon, la Teste-de-Buch, Gujan Mestras... plusieurs spots de choix vous attendent avec un petit verre de blanc, ou de rosé. Vous y mangerez aussi des crustacés et du pâté !
+                  </p>
+                  </Reveal>
+              </div>
+          </div>
+          <div className='column is-6  is-offset-1  is-paddingless  center-v'>
+              
+            <div style={{ width: "100%" }}>
+                  <Reveal effect="fadeInUp"  duration={1400} >
+                        <Img fluid={vos_evenements.childImageSharp.fluid}/>
+                  </Reveal>
+
+          </div>
+          </div>
+      </div> 
+  </div>
+</div> 
+</div>
+</div>
+
+
+<div  className='container-full'>
+    <div className=''>
+    <div className='container'>
+
+  <div className='section  is-paddingless is-marginless'>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+      <div className='columns is-paddingless is-marginless '>
+          <div  className='column  is-6   center-v'>
+
+            <div style={{ width: "100%" }}>
+                  <Reveal effect="fadeInUp"  duration={1400} >
+                        <Img fluid={vos_evenements.childImageSharp.fluid}/>
+                  </Reveal>
+
+            </div>
+
+          </div>
+          <div className='column is-5  is-offset-1  is-paddingless  center-v'>
+              
+              <div className='section'>
+                  <Reveal effect="fadeInUp"  duration={1400} >
+                    <div>
+                        <div className="arrow-r subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless">←</div>
+                        <br/>
+                        <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>14H00</span>
+                    </div>
+                  </Reveal>
+                    <br/>
+                    <br/>
+                  <Reveal effect="fadeInUp"  duration={1400} >
+                    <div className='sub-p is-size-5'><p>En pinasse</p></div>
+                  </Reveal>
+                    <br/>
+                  <Reveal effect="fadeInUp"  duration={1400} >
+                  <p>
+                  Que diriez-vous d’une balade sur l’eau, à bord d’une traditionnelle Pinasse. Laissez-vous guider (quel autre choix !?) pour admirer l’île aux oiseaux et ses célèbres cabanes tchanquées, la Dune du Pyla et la réserve naturelle du banc d’Arguin.  Vous pouvez même faire une escale au Cap Ferret et visiter son phare avec vue panoramique sur le bassin.  Plutôt tentant non ?                  
+                </p>
+                </Reveal>
+              </div>
+
+          </div>
+      </div> 
+  </div>
+</div> 
+</div>
+</div>
+
+
+
+<div  className='container-full ' style={{marginTop: '-100px'}}>
+    <div className=''>
+    <div className='container'>
+
+  <div className='section  is-paddingless is-marginless'>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+      <div className='columns is-paddingless is-marginless '>
+          <div  className='column  is-5   center-v'>
+              <div className='section'>
+                  <Reveal effect="fadeInUp"  duration={1400} >
+                    <div>
+                        <div className="arrow-l subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless">→</div>
+                        <br/>
+                        <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>17H30</span>
+                    </div>
+                  </Reveal>
+                    <br/>
+                    <br/>
+                  <Reveal effect="fadeInUp"  duration={1400} >
+                    <div className='sub-p is-size-5'><p>Dune du Pyla  #sunset</p></div>
+                  </Reveal>
+                    <br/>
+                  <Reveal effect="fadeInUp"  duration={1400} >
+                  <p>
+                  Ça sent bon la fin de journée. Quoi de mieux que de gravir les 110 mètres de la Dune du Pyla pour admirer le soleil se coucher ! Vous pouvez aussi le regarder d’en bas, mais on ne vous cache pas que c’est beaucoup moins sympa ! Si l’envie vous dit, vous pouvez même vous prévoir un pique-nique. En voilà une bonne idée !                  </p>
+                  </Reveal>
+              </div>
+          </div>
+          <div className='column is-6  is-offset-1  is-paddingless  center-v'>
+              
+            <div style={{ width: "100%" }}>
+                  <Reveal effect="fadeInUp"  duration={1400} >
+                        <Img fluid={vos_evenements.childImageSharp.fluid}/>
+                  </Reveal>
+
+          </div>
+          </div>
+      </div> 
+  </div>
+</div> 
+</div>
+</div>
+
+
+<div  className='container-full'>
+    <div className=''>
+    <div className='container'>
+
+  <div className='section  is-paddingless is-marginless'>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+      <div className='columns is-paddingless is-marginless '>
+          <div  className='column  is-6   center-v'>
+
+            <div style={{ width: "100%" }}>
+                  <Reveal effect="fadeInUp"  duration={1400} >
+                        <Img fluid={vos_evenements.childImageSharp.fluid}/>
+                  </Reveal>
+
+            </div>
+
+          </div>
+          <div className='column is-5  is-offset-1  is-paddingless  center-v'>
+              
+              <div className='section'>
+                  <Reveal effect="fadeInUp"  duration={1400} >
+                    <div>
+                        <div className="arrow-l subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless">→</div>
+                        <br/>
+                        <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>20H00</span>
+                    </div>
+                  </Reveal>
+                    <br/>
+                    <br/>
+                  <Reveal effect="fadeInUp"  duration={1400} >
+                    <div className='sub-p is-size-5'><p>LE MOULLEAU</p></div>
+                  </Reveal>
+                    <br/>
+                  <Reveal effect="fadeInUp"  duration={1400} >
+                  <p>
+                  Si votre belle journée mérite d’être prolongée, rendez-vous dans le quartier du Moulleau. C’est là-bas que vous trouverez les meilleurs animations, glaciers, restaurants,bars, boîtes de nuit... ouverts jusque tard dans la nuit ! Le réveil risque de piquer si vous avez prévu d’aller à la Criée !                  </p>
+                  </Reveal>
+              </div>
+
+          </div>
+      </div> 
+  </div>
+</div> 
+</div>
+</div>
 
     </div>
   )
 }
 
-leBassinPageTemplate.propTypes = {
+BassinPageTemplate.propTypes = {
   title: PropTypes.string,
   subtitle: PropTypes.string,
   meta_title: PropTypes.string,
@@ -153,4 +413,4 @@ leBassinPageTemplate.propTypes = {
 
 }
 
-export default leBassinPageTemplate
+export default BassinPageTemplate
