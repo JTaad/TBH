@@ -30,12 +30,10 @@ const BassinPageTemplate = ({
 
 
       <div className='headerHome'>
-            <Reveal effect="fadeInUp"  duration={1400} >
             <Img  
                 style={{ position: 'absolute', left: '0', top: "0", width: "100%", height: "100%" }} 
                 fluid={background_header.childImageSharp.fluid} 
             />
-          </Reveal>
       </div>
 
 
@@ -46,6 +44,7 @@ const BassinPageTemplate = ({
     </div>
  
     
+    <Reveal effect="fadeInUp"  duration={1400} >
     <div className='section is-bg-jaune'>
         <div className='columns'>
             <div className="column is-6 is-offset-3 has-text-centered">
@@ -66,20 +65,21 @@ const BassinPageTemplate = ({
             </div>
         </div>
         </div>
+        </Reveal>
 
 
 
     <div className='section  is-paddingless is-marginless' style={{zIndex: "9999", position:"relative"}}>
         <div className='columns is-paddingless is-marginless'>
-            <div className='column is-half is-paddingless is-marginless imgContent' style={{ textAlign: 'left' }}>
             <Reveal effect="fadeInUp"  duration={1400} >
-               <Img 
-                  style={{ position: 'absolute', left: '0', top: "0", width: "100%", height: "100%" }} 
-                  fluid={criee.childImageSharp.fluid}
-                  />
+                <div className='column is-full-mobile is-5-tablet is-5-desktop is-paddingless is-marginless imgContent' style={{ textAlign: 'left' }}>
+                <Img 
+                    style={{ position: 'absolute', left: '0', top: "0", width: "100%", height: "100%" }} 
+                    fluid={criee.childImageSharp.fluid}
+                    />
+                </div>
             </Reveal>
-            </div>
-            <div  className='column is-5  center-v paddinglessTB'>
+            <div  className='column is-5   is-4-widescreen is-offset-1 center-v paddinglessTB'>
                 <div className='section'>
                     <Reveal effect="fadeInUp"  duration={1400} >
                         <div>
@@ -91,7 +91,7 @@ const BassinPageTemplate = ({
                     <br/>
                     <br/>
                     <Reveal effect="fadeInUp"  duration={1400} >
-                      <div className='sub-p is-size-5'><p>LA Criée d’arcachon</p></div>
+                      <div className='sub-p is-size-5 '><p>LA Criée d’arcachon</p></div>
                     </Reveal>
                     <br/>
                     <Reveal effect="fadeInUp"  duration={1400} >
@@ -117,7 +117,7 @@ const BassinPageTemplate = ({
   <br/>
   <br/>
       <div className='columns is-paddingless is-marginless '>
-          <div  className='column  is-5   center-v'>
+          <div  className='column  is-5   '>
               <div className='section'>
                   <Reveal effect="fadeInUp"  duration={1400} >
                     <div>
@@ -141,7 +141,7 @@ const BassinPageTemplate = ({
                   </Reveal>
               </div>
           </div>
-          <div className='column is-6  is-offset-1  is-paddingless  center-v'>
+          <div className='column is-6  is-offset-1 center-v'>
               
             <div style={{ width: "100%" }}>
                   <Reveal effect="fadeInUp"  duration={1400} >
@@ -169,7 +169,7 @@ const BassinPageTemplate = ({
   <br/>
   <br/>
       <div className='columns is-paddingless is-marginless '>
-          <div  className='column  is-6   center-v'>
+          <div  className='column  is-6   center-v '>
 
             <div style={{ width: "100%" }}>
                   <Reveal effect="fadeInUp"  duration={1400} >
@@ -179,7 +179,8 @@ const BassinPageTemplate = ({
             </div>
 
           </div>
-          <div className='column is-5  is-offset-1  is-paddingless  center-v'>
+          <div  className='column is-5   is-4-widescreen is-offset-1 center-v paddinglessTB'>
+
               
               <div className='section'>
                   <Reveal effect="fadeInUp"  duration={1400} >
@@ -322,7 +323,7 @@ const BassinPageTemplate = ({
   <br/>
   <br/>
       <div className='columns is-paddingless is-marginless '>
-          <div  className='column  is-5   center-v'>
+          <div  className='column  is-5   center-v is-offset-2'>
               <div className='section'>
                   <Reveal effect="fadeInUp"  duration={1400} >
                     <div>
@@ -343,19 +344,18 @@ const BassinPageTemplate = ({
                   </Reveal>
               </div>
           </div>
-          <div className='column is-6  is-offset-1  is-paddingless  center-v'>
-              
-            <div style={{ width: "100%" }}>
                   <Reveal effect="fadeInUp"  duration={1400} >
-                        <Img fluid={dune.childImageSharp.fluid}/>
-                  </Reveal>
+                <div className='column is-full-mobile is-5-tablet is-6-desktop is-paddingless is-marginless imgContent' style={{ textAlign: 'left' }}>
+                <Img 
+                    style={{ position: 'absolute', right: '0', top: "0", width: "100%", height: "100%" }} 
+                    fluid={dune.childImageSharp.fluid} />
 
           </div>
+          </Reveal>
           </div>
       </div> 
   </div>
 </div> 
-</div>
 </div>
 
 
@@ -379,7 +379,7 @@ const BassinPageTemplate = ({
             </div>
 
           </div>
-          <div className='column is-5  is-offset-1  is-paddingless  center-v'>
+          <div className='column is-5    is-paddingless  center-v'>
               
               <div className='section'>
                   <Reveal effect="fadeInUp"  duration={1400} >
