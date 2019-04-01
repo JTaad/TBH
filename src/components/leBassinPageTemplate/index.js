@@ -30,10 +30,12 @@ const BassinPageTemplate = ({
 
 
       <div className='headerHome'>
-          <Img  
-            style={{ position: 'absolute', left: '0', top: "0", width: "100%", height: "100%" }} 
-            fluid={background_header.childImageSharp.fluid} 
-          />
+            <Reveal effect="fadeInUp"  duration={1400} >
+            <Img  
+                style={{ position: 'absolute', left: '0', top: "0", width: "100%", height: "100%" }} 
+                fluid={background_header.childImageSharp.fluid} 
+            />
+          </Reveal>
       </div>
 
 
@@ -70,10 +72,12 @@ const BassinPageTemplate = ({
     <div className='section  is-paddingless is-marginless' style={{zIndex: "9999", position:"relative"}}>
         <div className='columns is-paddingless is-marginless'>
             <div className='column is-half is-paddingless is-marginless imgContent' style={{ textAlign: 'left' }}>
+            <Reveal effect="fadeInUp"  duration={1400} >
                <Img 
                   style={{ position: 'absolute', left: '0', top: "0", width: "100%", height: "100%" }} 
                   fluid={criee.childImageSharp.fluid}
                   />
+            </Reveal>
             </div>
             <div  className='column is-5  center-v paddinglessTB'>
                 <div className='section'>
