@@ -85,8 +85,39 @@ $title-line-height: 1.125
       width: 32px!important
 
 .slider
+  .slider-frame
+    @include until($tablet)
+      margin-left: auto !important
+      margin-right: auto !important
+      margin-left: 2rem !important
+      margin-right: 2rem !important
+      height: auto!important
   .slider-control-centerleft
-    top: 70%
+    top: 0
+    left: 0
+    width: 50%
+    height: 100%
+    button
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      padding: 0
+      margin: 0
+      cursor: url('/arrow_slider_left.png'), auto
+  .slider-control-centerright
+    top: 0
+    right: 0
+    width: 50%
+    height: 100%
+    button
+      top: 0
+      right: 0
+      width: 100%
+      height: 100%
+      padding: 0
+      margin: 0
+      cursor: url('/arrow_slider_right.png'), auto
   button
     font-family: $fontTitle
     background-color: transparent!important
@@ -105,6 +136,12 @@ body p
 .carouselAll 
   padding-bottom: 33px
   padding-top: 33px
+  @include until($tablet)
+    width: calc(100% - 4rem) !important
+    margin-left: auto !important
+    margin-right: auto !important
+    margin-left: 2rem !important
+    margin-right: 2rem !important
   
 .is-paddinglessTB
   padding-top: 0
@@ -395,6 +432,13 @@ p
   background-position: top
   background-repeat: no-repeat
   background-size: cover 
+  @include until($tablet)
+    width: calc(100% - 2rem) !important
+    margin-left: auto !important
+    margin-right: auto !important
+    margin-left: 1rem !important
+    margin-right: 1rem !important
+    min-height: auto!important
 
 .headerHome
   position: relative
@@ -474,6 +518,11 @@ p
       span
         margin: 5px
 
+.column
+  .section-text
+    @include until($tablet)
+      padding-left: 0
+      padding-right: 0
 
 .titleNote
   line-height: 90px
@@ -504,6 +553,12 @@ p
 #nousTrouver
   font-family: $fontTitle
   color: $blue
+  @include until($tablet)
+    text-align: center
+    img
+      margin-left: auto
+      margin-right: auto
+      display: block
 
 #instagram 
   border-top: 1px solid $blue

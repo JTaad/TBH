@@ -16,12 +16,12 @@ class CarouselHome extends Component {
     this.state = {
       slideIndex: 0,
       length: 3,
-      wrapAround: true,
+      wrapAround: false,
       underlineHeader: false,
       slidesToShow: 1,
       cellAlign: "center",
       transitionMode: "fade",
-      heightMode: "current",
+      heightMode: "max",
       autoplay: true,
       autoplayInterval: 3000,
       withoutControls: false,
@@ -35,19 +35,13 @@ class CarouselHome extends Component {
       ], 
     };
 
-    this.handleImageClick = this.handleImageClick.bind(this);
   }
   componentDidMount() {
         setTimeout(() => {
             window.dispatchEvent(new Event('resize'));
-        }, 250);
+        }, 50);
   }
 
-
-
-  handleImageClick() {
-    this.setState({ underlineHeader: !this.state.underlineHeader });
-  }
 
 
   handleChange() {
@@ -89,10 +83,10 @@ class CarouselHome extends Component {
       <div className={this.state.colorBg}>
           <div className='columns is-paddingless is-marginless is-paddinglessTB '>
               <div  className='column center-v is-paddinglessTB 
-               is-full-tablet
+               is-full-half
                is-5-desktop 
                is-offset-1-desktop 'style={{position: 'relative'}}>
-                  <div className='section'>
+                  <div className='section section-text'>
 
                     <Reveal effect="fadeInUp"  duration={2000} >
                       <div>
@@ -121,15 +115,15 @@ class CarouselHome extends Component {
                         </Link>
                       </Reveal>
  
- 
-                      <TransitionGroup  className="is-pulled-right" style={{display: "block", height:"140px"}}>
+   
+                      <TransitionGroup  className="is-pulled-right  is-hidden-touch " style={{display: "block", height:"140px"}}>
                         <CSSTransition
                           key={this.state.slideIndex}
                           timeout={1000}
                           classNames="messageout"
                           style={{position: 'absolute'}}
                         >
-                        <div  className={`carouselNumberHome  is-hidden-touch  ${this.state.colorFont}`}>
+                        <div  className={`carouselNumberHome   ${this.state.colorFont}`}>
                          0{this.state.slideIndex + 1}
                          </div>
                         </CSSTransition>
@@ -138,16 +132,15 @@ class CarouselHome extends Component {
               </div>
               <div className='column 
               is-paddingless is-marginless
-              is-hidden-touch
               is-half-desktop   '>
                   
                 <div style={{ width: "100%" }}>
                 <Carousel
                   renderCenterLeftControls={({ previousSlide }) => (
-                    <button onClick={previousSlide}>←</button>
+                    <button onClick={previousSlide}>&nbsp;</button>
                   )}
                   renderCenterRightControls={({ nextSlide }) => (
-                    <button onClick={nextSlide}>→</button>
+                    <button onClick={nextSlide}>&nbsp;</button>
                   )}
                   renderBottomCenterControls={false}
                   slideIndex={this.state.slideIndex}

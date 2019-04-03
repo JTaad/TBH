@@ -4,7 +4,6 @@ import headerImage from '../../assets/img/home/chambre_1.jpg'
 import {Link} from 'gatsby'
 
 class CarouselHome extends Component {
-
   constructor() {
     super(...arguments);
     this.state = {
@@ -42,10 +41,10 @@ class CarouselHome extends Component {
                 <div>
                 <Carousel
                   renderCenterLeftControls={({ previousSlide }) => (
-                    <button onClick={previousSlide}>←</button>
+                    <button onClick={previousSlide}>&nbsp;</button>
                   )}
                   renderCenterRightControls={({ nextSlide }) => (
-                    <button onClick={nextSlide}>→</button>
+                    <button onClick={nextSlide}>&nbsp;</button>
                   )}
                   slideIndex={this.state.slideIndex}
                   withoutControls={this.state.withoutControls}
@@ -55,8 +54,11 @@ class CarouselHome extends Component {
                   wrapAround={this.state.wrapAround}
                   heightMode={this.state.heightMode}
                 >
-                <img src={headerImage} />
-                <img src={headerImage} />
+                {this.props.images.map(item => (
+                  <div key={item.id} >
+                      <img src={item.imageSrc} />
+                  </div>
+                ))}
                       
                 </Carousel> 
 

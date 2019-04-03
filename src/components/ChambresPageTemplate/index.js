@@ -15,17 +15,66 @@ import icon_eau from '../../assets/img/icons/Water_HDx2.png'
 import icon_phone from '../../assets/img/icons/Phone_HDx2.png'
 import icon_tv from '../../assets/img/icons/TV_HDx2.png'
 import icon_douche from '../../assets/img/icons/Shower_HDx2.png'
+import chambre_standard_1 from '../../assets/img/chambres/chambre_standard_1.jpg'
+import chambre_standard_2 from '../../assets/img/chambres/chambre_standard_2.jpg'
+import chambre_standard_3 from '../../assets/img/chambres/chambre_standard_3.jpg'
+import chambre_luxe_1 from '../../assets/img/chambres/chambre_luxe_1.jpg'
+import chambre_luxe_2 from '../../assets/img/chambres/chambre_luxe_2.jpg'
+import chambre_luxe_3 from '../../assets/img/chambres/chambre_luxe_3.jpg'
+import chambre_suite_1 from '../../assets/img/chambres/chambre_suite_1.jpg'
+import chambre_suite_2 from '../../assets/img/chambres/chambre_suite_2.jpg'
+import chambre_suite_3 from '../../assets/img/chambres/chambre_suite_3.jpg'
 
 let meta_title = 'Les Chambres | T Boutique Hôtel — Arcachon'
 let meta_description = 'description'
-
+const standard = [
+    {
+        id: 1,
+        imageSrc: chambre_standard_1
+    },
+    {
+        id: 2,
+        imageSrc: chambre_standard_2
+    },
+    {
+        id: 3,
+        imageSrc: chambre_standard_3
+    }
+]
+const luxe = [
+    {
+        id: 1,
+        imageSrc: chambre_luxe_1
+    },
+    {
+        id: 2,
+        imageSrc: chambre_luxe_2
+    },
+    {
+        id: 3,
+        imageSrc: chambre_luxe_3
+    }
+]
+const suite = [
+    {
+        id: 1,
+        imageSrc: chambre_suite_1
+    },
+    {
+        id: 2,
+        imageSrc: chambre_suite_2
+    },
+    {
+        id: 3,
+        imageSrc: chambre_suite_3
+    }
+]
 const ChambresPageTemplate = ({
   title,
   subtitle,
   meta_description,
   contacts,
   background_header,
-  standard,
   petitDej
 }) => {
   return (
@@ -80,10 +129,10 @@ const ChambresPageTemplate = ({
 
     <div id="standard" className='section  is-paddingless is-marginless'>
         <div className='columns is-paddingless is-marginless is-bg-orange'>
-            <div className='column is-half is-paddingless is-marginless ' style={{ textAlign: 'left' }}>
-                <CarouselChambre imgs={standard} />
+            <div className='column is-half is-paddingless is-marginless is-hidden-touch' style={{ textAlign: 'left' }}>
+                <CarouselChambre  images={standard} />
             </div>
-            <div  className='column is-5  center-v'>
+            <div  className='column is-5-desktop  is-full-tablet center-v'>
                 <div className='section is-paddinglessTB'>
                     <Reveal effect="fadeInUp"  duration={1400} >
                         <div>
@@ -136,6 +185,9 @@ const ChambresPageTemplate = ({
                         </Reveal>
                     </div>
                 </div>
+            </div>
+            <div className='column is-full is-paddingless is-marginless is-hidden-desktop' style={{ textAlign: 'left' }}>
+                <CarouselChambre  images={standard} />
             </div>
         </div>
     </div>
@@ -204,7 +256,7 @@ const ChambresPageTemplate = ({
               <div className='column is-half is-paddingless is-marginless'>
                   
                 <div style={{ width: "100%" }}>
-                <CarouselChambre />
+                <CarouselChambre images={luxe} />
 
               </div>
               </div>
@@ -217,7 +269,7 @@ const ChambresPageTemplate = ({
     <div id="suite" className='section  is-paddingless is-marginless'>
         <div className='columns is-paddingless is-marginless is-bg-vert'>
             <div className='column is-half is-paddingless is-marginless' style={{ textAlign: 'left' }}>
-                <CarouselChambre  />
+                <CarouselChambre  images={suite} />
             </div>
             <div  className='column is-5 center-v is-paddinglessTB'>
                 <div className='section'>
