@@ -56,12 +56,12 @@ const ContactPageTemplate = ({
                         </Reveal>
                         <Reveal effect="fadeInUp"  duration={1400} >
                             <div className='column is-4'>
-                            (+33)5.56.83.67.70
+                            <a href="tel:+33556836770">(+33)5.56.83.67.70</a>
                             </div>
                         </Reveal>
                         <Reveal effect="fadeInUp"  duration={1400} >
                             <div className='column is-4'>
-                                hello@tboutiquehotel.fr
+                                <a href="mailto:hello@boutiquehotel.fr">hello@tboutiquehotel.fr</a>
                             </div>
                         </Reveal>
                 </div>

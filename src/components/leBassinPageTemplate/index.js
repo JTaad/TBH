@@ -45,7 +45,7 @@ const BassinPageTemplate = ({
  
     
     <Reveal effect="fadeInUp"  duration={1400} >
-    <div className='section is-bg-jaune'>
+    <div className='section is-bg-orange'>
         <div className='columns'>
             <div className="column is-6 is-offset-3 has-text-centered">
                <Reveal effect="fadeInUp"  duration={1400} >

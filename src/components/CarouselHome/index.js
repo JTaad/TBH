@@ -36,10 +36,11 @@ class CarouselHome extends Component {
     };
 
   }
+  
   componentDidMount() {
         setTimeout(() => {
             window.dispatchEvent(new Event('resize'));
-        }, 50);
+        }, 200);
   }
 
 

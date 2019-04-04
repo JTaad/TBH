@@ -38,7 +38,7 @@ const TboutiquePageTemplate = ({
     </div>
 
 <div className="container-full">
-    <div className='section  is-paddingless is-marginless' style={{position:'relative', zIndex:"999"}}>
+    <div className='section  is-paddingless is-marginless'>
         <div className='columns is-paddingless is-marginless'>
            <Reveal effect="fadeInUp"  duration={1400} >
                 <div className='column is-half is-paddingless is-marginless imgContent' style={{ textAlign: 'left' }}>
@@ -76,7 +76,7 @@ const TboutiquePageTemplate = ({
 
 
     <div  className='container-full ' style={{marginTop: '-100px'}}>
-        <div className='is-bg-vert'>
+        <div className='is-bg-orange'>
         <div className='container'>
 
       <div className='section  is-paddingless is-marginless'>
@@ -168,11 +168,17 @@ const TboutiquePageTemplate = ({
 
     <div className='section  is-paddingless is-marginless'>
         <div className='columns is-paddingless is-marginless'>
-            <div className='column is-half is-paddingless is-marginless imgContent' style={{ textAlign: 'left' }}>
-               <Img 
-                  style={{ position: 'absolute', left: '0', top: "0", width: "100%", height: "100%" }} 
-                  fluid={family.childImageSharp.fluid}
-                  /> 
+            
+        <div className='column is-6   is-paddingless  center-v'>   
+                  <div style={{ width: "80%", marginLeft: 'auto' }}>
+                        <br/> 
+                        <br/> 
+                        <Reveal effect="fadeInUp"  duration={1400} >
+                              <Img fluid={family.childImageSharp.fluid}/>
+                        </Reveal>
+                        <br/>
+                        <br/> 
+                    </div> 
             </div>
             <div  className='column is-5  center-v is-paddinglessTB'>
                 <div className='section'>
@@ -180,7 +186,7 @@ const TboutiquePageTemplate = ({
                         <div>
                             <div className="arrow-r subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless">←</div>
                             <br/>
-                            <h4 className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>Family story</h4>
+                            <h3 className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>A Family story</h3>
                         </div>
                     </Reveal>
                     

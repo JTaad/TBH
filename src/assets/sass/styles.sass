@@ -30,7 +30,9 @@ $size-3: 2.5rem
 $column-gap: 2.5rem
 $button-background-color : 'transparent'
 $button-color: $blue
+$button-border-color: $blue
 $title-line-height: 1.125
+
   
 // Import Bulma core
 @import '~bulma'
@@ -39,6 +41,9 @@ $title-line-height: 1.125
 
 // Import Bulma Extensions 
 
+a
+  &:hover
+    text-decoration: underline
 
 .button-espacePro-home
   background-color: $white
@@ -46,7 +51,6 @@ $title-line-height: 1.125
   font-family:  $fontTitle
   padding: 25px
   padding-bottom: 32px
-
 
 
 * 
@@ -135,7 +139,7 @@ body p
   font-weight: 500    
 .carouselAll 
   padding-bottom: 33px
-  padding-top: 33px
+  padding-top: 15px
   @include until($tablet)
     width: calc(100% - 4rem) !important
     margin-left: auto !important
@@ -197,6 +201,10 @@ body p
   border: 1px solid $blue
   span
     color: $white  
+#email
+  padding: 33px
+  font-family: $fontCorps
+  border-color: #FFF
 #email.input::placeholder
   color: $white
   background-color: $blue
@@ -346,11 +354,14 @@ body p
   
   
 .footer
+  p
+    font-weight: normal
   #arrowTop
     font-family: $fontTitle
     color: $white!important
     &:hover
       color:#B8B8B8!important
+      text-decoration: none
   ul 
     padding: 0
     margin: 0
@@ -360,13 +371,8 @@ body p
       font-family: $fontCorps
   * 
     color: $white
-    a
-      &:hover
-        color:#B8B8B8
-    .button.is-primary.is-inverted.is-outlined:hover,
-    .button.is-primary.is-inverted.is-outlined:focus
-      &:hover
-        color:#B8B8B8
+    &:hover
+      color: #FFF
 
 .title
   font-weight: normal
@@ -385,10 +391,8 @@ a.title
   padding-bottom: 10px
 
 .button
-  border: 1px solid $black
   border-radius: 0
   font-family: $fontTitle
-  color: $black
 
 .boldTitle
   font-family: $fontTitleBold
@@ -453,11 +457,11 @@ p
   display: flex
   flex: 1 1 auto
   text-align: center
-  width: 700px
+  width: 645px
   position: absolute
   color:#fff
   top: 50%
-  left: calc(50% - 350px)
+  left: calc(50% - 322px)
   .blocResaDiv
     cursor: pointer
     display: flex
@@ -468,8 +472,8 @@ p
     padding: 0
     background-color: $blue
     color: $white
-    padding-top: 11px
-    padding-bottom: 12px
+    padding-top: 6px
+    padding-bottom: 7px
     font-family: $fontTitle
     margin-left: 1px
     &:hover
@@ -553,6 +557,8 @@ p
 #nousTrouver
   font-family: $fontTitle
   color: $blue
+  margin-top: .8rem
+  margin-bottom: .8rem
   @include until($tablet)
     text-align: center
     img
@@ -574,6 +580,17 @@ p
       padding-bottom: 20px
     &:last-of-type
       border-right: 1px solid $blue
+
+a.button
+  &:hover
+    text-decoration: none
+
+h4
+  font-family: $fontCorps
+  font-weight: normal!important
+  color: #FFF!important
+  text-transform: uppercase
+  margin-top: -3px
 
 //NAV
 
@@ -644,14 +661,32 @@ p
   top: 0vh
   left: 0
 
+#navButtonHover
+  cursor: pointer
+  border: 1px solid transparent
+  background-color: transparent!important
+  border-radius: 50%
+  width: 40px!important
+  height: 40px!important
+  padding-left: 5px!important
+  padding-top: 9px!important
+  margin-top: -9px!important
+  margin-left: -5px!important
+  transition: all .2s ease-in-out
+  &:hover
+    border: 1px solid $blue
+    box-shadow: 0 0 2px 0px $blue inset, 0 0 2px 0px $blue
+    transition: all .2s ease-in-out
+
 #navButton
   cursor: pointer
+  width: 28px!important
   div
-    width: 26px
-    height: 3px
+    width: 28px
+    height: 4px
     background-color: $blue
     margin: 4px 0
-    border-radius: 5px
+    border-radius: 3px
 
 .is-fixed-top
   z-index: 999999999999999
@@ -720,6 +755,7 @@ p
       &:hover 
         color: $blue
         text-shadow: $fontShadowWhite
+        text-decoration: none
     .navFocus
       color: $blue
       text-shadow: $fontShadowWhite
@@ -734,11 +770,11 @@ p
 .loadVideoTrue
   animation-duration: 10s
   animation-name: loadVideoTrue
-  background-color: #F8F7D6
+  background-color: $white
   opacity: 0
   
 .loadVideoFalse
-  background-color: #F8F7D6
+  background-color: $white
   opacity: .9
 
 
@@ -750,7 +786,7 @@ p
 
 @keyframes loadVideoTrue 
     0%
-      opacity: .9
+      opacity: .95
     100%
       opacity: 0
 
@@ -797,3 +833,27 @@ p
       width: 300%
       left: -100%
       position: relative
+
+
+
+.DateRangePickerInput_arrow.DateRangePickerInput_arrow_1 
+    display: none
+
+
+
+.DateInput_screenReaderMessage
+  overflow: visible
+  clip: auto
+  width: 100%
+  pointer-events: none
+  &:before
+    content: ''
+    width: 21px
+    height: 22px
+    position: absolute
+    right: 16px
+    bottom: 15px
+    background: url('/arrow_slider_left.png') no-repeat
+    background-size: contain
+
+

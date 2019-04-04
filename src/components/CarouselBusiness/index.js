@@ -39,7 +39,7 @@ class CarouselBusiness extends Component {
   componentDidMount() {
         setTimeout(() => {
             window.dispatchEvent(new Event('resize'));
-        }, 250);
+          }, 200);
   }
 
 
@@ -76,14 +76,14 @@ class CarouselBusiness extends Component {
     return (
       <div className='container-fullhd' className={this.state.colorBg} >
     <div className='container'>
-    
+    <br/>
     
       <div className='section' style={{paddingBottom: "0px"}}>
-        <div className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-centered' style={{textAlign:'center'}}>NOS PLANS DE SALLES_</div>
+        <div className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-centered' style={{textAlign:'center', marginBottom: '0'}}>NOS PLANS DE SALLES_</div>
       
         <div id="carousel-business" className='carouselAll ' style={{ display: "flex", justifyContent: "space-evenly" }}>
             {this.state.items.map(({ titre, capacite, urlLink, slideIndex }) => (
-               <button className={ this.state.slideIndex == slideIndex ? 'carouselActive' : 'carouselNotActive' } onClick={() => this.setState({ slideIndex, urlLink, capacite, titre})}><p>{titre}</p></button>
+               <button className={ this.state.slideIndex == slideIndex ? 'carouselActive' : 'carouselNotActive' } onClick={() => this.setState({ slideIndex, urlLink, capacite, titre})}><p className="is-size-5">{titre}</p></button>
             ))} 
       </div>
 </div>
@@ -176,6 +176,7 @@ class CarouselBusiness extends Component {
       </div>
 
 </div>
+    <br/>
 </div>
 
     )

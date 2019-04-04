@@ -52,7 +52,7 @@ const BusinessPageTemplate = ({
 
 
 
-    <div className='section  is-paddingless is-marginless' style={{zIndex: "9999", position:"relative"}}>
+    <div className='section  is-paddingless is-marginless'>
         <div className='columns is-paddingless is-marginless'>
             <Reveal effect="fadeInUp"  duration={1400} >
                 <div className='column is-half is-paddingless is-marginless imgContent' style={{ textAlign: 'left' }}>
@@ -193,29 +193,24 @@ const BusinessPageTemplate = ({
 </div>
    
 
-<div className='container'>
-
-
-      <div className='section business-call' style={{paddingBottom: '0'}}>
-          <div className='columns '>
-              <div  className='column  is-full'>
-              <div style={{display: 'flex', justifyContent: 'center', }}>
+<div className='section "center-v'>
+<br/>
+      <div className='business-call center-v ' style={{alignItems: "center" ,justifyContent: "center"}}>
+              <div className="center-v " style={{display: 'flex', justifyContent: 'center', }}>
                     <Reveal effect="fadeInUp"  duration={1400} >
                         <a className='title is-4' href='mailto:hello@tboutiquehotel.fr' style={{margin: '0', padding: '0'}}>
                         DEMANDER NOUS UN DEVIS
                         </a>
-                        <p className='title is-5' style={{marginTop: "5px"}}>
+                        <p className='title is-5 '   style={{marginBottom: "-4px"}}>
                         &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
                         </p>
                         <a className='title is-4' href='tel:(+33)556836770' style={{margin: '0', padding: '0'}}>
                         APPELLEZ-NOUS
                         </a>
                     </Reveal>
-               </div>
-                 </div>
             </div>
-            <br/><br/>
       </div>
+<br/>
    </div>
 
 

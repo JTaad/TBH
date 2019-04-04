@@ -81,9 +81,11 @@ const NavBar = ({toggleNavbarMain, navToggle}) => (
       
             <div id="navHeader" >
                 <div>
-                    <div id='navButton' onClick={toggleNavbarMain}>
-                        <div></div>
-                        <div></div>
+                    <div id="navButtonHover" onClick={toggleNavbarMain}>
+                        <div id='navButton' >
+                            <div></div>
+                            <div></div>
+                        </div>
                     </div>
                 </div>
                 <div>

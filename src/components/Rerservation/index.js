@@ -4,7 +4,6 @@ import "react-dates/initialize"
 import "react-dates/lib/css/_datepicker.css"
 import "./index.sass"
 import { DateRangePicker } from "react-dates"
-import Fade from 'react-reveal/Fade';
 
 moment.locale('fr', {
   months : 'Janvier_Février_Mars_Avril_Mai_Juin_Juillet_Août_Septembre_Octobre_Novembre_Décembre'.split('_'),
@@ -129,7 +128,6 @@ handleSubmitForm = () => {
             <input id="a_mois" type="hidden" value={this.state.endMonth} name="tmonth" id="tmonth"/>
             <input id="a_annee" type="hidden" value={this.state.endYear} name="tyear" id="tyear"/>
           </form>
-     <Fade duration={2000} >
       <DateRangePicker
         withPortal
         transitionDuration={300}
@@ -137,8 +135,8 @@ handleSubmitForm = () => {
         displayFormat={() => "DD/MM/YYYY"}
         endDateId="endDate"
         numberOfMonths={2}
-        startDatePlaceholderText=  "Arrivée ?"
-        endDatePlaceholderText="Départ ?"
+        startDatePlaceholderText=  "↘ Arrivée ?"
+        endDatePlaceholderText="↘ Départ ?"
         startDate={this.state.startDate}
         endDate={this.state.endDate}
         onDatesChange={({ startDate, endDate }) => {
@@ -153,7 +151,6 @@ handleSubmitForm = () => {
                Disponibilités
           </div>
 
-        </Fade>
       </div>
     );
   }

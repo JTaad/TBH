@@ -24,21 +24,21 @@ const Footer = ({ scrollTop }) => {
                           <img src={logo_footer} style={{ width: '170px'}} alt="T Boutique Hôtel" />
 
                           </div>
-                          <div className='column is-two-thirds'>
+                          <div className='column is-8'>
                               <Mailchimp />
                           </div>
                     </div>
                     
                     <div className='columns'>
-                        <div className='column'>
+                        <div className='column is-4'>
                         <p>82 Boulevard de la Plage,<br/>
                           33120 Arcachon</p>
                           <a className="navTel" href="tel:(+33)556836770">(+33) 5 56 83 67 70</a>
                           <br/>
-                          <a className="navMail" style={{fontWeight: '500'}} href="mailto:hello@tboutiquehotel.fr">hello@tboutiquehotel.fr</a>
+                          <a className="navMail" href="mailto:hello@tboutiquehotel.fr">hello@tboutiquehotel.fr</a>
                   
                         </div>
-                        <div className='column'>
+                        <div className='column is-3'>
                         
                             <ul>
                               <li><Link className='' to='/'>
@@ -58,18 +58,19 @@ const Footer = ({ scrollTop }) => {
                               </Link></li>
                             </ul>
                         </div>
-                        <div className='column'>
+                        <div className='column is-3'>
                         
-                          <div style={{textAlign: "right"}}>
+                          <div>
                               <div style={{ fontWeight: "500", marginBottom: "15px" }}>@tboutiquehotel</div>
                               <a style={{ marginRight: "15px" }} href="https://www.instagram.com/tboutiquehotel/"><FaInstagram size={25} /></a>
                               <a href="https://www.facebook.com/tboutiquehotel/"><FaFacebook size={25} /></a>
                           </div>
                         </div>
-                    </div>
-
-                    <div className="has-text-centered">
-                        <a id='arrowTop' className='title is-3' onClick={scrollTop}>↑</a>
+                        <div className='column is-2'>
+                          <div className="is-pulled-right">
+                              <a id='arrowTop' className='title is-3' onClick={scrollTop}>↑</a>
+                          </div>
+                        </div>
                     </div>
 
                   </div>
