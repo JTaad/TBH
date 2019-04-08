@@ -33,35 +33,35 @@ export const tBoutiquePageQuery = graphql`
   query TBoutiquePage($id: String!) {
     background_header: file(relativePath: { eq: "tboutique/let_header.jpg" }) {
       childImageSharp{
-        fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }) {
+        fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
            ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     concept: file(relativePath: { eq: "tboutique/let_let.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }) {
+        fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
   }
-  histoire: file(relativePath: { eq: "tboutique/lhistoire.jpg" }) {
+  histoire: file(relativePath: { eq: "tboutique/let_hotel.jpg" }) {
     childImageSharp {
-      fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }) {
+      fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
         ...GatsbyImageSharpFluid_withWebp_tracedSVG
       }
     }
 }
 boutique: file(relativePath: { eq: "tboutique/let_laboutique.jpg" }) {
   childImageSharp {
-    fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }) {
+    fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
       ...GatsbyImageSharpFluid_withWebp_tracedSVG
     }
   }
 }
 family: file(relativePath: { eq: "tboutique/let_family.jpg" }) {
   childImageSharp {
-    fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }) {
+    fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
       ...GatsbyImageSharpFluid_withWebp_tracedSVG
     }
   }

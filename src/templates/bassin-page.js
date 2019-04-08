@@ -37,56 +37,56 @@ export const bassinPageQuery = graphql`
   query BassinPages($id: String!) {
     background_header: file(relativePath: { eq: "bassin/lebassin_header.jpg" }) {
       childImageSharp{
-        fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }) {
+        fluid(maxWidth: 2400,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
            ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     criee: file(relativePath: { eq: "bassin/lebassin_lacriee.jpg" }) {
       childImageSharp{
-        fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }) {
+        fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
            ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     petittrain: file(relativePath: { eq: "bassin/lebassin_petittrain.jpg" }) {
       childImageSharp{
-        fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }) {
+        fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
            ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     lemarche: file(relativePath: { eq: "bassin/lebassin_lemarche.jpg" }) {
       childImageSharp{
-        fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }) {
+        fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
            ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     cabanes: file(relativePath: { eq: "bassin/lebassin_cabanes.jpg" }) {
       childImageSharp{
-        fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }) {
+        fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
            ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     pinasse: file(relativePath: { eq: "bassin/lebassin_pinasse.jpg" }) {
       childImageSharp{
-        fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }) {
+        fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
            ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     dune: file(relativePath: { eq: "bassin/lebassin_ladunbe.jpg" }) {
       childImageSharp{
-        fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }) {
+        fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
            ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     moulleau: file(relativePath: { eq: "bassin/lebassin_lemoulleau.jpg" }) {
       childImageSharp{
-        fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }) {
+        fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
            ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }

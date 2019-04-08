@@ -64,84 +64,84 @@ export const chambresPageQuery = graphql`
     }
     background_header: file(relativePath: { eq: "chambres/header_chambre_1.jpg" }) {
       childImageSharp{
-        fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }) {
+        fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
            ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     petitDej: file(relativePath: { eq: "chambres/chambre_petitdejeuner.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }) {
+        fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     iconWifi: file(relativePath: { eq: "icons/Wifi_HDx2.png" }) {
       childImageSharp {
-        fluid(maxWidth: 50,traceSVG: { background: "#fff", color: "#F8F7D6" }) {
+        fluid(maxWidth: 50,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     iconPhone: file(relativePath: { eq: "icons/Phone_HDx2.png" }) {
       childImageSharp {
-        fluid(maxWidth: 50,traceSVG: { background: "#fff", color: "#F8F7D6" }) {
+        fluid(maxWidth: 50,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     iconTv: file(relativePath: { eq: "icons/TV_HDx2.png" }) {
       childImageSharp {
-        fluid(maxWidth: 50,traceSVG: { background: "#fff", color: "#F8F7D6" }) {
+        fluid(maxWidth: 50,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     iconDouche: file(relativePath: { eq: "icons/Shower_HDx2.png" }) {
       childImageSharp {
-        fluid(maxWidth: 50,traceSVG: { background: "#fff", color: "#F8F7D6" }) {
+        fluid(maxWidth: 50,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     iconSecheCheveux: file(relativePath: { eq: "icons/HotHair_HDx2.png" }) {
       childImageSharp {
-        fluid(maxWidth: 50,traceSVG: { background: "#fff", color: "#F8F7D6" }) {
+        fluid(maxWidth: 50,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     iconClim: file(relativePath: { eq: "icons/Clim_HDx2.png" }) {
       childImageSharp {
-        fluid(maxWidth: 50,traceSVG: { background: "#fff", color: "#F8F7D6" }) {
+        fluid(maxWidth: 50,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     iconCoffre: file(relativePath: { eq: "icons/Lock_HDx2.png" }) {
       childImageSharp {
-        fluid(maxWidth: 50,traceSVG: { background: "#fff", color: "#F8F7D6" }) {
+        fluid(maxWidth: 50,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     iconCafe: file(relativePath: { eq: "icons/Coffee_HDx2.png" }) {
       childImageSharp {
-        fluid(maxWidth: 50,traceSVG: { background: "#fff", color: "#F8F7D6" }) {
+        fluid(maxWidth: 50,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     iconCaudalie: file(relativePath: { eq: "icons/Beauty_HDx2.png" }) {
       childImageSharp {
-        fluid(maxWidth: 50,traceSVG: { background: "#fff", color: "#F8F7D6" }) {
+        fluid(maxWidth: 50,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     iconEau: file(relativePath: { eq: "icons/Water_HDx2.png" }) {
       childImageSharp {
-        fluid(maxWidth: 50,traceSVG: { background: "#fff", color: "#F8F7D6" }) {
+        fluid(maxWidth: 50,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }

@@ -62,7 +62,7 @@ export const pageQuery = graphql`
     }
     concept: file(relativePath: { eq: "home/home_concept.jpg" }) {
       childImageSharp{
-        fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }) {
+        fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
            ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
@@ -109,7 +109,7 @@ export const pageQuery = graphql`
 export const fluidImage = graphql`
 fragment fluidImage on File { 
   childImageSharp {
-    fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }) {
+    fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
       ...GatsbyImageSharpFluid_withWebp_tracedSVG
     }
   }
