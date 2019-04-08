@@ -8,7 +8,7 @@ import '../assets/sass/styles.sass'
 import config from '../../data/config'
 import GlobalStyles from '../layouts/globalStyles'
 import Transition from "../components/Transition"
-import Remise from "../assets/img/remise.png"
+import Remise from "../assets/img/home_remiseHD_X2.png"
 
 class TemplateWrapper extends Component {
   constructor (props) {
@@ -52,8 +52,8 @@ class TemplateWrapper extends Component {
        
        <div> 
 
-      <div style={{fontSize: '18px', position: "fixed", right: "17px", top: "106px", zIndex: '999999999', color: "#FFF", fontFamily: "Poppins", fontWeight: "bold"}} id="remise">10%</div>
-      <img style={{position: 'fixed', right: "0", top: "110px", zIndex: '99999999'}} src={Remise}/>
+      <div style={{fontSize: '22px', position: "fixed", right: "22px", top: "110px", zIndex: '999999999', color: "#FFF", fontFamily: "Poppins", fontWeight: "bold"}} id="remise">10%</div>
+      <img style={{position: 'fixed', right: "0", top: "110px", zIndex: '99999999', width: "70px"}} src={Remise}/>
 
       </div>
         <div >

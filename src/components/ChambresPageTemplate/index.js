@@ -151,13 +151,12 @@ const ChambresPageTemplate = ({
                     <br/>
                     <Reveal effect="fadeInUp"  duration={1400} >
                         <p>
-                            La Standard est le refuge idéal pour se (re)poser après une longue journée. Chaque mètre carré est optimisé pour transformer l’espace en joli nid douillet. 
-                        </p>
+                        La Standard est un refuge idéal pour se (re)poser après une longue journée. Chaque mètre carré est optimisé pour transformer l’espace en joli nid douillet.                         </p>
                     </Reveal>
                     <br/>
                     <Reveal effect="fadeInUp"  duration={1400} >
                         <p>
-                        Il ne vous reste plus qu’à profiter, le temps d’une nuit et plus si affinités...
+                        Il ne vous reste plus qu’à profiter, le temps d’une nuit ou plus si affinité...
                         </p>
                     </Reveal>
                     <br/>
@@ -213,7 +212,7 @@ const ChambresPageTemplate = ({
                     <br/>
                     <Reveal effect="fadeInUp"  duration={1400} >
                       <p>
-                        La Luxe est une zone de confort dans laquelle on lâche prise. Certaines chambres ont un balcon, d’autres sont côté cours ou offrent un aperçu sur le Bassin. Toutes ont le nécessaire pour votre bien-être.
+                      La Luxe est une zone de confort dans laquelle on lâche prise. Toutes les chambres ont un balcon, certaines sont côté cours ou d’autres offrent un aperçu sur le Bassin. Toutes ont le nécessaire pour votre bien-être.
                       </p>
                     </Reveal>
                       <br/>
@@ -288,8 +287,7 @@ const ChambresPageTemplate = ({
                     <br/>
                     <Reveal effect="fadeInUp"  duration={1400} >
                         <p>
-                        La Suite est un espace sur-mesure pour une escale à deux, en famille ou entre amis. Prenez vos aises, étalez vos affaires, glânez sur la terrasse... bref faites ce qui vous plait.
-                        </p>  
+                        La Suite est un espace sur-mesure pour un séjour à deux, en famille ou entre amis. Prenez vos aises, étalez vos affaires, flânez sur la terrasse... bref faites tout ce qui vous plaît.                        </p>  
                     </Reveal>
                     <br/>
                     <Reveal effect="fadeInUp"  duration={1400} >
@@ -336,6 +334,53 @@ const ChambresPageTemplate = ({
         <span className='titleTbhEmpty'>Vos</span> <span className='titleTbhFull'>petits +_</span>
         </div>
     </div>
+
+<div className="container-fullhd"   style={{position: 'absolute'}}>
+    <div className='petitPlus  is-size-5-mobile is-size-4-tablet is-size-4-desktop'>
+        <div className='petitPlusBorder1 is-paddinglessTB'>
+            <div className='petitPlusItem has-text-centered'>
+                    <span><img className='image is-48x48' src={icon_wifi}/></span>
+                    <span className='petitPlusItemTitle'>WIFI_</span>
+            </div>
+            <div className='petitPlusItem has-text-centered'>
+                    <span><img className='image is-48x48' src={icon_phone}/></span>
+                    <span className='petitPlusItemTitle'>TELEPHONE_</span>
+            </div>
+            <div className='petitPlusItem has-text-centered'>
+                    <span><img className='image is-48x48' src={icon_tv}/></span>
+                    <span className='petitPlusItemTitle'>TV_</span>
+            </div>
+            <div className='petitPlusItem has-text-centered'>
+                    <span><img className='image is-48x48' src={icon_douche}/></span>
+                    <span className='petitPlusItemTitle'>DOUCHE MODERNE_</span>
+            </div>
+            <div className='petitPlusItem has-text-centered'>
+                    <span><img className='image is-48x48' src={icon_secheCheveux}/></span>
+                    <span className='petitPlusItemTitle'>SÈCHE CHEVEUX_</span>
+            </div>
+            <div className='petitPlusItem has-text-centered'>
+                    <span><img className='image is-48x48' src={icon_clim}/></span>
+                    <span className='petitPlusItemTitle'>CLIMATISATION RÉVERSIBLE_</span>
+            </div>
+            <div className='petitPlusItem has-text-centered'>
+                    <span><img className='image is-48x48' src={icon_coffre}/></span>
+                    <span className='petitPlusItemTitle'>COFFRE-FORT_</span>
+            </div>
+            <div className='petitPlusItem has-text-centered'>
+                    <span><img className='image is-48x48' src={icon_cafe}/></span>
+                    <span className='petitPlusItemTitle'>MACHINE NESPRESSO_</span>
+            </div>
+            <div className='petitPlusItem has-text-centered'>
+                    <span><img className='image is-48x48' src={icon_caudalie}/></span>
+                    <span className='petitPlusItemTitle'>PRODUITS CAUDALIE_</span>
+            </div>
+            <div className='petitPlusItem has-text-centered'>
+                    <span><img className='image is-48x48' src={icon_eau}/></span>
+                    <span className='petitPlusItemTitle'>BOUTEILLE D'EAU_</span>
+            </div>
+    </div>
+</div>
+</div>
 
 <div className="container-fullhd is-bg-rose" >
     <div className='petitPlus  is-size-5-mobile is-size-4-tablet is-size-4-desktop'>

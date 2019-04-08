@@ -153,9 +153,47 @@ const BusinessPageTemplate = ({
         </div>
     </div>
     
-<div className="container-fullhd is-bg-orange">
+<div className="container-fullhd" style={{position: "absolute"}}>
     <div className='petitPlus title  is-size-5-mobile is-size-4-tablet is-size-4-desktop'>
         <div className='petitPlusBorder is-paddinglessTB'>
+            <div className='petitPlusItem has-text-centered'>
+                    <span><img className='image is-48x48' src={icon_wifi1}/></span>
+                    <span className='petitPlusItemTitle'>WIFI_</span>
+            </div>
+            <div className='petitPlusItem has-text-centered'>
+                    <span><img className='image is-48x48' src={icon_tableau}/></span>
+                    <span className='petitPlusItemTitle'>TABEAU_</span>
+            </div>
+            <div className='petitPlusItem has-text-centered'>
+                    <span><img className='image is-48x48' src={icon_imprimante}/></span>
+                    <span className='petitPlusItemTitle'>IMPRIMANTE_</span>
+            </div>
+            <div className='petitPlusItem has-text-centered'>
+                    <span><img className='image is-48x48' src={icon_theCafe}/></span>
+                    <span className='petitPlusItemTitle'>THÉ & CAFÉ_</span>
+            </div>
+            <div className='petitPlusItem has-text-centered'>
+                    <span><img className='image is-48x48' src={icon_lumiere}/></span>
+                    <span className='petitPlusItemTitle'>LUMIÈRE DU JOUR_</span>
+            </div>
+            <div className='petitPlusItem has-text-centered'>
+                    <span><img className='image is-48x48' src={icon_clim}/></span>
+                    <span className='petitPlusItemTitle'>CLIMATISATION_</span>
+            </div>
+            <div className='petitPlusItem has-text-centered'>
+                    <span><img className='image is-48x48' src={icon_retro}/></span>
+                    <span className='petitPlusItemTitle'>RÉTROPROJECTEUR_</span>
+            </div>
+            <div className='petitPlusItem has-text-centered'>
+                    <span><img className='image is-48x48' src={icon_patio}/></span>
+                    <span className='petitPlusItemTitle'>PATIO_</span>
+            </div>
+    </div>
+</div>
+</div>
+<div className="container-fullhd is-bg-orange">
+    <div className='petitPlus title  is-size-5-mobile is-size-4-tablet is-size-4-desktop'>
+        <div className='petitPlusBorder1 is-paddinglessTB'>
             <div className='petitPlusItem has-text-centered'>
                     <span><img className='image is-48x48' src={icon_wifi1}/></span>
                     <span className='petitPlusItemTitle'>WIFI_</span>

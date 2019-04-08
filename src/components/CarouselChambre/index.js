@@ -9,7 +9,7 @@ class CarouselHome extends Component {
     this.state = {
       slideIndex: 0,
       length: 3,
-      wrapAround: false,
+      wrapAround: true,
       underlineHeader: false,
       slidesToShow: 1,
       cellAlign: "center",

@@ -3,7 +3,7 @@ import {Link} from 'gatsby'
 import config from '../../../data/config'
 import { FaInstagram, FaFacebook } from 'react-icons/fa';
 import Mailchimp from '../Mailchimp'
-import logo_footer from '../../assets/img/logos/logo_nav_tbh.png'
+import logo_footer from '../../assets/img/logos/logo_footer_4K.svg'
 
   
 const Footer = ({ scrollTop }) => {

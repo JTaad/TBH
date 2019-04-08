@@ -503,6 +503,23 @@ p
 .petitPlus
   font-family: $fontTitle
   color: $blue
+  .petitPlusBorder1
+    border-bottom: 1px solid $blue
+    display: flex
+    justify-content: center
+    align-content: center
+    flex-wrap: wrap
+    .petitPlusItem
+      border-bottom: 1px solid $blue
+      margin-bottom: -1px
+      display: flex
+      justify-content: center
+      align-items: center
+      padding: 0px
+      .petitPlusItemTitle
+        margin-top: -2px
+      span
+        margin: 5px
   .petitPlusBorder
     border-bottom: 1px solid $blue
     display: flex
@@ -516,7 +533,9 @@ p
       display: flex
       justify-content: center
       align-items: center
-      padding: 10px
+      padding: 0px
+      *
+        visibility: hidden
       .petitPlusItemTitle
         margin-top: -2px
       span
@@ -607,6 +626,8 @@ h4
   @include until($desktop)
     padding-left: 25px
     padding-right: 25px
+  @include until($tablet)
+    margin-top: 15px
   div
     padding: 0
     flex-grow: 1
@@ -859,3 +880,15 @@ h4
 
 .DateInput_screenReaderMessage_1
   display: none
+
+
+#parking_links
+  text-transform: uppercase
+  font-family: $fontCorps
+  li
+    margin-bottom: 20px
+    p
+      text-transform: none
+      margin-top: 5px
+    a
+      font-weight: 500

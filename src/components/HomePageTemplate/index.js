@@ -8,7 +8,7 @@ import Instagram from '../Instagram'
 import Testimonials from '../Testimonials'
 import Video from '../Video'
 import PropTypes from 'prop-types'
-import nousTrouver from '../../assets/img/home/illuHotel_tbh.png'
+import nousTrouver from '../../assets/img/home/facade_tbh.svg'
 import {Link} from 'gatsby'
 import Fade from 'react-reveal/Fade';
 import Reveal from 'react-reveal/Reveal';
@@ -75,11 +75,10 @@ const HomePageTemplate = ({
                       <Reveal effect="fadeInUp"  duration={1400} >
                     <div>
                         <p>
-                          Le T Boutique Hôtel vous propose une expérience 3 étoiles, à la fois unique et multiple, à Arcachon. Ici la convivialité se mêle au chic, la décontraction au design et la singularité au partage.</p>
-                        <p><br/></p>
-                        <p>
-                          Entièrement rénové, notre hôtel est pensé pour être avant tout le vôtre. Appropriez-vous chacun des espaces, comme à la maison.
-                        </p>
+                        Le T Boutique Hôtel vous propose une expérience 3 étoiles, à la fois unique et multiple, à Arcachon. Ici la convivialité se mêle au chic, la décontraction au design et la singularité au partage.                         </p>
+                        <br/><p>
+                          
+                        Entièrement rénové, notre hôtel est pensé pour être avant tout le vôtre. Appropriez-vous chacun des espaces, comme à la maison.                        </p>
                     </div>
                   </Reveal>
                     <br/>
@@ -150,7 +149,7 @@ const HomePageTemplate = ({
                         </div>
                         <div className='is-full-mobile column  is-4-desktop'>
                             <Reveal effect="fadeInRight"  duration={1400} >
-                                  <img src={nousTrouver} />
+                                  <img style={{width:'75%'}} src={nousTrouver} />
                             </Reveal>
                         </div>
                 </div>

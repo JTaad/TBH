@@ -91,7 +91,7 @@ const TboutiquePageTemplate = ({
                         <div>
                             <div className="arrow-l subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless">→</div>
                             <br/>
-                            <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>L"hôtel</span>
+                            <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>L'hôtel</span>
                         </div>
                       </Reveal>
                         <br/>

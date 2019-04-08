@@ -35,7 +35,7 @@ export default BassinPages
 
 export const bassinPageQuery = graphql`
   query BassinPages($id: String!) {
-    background_header: file(relativePath: { eq: "bassin/business_header.jpg" }) {
+    background_header: file(relativePath: { eq: "bassin/lebassin_header.jpg" }) {
       childImageSharp{
         fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }) {
            ...GatsbyImageSharpFluid_withWebp_tracedSVG

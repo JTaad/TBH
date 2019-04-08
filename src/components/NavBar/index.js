@@ -2,7 +2,7 @@ import React from 'react'
 import {Link, graphql, StaticQuery} from 'gatsby'
 import { FaInstagram, FaFacebook } from 'react-icons/fa';
 import logo_nav from '../../assets/img/logos/logo_nav_tbh.png'
-import logo_nav_header from '../../assets/img/logos/logo_navbar_4K_2x.svg'
+import logo_nav_header from '../../assets/img/logos/logo_navbar.svg'
 
 
 const NavBar = ({toggleNavbarMain, navToggle}) => (
@@ -95,7 +95,7 @@ const NavBar = ({toggleNavbarMain, navToggle}) => (
                 </div>
                 
                 <div id="navHeaderRight">
-                    <a className='title is-5' href="https://secure.reservit.com/fo/booking/2/10768/dates?specialMode=default&langcode=FR&partid=0&custid=2&hotelid=10768&m=booking" target="_blank">RÉSERVER</a>
+                    <a className='title is-4' href="https://secure.reservit.com/fo/booking/2/10768/dates?specialMode=default&langcode=FR&partid=0&custid=2&hotelid=10768&m=booking" target="_blank">RÉSERVER</a>
                 </div>         
           </div>
       </div>

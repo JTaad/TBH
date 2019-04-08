@@ -125,19 +125,18 @@ const ContactPageTemplate = ({
                                             </div>
                                         </Reveal>
                                         <Reveal effect="fadeInUp"  duration={1400} >
-                                        <p style={{fontWeight: 'bold'}}>L"hôtel ne dispose pas de parking</p>
+                                        <p style={{fontWeight: 'bold'}}>L'hôtel ne dispose pas de parking</p>
                                         </Reveal>
                                         <br/>
                                         <br/>
                                         <Reveal effect="fadeInUp"  duration={1400} >
-                                            <div>
-                                                <p>Parking du petit port à 50m</p>
-                                                <p>Zone de stationnement sur le boulevard de la Plage</p>
-                                                <p>-> Payant de de juin à septembre, gratuit le reste de l’année.</p>
-                                                <br/>
-                                                <p>Parking Municipal du Marché</p>
-                                                <p>VOIR LES ZONES DE STATIONNEMENT GRATUIT</p>
-                                            </div>
+                                            <ul id="parking_links">
+                                                <li><a href='https://goo.gl/maps/Goopi82rZHU2' target="_blank">Parking du petit port à 50m</a></li>
+                                                <li><a href='http://www.arcachon.com/acces.html' target="_blank">Zone de stationnement sur le boulevard de la Plage</a>
+                                                <p>-> Payant de de juin à septembre, gratuit le reste de l’année.</p></li>
+                                                <li><a href='https://goo.gl/maps/FRUA9xMerQ22' target="_blank">Parking Municipal du Marché</a></li>
+                                                <li><a href='http://www.ville-arcachon.fr/stationnement/' target="_blank">VOIR LES ZONES DE STATIONNEMENT GRATUIT</a></li>
+                                            </ul>
                                         </Reveal>
                                     </div>
                                      </div>
