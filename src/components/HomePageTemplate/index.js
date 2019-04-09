@@ -2,10 +2,8 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Img from "gatsby-image"
 import CarouselHome from '../CarouselHome'
-import Offerings from '../Offerings'
 import Rerservation from '../Rerservation'
 import Instagram from '../Instagram'
-import Testimonials from '../Testimonials'
 import Video from '../Video'
 import PropTypes from 'prop-types'
 import nousTrouver from '../../assets/img/home/facade_tbh.svg'
@@ -18,10 +16,8 @@ const HomePageTemplate = ({
   title,
   heading, 
   description,
-  offerings,
   meta_title,
   meta_description,
-  testimonials,
   posts_instagram,
   bienvenue,
   background_header,
@@ -40,7 +36,7 @@ const HomePageTemplate = ({
 
       
     <div className='section is-marginless is-paddingless'>
-        <div className='titleTbhFirst titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop'>
+        <div className=' titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop' style={{backgroundColor: "#FFF"}}>
        
           <div>
             <span className='titleTbhEmpty'>Bienvenue au</span> <span className='titleTbhFull'>T_</span> 
@@ -107,9 +103,7 @@ const HomePageTemplate = ({
     </div>
     
 
-   <Reveal effect="fadeInUp"  duration={1400} >
-     <CarouselHome />
-   </Reveal>
+    <CarouselHome />
 
 
     <div className='section is-marginless is-paddingless'>
@@ -137,24 +131,24 @@ const HomePageTemplate = ({
 
 
     <div className='container-full is-bg-jaune'>
-        <div className='section'>
-            <Link to='/contact'>
-                <div id='nousTrouver' className='columns is-vcentered   is-centered'>
-                        <div className='is-full-mobile column  is-3-desktop '>
-                            <Reveal effect="fadeInLeft"  duration={1400} >
-                              <div>
-                                 <span style={{lineHeight: '1'}} className='subtitle is-size-3-mobile is-size-2-tablet is-size-2-desktop'>_Nous&nbsp;&nbsp;&nbsp;<br/>Trouver</span>
-                               </div>
-                            </Reveal>
-                        </div>
-                        <div className='is-full-mobile column  is-4-desktop'>
-                            <Reveal effect="fadeInRight"  duration={1400} >
-                                  <img style={{width:'75%'}} src={nousTrouver} />
-                            </Reveal>
-                        </div>
-                </div>
-            </Link>
-        </div>
+        <Link to='/contact' id="nousTrouver-link" >
+            <div className='section'>
+                    <div id='nousTrouver' className='columns is-vcentered   is-centered'>
+                            <div className='is-full-mobile column  is-3-desktop'>
+                                <Reveal effect="fadeInLeft"  duration={1400} >
+                                  <div>
+                                    <span style={{lineHeight: '1'}} className='subtitle is-size-3-mobile is-size-3-tablet is-size-2-desktop'>_Nous&nbsp;&nbsp;&nbsp;<br/>Trouver</span>
+                                  </div>
+                                </Reveal>
+                            </div>
+                            <div className='is-full-mobile column  is-4-desktop'>
+                                <Reveal effect="fadeInRight"  duration={1400} >
+                                      <img style={{width:'75%'}} src={nousTrouver} />
+                                </Reveal>
+                            </div>
+                    </div>
+            </div>
+        </Link>
     </div>
 
 
@@ -195,29 +189,6 @@ const HomePageTemplate = ({
           </div>
     </div>
 
-    
-    <section className='section section--gradient' style={{display:'none'}}>
-      <div className='container'>
-
-        <div className='section'>
-          <div className='columns'>
-            <div className='column is-10 is-offset-1'>
-              <div className='content'>
-                <div>
-                  <h3 className='has-text-weight-semibold is-size-2'>
-                    {heading}
-                  </h3>
-                  <p>{description}</p>
-                </div>
-                <Offerings gridItems={offerings.blurbs} />
-                <h2 className='has-text-weight-semibold is-size-2'>Testimonials</h2>
-                <Testimonials testimonials={testimonials} />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   </div>
 )
 
@@ -227,10 +198,6 @@ HomePageTemplate.propTypes = {
   meta_description: PropTypes.string,
   heading: PropTypes.string,
   description: PropTypes.string,
-  offerings: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
-  testimonials: PropTypes.array,
   posts_instagram: PropTypes.array,
 
 }

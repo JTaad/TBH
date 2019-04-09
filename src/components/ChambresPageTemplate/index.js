@@ -120,7 +120,7 @@ const ChambresPageTemplate = ({
  </div>
 
     <div className='section is-marginless is-paddingless'>
-        <div className='titleTbhFirst titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop'>
+        <div className=' titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop'>
           <span className='titleTbhEmpty'>Les</span> <span className='titleTbhFull'>Chambres_</span>
         </div>
     </div>
@@ -163,8 +163,8 @@ const ChambresPageTemplate = ({
                     <br/>
                     <div className='columns is-size-7'>
                         <Reveal effect="fadeInUp"  duration={1400} >
-                            <div className='column is-half'>
-                                <div className='subtitle subtitle-chambres is-size-6 is-marginless'>LA CHAMBRE</div>
+                            <div className='column is-half '>
+                                <div className='subtitle subtitle-chambres is-size-6 is-marginless '>LA CHAMBRE</div>
                                 <p>16 m2 en moyenne</p>
                             </div>
                         </Reveal>

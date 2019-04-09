@@ -44,13 +44,28 @@ $title-line-height: 1.125
 a
   &:hover
     text-decoration: underline
+  &:active 
+      outline-style: 0
 
+button
+  &:active 
+      outline: 0
+  &:focus 
+      outline: 0
+
+#nousTrouver-link
+  &:hover
+    text-decoration: none
 .button-espacePro-home
   background-color: $white
   color: $blue
   font-family:  $fontTitle
-  padding: 25px
-  padding-bottom: 32px
+  padding: 20px
+  padding-bottom: 27px
+  &:hover
+    text-decoration: none
+    background-color: $blue
+    color: $white
 
 
 * 
@@ -89,6 +104,8 @@ a
       width: 32px!important
 
 .slider
+  .slider-slide
+    min-height: calc(100% - 80px)
   .slider-frame
     @include until($tablet)
       margin-left: auto !important
@@ -127,10 +144,11 @@ a
     background-color: transparent!important
     outline: none
     border: 0px
-    font-size: 2rem
+    font-size: 2rem!important
     cursor: pointer
-    margin-left: 40px
-    margin-right: 40px
+    margin-left: 0px
+    color: $blue!important
+    margin-right: 0px
     &:hover
       color: $white!important
 
@@ -139,7 +157,7 @@ body p
   font-weight: 500    
 .carouselAll 
   padding-bottom: 33px
-  padding-top: 15px
+  padding-top: 25px
   @include until($tablet)
     width: calc(100% - 4rem) !important
     margin-left: auto !important
@@ -337,7 +355,6 @@ body p
   color: $white
   font-size: 6rem
   line-height: 7rem
-  right: 10px
 
 
 .subtitle-chambres
@@ -558,6 +575,7 @@ p
   border-bottom: 1px solid $blue
   text-align: center
   font-family: $fontTitle
+  background-color: $white
   @include until($tablet)
     height: auto!important
     padding-top: 15px

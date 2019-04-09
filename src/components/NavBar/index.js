@@ -7,7 +7,7 @@ import logo_nav_header from '../../assets/img/logos/logo_navbar.svg'
 
 const NavBar = ({toggleNavbarMain, navToggle}) => (
   <div>
-      <nav id="nav_norm" className={navToggle ? 'nav-on' : 'nav-off'} aria-label='main navigation' style={{zIndex:"999999999"}}>
+      <nav id="nav_norm" className={navToggle ? 'nav-on' : 'nav-off'} aria-label='main navigation' style={{zIndex:"999999999999999999"}}>
         <div  id="navMain" className='container is-fixed-top '>
                 <div className="column-nav-left is-flex-desktop">
                     <div id="contentNavNorm" className=''>

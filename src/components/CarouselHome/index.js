@@ -84,7 +84,10 @@ class CarouselHome extends Component {
       <div className={this.state.colorBg}>
           <div className='columns is-paddingless is-marginless is-paddinglessTB '>
               <div  className='column center-v is-paddinglessTB 
-               is-full-half
+                is-full-mobile
+                is-full-tablet
+                is-5-desktop
+
                is-5-desktop 
                is-offset-1-desktop 'style={{position: 'relative'}}>
                   <div className='section section-text'>
@@ -116,7 +119,7 @@ class CarouselHome extends Component {
                       </Reveal>
  
    
-                      <TransitionGroup  className="is-pulled-right  is-hidden-touch " style={{display: "block", height:"140px"}}>
+                      <TransitionGroup  className="is-pulled-right  is-hidden-touch " style={{display: "block", height:"140px",position: "absolute",right: "110px", bottom: "55px"}}>
                         <CSSTransition
                           key={this.state.slideIndex}
                           timeout={1000}
@@ -132,7 +135,9 @@ class CarouselHome extends Component {
               </div>
               <div className='column 
               is-paddingless is-marginless
-              is-half-desktop   '>
+              is-full-mobile
+              is-full-tablet
+              is-half-desktop  '>
                   
                 <div style={{ width: "100%" }}>
                 <Carousel
