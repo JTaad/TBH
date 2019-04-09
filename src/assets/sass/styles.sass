@@ -296,6 +296,32 @@ body p
     100% 
       transform: scaleY(1) translateY(0)
       opacity: 1 
+    
+
+@keyframes rightToLeft
+    0%
+      right: 0
+    100% 
+      right: -70px
+
+@keyframes leftToRight
+    0%
+      right: -70px
+    100% 
+      right: 0px
+
+#remise
+  transition: all .5s ease-in-out
+  position: fixed
+  top: 110px
+  z-index: 99999999
+  width: 70px
+
+.remise-on
+  right: 0px
+
+.remise-off
+  right: -70px
 
 .business-call
   a 

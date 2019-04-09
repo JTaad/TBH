@@ -16,11 +16,24 @@ class TemplateWrapper extends Component {
     this.state = {
       isActive: false,
       navToggle: false,
+      isRemise: true,
     }
     this.toggleNavbar = this.toggleNavbar.bind(this) 
     this.toggleNavbarMain = this.toggleNavbarMain.bind(this) 
   }
 
+
+
+  componentDidMount () {
+    window.onscroll = function() {
+      if(window.pageYOffset === 0 && this.state.isRemise == false) {
+          this.setState({isRemise: true})
+      }
+      else{
+        this.setState({isRemise: false})
+      }
+    }.bind(this);
+  }
   toggleNavbar () {
     this.setState({isActive: !this.state.isActive})
   }
@@ -52,8 +65,10 @@ class TemplateWrapper extends Component {
        
        <div> 
 
-      <div style={{fontSize: '22px', position: "fixed", right: "22px", top: "110px", zIndex: '999999999', color: "#FFF", fontFamily: "Poppins", fontWeight: "bold"}} id="remise">10%</div>
-      <img style={{position: 'fixed', right: "0", top: "110px", zIndex: '99999999', width: "70px"}} src={Remise}/>
+      <div id="remise"  className={this.state.isRemise ? 'remise-on' : 'remise-off'} >
+        <div style={{fontSize: '22px', position: "relative", left: "10px", top: "35px", zIndex: '999999999', color: "#FFF", fontFamily: "Poppins", fontWeight: "bold"}} id="remise">10%</div>
+        <img src={Remise}/>
+      </div>
 
       </div>
         <div >
