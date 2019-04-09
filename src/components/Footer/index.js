@@ -53,6 +53,9 @@ const Footer = ({ scrollTop }) => {
                               <li ><Link className='' to='/tboutique'>
                                               Le "T" Boutique
                               </Link></li>
+                              <li ><Link className='' to='/bassin'>
+                                              Le Bassin
+                              </Link></li>
                               <li ><Link className='' to='/contact'>
                                               À Bientôt
                               </Link></li>
