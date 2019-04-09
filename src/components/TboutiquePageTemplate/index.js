@@ -40,15 +40,16 @@ const TboutiquePageTemplate = ({
 <div className="container-full">
     <div className='section  is-paddingless is-marginless'>
         <div className='columns is-paddingless is-marginless'>
-           <Reveal effect="fadeInUp"  duration={1400} >
-                <div className='column is-half is-paddingless is-marginless imgContent' style={{ textAlign: 'left' }}>
-                <Img 
-                    style={{ position: 'relative', left: '0', top: "0", width: "100%", height: "100%" }} 
-                    fluid={concept.childImageSharp.fluid}
-                    /> 
-                </div>
-            </Reveal>
-            <div  className='column is-5 center-v '>
+        <div className='column is-6   is-paddingless  center-v'>   
+                  <div style={{ width: "80%", marginLeft: 'auto' }}>
+                        <br/> 
+                        <Reveal effect="fadeInUp"  duration={1400} >
+                              <Img fluid={concept.childImageSharp.fluid}/>
+                        </Reveal>
+                        <br/>
+                    </div> 
+        </div>
+            <div  className='column is-6 center-v '>
                 <div className='section '>
                     <Reveal effect="fadeInUp"  duration={1400} >
                         <div>
@@ -75,15 +76,10 @@ const TboutiquePageTemplate = ({
     </div>
 
 
-    <div  className='container-full ' style={{marginTop: '-100px'}}>
+    <div  className='container-full '>
         <div className='is-bg-orange'>
         <div className='container'>
 
-      <div className='section  is-paddingless is-marginless'>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
           <div className='columns is-paddingless is-marginless '>
               <div  className='column  is-5   center-v'>
                   <div className='section'>
@@ -115,7 +111,6 @@ const TboutiquePageTemplate = ({
               </div>
               </div>
           </div> 
-      </div>
 </div> 
 </div>
     </div>
@@ -172,12 +167,10 @@ const TboutiquePageTemplate = ({
         <div className='column is-6   is-paddingless  center-v'>   
                   <div style={{ width: "80%", marginLeft: 'auto' }}>
                         <br/> 
-                        <br/> 
                         <Reveal effect="fadeInUp"  duration={1400} >
                               <Img fluid={family.childImageSharp.fluid}/>
                         </Reveal>
                         <br/>
-                        <br/> 
                     </div> 
             </div>
             <div  className='column is-5  center-v is-paddinglessTB'>

@@ -144,7 +144,6 @@ const ChambresPageTemplate = ({
                         </div>
                     </Reveal>
                     <br/>
-                    <br/>
                     <Reveal effect="fadeInUp"  duration={1400} >
                       <div className='sub-p is-size-5'><p>Pour une bonne nuit</p></div>
                     </Reveal>
@@ -204,7 +203,6 @@ const ChambresPageTemplate = ({
                             <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>Luxe</span>
                       </div>
                      </Reveal>
-                    <br/>
                     <br/>
                     <Reveal effect="fadeInUp"  duration={1400} >
                       <div className='sub-p is-size-5'><p>POUR UN BON MOMENT</p></div>
@@ -279,7 +277,6 @@ const ChambresPageTemplate = ({
                             <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>Suite</span>
                         </div>
                     </Reveal>
-                    <br/>
                     <br/>
                     <Reveal effect="fadeInUp"  duration={1400} >
                       <div className='sub-p is-size-5'><p>POUR UNE BELLE EXPÉRIENCE</p></div>

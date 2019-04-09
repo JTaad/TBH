@@ -89,14 +89,13 @@ const BassinPageTemplate = ({
                         </div>
                     </Reveal>
                     <br/>
-                    <br/>
                     <Reveal effect="fadeInUp"  duration={1400} >
                       <div className='sub-p is-size-5 '><p>LA Criée d’arcachon</p></div>
                     </Reveal>
                     <br/>
                     <Reveal effect="fadeInUp"  duration={1400} >
                         <p>
-                        Notre programme démarre à 6h30, à la Criée d’Arcachon. Une fois que les pêcheurs du coin ont entassé leurs prises dans des casiers, la vente peut commencer.  Vous verrez défiler de nombreuses espèces de poissons, coquillages et crustacés et vous assisterez à la vente, aux enchères s’il vous plaît, de ces beaux produits. Une vraie expérience !
+                        Notre programme démarre à 6h30, à la Criée d’Arcachon. Une fois que les pêcheurs du coin ont entassé leurs prises dans des casiers, la vente peut commencer. Vous verrez défiler de nombreuses espèces de poissons, coquillages et crustacés et vous assisterez à la vente, aux enchères s'il vous plaît, de ces beaux produits. Une vraie expérience !
                         </p>
                     </Reveal>
                 </div>
@@ -127,16 +126,15 @@ const BassinPageTemplate = ({
                     </div>
                   </Reveal>
                     <br/>
-                    <br/>
                   <Reveal effect="fadeInUp"  duration={1400} >
                     <div className='sub-p is-size-5'><p>LE PETIT TRAIN</p></div>
                   </Reveal>
                     <br/>
                   <Reveal effect="fadeInUp"  duration={1400} >
                   <p>
-                  Il est 9h, soit l’heure idéale pour faire un tour de petit train... Oui, ça fait longtemps que vous n’êtes pas montés à bord d’un tel engin. Donc c’est le moment, ou jamais ! 
-<br/><br/>Profitez des lueurs matinales pour découvrir le quartier de la ville d’hiver d’Arcachon et ses somptueuses villas du XIXème siècle.
-<br/><br/>Le tout en étant confortablement installés et agréablement bercés. Merci le petit train !
+                  Il est 9h, soit l'heure idéale pour faire un tour de petit train... Oui, ça fait longtemps que vous n'êtes pas montés à bord d'un tel engin. Donc c’est le moment, ou jamais ! 
+<br/><br/>Profitez des lueurs matinales pour découvrir le quartier de la ville d'hiver d'Arcachon et ses somptueuses villas du XIXème siècle.
+<br/><br/>Le tout en étant confortablement installés et agréablement bercés. Merci le petit train !
                   </p>
                   </Reveal>
               </div>
@@ -191,15 +189,14 @@ const BassinPageTemplate = ({
                     </div>
                   </Reveal>
                     <br/>
-                    <br/>
                   <Reveal effect="fadeInUp"  duration={1400} >
                     <div className='sub-p is-size-5'><p>LE MARCHé</p></div>
                   </Reveal>
                     <br/>
                   <Reveal effect="fadeInUp"  duration={1400} >
                   <p>
-                  En fin de matinée (à l’heure que vous vous voudrez), une petite halte au marché n’est jamais une mauvaise idée. Les Halles vous attendent au coeur du centre ville d’Arcachon.
-<br/><br/>Entre les produits du terroir, les producteurs locaux, les nombreuses boutiques, bars et restaurants, le plus dur sera de choisir. Ou le mieux sera de goûter à tout ! À vous de voir !
+                  En fin de matinée (à l'heure que vous vous voudrez), une petite halte au marché n'est jamais une mauvaise idée. Les Halles vous attendent au coeur du centre ville d'Arcachon.
+<br/><br/>Entre les produits du terroir, les producteurs locaux, les nombreuses boutiques, bars et restaurants, le plus dur sera de choisir. Ou le mieux sera de goûter à tout ! À vous de voir !
                   </p>
                   </Reveal>
               </div>
@@ -233,14 +230,13 @@ const BassinPageTemplate = ({
                     </div>
                   </Reveal>
                     <br/>
-                    <br/>
                   <Reveal effect="fadeInUp"  duration={1400} >
                     <div className='sub-p is-size-5'><p>Cabanes ostréicoles</p></div>
                   </Reveal>
                     <br/>
                   <Reveal effect="fadeInUp"  duration={1400} >
                   <p>
-                  À l'heure du déjeuner (là aussi vous choisirez), la dégustation d’huîtres est incontournable. Direction les cabanes d’ostréiculteurs, au décor traditionnel et à l’atmosphère décontracté. L’Aiguillon, la Teste-de-Buch, Gujan Mestras... plusieurs spots de choix vous attendent avec un petit verre de blanc, ou de rosé. Vous y mangerez aussi des crustacés et du pâté !
+                  À l'heure du déjeuner (là aussi vous choisirez), la dégustation d'huîtres est incontournable. Direction les cabanes d'ostréiculteurs, au décor traditionnel et à l'atmosphère décontracté. L'Aiguillon, la Teste-de-Buch, Gujan Mestras... plusieurs spots de choix vous attendent avec un petit verre de blanc, ou de rosé. Vous y mangerez aussi des crustacés et du pâté !
                   </p>
                   </Reveal>
               </div>
@@ -292,14 +288,13 @@ const BassinPageTemplate = ({
                     </div>
                   </Reveal>
                     <br/>
-                    <br/>
                   <Reveal effect="fadeInUp"  duration={1400} >
                     <div className='sub-p is-size-5'><p>En pinasse</p></div>
                   </Reveal>
                     <br/>
                   <Reveal effect="fadeInUp"  duration={1400} >
                   <p>
-                  Que diriez-vous d’une balade sur l’eau, à bord d’une traditionnelle Pinasse. Laissez-vous guider (quel autre choix !?) pour admirer l’île aux oiseaux et ses célèbres cabanes tchanquées, la Dune du Pyla et la réserve naturelle du banc d’Arguin.  Vous pouvez même faire une escale au Cap Ferret et visiter son phare avec vue panoramique sur le bassin.  Plutôt tentant non ?                  
+                  Que diriez-vous d'une balade sur l'eau, à bord d'une traditionnelle Pinasse. Laissez-vous guider (quel autre choix !?) pour admirer l'île aux oiseaux et ses célèbres cabanes tchanquées, la Dune du Pyla et la réserve naturelle du banc d'Arguin. Vous pouvez même faire une escale au Cap Ferret et visiter son phare avec vue panoramique sur le bassin. Plutôt tentant non ?                  
                 </p>
                 </Reveal>
               </div>
@@ -333,25 +328,25 @@ const BassinPageTemplate = ({
                     </div>
                   </Reveal>
                     <br/>
-                    <br/>
                   <Reveal effect="fadeInUp"  duration={1400} >
                     <div className='sub-p is-size-5'><p>Dune du Pyla  #sunset</p></div>
                   </Reveal>
                     <br/>
                   <Reveal effect="fadeInUp"  duration={1400} >
                   <p>
-                  Ça sent bon la fin de journée. Quoi de mieux que de gravir les 110 mètres de la Dune du Pyla pour admirer le soleil se coucher ! Vous pouvez aussi le regarder d’en bas, mais on ne vous cache pas que c’est beaucoup moins sympa ! Si l’envie vous dit, vous pouvez même vous prévoir un pique-nique. En voilà une bonne idée !                  </p>
+                  Ça sent bon la fin de journée. Quoi de mieux que de gravir les 110 mètres de la Dune du Pyla pour admirer le soleil se coucher ! Vous pouvez aussi le regarder d'en bas, mais on ne vous cache pas que c'est beaucoup moins sympa ! Si l’envie vous dit, vous pouvez même vous prévoir un pique-nique. En voilà une bonne idée !                  </p>
                   </Reveal>
               </div>
           </div>
+          <div className='column is-6  is-full-mobile is-5-tablet is-6-desktop is-paddingless  center-v'>
+              
+            <div style={{ width: "100%" }}>
                   <Reveal effect="fadeInUp"  duration={1400} >
-                <div className='column is-full-mobile is-5-tablet is-6-desktop is-paddingless is-marginless imgContent' style={{ textAlign: 'left' }}>
-                <Img 
-                    style={{ position: 'absolute', right: '0', top: "0", width: "100%", height: "100%" }} 
-                    fluid={dune.childImageSharp.fluid} />
+                        <Img fluid={dune.childImageSharp.fluid}/>
+                  </Reveal>
 
           </div>
-          </Reveal>
+          </div>
           </div>
       </div> 
   </div>
@@ -390,14 +385,13 @@ const BassinPageTemplate = ({
                     </div>
                   </Reveal>
                     <br/>
-                    <br/>
                   <Reveal effect="fadeInUp"  duration={1400} >
                     <div className='sub-p is-size-5'><p>LE MOULLEAU</p></div>
                   </Reveal>
                     <br/>
                   <Reveal effect="fadeInUp"  duration={1400} >
                   <p>
-                  Si votre belle journée mérite d’être prolongée, rendez-vous dans le quartier du Moulleau. C’est là-bas que vous trouverez les meilleurs animations, glaciers, restaurants,bars, boîtes de nuit... ouverts jusque tard dans la nuit ! Le réveil risque de piquer si vous avez prévu d’aller à la Criée !                  </p>
+                  Si votre belle journée mérite d'être prolongée, rendez-vous dans le quartier du Moulleau. C’est là-bas que vous trouverez les meilleurs animations, glaciers, restaurants,bars, boîtes de nuit... ouverts jusque tard dans la nuit ! Le réveil risque de piquer si vous avez prévu d'aller à la Criée !                  </p>
                   </Reveal>
               </div>
 

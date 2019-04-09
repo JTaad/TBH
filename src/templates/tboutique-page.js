@@ -45,7 +45,7 @@ export const tBoutiquePageQuery = graphql`
         }
       }
   }
-  histoire: file(relativePath: { eq: "tboutique/let_hotel.jpg" }) {
+  histoire: file(relativePath: { eq: "tboutique/let_leconcept.jpg" }) {
     childImageSharp {
       fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
         ...GatsbyImageSharpFluid_withWebp_tracedSVG

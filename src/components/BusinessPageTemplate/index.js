@@ -72,7 +72,6 @@ const BusinessPageTemplate = ({
                         </div>
                     </Reveal>
                     <br/>
-                    <br/>
                     <Reveal effect="fadeInUp"  duration={1400} >
                       <div className='sub-p is-size-5'><p>APPROPRIEZ-VOUS LES LIEUX</p></div>
                     </Reveal>
@@ -113,7 +112,6 @@ const BusinessPageTemplate = ({
                             <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>VOS événements</span>
                         </div>
                     </Reveal>
-                        <br/>
                         <br/>
                         <Reveal effect="fadeInUp"  duration={1400} >
                             <div className='sub-p is-size-5'><p>Clef-en-main</p></div>
