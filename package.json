@@ -16,7 +16,7 @@
     "serve": "gatsby serve",
     "lint": "eslint --ext js,jsx --ignore-path .gitignore . --fix",
     "clean": "rm -rf public/ .cache/"
-  }, 
+  },
   "dependencies": {
     "@babel/core": "^7.0.0",
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^2.1.1",
@@ -70,6 +70,7 @@
     "prop-types": "^15.6.2",
     "react": "^16.5.1",
     "react-animate-on-scroll": "^2.1.5",
+    "react-cookie-consent": "^2.2.2",
     "react-dates": "^18.4.1",
     "react-disqus-comments": "^1.4.0",
     "react-dom": "^16.5.1",

@@ -9,6 +9,8 @@ import config from '../../data/config'
 import GlobalStyles from '../layouts/globalStyles'
 import Transition from "../components/Transition"
 import Remise from "../assets/img/home_remiseHD_X2.png"
+import CookieConsent from "react-cookie-consent";
+
 
 class TemplateWrapper extends Component {
   constructor (props) {
@@ -26,7 +28,7 @@ class TemplateWrapper extends Component {
 
   componentDidMount () {
     window.onscroll = function() {
-      if(window.pageYOffset === 0 && this.state.isRemise == false) {
+      if(window.pageYOffset === 0 && this.state.isRemise === false) {
           this.setState({isRemise: true})
       }
       else{
@@ -54,7 +56,13 @@ class TemplateWrapper extends Component {
           <meta name='description' content={config.siteDescription} />
         </Helmet>
           <GlobalStyles />
-
+  <CookieConsent
+  buttonText="Accepter"
+  style={{ background: "#00165fb3", color: "#FFF" , fontFamily: "Poppins"}}
+  buttonStyle={{ color: "#00165F", fontSize: "14px", backgroundColor: "#FFF", fontFamily: "Poppins", textTransform: "uppercase" }}
+  >
+    <span style={{ color: "#FFF" }}>En poursuivant la navigation, vous acceptez l'utilisation des cookies. <a style={{color: "#FFF"}} href="/mentions-legales">En savoir plus</a></span>
+</CookieConsent>
         <Marquee />
         <NavBar 
           isActive={this.state.isActive} 
