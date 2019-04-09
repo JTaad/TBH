@@ -40,8 +40,8 @@ const TboutiquePageTemplate = ({
 <div className="container-full">
     <div className='section  is-paddingless is-marginless'>
         <div className='columns is-paddingless is-marginless'>
-        <div className='column is-6   is-paddingless  center-v'>   
-                  <div style={{ width: "80%", marginLeft: 'auto' }}>
+        <div className='column is-6   center-v is-noPaddingRight'>   
+                  <div style={{ width: "100%", marginLeft: 'auto' }}>
                         <br/> 
                         <Reveal effect="fadeInUp"  duration={1400} >
                               <Img fluid={concept.childImageSharp.fluid}/>
@@ -79,9 +79,10 @@ const TboutiquePageTemplate = ({
     <div  className='container-full '>
         <div className='is-bg-orange'>
         <div className='container'>
-
+    <br/>
+    <br/>
           <div className='columns is-paddingless is-marginless '>
-              <div  className='column  is-5   center-v'>
+              <div  className='column  is-6   center-v'>
                   <div className='section'>
                       <Reveal effect="fadeInUp"  duration={1400} >
                         <div>
@@ -101,9 +102,10 @@ const TboutiquePageTemplate = ({
                       </Reveal>
                   </div>
               </div>
-              <div className='column is-6  is-offset-1  is-paddingless  center-v'>
+              <div className='column is-6  center-v'>
                   
-                <div style={{ width: "100%" }}>
+                <div className="section" style={{ width: "100%" }}>
+                <br/>
                       <Reveal effect="fadeInUp"  duration={1400} >
                             <Img fluid={histoire.childImageSharp.fluid}/>
                       </Reveal>
@@ -111,6 +113,8 @@ const TboutiquePageTemplate = ({
               </div>
               </div>
           </div> 
+    <br/>
+    <br/>
 </div> 
 </div>
     </div>
@@ -165,7 +169,7 @@ const TboutiquePageTemplate = ({
         <div className='columns is-paddingless is-marginless'>
             
         <div className='column is-6   is-paddingless  center-v'>   
-                  <div style={{ width: "80%", marginLeft: 'auto' }}>
+                  <div className="section" style={{ width: "80%", marginLeft: 'auto' }}>
                         <br/> 
                         <Reveal effect="fadeInUp"  duration={1400} >
                               <Img fluid={family.childImageSharp.fluid}/>

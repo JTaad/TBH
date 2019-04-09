@@ -12,7 +12,7 @@ const Instagram = ({ gridItems }) => (
       <div className='columns is-mobile is-paddingless is-marginless is-centered'>
         
           <div  className=' is-one-third-mobile column  is-2-desktop  is-paddingless is-marginless' style={{ display: "flex", flexDirection: 'column', justifyContent: 'center', textAlign: 'center' }}>
-              <a href="https://www.instagram.com/tboutiquehotel/">
+              <a href="https://www.instagram.com/tboutiquehotel/" target='_blank'>
                 <div>
                    <FaInstagram size={25} />
                 </div>

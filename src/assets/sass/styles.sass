@@ -44,6 +44,7 @@ $title-line-height: 1.125
 a
   &:hover
     text-decoration: underline
+    color: $brown
   &:active 
       outline-style: 0
 
@@ -52,6 +53,11 @@ button
       outline: 0
   &:focus 
       outline: 0
+
+.button.is-primary.is-inverted.is-outlined:hover, 
+.button.is-primary.is-inverted.is-outlined:focus
+  &:hover
+    color: $blue
 
 #nousTrouver-link
   &:hover
@@ -377,7 +383,7 @@ body p
     font-family: $fontTitle
     color: $white!important
     &:hover
-      color:#B8B8B8!important
+      color: $brown!important
       text-decoration: none
   ul 
     padding: 0
@@ -388,8 +394,6 @@ body p
       font-family: $fontCorps
   * 
     color: $white
-    &:hover
-      color: #FFF
 
 .title
   font-weight: normal
@@ -444,6 +448,11 @@ p
     div
       width: 100%
 
+.is-noPaddingLeft
+  padding-left: 0
+
+.is-noPaddingRight
+  padding-right: 0
 
 .imgContent
   position: relative
@@ -657,6 +666,9 @@ h4
     a 
      font-family: $fontTitle
      color: $blue
+     &:hover
+       color: $brown
+       text-decoration: none
 
 #forfaits 
   display: flex

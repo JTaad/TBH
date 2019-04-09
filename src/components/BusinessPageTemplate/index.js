@@ -14,6 +14,7 @@ import icon_lumiere from '../../assets/img/icons/SunLight_HDx2.png'
 import icon_clim from '../../assets/img/icons/Clim_HDx2.png'
 import icon_retro from '../../assets/img/icons/Retro_HDx2.png'
 import icon_patio from '../../assets/img/icons/Patio_HDx2.png'
+import forfaits from '../../assets/img/business/business_sectionforfaits.jpg'
  
 
 const BusinessPageTemplate = ({
@@ -140,6 +141,21 @@ const BusinessPageTemplate = ({
 </div> 
 </div>
     </div>
+
+
+   <Reveal effect="fadeInUp"  duration={1400} >
+    <section className="hero is-medium has-bg-img" style={{backgroundImage: `url('${forfaits}')`, backgroundPosition: 'center center', backgroundSize: 'cover'}}> 
+      <div className="hero-body"> 
+        <div className="container has-text-centered"> 
+           <Reveal effect="fadeInUp"  duration={1400} >
+              <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop' style={{color: "#FFF"}}>
+                    Des forfaits sur-mesure<br/>pour vos évènements_
+              </span>
+           </Reveal>
+        </div> 
+      </div> 
+    </section>
+   </Reveal>
 
 
 <CarouselBusiness />
