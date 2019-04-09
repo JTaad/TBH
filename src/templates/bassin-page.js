@@ -51,7 +51,7 @@ export const bassinPageQuery = graphql`
     }
     petittrain: file(relativePath: { eq: "bassin/lebassin_petittrain.jpg" }) {
       childImageSharp{
-        fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
+        fluid(maxWidth: 2000,traceSVG: { background: "#e2e4e8", color: "#F8F7D6" }, quality: 100) {
            ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
@@ -65,7 +65,7 @@ export const bassinPageQuery = graphql`
     }
     cabanes: file(relativePath: { eq: "bassin/lebassin_cabanes.jpg" }) {
       childImageSharp{
-        fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
+        fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#fbebe4" }, quality: 100) {
            ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
