@@ -5,11 +5,9 @@ import Img from "gatsby-image"
 import { Link } from 'gatsby'
 import Reveal from 'react-reveal/Reveal';
  
+let meta_title = 'Le Bassin | T Boutique Hôtel — Arcachon'
 
 const BassinPageTemplate = ({
-  title,
-  subtitle,
-  meta_title,
   meta_description,
   background_header,
   cabanes,
@@ -24,7 +22,6 @@ const BassinPageTemplate = ({
     <div>
       <Helmet>
         <title>{meta_title}</title>
-        <meta name='description' content={meta_description} />
       </Helmet>
       
 
@@ -404,15 +401,6 @@ const BassinPageTemplate = ({
 
     </div>
   )
-}
-
-BassinPageTemplate.propTypes = {
-  title: PropTypes.string,
-  subtitle: PropTypes.string,
-  meta_title: PropTypes.string,
-  meta_description: PropTypes.string,
-  contacts: PropTypes.array,
-
 }
 
 export default BassinPageTemplate

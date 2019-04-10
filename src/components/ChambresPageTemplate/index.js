@@ -25,7 +25,7 @@ import chambre_suite_1 from '../../assets/img/chambres/chambre_suite_1.jpg'
 import chambre_suite_2 from '../../assets/img/chambres/chambre_suite_2.jpg'
 import chambre_suite_3 from '../../assets/img/chambres/chambre_suite_3.jpg'
 
-let meta_title = 'Les Chambres | T Boutique Hôtel — Arcachon'
+let meta_title = 'Chambres | T Boutique Hôtel — Arcachon'
 let meta_description = 'description'
 const standard = [
     {
@@ -70,10 +70,6 @@ const suite = [
     }
 ]
 const ChambresPageTemplate = ({
-  title,
-  subtitle,
-  meta_description,
-  contacts,
   background_header,
   petitDej
 }) => {
@@ -81,7 +77,6 @@ const ChambresPageTemplate = ({
     <div>
       <Helmet>
         <title>{meta_title}</title>
-        <meta name='description' content={meta_description} />
       </Helmet>
       
 
@@ -470,15 +465,6 @@ const ChambresPageTemplate = ({
 
     </div>
   )
-}
-
-ChambresPageTemplate.propTypes = {
-  title: PropTypes.string,
-  subtitle: PropTypes.string,
-  meta_title: PropTypes.string,
-  meta_description: PropTypes.string,
-  contacts: PropTypes.array,
-
 }
 
 export default ChambresPageTemplate

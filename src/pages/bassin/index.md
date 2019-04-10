@@ -1,7 +1,7 @@
 ---
 templateKey: bassin-page
-title: About Us
-meta_title: About Us | Gatsby Starter Business
+title: Le bassin
+meta_title: Le Bassin | T Boutique Hôtel — Arcachon
 meta_description: >-
   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
   ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam

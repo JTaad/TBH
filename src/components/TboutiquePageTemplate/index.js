@@ -5,12 +5,9 @@ import Img from "gatsby-image"
 import Reveal from 'react-reveal/Reveal';
 import { Link } from 'gatsby'
 
+let meta_title = 'Le "T" Boutique | T Boutique Hôtel — Arcachon'
+
 const TboutiquePageTemplate = ({
-  title,
-  subtitle,
-  meta_title,
-  meta_description,
-  contacts,
   background_header,
   concept,
   family,
@@ -21,7 +18,6 @@ const TboutiquePageTemplate = ({
     <div>
       <Helmet>
         <title>{meta_title}</title>
-        <meta name='description' content={meta_description} />
       </Helmet>
       
 
@@ -217,15 +213,6 @@ const TboutiquePageTemplate = ({
 
     </div>
   )
-}
-
-TboutiquePageTemplate.propTypes = {
-  title: PropTypes.string,
-  subtitle: PropTypes.string,
-  meta_title: PropTypes.string,
-  meta_description: PropTypes.string,
-  contacts: PropTypes.array,
-
 }
 
 export default TboutiquePageTemplate

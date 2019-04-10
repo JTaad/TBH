@@ -5,20 +5,16 @@ import headerImage from '../../assets/img/contact/header_contact_tbh.jpg'
 import SimpleMap from '../SimpleMap'
 import Img from "gatsby-image"
 import Reveal from 'react-reveal/Reveal';
+ 
+let meta_title = 'Contact | T Boutique Hôtel — Arcachon'
 
 const ContactPageTemplate = ({
-  title,
-  subtitle,
-  meta_title,
-  meta_description,
-  contacts,
   background_header,
 }) => {
   return (
     <div>
       <Helmet>
         <title>{meta_title}</title>
-        <meta name='description' content={meta_description} />
       </Helmet>
       
 
