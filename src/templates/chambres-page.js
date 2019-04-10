@@ -71,7 +71,7 @@ export const chambresPageQuery = graphql`
     }
     petitDej: file(relativePath: { eq: "chambres/chambre_petitdejeuner.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
+        fluid(maxWidth: 2000,traceSVG: { background: "#dbe0dc", color: "#F8F7D6" }, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
