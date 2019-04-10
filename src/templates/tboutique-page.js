@@ -40,7 +40,7 @@ export const tBoutiquePageQuery = graphql`
     }
     concept: file(relativePath: { eq: "tboutique/let_let.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
+        fluid(maxWidth: 2000,traceSVG: { background: "#e2e4e8", color: "#F8F7D6" }, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
