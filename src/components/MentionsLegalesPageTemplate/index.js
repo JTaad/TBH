@@ -5,6 +5,7 @@ import headerImage from '../../assets/img/contact/header_contact_tbh.jpg'
 import SimpleMap from '../SimpleMap'
 import Img from "gatsby-image"
 import Reveal from 'react-reveal/Reveal';
+import Content from '../Content'
 
 const MentionsLegalesPageTemplate = ({
   title,
@@ -13,7 +14,10 @@ const MentionsLegalesPageTemplate = ({
   meta_description,
   contacts,
   background_header,
+  content,
+  contentComponent
 }) => {
+  const PageContent = contentComponent || Content
   return (
     <div>
       <Helmet>
@@ -21,21 +25,28 @@ const MentionsLegalesPageTemplate = ({
         <meta name='description' content={meta_description} />
       </Helmet>
       
-
-<div className="container">
-    <div className="section">
-        <div className="columns">
-            <div className="column">
-                <h1>Mentions légales</h1>
-            </div>
+<div id="mentionsLegales">
+    <div className='section is-marginless is-paddingless'>
+        <div className=' titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop'>
+          <span className="titleTbhEmpty">Mentions</span><span className='titleTbhFull'> légales_</span>
         </div>
     </div>
-</div>
+      <section className='section section--gradient'>
+        <div className='container'>
+          <div className='columns'>
+            <div className='column is-10 is-offset-1'>
+              <div className='section'>
+                <PageContent className='content' content={content} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
 
     </div>
-
+</div>
 
   )
 }
