@@ -45,7 +45,7 @@ class CarouselHome extends Component {
     return (
     
                   
-                <div>
+                <div style={{ width: "100%" }}>
                 <Carousel
                   renderCenterLeftControls={({ previousSlide }) => (
                     <button onClick={previousSlide}>&nbsp;</button>
@@ -60,11 +60,10 @@ class CarouselHome extends Component {
                   slidesToShow={this.state.slidesToShow}
                   wrapAround={this.state.wrapAround}
                   heightMode={this.state.heightMode}
+                  initialSlideHeight='720px'
                 >
                 {this.props.images.map(item => (
-                  <div key={item.id} >
                       <img src={item.imageSrc} />
-                  </div>
                 ))}
                       
                 </Carousel> 
