@@ -4,11 +4,11 @@ title: Mentions légales
 meta_title: Mentions légales | T Boutique Hôtel — Arcachon
 ---
 ## ÉDITEUR
-Le site internet accessible, notamment, à l’adresse [www.tboutiquehotel.fr](www.tboutiquehotel.fr) (ci-après : le « Site ») est édité par la société par actions simplifiée MTO, société de droit française au capital social de 10 000,00 €, immatriculée au Registre du Commerce et des Sociétés de Bordeaux sous le numéro 82397501600010 et dont le siège social est situé 82 BD DE LA PLAGE — 33120 ARCACHON. Numéro de TVA: FR90 380 511 626
+Le site internet accessible, notamment, à l’adresse [www.tboutiquehotel.fr](www.tboutiquehotel.fr) (ci-après : le « Site ») est édité par la société SARL BTI société de droit française au capital social de 8 000,00 €, immatriculée au Registre du Commerce et des Sociétés de Bordeaux sous le numéro 82397501600010 et dont le siège social est situé 82 BD DE LA PLAGE — 33120 ARCACHON. Numéro de TVA: FR90 380 511 626
 
 * Design graphique : SAS Bureau Nuits
 * Développement web : Julien Taddei
-* Photographie : Coralie Terré
+* Photographie : Coralie Terré, Maison Weshoot
 
 Le Site est hébergé par la [Netlify](https://www.netlify.com/).
 
