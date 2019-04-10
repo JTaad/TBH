@@ -124,10 +124,10 @@ const ChambresPageTemplate = ({
 
     <div id="standard" className='section  is-paddingless is-marginless'>
         <div className='columns is-paddingless is-marginless is-bg-orange'>
-            <div className='column is-half is-paddingless is-marginless is-hidden-touch' style={{ textAlign: 'left' }}>
+            <div className='column is-half is-paddingless is-marginless is-hidden-touch  center-v' style={{ textAlign: 'left' }}>
                 <CarouselChambre  images={standard} />
             </div>
-            <div  className='column is-5-desktop  is-full-tablet center-v'>
+            <div  className='column is-5-desktop  is-full-tablet center-v is-paddinglessTB'>
                 <div className='section is-paddinglessTB'>
                     <Reveal effect="fadeInUp"  duration={1400} >
                         <div>
@@ -155,7 +155,7 @@ const ChambresPageTemplate = ({
                     </Reveal>
                     <br/>
                     <br/>
-                    <div className='columns is-size-7'>
+                    <div className='columns is-size-7 is-gapless'>
                         <Reveal effect="fadeInUp"  duration={1400} >
                             <div className='column is-half '>
                                 <div className='subtitle subtitle-chambres is-size-6 is-marginless '>LA CHAMBRE</div>
@@ -169,7 +169,7 @@ const ChambresPageTemplate = ({
                         </div>
                         </Reveal>
                     </div>
-                    <div className='columns is-size-7'>
+                    <div className='columns is-size-7 is-gapless'>
                         <Reveal effect="fadeInUp"  duration={1400} >
                             <div className='column is-half'>
                                 <div className='subtitle subtitle-chambres is-size-6 is-marginless'>LA CAPACITÉ</div>
@@ -191,7 +191,7 @@ const ChambresPageTemplate = ({
         <div className='columns is-paddingless is-marginless is-bg-vert'>
             <div className='column is-5  is-offset-1  center-v is-paddinglessTB' style={{ textAlign: 'left' }}>
 
-                <div className='section'>
+                <div className='section is-paddinglessTB'>
                     <Reveal effect="fadeInUp"  duration={1400} >
                         <div>
                             <div className="arrow-r subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless is-hidden-touch" >←</div>
@@ -215,7 +215,7 @@ const ChambresPageTemplate = ({
 
                     <br/>
                     <br/>
-                    <div className='columns is-size-7'>
+                    <div className='columns is-size-7 is-gapless'>
                         <Reveal effect="fadeInUp"  duration={1400} >
                             <div className='column is-half'>
                                 <div className='subtitle subtitle-chambres is-size-6 is-marginless'>LA CHAMBRE</div>
@@ -229,7 +229,7 @@ const ChambresPageTemplate = ({
                         </div>
                         </Reveal>
                     </div>
-                    <div className='columns is-size-7'>
+                    <div className='columns is-size-7 is-gapless'>
                         <Reveal effect="fadeInUp"  duration={1400} >
                             <div className='column is-half'>
                                 <div className='subtitle subtitle-chambres is-size-6 is-marginless'>LA CAPACITÉ</div>
@@ -253,15 +253,15 @@ const ChambresPageTemplate = ({
 
       <div  id="luxe" className='section  is-paddingless is-marginless'>
           <div className='columns is-paddingless is-marginless is-bg-jaune'>
-              <div  className='column is-half is-paddingless is-marginless is-hidden-touch'>
+              <div  className='column is-half is-paddingless is-marginless is-hidden-touch  center-v'>
               
               <div style={{ width: "100%" }}>
                 <CarouselChambre images={luxe} />
 
               </div>
               </div>
-              <div className='column is-5-desktop  is-full-tablet center-v'>
-                      <div className='section'>
+              <div className='column is-5-desktop  is-full-tablet center-v is-paddinglessTB'>
+                      <div className='section is-paddinglessTB'>
                     <Reveal effect="fadeInUp"  duration={1400} >
                         <div>
                             <div className="arrow-l subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless is-hidden-touch">→</div>
@@ -286,7 +286,7 @@ const ChambresPageTemplate = ({
   
                       <br/>
                     <br/>
-                    <div className='columns is-size-7'>
+                    <div className='columns is-size-7 is-gapless'>
                         <Reveal effect="fadeInUp"  duration={1400} >
                             <div className='column is-half'>
                                 <div className='subtitle subtitle-chambres is-size-6 is-marginless'>LA CHAMBRE</div>
@@ -300,7 +300,7 @@ const ChambresPageTemplate = ({
                             </div>
                         </Reveal>
                     </div>
-                    <div className='columns is-size-7'>
+                    <div className='columns is-size-7 is-gapless'>
                         <Reveal effect="fadeInUp"  duration={1400} >
                             <div className='column is-half'>
                                 <div className='subtitle subtitle-chambres is-size-6 is-marginless'>LA CAPACITÉ</div>
@@ -316,6 +316,9 @@ const ChambresPageTemplate = ({
                     </div>
                   </div>
               </div>
+                    <div className='column is-full is-paddingless is-marginless is-hidden-desktop' >
+                        <CarouselChambre  images={luxe} />
+                    </div>
           </div>
       </div>
 

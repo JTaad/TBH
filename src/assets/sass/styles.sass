@@ -189,6 +189,9 @@ body p
 .is-paddinglessTB
   padding-top: 0
   padding-bottom: 0
+  @include until($tablet)
+    padding-top: 2.5rem!important
+    padding-bottom: 2.5rem!important
   
 .is-paddingless-noTouch
   @include until($tablet)
