@@ -20,10 +20,10 @@ class CarouselHome extends Component {
 
     this.handleImageClick = this.handleImageClick.bind(this);
   }
-  componentDidMount() {
+  componentDidUpdate() {
         setTimeout(() => {
             window.dispatchEvent(new Event('resize'));
-          }, 200);
+          }, 0);
   }
 
 
