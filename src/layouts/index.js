@@ -19,12 +19,18 @@ class TemplateWrapper extends Component {
       isActive: false,
       navToggle: false,
       isRemise: true,
+      isHoverNav: false
     }
     this.toggleNavbar = this.toggleNavbar.bind(this) 
     this.toggleNavbarMain = this.toggleNavbarMain.bind(this) 
+    this.handleHoverNav = this.handleHoverNav.bind(this) 
   }
 
-
+  handleHoverNav () {
+    this.setState(prevState => ({
+      isHoverNav: !prevState.isHoverNav
+    }));
+  }
 
   componentDidMount () {
     window.onscroll = function() {
@@ -67,8 +73,10 @@ class TemplateWrapper extends Component {
         <NavBar 
           isActive={this.state.isActive} 
           navToggle={this.state.navToggle} 
+          isHoverNav={this.state.isHoverNav} 
           toggleNavbarMain={() => this.toggleNavbarMain()}
           toggleNavbar={() => this.toggleNavbar()} 
+          handleHoverNav={() => this.handleHoverNav()} 
         />
        
        <div> 

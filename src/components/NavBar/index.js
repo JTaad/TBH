@@ -5,7 +5,7 @@ import logo_nav from '../../assets/img/logos/logo_nav_tbh.png'
 import logo_nav_header from '../../assets/img/logos/logo_navbar.svg'
 
 
-const NavBar = ({toggleNavbarMain, navToggle}) => (
+const NavBar = ({toggleNavbarMain, navToggle, handleHoverNav, isHoverNav}) => (
   <div>
       <nav id="nav_norm" className={navToggle ? 'nav-on' : 'nav-off'} aria-label='main navigation' style={{zIndex:"999999999999999999"}}>
         <div  id="navMain" className='container is-fixed-top '>
@@ -81,11 +81,13 @@ const NavBar = ({toggleNavbarMain, navToggle}) => (
       
             <div id="navHeader" >
                 <div>
-                    <div id="navButtonHover" onClick={toggleNavbarMain}>
-                        <div id='navButton' >
-                            <div></div>
-                            <div></div>
-                        </div>
+                    <div id="navButton" className={`menuTwo ${isHoverNav ? 'clickMenuTow' : ''}`} 
+                    onClick={toggleNavbarMain}
+                    onMouseEnter={handleHoverNav} 
+                    onMouseLeave={handleHoverNav}>
+                            <span></span>
+                            <span></span>
+                            <span></span>
                     </div>
                 </div>
                 <div>
