@@ -110,7 +110,7 @@ setTimeout(() => {
                       <br/>
                     <Reveal effect="fadeInUp"  duration={2000} >
                       <p>
-                      Nos chambres sont de jolis cocons où il fait bon se lover. Décoration soignée, choix minutieux des matières, des couleurs, des équipements, petits plus en bonus... nous avons pris soin de nous occuper de tout, pour que vous vous sentiez comme chez vous. Sans parler du petit-déjeuner ... !                      </p>
+                      Nos chambres sont de jolis cocons où il fait bon se lover. Décoration soignée, choix minutieux des matières, des couleurs, des équipements, petits plus en bonus... nous avons pris soin de nous occuper de tout, pour que vous vous sentiez comme chez vous. Sans parler du petit-déjeuner... !                      </p>
                     </Reveal>
 
                       <br/>

@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import Img from "gatsby-image"
 import Reveal from 'react-reveal/Reveal';
+import { Link } from 'gatsby'
 
 const TboutiquePageTemplate = ({
   title,
@@ -95,9 +96,8 @@ const TboutiquePageTemplate = ({
                         <br/>
                       <Reveal effect="fadeInUp"  duration={1400} >
                       <p>
-                      Pour que vos ateliers de quelques heures ou vos séminairse de plusieurs jours soient de bons moments, nous vous accompagnons dans l’organisation de vos évènements. Des activités aux restaurants, dites-nous ce que vous voulez, nous nous occupons du reste.
-                          <br/>  <br/> 
-                          N’hésitez pas à nous envoyer vos souhaits pour obtenir un devis personnalisé. 
+                      Le T renouvelle les codes de l’hôtellerie pour vous proposer une expérience plus conviviale, plus authentique, plus mémorable aussi. À ceci s’ajoute le lieu, le cadre et le décor. Un architecte et une décoratrice ont aménagé chaque espace, dans son moindre détail.</p>
+                      <br/><p>Bienvenue dans un hôtel comme à la maison, chic et design à la fois, avec du confort et des prestations 3 étoiles.
                       </p>
                       </Reveal>
                   </div>
@@ -191,20 +191,22 @@ const TboutiquePageTemplate = ({
                     <br/>
                     <Reveal effect="fadeInUp"  duration={1400} >
                         <p>
-                        Le T est avant tout l’histoire d’une famille. Celle d’un père qui découvre un jour l’hôtellerie et s’éprend du métier. Puis celle de sa fille, Mathilde, qui décide de bousculer son destin pour reprendre le flambeau familial.
+                        Le T est avant tout l’histoire d’une famille. De deux générations précisément, qui tour à tour ont transmis leur passion pour l’hôtellerie et le métier. Mathilde est la 3ème génération. Elle a décidé de bousculer son destin pour reprendre le flambeau familial.
                         </p> 
                      </Reveal>
                        <br/> 
                      
                     <Reveal effect="fadeInUp"  duration={1400} > 
                      <p>
-                     À sa façon, avec sa vision et après 9 mois de rénovation.
+                     À sa façon, avec sa vision et après 9 mois de rénovation. 
                     </p>
                     </Reveal>
 
                     <br/>
                     <Reveal effect="fadeInUp"  duration={1400} >
-                      <div className='sub-p is-size-5'><p>On vous montre le résultat ?</p></div>
+                        <Link className='sub-p is-size-5' to='/chambres'>
+                        On vous montre le résultat ?
+                        </Link>
                     </Reveal>
                     
                 </div>

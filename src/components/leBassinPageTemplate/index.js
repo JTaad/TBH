@@ -95,7 +95,7 @@ const BassinPageTemplate = ({
                     <br/>
                     <Reveal effect="fadeInUp"  duration={1400} >
                         <p>
-                        Notre programme démarre à 6h30, à la Criée d’Arcachon. Une fois que les pêcheurs du coin ont entassé leurs prises dans des casiers, la vente peut commencer. Vous verrez défiler de nombreuses espèces de poissons, coquillages et crustacés et vous assisterez à la vente, aux enchères s'il vous plaît, de ces beaux produits. Une vraie expérience !
+                        Notre programme démarre à 6h30, à la Criée d’Arcachon. Une fois que les pêcheurs du coin ont entassé leurs prises dans des casiers, la vente peut commencer. Vous verrez défiler de nombreuses espèces de poissons, coquillages et crustacés et vous assisterez à la vente aux enchères, s'il vous plaît, de ces beaux produits. Une vraie expérience !
                         </p>
                     </Reveal>
                 </div>
