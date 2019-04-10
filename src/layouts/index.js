@@ -58,7 +58,7 @@ class TemplateWrapper extends Component {
           <GlobalStyles />
   <CookieConsent
   buttonText="Accepter"
-  style={{ background: "#00165fb3", color: "#FFF" , fontFamily: "Poppins"}}
+  style={{ background: "#00165F", color: "#FFF" , fontFamily: "Poppins"}}
   buttonStyle={{ color: "#00165F", fontSize: "14px", backgroundColor: "#FFF", fontFamily: "Poppins", textTransform: "uppercase" }}
   >
     <span style={{ color: "#FFF" }}>En poursuivant la navigation, vous acceptez l'utilisation des cookies. <a style={{color: "#FFF"}} href="/mentions-legales">En savoir plus</a></span>
