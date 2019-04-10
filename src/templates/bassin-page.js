@@ -77,7 +77,7 @@ export const bassinPageQuery = graphql`
         }
       }
     }
-    dune: file(relativePath: { eq: "bassin/lebassin_ladunbe.jpg" }) {
+    dune: file(relativePath: { eq: "bassin/lebassin_pyla.jpg" }) {
       childImageSharp{
         fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
            ...GatsbyImageSharpFluid_withWebp_tracedSVG
