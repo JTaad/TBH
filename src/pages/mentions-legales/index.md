@@ -11,7 +11,6 @@ Le site internet accessible, notamment, à l’adresse [www.tboutiquehotel.fr](w
 
 Le Site est hébergé par la [Netlify](https://www.netlify.com/).
 
-Directeur de la publication : David Robin\
 L’accès au Site ainsi que l’utilisation de son contenu s’effectuent dans le cadre des mentions d’utilisation décrites ci-après.
 Le fait d’accéder et de naviguer sur le Site constitue de la part de l’internaute une acceptation sans réserve des précisions suivantes :
 
