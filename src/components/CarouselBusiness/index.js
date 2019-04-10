@@ -28,9 +28,9 @@ class CarouselBusiness extends Component {
       capacite: '18 personnes',
       titre: 'Conférence',
       items: [
-        { slideIndex: 0, image: image1, titre: 'Conférence', capacite: '21 personnes', urlLink: 'conference' },
-        { slideIndex: 1, image: image2, titre: 'Théâtre', capacite: '22 personnes', urlLink: 'theatre' },
-        { slideIndex: 2, image: image3, titre: 'En "U', capacite: '23 personnes', urlLink: 'enu' },
+        { slideIndex: 0, image: image1, titre: 'Conférence', capacite: '18 personnes', urlLink: 'conference' },
+        { slideIndex: 1, image: image2, titre: 'Théâtre', capacite: '30 personnes', urlLink: 'theatre' },
+        { slideIndex: 2, image: image3, titre: 'En "U', capacite: '10 personnes', urlLink: 'enu' },
       ],
     };
 

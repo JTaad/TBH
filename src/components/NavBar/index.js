@@ -3,6 +3,7 @@ import {Link, graphql, StaticQuery} from 'gatsby'
 import { FaInstagram, FaFacebook } from 'react-icons/fa';
 import logo_nav from '../../assets/img/logos/logo_nav_tbh.png'
 import logo_nav_header from '../../assets/img/logos/logo_navbar.svg'
+import "./styles.sass"
 
 
 const NavBar = ({toggleNavbarMain, navToggle, handleHoverNav, isHoverNav}) => (

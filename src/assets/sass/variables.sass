@@ -1,0 +1,127 @@
+
+@charset "utf-8"
+
+$primary: #00d1b2
+$primary-invert: #ffffff
+$blue: #00165F
+$white: #FFF
+$black: #000
+$brown: #CE6621
+$fontTitle: "MonoramaRegular"
+$fontTitleBold: "MonoramaBold"
+$fontTitleSemiBold: "MonoramaSemiBold"
+$fontCorps: "Poppins"
+$indexMax: 9999999999
+$indexMidl: 99999999
+$footer-background-color: $blue
+$navbar-background-color: transparent
+$fontShadowWhite : $white 1px 1px, $white -1px 1px, $white -1px -1px, $white 1px -1px
+$fontShadowBlue : $blue 1px 1px, $blue -1px 1px, $blue -1px -1px, $blue 1px -1px
+
+$calendar-days-background-color: $blue
+$calendar-date-hover-border:  .1rem solid $blue 
+$calendar-today-color: $blue
+
+$size-1: 4.2rem
+$size-2: 3.7rem
+$size-3: 2.5rem
+$column-gap: 2.5rem
+$button-background-color : 'transparent'
+$button-color: $blue
+$button-border-color: $blue
+$title-line-height: 1.125
+
+
+.is-bg-white
+  background-color: $white
+.is-bg-grey
+  background-color: #E2E4E8
+.is-bg-rose
+  background-color: #FBEBE4
+.is-bg-jaune
+  background-color: #F8F7D6
+.is-bg-orange
+  background-color: #F8EAD6
+.is-bg-vert
+  background-color: #DBE0DC
+
+.is-font-white
+  color: $white!important
+.is-font-grey
+  color: #E2E4E8!important
+.is-font-rose
+  color: #FBEBE4!important
+.is-font-jaune
+  color: #F8F7D6!important
+.is-font-orange
+  color: #F8EAD6!important
+.is-font-vert
+  color: #DBE0DC!important
+
+
+
+.fadeInUp
+  opacity: 0
+  animation-name: fadeInUp
+.fadeInDown
+  opacity: 0
+  animation-name: fadeInDown
+.fadeInLeft
+  opacity: 0
+  animation-name: fadeInLeft
+.fadeInRight
+  opacity: 0
+  animation-name: fadeInRight
+.fadeStrech
+  animation-name: fadeStretch
+
+
+@keyframes fadeInLeft 
+    0%
+      transform: scaleX(1.2) translateX(-5rem)
+      opacity: 0
+      transition: opacity .4s transform 0s .4s
+    100%
+      transform: scaleX(1) translateX(0)
+      opacity: 1 
+
+@keyframes fadeInRight 
+    0%
+      transform: scaleX(1.2) translateX(5rem)
+      opacity: 0
+      transition: opacity .4s transform 0s .4s
+    100%
+      transform: scaleX(1) translateX(0)
+      opacity: 1 
+
+@keyframes fadeInUp 
+    0%
+      transform: scaleY(1.2) translateY(3.5rem)
+      opacity: 0
+      transition: opacity .6s transform 0s .6s
+    100%
+      transform: scaleY(1) translateY(0)
+      opacity: 1 
+    
+
+@keyframes fadeInDown
+    0%
+      transform: scaleY(1.2) translateY(-5rem)
+      opacity: 0
+      transition: opacity .4s transform 0s .4s
+    100% 
+      transform: scaleY(1) translateY(0)
+      opacity: 1 
+    
+
+@keyframes rightToLeft
+    0%
+      right: 0
+    100% 
+      right: -70px
+
+@keyframes leftToRight
+    0%
+      right: -70px
+    100% 
+      right: 0px
