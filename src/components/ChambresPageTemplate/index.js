@@ -136,8 +136,8 @@ const ChambresPageTemplate = ({
                 <div className='section is-paddinglessTB'>
                     <Reveal effect="fadeInUp"  duration={1400} >
                         <div>
-                            <div className="arrow-r subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless">←</div>
-                            <br/>
+                            <div className="arrow-r subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless is-hidden-touch">←</div>
+                            <br className="is-hidden-touch"/>
 
 
                             <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>Standard</span>
@@ -153,7 +153,7 @@ const ChambresPageTemplate = ({
                         La Standard est un refuge idéal pour se (re)poser après une longue journée. Chaque mètre carré est optimisé pour transformer l’espace en joli nid douillet.                         </p>
                     </Reveal>
                     <br/>
-                    <Reveal effect="fadeInUp"  duration={1400} >
+                    <Reveal effect="fadeInUp"  duration={1400} className="is-hidden-touch">
                         <p>
                         Il ne vous reste plus qu’à profiter, le temps d’une nuit ou plus si affinité...
                         </p>
@@ -198,8 +198,8 @@ const ChambresPageTemplate = ({
                   <div className='section'>
                     <Reveal effect="fadeInUp"  duration={1400} >
                         <div>
-                            <div className="arrow-l subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless">→</div>
-                            <br/>
+                            <div className="arrow-l subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless is-hidden-touch">→</div>
+                            <br className="is-hidden-touch"/>
                             <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>Luxe</span>
                       </div>
                      </Reveal>
@@ -214,7 +214,7 @@ const ChambresPageTemplate = ({
                       </p>
                     </Reveal>
                       <br/>
-                    <Reveal effect="fadeInUp"  duration={1400} >
+                    <Reveal effect="fadeInUp"  duration={1400} className="is-hidden-touch" >
                       <p>Oubliez tout, ne pensez qu’à vous !</p>
                     </Reveal>
   
@@ -272,8 +272,8 @@ const ChambresPageTemplate = ({
                 <div className='section'>
                     <Reveal effect="fadeInUp"  duration={1400} >
                         <div>
-                            <div className="arrow-r subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless">←</div>
-                            <br/>
+                            <div className="arrow-r subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless is-hidden-touch" >←</div>
+                            <br className="is-hidden-touch"/>
                             <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>Suite</span>
                         </div>
                     </Reveal>
@@ -287,7 +287,7 @@ const ChambresPageTemplate = ({
                         La Suite est un espace sur-mesure pour un séjour à deux, en famille ou entre amis. Prenez vos aises, étalez vos affaires, flânez sur la terrasse... bref faites tout ce qui vous plaît.                        </p>  
                     </Reveal>
                     <br/>
-                    <Reveal effect="fadeInUp"  duration={1400} >
+                    <Reveal effect="fadeInUp"  duration={1400} className="is-hidden-touch">
                         <p>Idéal pour un séjour “wahou” qu’on n’oublie pas !</p>  
                     </Reveal>
 
