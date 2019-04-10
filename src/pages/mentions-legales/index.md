@@ -16,7 +16,7 @@ L’accès au Site ainsi que l’utilisation de son contenu s’effectuent dans 
 Le fait d’accéder et de naviguer sur le Site constitue de la part de l’internaute une acceptation sans réserve des précisions suivantes :
 
 ## COOKIES
-Un cookie est un fichier de données placé sur votre ordinateur ou sur tout autre dispositif lors de son utilisation pour visiter le Site. Le COQ Hotel utilise les cookies pour vous permettre de partager du contenu sur les réseaux sociaux, vous offrir des offres publicitaires conformes à vous goûts et pour connaître les pages du Site visitées et avec quelle fréquence, afin de le rendre plus convivial et vous proposer des services adaptés et personnalisés lors de votre prochaine visite du Site.
+Un cookie est un fichier de données placé sur votre ordinateur ou sur tout autre dispositif lors de son utilisation pour visiter le Site. Le **LE T BOUTIQUE HOTEL** utilise les cookies pour vous permettre de partager du contenu sur les réseaux sociaux, vous offrir des offres publicitaires conformes à vous goûts et pour connaître les pages du Site visitées et avec quelle fréquence, afin de le rendre plus convivial et vous proposer des services adaptés et personnalisés lors de votre prochaine visite du Site.
 
 Pour désactiver les cookies, nous vous invitons à cliquer sur l’onglet “aide” de votre navigateur ou lire les informations qui accompagnent le logiciel de votre navigateur.
 
