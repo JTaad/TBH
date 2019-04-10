@@ -67,6 +67,13 @@ const Footer = ({ scrollTop }) => {
                               <div style={{ fontWeight: "500", marginBottom: "15px" }}>@tboutiquehotel</div>
                               <a style={{ marginRight: "15px" }} href="https://www.instagram.com/tboutiquehotel/"><FaInstagram size={25} /></a>
                               <a href="https://www.facebook.com/tboutiquehotel/"><FaFacebook size={25} /></a>
+                              <br/>
+                              <br/>
+                              <br/>
+                              <br/>
+                              <Link className='' to='/mentions-legales' style={{marginTop: "-3px", display: "block"}}>
+                                              Mentions légales
+                              </Link>
                           </div>
                         </div>
                         <div className='column is-2'>
