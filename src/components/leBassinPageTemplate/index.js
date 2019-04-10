@@ -72,7 +72,7 @@ const BassinPageTemplate = ({
     <div className='section  is-paddingless is-marginless' style={{zIndex: "9999", position:"relative"}}>
         <div className='columns is-paddingless is-marginless'>
             <Reveal effect="fadeInUp"  duration={1400} >
-                <div className='column is-full-mobile is-5-tablet is-5-desktop is-paddingless is-marginless imgContent' style={{ textAlign: 'left' }}>
+                <div className='column is-full-mobile is-5-tablet is-5-desktop is-paddingless is-paddingless-noTouch is-marginless imgContent' style={{ textAlign: 'left' }}>
                 <Img 
                     style={{ position: 'absolute', left: '0', top: "0", width: "100%", height: "100%" }} 
                     fluid={criee.childImageSharp.fluid}
@@ -241,7 +241,7 @@ const BassinPageTemplate = ({
                   </Reveal>
               </div>
           </div>
-          <div className='column is-6  is-offset-1  is-paddingless  center-v'>
+          <div className='column is-6  is-offset-1  is-paddingless  is-paddingless-noTouch center-v'>
               
             <div style={{ width: "100%" }}>
                   <Reveal effect="fadeInUp"  duration={1400} >
@@ -277,7 +277,7 @@ const BassinPageTemplate = ({
             </div>
 
           </div>
-          <div className='column is-5  is-offset-1  is-paddingless  center-v'>
+          <div className='column is-5  is-offset-1  center-v'>
               
               <div className='section'>
                   <Reveal effect="fadeInUp"  duration={1400} >
@@ -338,7 +338,7 @@ const BassinPageTemplate = ({
                   </Reveal>
               </div>
           </div>
-          <div className='column is-6  is-full-mobile is-5-tablet is-6-desktop is-paddingless  center-v'>
+          <div className='column is-6  is-full-mobile is-5-tablet is-6-desktop is-paddingless  center-v is-paddingless-noTouch'>
               
             <div style={{ width: "100%" }}>
                   <Reveal effect="fadeInUp"  duration={1400} >

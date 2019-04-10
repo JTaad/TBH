@@ -113,6 +113,11 @@ strong
 .is-font-vert
   color: #DBE0DC!important
 
+
+.imgMinResp
+  width: 80%
+  @include until($tablet)
+    width: 100%
 .image
   .is-64x64
     @include until($tablet)
@@ -185,6 +190,10 @@ body p
   padding-top: 0
   padding-bottom: 0
   
+.is-paddingless-noTouch
+  @include until($tablet)
+    padding: 2.5rem!important
+
 .hero.is-primary 
   .subtitle
     color: $blue
@@ -290,9 +299,9 @@ body p
 
 @keyframes fadeInUp 
     0%
-      transform: scaleY(1.2) translateY(5rem)
+      transform: scaleY(1.2) translateY(3rem)
       opacity: 0
-      transition: opacity .4s transform 0s .4s
+      transition: opacity .6s transform 0s .6s
     100%
       transform: scaleY(1) translateY(0)
       opacity: 1 
@@ -486,9 +495,13 @@ p
 
 .is-noPaddingLeft
   padding-left: 0
+  @include until($tablet)
+    padding-left: 2.5rem
 
 .is-noPaddingRight
   padding-right: 0
+  @include until($tablet)
+    padding-right: 2.5rem
 
 .imgContent
   position: relative
@@ -499,11 +512,9 @@ p
   background-repeat: no-repeat
   background-size: cover 
   @include until($tablet)
-    width: calc(100% - 2rem) !important
+    width: 100%!important
     margin-left: auto !important
     margin-right: auto !important
-    margin-left: 1rem !important
-    margin-right: 1rem !important
     min-height: auto!important
 
 .headerHome
@@ -513,7 +524,7 @@ p
   background-repeat: no-repeat
   background-size: cover 
   @include until($tablet)
-    height: calc(100vh - 67px)
+    height: 65vh
 
 #blocResa
   display: flex

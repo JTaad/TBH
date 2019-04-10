@@ -33,7 +33,7 @@ const TboutiquePageTemplate = ({
       </div>
 
     <div className='section is-marginless is-paddingless'>
-        <div className='titleTbhFirst titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop'>
+        <div className='titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop'>
           <span className='titleTbhFull'>Concept_</span>
         </div>
     </div>
@@ -104,7 +104,7 @@ const TboutiquePageTemplate = ({
               </div>
               <div className='column is-6  center-v'>
                   
-                <div className="section" style={{ width: "100%" }}>
+                <div className="" style={{ width: "100%" }}>
                 <br/>
                       <Reveal effect="fadeInUp"  duration={1400} >
                             <Img fluid={histoire.childImageSharp.fluid}/>
@@ -124,7 +124,7 @@ const TboutiquePageTemplate = ({
     <div className='section  is-paddingless is-marginless'>
         <div className='columns is-paddingless is-marginless'>
             <Reveal effect="fadeInUp"  duration={1400} >
-                <div className='column is-half is-paddingless is-marginless imgContent' style={{ textAlign: 'left' }}>
+                <div className='column is-half is-paddingless is-marginless is-paddingless-noTouch imgContent' style={{ textAlign: 'left' }}>
                 <Img 
                     style={{ position: 'relative', left: '0', top: "0", width: "100%", height: "100%" }} 
                     fluid={boutique.childImageSharp.fluid}
@@ -168,8 +168,8 @@ const TboutiquePageTemplate = ({
     <div className='section  is-paddingless is-marginless'>
         <div className='columns is-paddingless is-marginless'>
             
-        <div className='column is-6   is-paddingless  center-v'>   
-                  <div className="section" style={{ width: "80%", marginLeft: 'auto' }}>
+        <div className='column is-6   is-paddingless  center-v  is-paddingless-noTouch'>   
+                  <div className="section imgMinResp" style={{ marginLeft: 'auto' }}>
                         <br/> 
                         <Reveal effect="fadeInUp"  duration={1400} >
                               <Img fluid={family.childImageSharp.fluid}/>

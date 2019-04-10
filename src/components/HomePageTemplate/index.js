@@ -47,7 +47,7 @@ const HomePageTemplate = ({
     <div className='section  is-paddingless is-marginless'>
         <div className='columns is-paddingless is-marginless is-bg-grey'>
            <Reveal effect="fadeInUp"  duration={1400} >
-              <div className='column is-full-mobile is-half-tablet is-half-desktop is-paddingless is-marginless imgContent'  style={{ textAlign: 'left' }}>
+              <div className='column is-full-mobile is-half-tablet is-half-desktop is-paddingless is-paddingless-noTouch is-marginless imgContent'  style={{ textAlign: 'left' }}>
                 
               <Img 
                     style={{ position: 'absolute', left: '0', top: "0", width: "100%", height: "100%" }} 
