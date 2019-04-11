@@ -1,7 +1,7 @@
 [build]
-  publish = "public"
-  command = "gatsby build"
-  functions = "./src/lambda"
+  command = "npm run build && npm run build:lambda"
+  functions = "lambda"
+  publish = "build"
 [build.environment]
   YARN_VERSION = "1.9.4"
   YARN_FLAGS = "--no-ignore-optional"
