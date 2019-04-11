@@ -30,7 +30,7 @@ module.exports.handler = (event, context, callback) => {
 
     const data = {
         email_address: email,
-        status: "subscribed",
+        msg: "subscribed",
         merge_fields: {}
     };
 
@@ -52,19 +52,19 @@ module.exports.handler = (event, context, callback) => {
         const bodyObj = JSON.parse(body);
 
         console.log("Mailchimp body: " + JSON.stringify(bodyObj));
-        console.log("Status Code: " + response.statusCode);
+        console.log("Status Code: " + response.msgCode);
 
-        if (response.statusCode < 300 || (bodyObj.status === 400 && bodyObj.title === "Member Exists")) {
+        if (response.msgCode < 300 || (bodyObj.msg === 400 && bodyObj.title === "Member Exists")) {
             console.log("Added to list in Mailchimp subscriber list");
             callback(null, {
-                statusCode: 201,
+                msgCode: 201,
                 headers: {
                     "Content-Type": "application/json",
                     "Access-Control-Allow-Origin": "*",
                     "Access-Control-Allow-Credentials": "true"
                 },
                 body: JSON.stringify({
-                    status: "saved email"
+                    msg: `📩 Votre e-mail ${email} a bien été enregistré`
                 })
             })
         } else {
