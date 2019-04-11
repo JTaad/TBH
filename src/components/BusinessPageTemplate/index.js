@@ -17,25 +17,16 @@ import icon_patio from '../../assets/img/icons/Patio_HDx2.png'
 import forfaits from '../../assets/img/business/business_sectionforfaits.jpg'
  
 
-let meta_title = 'Business | T Boutique Hôtel — Arcachon'
-let meta_description = 'description'
 
 const BusinessPageTemplate = ({
   title,
   subtitle,
   background_header,
-  contacts,
   vos_espaces,
   vos_evenements,
 }) => { 
   return (
     <div>
-      <Helmet>
-        <title>{meta_title}</title>
-      </Helmet>
-      
-
-
       <div className='headerHome'>
           <Img  
             style={{ position: 'absolute', left: '0', top: "0", width: "100%", height: "100%" }} 

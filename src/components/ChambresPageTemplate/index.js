@@ -1,6 +1,4 @@
 import React from 'react'
-import Helmet from 'react-helmet'
-import PropTypes from 'prop-types'
 import CarouselChambre from '../CarouselChambre'
 import Img from "gatsby-image"
 import Fade from 'react-reveal/Fade';
@@ -25,8 +23,6 @@ import chambre_suite_1 from '../../assets/img/chambres/chambre_suite_1.jpg'
 import chambre_suite_2 from '../../assets/img/chambres/chambre_suite_2.jpg'
 import chambre_suite_3 from '../../assets/img/chambres/chambre_suite_3.jpg'
 
-let meta_title = 'Chambres | T Boutique Hôtel — Arcachon'
-let meta_description = 'description'
 const standard = [
     {
         id: 1,
@@ -75,11 +71,6 @@ const ChambresPageTemplate = ({
 }) => {
   return (
     <div>
-      <Helmet>
-        <title>{meta_title}</title>
-      </Helmet>
-      
-
 
       <div className='headerHome'>
           <Img  

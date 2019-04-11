@@ -12,7 +12,6 @@ const BusinessPages = ({data}) => {
     <div>
       <Helmet>
         <title>{post.frontmatter.meta_title}</title>
-        <meta name='description' content={post.frontmatter.meta_description} />
       </Helmet>
       <BusinessPageTemplate
         contentComponent={HTMLContent}

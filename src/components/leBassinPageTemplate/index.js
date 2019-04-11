@@ -4,11 +4,8 @@ import PropTypes from 'prop-types'
 import Img from "gatsby-image"
 import { Link } from 'gatsby'
 import Reveal from 'react-reveal/Reveal';
- 
-let meta_title = 'Le Bassin | T Boutique Hôtel — Arcachon'
 
 const BassinPageTemplate = ({
-  meta_description,
   background_header,
   cabanes,
   petittrain,
@@ -19,14 +16,8 @@ const BassinPageTemplate = ({
   moulleau
 }) => { 
   return (
-    <div>
-      <Helmet>
-        <title>{meta_title}</title>
-      </Helmet>
-      
-
-
-      <div className='headerHome'>
+      <div>
+        <div className='headerHome'>
             <Img  
                 style={{ position: 'absolute', left: '0', top: "0", width: "100%", height: "100%" }} 
                 fluid={background_header.childImageSharp.fluid} 
@@ -66,7 +57,7 @@ const BassinPageTemplate = ({
 
 
 
-    <div className='section  is-paddingless is-marginless' style={{zIndex: "9999", position:"relative"}}>
+    <div className='section  is-paddingless is-marginless'>
         <div className='columns is-paddingless is-marginless'>
             <Reveal effect="fadeInUp"  duration={1400} >
                 <div className='column is-full-mobile is-5-tablet is-5-desktop is-paddingless is-paddingless-noTouch is-marginless imgContent' style={{ textAlign: 'left' }}>

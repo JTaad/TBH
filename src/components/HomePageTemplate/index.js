@@ -13,21 +13,11 @@ import Reveal from 'react-reveal/Reveal';
 import espace_pro from '../../assets/img/home/home_espacepro.jpg'
 
 const HomePageTemplate = ({
-  title,
-  heading, 
-  description,
-  meta_title,
-  meta_description,
   posts_instagram,
   bienvenue,
   background_header,
 }) => (
   <div> 
-    <Helmet>
-      <title>{meta_title}</title>
-      <meta name='description' content={meta_description} />  
-    </Helmet>
-
       <div className='headerHome' >
              <Video />
              <Rerservation />
@@ -193,11 +183,6 @@ const HomePageTemplate = ({
 )
 
 HomePageTemplate.propTypes = {
-  title: PropTypes.string,
-  meta_title: PropTypes.string,
-  meta_description: PropTypes.string,
-  heading: PropTypes.string,
-  description: PropTypes.string,
   posts_instagram: PropTypes.array,
 
 }

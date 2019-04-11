@@ -5,8 +5,6 @@ import Img from "gatsby-image"
 import Reveal from 'react-reveal/Reveal';
 import { Link } from 'gatsby'
 
-let meta_title = 'Le "T" Boutique | T Boutique Hôtel — Arcachon'
-
 const TboutiquePageTemplate = ({
   background_header,
   concept,
@@ -16,11 +14,6 @@ const TboutiquePageTemplate = ({
 }) => {
   return (
     <div>
-      <Helmet>
-        <title>{meta_title}</title>
-      </Helmet>
-      
-
       <div className='headerHome'>
           <Img  
             style={{ position: 'absolute', left: '0', top: "0", width: "100%", height: "100%" }} 

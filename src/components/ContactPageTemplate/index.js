@@ -1,24 +1,15 @@
 import React from 'react'
-import Helmet from 'react-helmet'
-import PropTypes from 'prop-types'
 import headerImage from '../../assets/img/contact/header_contact_tbh.jpg'
 import SimpleMap from '../SimpleMap'
 import Img from "gatsby-image"
 import Reveal from 'react-reveal/Reveal';
  
-let meta_title = 'Contact | T Boutique Hôtel — Arcachon'
 
 const ContactPageTemplate = ({
   background_header,
 }) => {
   return (
     <div>
-      <Helmet>
-        <title>{meta_title}</title>
-      </Helmet>
-      
-
-
       <div className='headerHome'>
           <Img
             style={{ position: 'absolute', left: '0', top: "0", width: "100%", height: "100%" }} 
@@ -147,13 +138,5 @@ const ContactPageTemplate = ({
   )
 }
 
-ContactPageTemplate.propTypes = {
-  title: PropTypes.string,
-  subtitle: PropTypes.string,
-  meta_title: PropTypes.string,
-  meta_description: PropTypes.string,
-  contacts: PropTypes.array,
-
-}
 
 export default ContactPageTemplate

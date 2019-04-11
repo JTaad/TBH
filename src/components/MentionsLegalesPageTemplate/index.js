@@ -22,7 +22,6 @@ const MentionsLegalesPageTemplate = ({
     <div>
       <Helmet>
         <title>{meta_title}</title>
-        <meta name='description' content={meta_description} />
       </Helmet>
       
 <div id="mentionsLegales">
