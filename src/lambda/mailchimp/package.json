@@ -1,0 +1,15 @@
+{
+    "name": "functions",
+    "version": "1.0.0",
+    "description": "",
+    "main": "function-mailchimp.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "mailchimp-api-v3": "^1.12.1",
+      "md5": "^2.2.1"
+    }
+  }
