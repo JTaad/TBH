@@ -19,7 +19,7 @@ class CarouselBusiness extends Component {
       slidesToShow: 1,
       cellAlign: "center",
       transitionMode: "fade",
-      heightMode: "current",
+      heightMode: "max",
       autoplay: true,
       autoplayInterval: 3000,
       withoutControls: false,
@@ -117,6 +117,7 @@ class CarouselBusiness extends Component {
                   wrapAround={this.state.wrapAround}
                   heightMode={this.state.heightMode}
                   autoplayInterval={this.state.autoplayInterval}
+                  initialSlideHeight='220px'
                 >
                 {this.state.items.map(({image }) => (
                   <img src={image} 
