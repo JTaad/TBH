@@ -1,7 +1,7 @@
 [build]
   command = "npm run build && npm run build:lambda"
   functions = "lambda"
-  publish = "build"
+  publish = "public"
 [build.environment]
   YARN_VERSION = "1.9.4"
   YARN_FLAGS = "--no-ignore-optional"
