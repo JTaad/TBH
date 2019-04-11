@@ -48,8 +48,6 @@ export const contactPageQuery = graphql`
       html
       frontmatter {
         title
-        meta_title
-        meta_description
       }
     }
   }

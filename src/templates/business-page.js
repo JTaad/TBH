@@ -127,8 +127,6 @@ export const businessPageQuery = graphql`
       html
       frontmatter {
         title
-        meta_title
-        meta_description
       }
     }
 }

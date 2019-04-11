@@ -73,14 +73,6 @@ const BusinessPageTemplate = ({
                     Nous vous choyons aussi lors de vos escales professionnelles. Des espaces dédiés, fonctionnels et esthétiques sont mis à votre disposition. Notre salle, pouvant accueillir jusqu’à 30 personnes, est idéale pour se réunir. Le patio et le salon bibliothèque sont quant à eux parfaits pour des moments d’échange et de pause. Sans oublier nos 27 chambres et nos 3 suites, que vous aurez plaisir à retrouver une fois la nuit tombée !
                     </p>
                     </Reveal>
-
-                    <br/>
-                    <br/>
-                    <Reveal effect="fadeInUp"  duration={1400} >
-                        <Link className='button is-outlined title is-5' to='/tboutique'>
-                        Forfaits
-                        </Link>
-                    </Reveal>
                 </div>
             </div>
         </div>

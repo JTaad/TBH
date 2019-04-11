@@ -95,8 +95,6 @@ export const bassinPageQuery = graphql`
       html
       frontmatter {
         title
-        meta_title
-        meta_description
       }
     }
 }

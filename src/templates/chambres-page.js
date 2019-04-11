@@ -58,8 +58,6 @@ export const chambresPageQuery = graphql`
       html
       frontmatter {
         title
-        meta_title
-        meta_description
       }
     }
     background_header: file(relativePath: { eq: "chambres/header_chambre_1.jpg" }) {

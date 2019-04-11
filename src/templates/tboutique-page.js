@@ -70,8 +70,6 @@ family: file(relativePath: { eq: "tboutique/let_family.jpg" }) {
       html
       frontmatter {
         title
-        meta_title
-        meta_description
       }
     }
   }
