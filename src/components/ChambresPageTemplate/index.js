@@ -107,7 +107,7 @@ const ChambresPageTemplate = ({
 
     <div className='section is-marginless is-paddingless'>
         <div className=' titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop'>
-          <span className='titleTbhEmpty'>Les</span> <span className='titleTbhFull'>Chambres_</span>
+          <h1><span className='titleTbhEmpty'>Les</span> <span className='titleTbhFull'>Chambres_</span></h1>
         </div>
     </div>
 
@@ -126,7 +126,7 @@ const ChambresPageTemplate = ({
                             <br className="is-hidden-touch"/>
 
 
-                            <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>Standard</span>
+                            <h2 className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>Standard</h2>
                         </div>
                     </Reveal>
                     <br/>
@@ -177,87 +177,15 @@ const ChambresPageTemplate = ({
     </div>
 
 
-
-    <div id="suite" className='section  is-paddingless is-marginless'>
-        <div className='columns is-paddingless is-marginless is-bg-vert'>
-            <div className='column is-5  is-offset-1  center-v is-paddinglessTB' style={{ textAlign: 'left' }}>
-
-                <div className='section is-paddinglessTB'>
-                    <Reveal effect="fadeInUp"  duration={1400} >
-                        <div>
-                            <div className="arrow-r subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless is-hidden-touch" >←</div>
-                            <br className="is-hidden-touch"/>
-                            <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>Suite</span>
-                        </div>
-                    </Reveal>
-                    <br/>
-                    <Reveal effect="fadeInUp"  duration={1400} >
-                      <div className='sub-p is-size-5'><p>POUR UNE BELLE EXPÉRIENCE</p></div>
-                    </Reveal>
-                    <br/>
-                    <Reveal effect="fadeInUp"  duration={1400} >
-                        <p>
-                        La Suite est un espace sur-mesure pour un séjour à deux, en famille ou entre amis. Prenez vos aises, étalez vos affaires, flânez sur la terrasse... bref faites tout ce qui vous plaît.                        </p>  
-                    </Reveal>
-                    <br/>
-                    <Reveal effect="fadeInUp"  duration={1400} className="is-hidden-touch">
-                        <p>Idéal pour un séjour “wahou” qu’on n’oublie pas !</p>  
-                    </Reveal>
-
-                    <br/>
-                    <br/>
-                    <div className='columns is-size-7 is-gapless'>
-                        <Reveal effect="fadeInUp"  duration={1400} >
-                            <div className='column is-half'>
-                                <div className='subtitle subtitle-chambres is-size-6 is-marginless'>LA CHAMBRE</div>
-                                <p>30 m2 en moyenne</p>
-                            </div>
-                        </Reveal>
-                        <Reveal effect="fadeInUp"  duration={1400} >
-                        <div className='column is-half'>
-                            <div className='subtitle subtitle-chambres is-size-6 is-marginless'>LA LITERIE</div>
-                            <p >Queen Size twin + canapé lit</p>
-                        </div>
-                        </Reveal>
-                    </div>
-                    <div className='columns is-size-7 is-gapless'>
-                        <Reveal effect="fadeInUp"  duration={1400} >
-                            <div className='column is-half'>
-                                <div className='subtitle subtitle-chambres is-size-6 is-marginless'>LA CAPACITÉ</div>
-                                <p>4 personnes</p>
-                            </div>
-                        </Reveal>
-                        <Reveal effect="fadeInUp"  duration={1400} >
-                            <div className='column is-half'>
-                                <div className='subtitle subtitle-chambres is-size-6 is-marginless'>LE ++ LA TERRASSE</div>
-                                <p>Côté cours</p>
-                            </div>
-                        </Reveal>
-                    </div>
-            </div>
-            </div>
-            <div  className='column  is-half is-paddingless is-marginless center-v'>
-                <CarouselChambre  images={suite} />
-                </div>
-            </div>
-        </div>
-
       <div  id="luxe" className='section  is-paddingless is-marginless'>
           <div className='columns is-paddingless is-marginless is-bg-jaune'>
-              <div  className='column is-half is-paddingless is-marginless is-hidden-touch  center-v'>
-              
-              <div style={{ width: "100%" }}>
-                <CarouselChambre images={luxe} />
-
-              </div>
-              </div>
-              <div className='column is-5-desktop  is-full-tablet center-v is-paddinglessTB'>
+              <div className='column is-5-desktop is-offset-1  is-full-tablet center-v is-paddinglessTB'>
                       <div className='section is-paddinglessTB'>
                     <Reveal effect="fadeInUp"  duration={1400} >
                         <div>
                             <div className="arrow-l subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless is-hidden-touch">→</div>
                             <br className="is-hidden-touch"/>
-                            <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>Luxe</span>
+                            <h2 className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>Luxe</h2>
                       </div>
                      </Reveal>
                     <br/>
@@ -307,24 +235,95 @@ const ChambresPageTemplate = ({
                     </div>
                   </div>
               </div>
+            <div  className='column  is-half is-paddingless is-marginless center-v is-hidden-touch'>
+                <CarouselChambre  images={suite} />
+                </div>
                     <div className='column is-full is-paddingless is-marginless is-hidden-desktop' >
-                        <CarouselChambre  images={luxe} />
+                        <CarouselChambre  images={suite} />
                     </div>
           </div>
       </div>
+
+
+    <div id="suite" className='section  is-paddingless is-marginless'>
+        <div className='columns is-paddingless is-marginless is-bg-vert'>
+            <div  className='column  is-half is-paddingless is-marginless center-v is-hidden-touch'>
+                <CarouselChambre  images={luxe} />
+                </div>
+            <div className='column is-5  is-offset-1  center-v is-paddinglessTB' style={{ textAlign: 'left' }}>
+
+                <div className='section is-paddinglessTB'>
+                    <Reveal effect="fadeInUp"  duration={1400} >
+                        <div>
+                            <div className="arrow-r subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless is-hidden-touch" >←</div>
+                            <br className="is-hidden-touch"/>
+                            <h2 className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>Suite</h2>
+                        </div>
+                    </Reveal>
+                    <br/>
+                    <Reveal effect="fadeInUp"  duration={1400} >
+                      <div className='sub-p is-size-5'><p>POUR UNE BELLE EXPÉRIENCE</p></div>
+                    </Reveal>
+                    <br/>
+                    <Reveal effect="fadeInUp"  duration={1400} >
+                        <p>
+                        La Suite est un espace sur-mesure pour un séjour à deux, en famille ou entre amis. Prenez vos aises, étalez vos affaires, flânez sur la terrasse... bref faites tout ce qui vous plaît.                        </p>  
+                    </Reveal>
+                    <br/>
+                    <Reveal effect="fadeInUp"  duration={1400} className="is-hidden-touch">
+                        <p>Idéal pour un séjour “wahou” qu’on n’oublie pas !</p>  
+                    </Reveal>
+
+                    <br/>
+                    <br/>
+                    <div className='columns is-size-7 is-gapless'>
+                        <Reveal effect="fadeInUp"  duration={1400} >
+                            <div className='column is-half'>
+                                <div className='subtitle subtitle-chambres is-size-6 is-marginless'>LA CHAMBRE</div>
+                                <p>30 m2 en moyenne</p>
+                            </div>
+                        </Reveal>
+                        <Reveal effect="fadeInUp"  duration={1400} >
+                        <div className='column is-half'>
+                            <div className='subtitle subtitle-chambres is-size-6 is-marginless'>LA LITERIE</div>
+                            <p >Queen Size twin + canapé lit</p>
+                        </div>
+                        </Reveal>
+                    </div>
+                    <div className='columns is-size-7 is-gapless'>
+                        <Reveal effect="fadeInUp"  duration={1400} >
+                            <div className='column is-half'>
+                                <div className='subtitle subtitle-chambres is-size-6 is-marginless'>LA CAPACITÉ</div>
+                                <p>4 personnes</p>
+                            </div>
+                        </Reveal>
+                        <Reveal effect="fadeInUp"  duration={1400} >
+                            <div className='column is-half'>
+                                <div className='subtitle subtitle-chambres is-size-6 is-marginless'>LE ++ LA TERRASSE</div>
+                                <p>Côté cours</p>
+                            </div>
+                        </Reveal>
+                    </div>
+            </div>
+            </div>
+            <div  className='column  is-half is-paddingless is-marginless center-v is-hidden-desktop'>
+                <CarouselChambre  images={luxe} />
+                </div>
+            </div>
+        </div>
 
 
 
 
     <div className='section is-marginless is-paddingless'>
         <div className='titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop'>
-        <span className='titleTbhEmpty'>Vos</span> <span className='titleTbhFull'>petits +_</span>
+        <h3><span className='titleTbhEmpty'>Vos</span> <span className='titleTbhFull'>petits +_</span></h3>
         </div>
     </div>
 
 <div className="container-fullhd"   style={{position: 'absolute'}}>
     <div className='petitPlus  is-size-5-mobile is-size-4-tablet is-size-4-desktop'>
-        <div className='petitPlusBorder1 is-paddinglessTB'>
+        <div className='petitPlusBorder1 is-paddinglessTB1'>
             <div className='petitPlusItem has-text-centered'>
                     <span><img className='image is-48x48' src={icon_wifi}/></span>
                     <span className='petitPlusItemTitle'>WIFI_</span>
@@ -419,7 +418,7 @@ const ChambresPageTemplate = ({
 
 <div className='section is-marginless is-paddingless'>
     <div className='titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop' style={{borderTop: '0px'}}>
-      <span className='titleTbhEmpty'>Le petit-</span><span className='titleTbhFull'>Déjeuner_</span>
+      <h3><span className='titleTbhEmpty'>Le petit-</span><span className='titleTbhFull'>Déjeuner_</span></h3>
     </div>
 </div>
 

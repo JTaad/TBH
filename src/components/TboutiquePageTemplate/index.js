@@ -23,7 +23,7 @@ const TboutiquePageTemplate = ({
 
     <div className='section is-marginless is-paddingless'>
         <div className='titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop'>
-          <span className='titleTbhFull'>Concept_</span>
+          <h1 className='titleTbhFull'>Concept_</h1>
         </div>
     </div>
 
@@ -45,7 +45,7 @@ const TboutiquePageTemplate = ({
                         <div>
                             <div className="arrow-r subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless">←</div>
                             <br/>
-                            <h1 className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>Le "T"</h1>
+                            <h2 className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>Le "T"</h2>
                         </div>
                     </Reveal>
                     <br/>
@@ -78,7 +78,7 @@ const TboutiquePageTemplate = ({
                         <div>
                             <div className="arrow-l subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless">→</div>
                             <br/>
-                            <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>L'hôtel</span>
+                            <h2 className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>L'hôtel</h2>
                         </div>
                       </Reveal>
                         <br/>
@@ -148,7 +148,7 @@ const TboutiquePageTemplate = ({
 
     <div className='section is-marginless is-paddingless'>
         <div className='titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop'>
-           <span className='titleTbhEmpty'>L'histoire </span> <span className='titleTbhFull'>du T_</span>
+           <h3><span className='titleTbhEmpty'>L'histoire </span> <span className='titleTbhFull'>du T_</span></h3>
         </div>
     </div>
 

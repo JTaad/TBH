@@ -27,7 +27,7 @@ const BassinPageTemplate = ({
 
     <div className='section is-marginless is-paddingless'>
         <div className=' titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop'>
-          <span className='titleTbhFull'>Le bassin_</span>
+          <h1 className='titleTbhFull'>Le bassin_</h1>
         </div>
     </div>
  
@@ -78,7 +78,7 @@ const BassinPageTemplate = ({
                     </Reveal>
                     <br/>
                     <Reveal effect="fadeInUp"  duration={1400} >
-                      <div className='sub-p is-size-5 '><p>LA Criée d’arcachon</p></div>
+                      <h2 className='sub-p is-size-5 '><p>LA Criée d’arcachon</p></h2>
                     </Reveal>
                     <br/>
                     <Reveal effect="fadeInUp"  duration={1400} >
@@ -115,7 +115,7 @@ const BassinPageTemplate = ({
                   </Reveal>
                     <br/>
                   <Reveal effect="fadeInUp"  duration={1400} >
-                    <div className='sub-p is-size-5'><p>LE PETIT TRAIN</p></div>
+                    <h2 className='sub-p is-size-5'><p>LE PETIT TRAIN</p></h2>
                   </Reveal>
                     <br/>
                   <Reveal effect="fadeInUp"  duration={1400} >
@@ -178,7 +178,7 @@ const BassinPageTemplate = ({
                   </Reveal>
                     <br/>
                   <Reveal effect="fadeInUp"  duration={1400} >
-                    <div className='sub-p is-size-5'><p>LE MARCHé</p></div>
+                    <h2 className='sub-p is-size-5'><p>LE MARCHÉ</p></h2>
                   </Reveal>
                     <br/>
                   <Reveal effect="fadeInUp"  duration={1400} >
@@ -219,7 +219,7 @@ const BassinPageTemplate = ({
                   </Reveal>
                     <br/>
                   <Reveal effect="fadeInUp"  duration={1400} >
-                    <div className='sub-p is-size-5'><p>Cabanes ostréicoles</p></div>
+                    <h2 className='sub-p is-size-5'><p>Cabanes ostréicoles</p></h2>
                   </Reveal>
                     <br/>
                   <Reveal effect="fadeInUp"  duration={1400} >
@@ -277,7 +277,7 @@ const BassinPageTemplate = ({
                   </Reveal>
                     <br/>
                   <Reveal effect="fadeInUp"  duration={1400} >
-                    <div className='sub-p is-size-5'><p>En pinasse</p></div>
+                    <h2 className='sub-p is-size-5'><p>En pinasse</p></h2>
                   </Reveal>
                     <br/>
                   <Reveal effect="fadeInUp"  duration={1400} >
@@ -317,7 +317,7 @@ const BassinPageTemplate = ({
                   </Reveal>
                     <br/>
                   <Reveal effect="fadeInUp"  duration={1400} >
-                    <div className='sub-p is-size-5'><p>Dune du Pyla  #sunset</p></div>
+                    <h2 className='sub-p is-size-5'><p>Dune du Pyla  #sunset</p></h2>
                   </Reveal>
                     <br/>
                   <Reveal effect="fadeInUp"  duration={1400} >
@@ -374,7 +374,7 @@ const BassinPageTemplate = ({
                   </Reveal>
                     <br/>
                   <Reveal effect="fadeInUp"  duration={1400} >
-                    <div className='sub-p is-size-5'><p>LE MOULLEAU</p></div>
+                    <h2 className='sub-p is-size-5'><p>LE MOULLEAU</p></h2>
                   </Reveal>
                     <br/>
                   <Reveal effect="fadeInUp"  duration={1400} >

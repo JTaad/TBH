@@ -29,7 +29,7 @@ const HomePageTemplate = ({
         <div className=' titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop' style={{backgroundColor: "#FFF"}}>
        
           <div>
-            <span className='titleTbhEmpty'>Bienvenue au</span> <span className='titleTbhFull'>T_</span> 
+            <h1><span className='titleTbhEmpty'>Bienvenue au</span> <span className='titleTbhFull'>T_</span></h1> 
          </div>
        </div>
     </div>
@@ -53,7 +53,7 @@ const HomePageTemplate = ({
                     <div>
                         <div className="arrow-r title is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless ">←</div>
                         <br/>
-                        <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>Le concept</span>
+                        <h2 className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>Le concept</h2>
                     </div>
                   </Reveal>
                     <br/>

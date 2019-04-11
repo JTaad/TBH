@@ -37,7 +37,7 @@ const BusinessPageTemplate = ({
 
     <div className='section is-marginless is-paddingless'>
         <div className=' titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop'>
-          <span className='titleTbhEmpty'>Pour les</span> <span className='titleTbhFull'>professionnels_</span>
+          <h1><span className='titleTbhEmpty'>Pour les</span> <span className='titleTbhFull'>professionnels_</span></h1>
         </div>
     </div>
  
@@ -60,7 +60,7 @@ const BusinessPageTemplate = ({
                         <div>
                             <div className="arrow-r subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless">←</div>
                             <br/>
-                            <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>Vos espaces</span>
+                            <h2 className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>Vos espaces</h2>
                         </div>
                     </Reveal>
                     <br/>
@@ -101,7 +101,7 @@ const BusinessPageTemplate = ({
                         <div>
                             <div className="arrow-l subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop is-marginless is-paddingless">→</div>
                             <br/>
-                            <span className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>VOS événements</span>
+                            <h2 className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>VOS événements</h2>
                         </div>
                     </Reveal>
                         <br/>
@@ -154,7 +154,7 @@ const BusinessPageTemplate = ({
 
     <div className='section is-marginless is-paddingless'>
         <div className='titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop'>
-          <span className='titleTbhEmpty'>Nos </span> <span className='titleTbhFull'>petits +_</span>
+          <h3><span className='titleTbhEmpty'>Nos </span> <span className='titleTbhFull'>petits +_</span></h3>
         </div>
     </div>
     

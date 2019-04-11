@@ -19,7 +19,7 @@ const ContactPageTemplate = ({
   
       <div className='section is-marginless is-paddingless'>
           <div className=' titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop'>
-            <span className='titleTbhEmpty'>Notre</span> <span className='titleTbhFull'>Emplacement_</span>
+            <h1><span className='titleTbhEmpty'>Notre</span> <span className='titleTbhFull'>Emplacement_</span></h1>
           </div>
       </div>
 
@@ -59,7 +59,7 @@ const ContactPageTemplate = ({
       <div className='section is-marginless is-paddingless'>
       <div className='titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop is-bg-white'  style={{'position': 'relative', 'zIndex': '999'}}>
 
-            <h1><span className='titleTbhEmpty'>Accès</span><span className='titleTbhFull'>_</span></h1>
+            <h2><span className='titleTbhEmpty'>Accès</span><span className='titleTbhFull'>_</span></h2>
           </div>
       </div>
   
