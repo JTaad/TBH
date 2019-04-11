@@ -1,8 +1,8 @@
 const request = require("request");
 
-const mailChimpAPI = "5ee62a5b72056875082e791847412359";
-const mailChimpListID = "872c00aa85";
-const mcRegion = "us10";
+const mailChimpAPI =  process.env.MAILCHIMP_API_KEY;
+const mailChimpListID = process.env.MAILCHIMP_LIST_ID;
+const mcRegion = process.env.MAILCHIMP_REGION;
 
 module.exports.handler = (event, context, callback) => {
 
@@ -64,7 +64,7 @@ module.exports.handler = (event, context, callback) => {
                     "Access-Control-Allow-Credentials": "true"
                 },
                 body: JSON.stringify({
-                    msg: `📩 Votre e-mail ${email} a bien été enregistré`,
+                    msg: `📩 Votre e-mail ${email} a bien été enregistré !`,
                     status: 'subscribed'
                 })
             })

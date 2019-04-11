@@ -50,8 +50,8 @@ class Mailchimp extends Component {
                 S'inscrire
               </button>
             </div>
-            <p>{this.state.msg}</p>
           </div>
+            <p style={{fontWeight: 'bold'}}>{this.state.msg}</p>
       </form>
     )
   }
