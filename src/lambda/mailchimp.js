@@ -1,7 +1,7 @@
 const Mailchimp = require('mailchimp-api-v3')
 const md5 = require ('md5')
 require('dotenv').config()
-
+alert('ok')
 console.log('1ok')
 const mailchimp = new Mailchimp(process.env.MAILCHIMP_API)
 
