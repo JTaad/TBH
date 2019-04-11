@@ -9,6 +9,7 @@ import config from '../../data/config'
 import GlobalStyles from '../layouts/globalStyles'
 import Transition from "../components/Transition"
 import Remise from "../assets/img/home_remiseHD_X2.png"
+import OpenGraph from "../assets/img/OpenGraph_TBH.jpg"
 import CookieConsent from "react-cookie-consent";
 
 
@@ -60,6 +61,11 @@ class TemplateWrapper extends Component {
         <Helmet>
           <title>{config.siteTitle}</title>
           <meta name='description' content={config.siteDescription} />
+          <meta property='og:title' content={config.siteTitle} />
+          <meta property='og:description' content={config.siteDescription} />
+          <meta property='og:image' content={OpenGraph} />
+          <meta name='twitter:card' content='summary_large_image' />
+          <meta name='twitter:image' content={OpenGraph} />
         </Helmet>
           <GlobalStyles />
   <CookieConsent
