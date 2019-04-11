@@ -1,25 +1,77 @@
-const Mailchimp = require('mailchimp-api-v3')
-const md5 = require ('md5')
-require('dotenv').config()
+const request = require("request");
 
-const mailchimp = new Mailchimp(process.env.MAILCHIMP_API)
+const mailChimpAPI = process.env.MAILCHIMP_API_KEY;
+const mailChimpListID = "872c00aa85";
+const mcRegion = "us10";
 
+module.exports.handler = (event, context, callback) => {
 
-export async function handler(event, context, callback) {
-    const data = JSON.parse(event.body)
-    const email = data.email
-    const emailHash = md5(email)
+    const formData = JSON.parse(event.body);
+    const email = formData.email;
+    let errorMessage = null;
 
-    await mailchimp.put(
-        `/lists/872c00aa85/membres/${emailHash}`,
-        {
-            email_address: email,
-            status: 'subscribed'
+    if (!formData) {
+        errorMessage = "No form data supplied";
+        console.log(errorMessage);
+        callback(errorMessage);
+    }
+
+    if (!email) {
+        errorMessage = "No EMAIL supplied";
+        console.log(errorMessage);
+        callback(errorMessage);
+    }
+
+    if (!mailChimpListID) {
+        errorMessage = "No LIST_ID supplied";
+        console.log(errorMessage);
+        callback(errorMessage);
+    }
+
+    const data = {
+        email_address: email,
+        status: "subscribed",
+        merge_fields: {}
+    };
+
+    const subscriber = JSON.stringify(data);
+    console.log("Sending data to mailchimp", subscriber);
+
+    request({
+        method: "POST",
+        url: `https://${mcRegion}.api.mailchimp.com/3.0/lists/${mailChimpListID}/members`,
+        body: subscriber,
+        headers: {
+            "Authorization": `apikey ${mailChimpAPI}`,
+            "Content-Type": "application/json"
         }
-    )
+    }, (error, response, body) => {
+        if (error) {
+            callback(error, null)
+        }
+        const bodyObj = JSON.parse(body);
 
-    callback(null, {
-      statusCode: 200,
-      body: JSON.stringify({msg:  `📩 Votre e-mail ${email} a bien été enregistré` })
-    })
-  }
+        console.log("Mailchimp body: " + JSON.stringify(bodyObj));
+        console.log("Status Code: " + response.statusCode);
+
+        if (response.statusCode < 300 || (bodyObj.status === 400 && bodyObj.title === "Member Exists")) {
+            console.log("Added to list in Mailchimp subscriber list");
+            callback(null, {
+                statusCode: 201,
+                headers: {
+                    "Content-Type": "application/json",
+                    "Access-Control-Allow-Origin": "*",
+                    "Access-Control-Allow-Credentials": "true"
+                },
+                body: JSON.stringify({
+                    status: "saved email"
+                })
+            })
+        } else {
+            console.log("Error from mailchimp", bodyObj.detail);
+            callback(bodyObj.detail, null);
+        }
+
+    });
+    
+};

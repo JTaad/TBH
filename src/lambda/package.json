@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "mailchimp-api-v3": "^1.12.1",
-    "md5": "^2.2.1"
+    "md5": "^2.2.1",
+    "request": "^2.88.0"
   }
 }
