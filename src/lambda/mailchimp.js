@@ -1,6 +1,6 @@
 const request = require("request");
 
-const mailChimpAPI = process.env.MAILCHIMP_API_KEY;
+const mailChimpAPI = "5ee62a5b72056875082e791847412359-us10";
 const mailChimpListID = "872c00aa85";
 const mcRegion = "us10";
 
