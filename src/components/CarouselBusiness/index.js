@@ -161,14 +161,14 @@ class CarouselBusiness extends Component {
                       </p>
 
  
-                      <TransitionGroup  style={{display: "block", height:"140px"}}>
+                      <TransitionGroup  style={{display: "block", height:"140px"}} className="is-hidden-touch ">
                         <CSSTransition
                           key={this.state.slideIndex}
                           timeout={1000}
                           classNames="messageout"
                           style={{position: 'absolute'}}
                         >
-                        <div  className='carouselNumber is-pulled-left is-hidden-touch is-font-rose'>
+                        <div  className='carouselNumber is-pulled-left is-font-rose'>
                          0{this.state.slideIndex + 1}
                          </div>
                         </CSSTransition>

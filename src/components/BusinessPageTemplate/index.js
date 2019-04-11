@@ -169,7 +169,7 @@ const BusinessPageTemplate = ({
     
 <div className="container-fullhd" style={{position: "absolute"}}>
     <div className='petitPlus title  is-size-5-mobile is-size-4-tablet is-size-4-desktop'>
-        <div className='petitPlusBorder is-paddinglessTB'>
+        <div className='petitPlusBorder is-paddinglessTB1'>
             <div className='petitPlusItem has-text-centered'>
                     <span><img className='image is-48x48' src={icon_wifi1}/></span>
                     <span className='petitPlusItemTitle'>WIFI_</span>
@@ -207,7 +207,7 @@ const BusinessPageTemplate = ({
 </div>
 <div className="container-fullhd is-bg-orange">
     <div className='petitPlus title  is-size-5-mobile is-size-4-tablet is-size-4-desktop'>
-        <div className='petitPlusBorder1 is-paddinglessTB'>
+        <div className='petitPlusBorder1 is-paddinglessTB1'>
             <div className='petitPlusItem has-text-centered'>
                     <span><img className='image is-48x48' src={icon_wifi1}/></span>
                     <span className='petitPlusItemTitle'>WIFI_</span>

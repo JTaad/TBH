@@ -66,7 +66,7 @@ const ContactPageTemplate = ({
 
 
       <div className='section is-marginless is-paddingless'>
-      <div className='titleTbhFirst titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop is-bg-white'  style={{'position': 'relative', 'zIndex': '999'}}>
+      <div className='titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop is-bg-white'  style={{'position': 'relative', 'zIndex': '999'}}>
 
             <h1><span className='titleTbhEmpty'>Accès</span><span className='titleTbhFull'>_</span></h1>
           </div>
@@ -94,7 +94,7 @@ const ContactPageTemplate = ({
                                 <h2 className='subtitle is-size-4-mobile is-size-3-tablet is-size-3-desktop'>de la gare d’arcachon</h2>
                             </div>
                                 </Reveal>
-                            <div className='columns'>
+                            <div className='columns is-gapless'>
                                 <Reveal effect="fadeInUp"  duration={1400} >
                                 <p className='column  is-3'>TAXI — 5min.</p>
                                 <p className='column is-3'>BUS — 10min.</p>
