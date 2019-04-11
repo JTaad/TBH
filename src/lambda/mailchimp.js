@@ -1,5 +1,5 @@
-var Mailchimp = require('mailchimp-api-v3')
-var md5 = require ('md5')
+import Mailchimp = require('mailchimp-api-v3')
+import md5 = require ('md5')
 require('dotenv').config()
 
 const mailchimp = new Mailchimp(process.env.MAILCHIMP_API)
