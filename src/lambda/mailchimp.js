@@ -52,22 +52,23 @@ module.exports.handler = (event, context, callback) => {
         const bodyObj = JSON.parse(body);
 
         console.log("Mailchimp body: " + JSON.stringify(bodyObj));
-        console.log("Status Code: " + response.msgCode);
+        console.log("Status Code: " + response.statusCode);
 
-        if (response.msgCode < 300 || (bodyObj.msg === 400 && bodyObj.title === "Member Exists")) {
+        if (response.statusCode < 300 || (bodyObj.status === 400 && bodyObj.title === "Member Exists")) {
             console.log("Added to list in Mailchimp subscriber list");
             callback(null, {
-                msgCode: 201,
+                statusCode: 201,
                 headers: {
                     "Content-Type": "application/json",
                     "Access-Control-Allow-Origin": "*",
                     "Access-Control-Allow-Credentials": "true"
                 },
                 body: JSON.stringify({
-                    msg: `📩 Votre e-mail ${email} a bien été enregistré`
+                    msg: `📩 Votre e-mail ${email} a bien été enregistré`,
+                    status: 'subscribed'
                 })
             })
-        } else {
+        } else {s
             console.log("Error from mailchimp", bodyObj.detail);
             callback(bodyObj.detail, null);
         }
