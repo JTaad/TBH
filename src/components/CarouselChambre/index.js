@@ -60,10 +60,10 @@ class CarouselHome extends Component {
                   slidesToShow={this.state.slidesToShow}
                   wrapAround={this.state.wrapAround}
                   heightMode={this.state.heightMode}
-                  initialSlideHeight='720px'
+            
                 >
                 {this.props.images.map(item => (
-                      <img src={item.imageSrc} />
+                      <img style={{minHeight: 295}} src={item.imageSrc} />
                 ))}
                       
                 </Carousel> 

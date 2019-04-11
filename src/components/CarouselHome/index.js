@@ -165,10 +165,9 @@ setTimeout(() => {
                   wrapAround={this.state.wrapAround}
                   heightMode={this.state.heightMode}
                   autoplayInterval={this.state.autoplayInterval}
-                  initialSlideHeight='720px'
                 >
                 {this.state.items.map(({image }) => (
-                  <img src={image} 
+                  <img src={image} style={{minHeight: 295}}
                         onClick={this.handleImageClick}/>
                 ))}
                 </Carousel> 
