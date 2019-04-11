@@ -1,13 +1,11 @@
 const Mailchimp = require('mailchimp-api-v3')
 const md5 = require ('md5')
 require('dotenv').config()
-alert('ok')
-console.log('1ok')
+
 const mailchimp = new Mailchimp(process.env.MAILCHIMP_API)
 
 
 export async function handler(event, context, callback) {
-    console.log('ok')
     const data = JSON.parse(event.body)
     const email = data.email
     const emailHash = md5(email)
