@@ -30,7 +30,7 @@ module.exports.handler = (event, context, callback) => {
 
     const data = {
         email_address: email,
-        msg: "subscribed",
+        status: "subscribed",
         merge_fields: {}
     };
 
