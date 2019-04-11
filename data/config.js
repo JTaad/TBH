@@ -1,7 +1,7 @@
 module.exports = {
   siteTitle: 'T BOUTIQUE HÔTEL Arcachon — Site Officiel', // Site title.
   siteTitleAlt: 'T BOUTIQUE HÔTEL', // Alternative site title for SEO.
-  siteLogo: '/icons/icon-512x512.png', // Logo used for SEO and manifest.
+  siteLogo: '/icons/OpenGraph_TBH.jpg', // Logo used for SEO and manifest.
   siteUrl: 'https://tbh-dev.netlify.com', // Domain of your website without pathPrefix.
   pathPrefix: '/', // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-business/.
   siteDescription: "Bienvenue au T Boutique Hôtel, un nouveau boutique hôtel 3 étoiles au coeur d'Arcachon, nous vous accueillons toute l’année. Site officiel. Meilleur tarif garantit.", // Website description used for RSS feeds/meta description tag.
