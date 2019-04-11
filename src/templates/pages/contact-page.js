@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import {graphql} from 'gatsby'
-import {HTMLContent} from '../components/Content'
-import ContactPageTemplate from '../components/ContactPageTemplate'
+import {HTMLContent} from '../../components/Content'
+import ContactPageTemplate from '../../components/ContactPageTemplate'
 
 
 const ContactPage = ({data}) => {

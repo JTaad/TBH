@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import {graphql} from 'gatsby'
-import {HTMLContent} from '../components/Content'
-import BassinPageTemplate from '../components/leBassinPageTemplate'
+import {HTMLContent} from '../../components/Content'
+import BassinPageTemplate from '../../components/leBassinPageTemplate'
 
 const BassinPages = ({data}) => {
   const {markdownRemark: post} = data

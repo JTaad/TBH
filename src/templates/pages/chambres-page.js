@@ -2,10 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import {graphql} from 'gatsby'
-import {HTMLContent} from '../components/Content'
-import ChambresPageTemplate from '../components/ChambresPageTemplate'
-import standard1 from '../assets/img/chambres/01_standard_chambres.jpg'
-import standard2 from '../assets/img/chambres/01_luxe_chambres.jpg'
+import {HTMLContent} from '../../components/Content'
+import ChambresPageTemplate from '../../components/ChambresPageTemplate'
+import standard1 from '../../assets/img/chambres/01_standard_chambres.jpg'
+import standard2 from '../../assets/img/chambres/01_luxe_chambres.jpg'
 
 
 
@@ -17,10 +17,10 @@ const ChambresPages = ({data}) => {
     standard2
   ];
   const luxe = [
-    '../../assets/img/chambres/01_luxe_chambres.jpg'
+    '../../../assets/img/chambres/01_luxe_chambres.jpg'
   ];
   const suite = [
-    '../../assets/img/chambres/01_suite_chambres.jpg'
+    '../../../assets/img/chambres/01_suite_chambres.jpg'
   ];
 
   return (

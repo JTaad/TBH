@@ -250,7 +250,7 @@ const ChambresPageTemplate = ({
             <div  className='column  is-half is-paddingless is-marginless center-v is-hidden-touch'>
                 <CarouselChambre  images={luxe} />
                 </div>
-            <div className='column is-5  is-offset-1  center-v is-paddinglessTB' style={{ textAlign: 'left' }}>
+            <div className='column is-5 center-v is-paddinglessTB' style={{ textAlign: 'left' }}>
 
                 <div className='section is-paddinglessTB'>
                     <Reveal effect="fadeInUp"  duration={1400} >

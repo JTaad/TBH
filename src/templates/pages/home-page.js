@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {graphql} from 'gatsby'
-import HomePageTemplate from '../components/HomePageTemplate'
+import HomePageTemplate from '../../components/HomePageTemplate'
 
 function sortNumber(a,b) {
   return a - b;

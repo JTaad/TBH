@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import {graphql} from 'gatsby'
-import {HTMLContent} from '../components/Content'
-import MentionsLegalesPageTemplate from '../components/MentionsLegalesPageTemplate'
+import {HTMLContent} from '../../components/Content'
+import MentionsLegalesPageTemplate from '../../components/MentionsLegalesPageTemplate'
 
 
 const MentionsPage = ({data}) => {

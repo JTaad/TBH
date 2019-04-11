@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import {graphql} from 'gatsby'
-import {HTMLContent} from '../components/Content'
-import BusinessPageTemplate from '../components/BusinessPageTemplate'
+import {HTMLContent} from '../../components/Content'
+import BusinessPageTemplate from '../../components/BusinessPageTemplate'
 
 const BusinessPages = ({data}) => {
   const {markdownRemark: post} = data
