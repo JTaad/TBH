@@ -5,7 +5,8 @@ class Mailchimp extends Component {
 
   state = {
     email: '',
-    msg: ''
+    msg: '',
+    loading: false
   }
 
   handleChange = e => {
@@ -15,6 +16,7 @@ class Mailchimp extends Component {
 
   handleSubmit = async e => {
     e.preventDefault();
+    this.setState({ loading: true })
     const email = this.state.email
 
     const mailchimp = await fetch('/.netlify/functions/mailchimp', {
@@ -25,7 +27,10 @@ class Mailchimp extends Component {
     const res = await mailchimp.json()
     const msg = res.msg
 
-    this.setState({ msg })
+    this.setState({ 
+      msg,
+      loading: false
+     })
   }
 
 
@@ -51,7 +56,7 @@ class Mailchimp extends Component {
               </button>
             </div>
           </div>
-            <p style={{fontWeight: 'bold'}}>{this.state.msg}</p>
+            <p style={{fontWeight: 'bold'}}>{ this.state.loading ? 'Traitement en cours...' : this.state.msg }</p>
       </form>
     )
   }
