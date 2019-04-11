@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import Carousel from 'nuka-carousel';
-import image1 from '../../assets/img/business/plans_seminaire_1.png'
-import image2 from '../../assets/img/business/plans_seminaire_1.png'
-import image3 from '../../assets/img/business/plans_seminaire_1.png'
+import image1 from '../../assets/img/business/plans_seminaire_conference.png'
+import image2 from '../../assets/img/business/plans_seminaire_theatre.png'
+import image3 from '../../assets/img/business/plans_seminaire_enu.png'
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 
