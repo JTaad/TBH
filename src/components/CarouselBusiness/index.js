@@ -39,13 +39,13 @@ class CarouselBusiness extends Component {
   componentDidMount() {
         setTimeout(() => {
             window.dispatchEvent(new Event('resize'));
-          }, 100);
+          }, 250);
   }
 
   componentDidUpdate() {
     setTimeout(() => {
         window.dispatchEvent(new Event('resize'));
-      }, 100);
+      }, 250);
 }
 
 

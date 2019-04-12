@@ -39,7 +39,7 @@ export default BusinessPages
 
 export const businessPageQuery = graphql`
   query BusinessPages($id: String!) {
-    background_header: file(relativePath: { eq: "business/business_header.jpg" }) {
+    background_header: file(relativePath: { eq: "business/business_header1.jpg" }) {
       childImageSharp{
         fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
            ...GatsbyImageSharpFluid_withWebp_tracedSVG

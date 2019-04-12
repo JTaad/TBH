@@ -32,7 +32,6 @@ const HomePage = ({data}) => {
       meta_description={frontmatter.meta_description}
       heading={frontmatter.heading}
       description={frontmatter.description}
-      espace_pro={data.espacePro}
       bienvenue={data.concept}
       posts_instagram={postsInstagram}
       background_header={data.background_header}
@@ -53,9 +52,6 @@ export default HomePage
 export const pageQuery = graphql`
   query IndexPage($id: String!) {
     background_header: file(relativePath: { eq: "home/header_tbh.jpg" }) {
-      ...fluidImage
-    }
-    espacePro: file(relativePath: { eq: "home/home_espacepro.jpg" }) {
       ...fluidImage
     }
     concept: file(relativePath: { eq: "home/home_concept.jpg" }) {

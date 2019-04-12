@@ -40,13 +40,13 @@ class CarouselHome extends Component {
   componentDidMount() {
     setTimeout(() => {
         window.dispatchEvent(new Event('resize'));
-      }, 0);
+      }, 300);
 }
 
 componentDidUpdate() {
 setTimeout(() => {
     window.dispatchEvent(new Event('resize'));
-  }, 0);
+  }, 300);
 }
 
 
@@ -167,7 +167,7 @@ setTimeout(() => {
                   autoplayInterval={this.state.autoplayInterval}
                 >
                 {this.state.items.map(({image }) => (
-                  <img src={image} style={{minHeight: 295}}
+                  <img src={image} style={{minHeight: "295"}}
                         onClick={this.handleImageClick}/>
                 ))}
                 </Carousel> 

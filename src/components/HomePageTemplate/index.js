@@ -10,7 +10,7 @@ import nousTrouver from '../../assets/img/home/facade_tbh.svg'
 import {Link} from 'gatsby'
 import Fade from 'react-reveal/Fade';
 import Reveal from 'react-reveal/Reveal';
-import espace_pro from '../../assets/img/home/home_espacepro.jpg'
+import espace_pro from '../../assets/img/home/home_espacepro_v2.jpg'
 
 const HomePageTemplate = ({
   posts_instagram,
