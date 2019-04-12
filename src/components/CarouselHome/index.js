@@ -30,8 +30,8 @@ class CarouselHome extends Component {
       colorFont: 'is-font-orange',
       items: [
         { slideIndex: 0, titre: "STANDARD", image: imageStandard, urlLink: 'standard' , colorBg: 'is-bg-orange', colorFont: 'is-font-orange'},
-        { slideIndex: 1, titre: "LUXE", image: imageSuite, urlLink: 'luxe', colorBg: 'is-bg-jaune', colorFont: 'is-font-jaune' },
-        { slideIndex: 2, titre: "SUITE", image: imageLuxe, urlLink: 'suite', colorBg: 'is-bg-vert', colorFont: 'is-font-vert'  },
+        { slideIndex: 1, titre: "LUXE", image: imageLuxe, urlLink: 'luxe', colorBg: 'is-bg-jaune', colorFont: 'is-font-jaune' },
+        { slideIndex: 2, titre: "SUITE", image: imageSuite, urlLink: 'suite', colorBg: 'is-bg-vert', colorFont: 'is-font-vert'  },
       ], 
     };
 
