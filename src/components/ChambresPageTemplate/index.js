@@ -236,10 +236,10 @@ const ChambresPageTemplate = ({
                   </div>
               </div>
             <div  className='column  is-half is-paddingless is-marginless center-v is-hidden-touch'>
-                <CarouselChambre  images={suite} />
+                <CarouselChambre  images={luxe} />
                 </div>
                     <div className='column is-full is-paddingless is-marginless is-hidden-desktop' >
-                        <CarouselChambre  images={suite} />
+                        <CarouselChambre  images={luxe} />
                     </div>
           </div>
       </div>
@@ -248,7 +248,7 @@ const ChambresPageTemplate = ({
     <div id="suite" className='section  is-paddingless is-marginless'>
         <div className='columns is-paddingless is-marginless is-bg-vert'>
             <div  className='column  is-half is-paddingless is-marginless center-v is-hidden-touch'>
-                <CarouselChambre  images={luxe} />
+                <CarouselChambre  images={suite} />
                 </div>
             <div className='column is-5 center-v is-paddinglessTB' style={{ textAlign: 'left' }}>
 
@@ -307,7 +307,7 @@ const ChambresPageTemplate = ({
             </div>
             </div>
             <div  className='column  is-half is-paddingless is-marginless center-v is-hidden-desktop'>
-                <CarouselChambre  images={luxe} />
+                <CarouselChambre  images={suite} />
                 </div>
             </div>
         </div>
