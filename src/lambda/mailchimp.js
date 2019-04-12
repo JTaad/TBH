@@ -64,7 +64,7 @@ module.exports.handler = (event, context, callback) => {
                     "Access-Control-Allow-Credentials": "true"
                 },
                 body: JSON.stringify({
-                    msg: `📩 Votre e-mail ${email} a bien été enregistré !`,
+                    msg: `📩  Merci de nous avoir confié votre adresse mail. On vous dit à bientôt !`,
                     status: 'subscribed'
                 })
             })
