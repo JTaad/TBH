@@ -40,11 +40,11 @@ const standard = [
 const luxe = [
     {
         id: 1,
-        imageSrc: chambre_luxe_1
+        imageSrc: chambre_luxe_2
     },
     {
         id: 2,
-        imageSrc: chambre_luxe_2
+        imageSrc: chambre_luxe_1
     },
     {
         id: 3,
