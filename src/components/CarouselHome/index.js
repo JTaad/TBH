@@ -73,8 +73,8 @@ setTimeout(() => {
         urlLink = 'luxe' 
         break;
       case 2:
-        colorBg = 'is-bg-jaune'
-        colorFont = 'is-font-jaune'
+        colorBg = 'is-bg-vert'
+        colorFont = 'is-font-vert'
         urlLink = 'suite' 
         break;
     }

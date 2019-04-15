@@ -233,15 +233,19 @@ const BusinessPageTemplate = ({
       <div className='business-call center-v ' style={{alignItems: "center" ,justifyContent: "center"}}>
               <div className="center-v " style={{display: 'flex', justifyContent: 'center', }}>
                     <Reveal effect="fadeInUp"  duration={1400} >
-                        <a className='title is-4' href='mailto:hello@tboutiquehotel.fr' style={{margin: '0', padding: '0'}}>
+                    <div>
+                        <a className='title is-4' href='mailto:hello@tboutiquehotel.fr' >
                         DEMANDER NOUS UN DEVIS
                         </a>
+                    </div>
                         <p className='title is-5 '   style={{marginBottom: "-4px"}}>
                         &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
                         </p>
-                        <a className='title is-4' href='tel:(+33)556836770' style={{margin: '0', padding: '0'}}>
+                    <div>
+                        <a className='title is-4' href='tel:(+33)556836770' >
                         APPELLEZ-NOUS
                         </a>
+                    </div>
                     </Reveal>
             </div>
       </div>
