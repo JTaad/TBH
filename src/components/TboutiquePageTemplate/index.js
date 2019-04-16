@@ -39,7 +39,7 @@ const TboutiquePageTemplate = ({
                         <br/>
                     </div> 
         </div>
-            <div  className='column is-6 center-v '>
+            <div  className='column is-5 center-v '>
                 <div className='section '>
                     <Reveal effect="fadeInUp"  duration={1400} >
                         <div>
