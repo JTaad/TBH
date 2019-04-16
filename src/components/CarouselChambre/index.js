@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Carousel from 'nuka-carousel';
 
-class CarouselHome extends Component {
+class CarouselChambre extends Component {
   constructor() {
     super(...arguments);
     this.state = {
@@ -12,7 +12,7 @@ class CarouselHome extends Component {
       slidesToShow: 1,
       cellAlign: "center",
       transitionMode: "fade",
-      heightMode: "max",
+      heightMode: "current",
       withoutControls: false,
     };
 
@@ -21,16 +21,14 @@ class CarouselHome extends Component {
   componentDidMount() {
         setTimeout(() => {
             window.dispatchEvent(new Event('resize'));
-          }, 250);
+          }, 0);
   }
 
   componentDidUpdate() {
     setTimeout(() => {
         window.dispatchEvent(new Event('resize'));
-      }, 250);
+      }, 0);
 }
-
-
 
 
   handleImageClick() {
@@ -74,6 +72,6 @@ class CarouselHome extends Component {
   }
 }
 
-export default CarouselHome
+export default CarouselChambre
 
 

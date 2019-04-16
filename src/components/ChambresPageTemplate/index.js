@@ -130,7 +130,7 @@ const ChambresPageTemplate = ({
             <div className='column is-half is-paddingless is-marginless is-hidden-touch  center-v' style={{ textAlign: 'left' }}>
                 <CarouselChambre  images={standard} />
             </div>
-            <div  className='column is-5-desktop  is-full-tablet center-v is-paddinglessTB'>
+              <div className='column is-5 center-v is-offset-1-desktop  is-paddinglessTB'>
                 <div className='section is-paddinglessTB'>
                     <Reveal effect="fadeInUp"  duration={1400} >
                         <div>
@@ -182,7 +182,7 @@ const ChambresPageTemplate = ({
                     </div>
                 </div>
             </div>
-            <div className='column is-full is-paddingless is-marginless is-hidden-desktop' style={{ textAlign: 'left' }}>
+            <div  className='column  is-half is-paddingless is-marginless center-v is-hidden-desktop'>
                 <CarouselChambre  images={standard} />
             </div>
         </div>
@@ -191,7 +191,7 @@ const ChambresPageTemplate = ({
 
       <div  id="luxe" className='section  is-paddingless is-marginless'>
           <div className='columns is-paddingless is-marginless is-bg-jaune'>
-              <div className='column is-5-desktop is-offset-1  is-full-tablet center-v is-paddinglessTB'>
+              <div className='column is-5 center-v is-offset-1-desktop  is-paddinglessTB'>
                       <div className='section is-paddinglessTB'>
                     <Reveal effect="fadeInUp"  duration={1400} >
                         <div>
@@ -250,7 +250,7 @@ const ChambresPageTemplate = ({
             <div  className='column  is-half is-paddingless is-marginless center-v is-hidden-touch'>
                 <CarouselChambre  images={luxe} />
                 </div>
-                    <div className='column is-full is-paddingless is-marginless is-hidden-desktop' >
+            <div  className='column  is-half is-paddingless is-marginless center-v is-hidden-desktop'>
                         <CarouselChambre  images={luxe} />
                     </div>
           </div>
