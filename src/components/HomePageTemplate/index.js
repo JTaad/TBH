@@ -6,7 +6,7 @@ import Rerservation from '../Rerservation'
 import Instagram from '../Instagram'
 import Video from '../Video'
 import PropTypes from 'prop-types'
-import nousTrouver from '../../assets/img/home/facade_tbh.svg'
+import nousTrouver from '../../assets/img/home/facade_home_HDx2.png'
 import {Link} from 'gatsby'
 import Fade from 'react-reveal/Fade';
 import Reveal from 'react-reveal/Reveal';
