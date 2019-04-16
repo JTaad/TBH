@@ -61,7 +61,7 @@ class CarouselHome extends Component {
             
                 >
                 {this.props.images.map(item => (
-                      <img style={{minHeight: "100%"}} src={item.imageSrc} />
+                      <img style={{minHeight: "100%!important"}} src={item.imageSrc} />
                 ))}
                       
                 </Carousel> 
