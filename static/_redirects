@@ -3,3 +3,4 @@
 
 # Redirect default Netlify subdomain to primary domain
 https://tbh-dev.netlify.com/* https://www.tboutiquehotel.fr/:splat 301!
+tboutiquehotel.fr/* https://www.tboutiquehotel.fr/:splat 301!
