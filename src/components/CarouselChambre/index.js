@@ -21,13 +21,13 @@ class CarouselChambre extends Component {
   componentDidMount() {
         setTimeout(() => {
             window.dispatchEvent(new Event('resize'));
-          }, 0);
+          }, 350);
   }
 
   componentDidUpdate() {
     setTimeout(() => {
         window.dispatchEvent(new Event('resize'));
-      }, 0);
+      }, 350);
 }
 
 
