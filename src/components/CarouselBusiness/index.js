@@ -120,7 +120,7 @@ class CarouselBusiness extends Component {
                   
                 >
                 {this.state.items.map(({image }) => (
-                  <img src={image}  style={{minHeight: 295}}
+                  <img src={image}  style={{minHeight: "100%"}}
                         onClick={this.handleImageClick}/>
                 ))}
                 </Carousel> 

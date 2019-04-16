@@ -40,13 +40,13 @@ class CarouselHome extends Component {
   componentDidMount() {
     setTimeout(() => {
         window.dispatchEvent(new Event('resize'));
-      }, 300);
+      }, 0);
 }
 
 componentDidUpdate() {
 setTimeout(() => {
     window.dispatchEvent(new Event('resize'));
-  }, 300);
+  }, 0);
 }
 
 
@@ -88,7 +88,7 @@ setTimeout(() => {
     
 
       <div className='section  is-paddingless is-marginless'>
-      <div className={this.state.colorBg}>
+      <div id="carousel-home-bg" className={this.state.colorBg}>
           <div className='columns is-paddingless is-marginless is-paddinglessTB '>
               <div  className='column center-v is-paddinglessTB 
                 is-full-mobile
@@ -167,7 +167,7 @@ setTimeout(() => {
                   autoplayInterval={this.state.autoplayInterval}
                 >
                 {this.state.items.map(({image }) => (
-                  <img src={image} style={{minHeight: "295"}}
+                  <img src={image} style={{minHeight: "100%"}}
                         onClick={this.handleImageClick}/>
                 ))}
                 </Carousel> 

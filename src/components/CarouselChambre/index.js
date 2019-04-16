@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import Carousel from 'nuka-carousel';
-import headerImage from '../../assets/img/home/chambre_1.jpg'
-import {Link} from 'gatsby'
 
 class CarouselHome extends Component {
   constructor() {
@@ -63,7 +61,7 @@ class CarouselHome extends Component {
             
                 >
                 {this.props.images.map(item => (
-                      <img style={{minHeight: 295}} src={item.imageSrc} />
+                      <img style={{minHeight: "100%"}} src={item.imageSrc} />
                 ))}
                       
                 </Carousel> 
