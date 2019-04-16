@@ -2,6 +2,9 @@ import React from 'react'
 import CarouselChambre from '../CarouselChambre'
 import Img from "gatsby-image"
 import Fade from 'react-reveal/Fade';
+import config from '../../../data/config'
+import Helmet from 'react-helmet';
+import OpenGraph from "../../assets/img/OpenGraph_TBH.jpg"
 import Reveal from 'react-reveal/Reveal';
 import icon_wifi from '../../assets/img/icons/Wifi1_HDx2.png'
 import icon_secheCheveux from '../../assets/img/icons/HotHair_HDx2.png'
@@ -69,8 +72,17 @@ const ChambresPageTemplate = ({
   background_header,
   petitDej
 }) => {
-  return (
+  return ( 
     <div>
+    <Helmet>
+      <title>Chambres | {config.siteTitle}</title>
+      <meta name='description' content={config.siteDescription} />
+      <meta property='og:title' content={config.siteTitle} />
+      <meta property='og:description' content={config.siteDescription} />
+      <meta property='og:image' content={OpenGraph} />
+      <meta name='twitter:card' content='summary_large_image' />
+      <meta name='twitter:image' content={OpenGraph} />
+    </Helmet>
 
       <div className='headerHome'>
           <Img  

@@ -1,8 +1,8 @@
 import React from 'react'
-import Helmet from 'react-helmet'
-import PropTypes from 'prop-types'
+import config from '../../../data/config'
+import Helmet from 'react-helmet';
+import OpenGraph from "../../assets/img/OpenGraph_TBH.jpg"
 import Img from "gatsby-image"
-import { Link } from 'gatsby'
 import Reveal from 'react-reveal/Reveal';
 
 const BassinPageTemplate = ({
@@ -17,6 +17,15 @@ const BassinPageTemplate = ({
 }) => { 
   return (
       <div>
+      <Helmet>
+        <title>Le Bassin | {config.siteTitle}</title>
+        <meta name='description' content={config.siteDescription} />
+        <meta property='og:title' content={config.siteTitle} />
+        <meta property='og:description' content={config.siteDescription} />
+        <meta property='og:image' content={OpenGraph} />
+        <meta name='twitter:card' content='summary_large_image' />
+        <meta name='twitter:image' content={OpenGraph} />
+      </Helmet>
         <div className='headerHome'>
             <Img  
                 style={{ position: 'absolute', left: '0', top: "0", width: "100%", height: "100%" }} 

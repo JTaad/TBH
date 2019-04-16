@@ -1,4 +1,7 @@
 import React from 'react'
+import config from '../../../data/config'
+import Helmet from 'react-helmet';
+import OpenGraph from "../../assets/img/OpenGraph_TBH.jpg"
 import headerImage from '../../assets/img/contact/header_contact_tbh.jpg'
 import SimpleMap from '../SimpleMap'
 import Img from "gatsby-image"
@@ -10,6 +13,15 @@ const ContactPageTemplate = ({
 }) => {
   return (
     <div>
+    <Helmet>
+      <title>Contact | {config.siteTitle}</title>
+      <meta name='description' content={config.siteDescription} />
+      <meta property='og:title' content={config.siteTitle} />
+      <meta property='og:description' content={config.siteDescription} />
+      <meta property='og:image' content={OpenGraph} />
+      <meta name='twitter:card' content='summary_large_image' />
+      <meta name='twitter:image' content={OpenGraph} />
+    </Helmet>
       <div className='headerHome'>
           <Img
             style={{ position: 'absolute', left: '0', top: "0", width: "100%", height: "100%" }} 

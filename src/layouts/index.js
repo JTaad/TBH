@@ -1,11 +1,9 @@
 import React, { Component } from 'react'
-import Helmet from 'react-helmet'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 import Marquee from '../components/Marquee'
 import { animateScroll as scroll } from 'react-scroll'
 import '../assets/sass/styles.sass'
-import config from '../../data/config'
 import GlobalStyles from '../layouts/globalStyles'
 import Transition from "../components/Transition"
 import Remise from "../assets/img/home_remiseHD_X2.png"
@@ -58,15 +56,6 @@ class TemplateWrapper extends Component {
     const { location } = this.props
     return (
       <div>
-        <Helmet>
-          <title>{config.siteTitle}</title>
-          <meta name='description' content={config.siteDescription} />
-          <meta property='og:title' content={config.siteTitle} />
-          <meta property='og:description' content={config.siteDescription} />
-          <meta property='og:image' content={OpenGraph} />
-          <meta name='twitter:card' content='summary_large_image' />
-          <meta name='twitter:image' content={OpenGraph} />
-        </Helmet>
           <GlobalStyles />
   <CookieConsent
   buttonText="Accepter"

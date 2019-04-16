@@ -1,6 +1,8 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 import Img from "gatsby-image"
+import config from '../../../data/config'
+import Helmet from 'react-helmet';
+import OpenGraph from "../../assets/img/OpenGraph_TBH.jpg"
 import CarouselHome from '../CarouselHome'
 import Rerservation from '../Rerservation'
 import Instagram from '../Instagram'
@@ -8,7 +10,6 @@ import Video from '../Video'
 import PropTypes from 'prop-types'
 import nousTrouver from '../../assets/img/home/facade_home_HDx2.png'
 import {Link} from 'gatsby'
-import Fade from 'react-reveal/Fade';
 import Reveal from 'react-reveal/Reveal';
 import espace_pro from '../../assets/img/home/home_espacepro_v2.jpg'
 
@@ -18,6 +19,15 @@ const HomePageTemplate = ({
   background_header,
 }) => (
   <div> 
+  <Helmet>
+    <title>{config.siteTitle}</title>
+    <meta name='description' content={config.siteDescription} />
+    <meta property='og:title' content={config.siteTitle} />
+    <meta property='og:description' content={config.siteDescription} />
+    <meta property='og:image' content={OpenGraph} />
+    <meta name='twitter:card' content='summary_large_image' />
+    <meta name='twitter:image' content={OpenGraph} />
+  </Helmet>
       <div className='headerHome' >
              <Video />
              <Rerservation />

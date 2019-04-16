@@ -1,10 +1,9 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import PropTypes from 'prop-types'
+import config from '../../../data/config'
+import OpenGraph from "../../assets/img/OpenGraph_TBH.jpg"
 import Img from "gatsby-image"
 import CarouselBusiness from '../CarouselBusiness'
-import { Link } from 'gatsby'
-import Fade from 'react-reveal/Fade';
 import Reveal from 'react-reveal/Reveal';
 import icon_wifi1 from '../../assets/img/icons/Wifi1_HDx2.png'
 import icon_tableau from '../../assets/img/icons/Board_HDx2.png'
@@ -19,14 +18,21 @@ import forfaits from '../../assets/img/business/business_sectionforfaits.jpg'
 
 
 const BusinessPageTemplate = ({
-  title,
-  subtitle,
   background_header,
   vos_espaces,
   vos_evenements,
 }) => { 
   return (
     <div>
+    <Helmet>
+      <title>Business | {config.siteTitle}</title>
+      <meta name='description' content={config.siteDescription} />
+      <meta property='og:title' content={config.siteTitle} />
+      <meta property='og:description' content={config.siteDescription} />
+      <meta property='og:image' content={OpenGraph} />
+      <meta name='twitter:card' content='summary_large_image' />
+      <meta name='twitter:image' content={OpenGraph} />
+    </Helmet>
       <div className='headerHome'>
           <Img  
             style={{ position: 'absolute', left: '0', top: "0", width: "100%", height: "100%" }} 
@@ -259,15 +265,6 @@ const BusinessPageTemplate = ({
 
     </div>
   )
-}
-
-BusinessPageTemplate.propTypes = {
-  title: PropTypes.string,
-  subtitle: PropTypes.string,
-  meta_title: PropTypes.string,
-  meta_description: PropTypes.string,
-  contacts: PropTypes.array,
-
 }
 
 export default BusinessPageTemplate
