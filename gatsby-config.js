@@ -36,8 +36,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://www.tbh-dev.netlify.com',
-        sitemap: 'https://www.tbh-dev.netlify.com/sitemap.xml',
+        host: 'https://www.tboutiquehotel.fr',
+        sitemap: 'https://www.tboutiquehotel.fr/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },
