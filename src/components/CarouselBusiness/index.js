@@ -37,15 +37,18 @@ class CarouselBusiness extends Component {
     this.handleImageClick = this.handleImageClick.bind(this);
   }
   componentDidMount() {
-        setTimeout(() => {
-            window.dispatchEvent(new Event('resize'));
-          }, 250);
+    setTimeout(() => {
+        window.dispatchEvent(new Event('resize'));
+          setTimeout(() => {
+              window.dispatchEvent(new Event('resize'));
+            }, 500);
+      }, 100);
   }
 
   componentDidUpdate() {
     setTimeout(() => {
         window.dispatchEvent(new Event('resize'));
-      }, 250);
+      }, 0);
 }
 
 
