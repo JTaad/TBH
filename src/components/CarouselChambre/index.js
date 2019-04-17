@@ -12,7 +12,7 @@ class CarouselChambre extends Component {
       slidesToShow: 1,
       cellAlign: "center",
       transitionMode: "fade",
-      heightMode: "current",
+      heightMode: "max",
       withoutControls: false,
     };
 
