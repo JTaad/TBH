@@ -440,9 +440,9 @@ const ChambresPageTemplate = ({
 
 
     <div className='section  is-paddingless is-marginless'>
-        <div className='columns is-paddingless is-marginless is-bg-vert'>
+        <div className='columns is-paddingless is-marginless is-bg-vert center-v'>
             <Reveal effect="fadeInUp"  duration={1400} >
-                <div className='column is-half is-paddingless is-marginless' style={{ textAlign: 'left' }}>
+                <div className='column is-half is-paddingless is-marginless ' style={{ textAlign: 'left' }}>
                     <Img fluid={petitDej.childImageSharp.fluid}/>
                 </div>
             </Reveal>

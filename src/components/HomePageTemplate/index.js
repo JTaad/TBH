@@ -115,7 +115,6 @@ const HomePageTemplate = ({
         </div>
     </div>
 
-   <Reveal effect="fadeInUp"  duration={1400} >
     <section className="hero is-large has-bg-img" style={{backgroundImage: `url('${espace_pro}')`, backgroundPosition: 'center center', backgroundSize: 'cover'}}> 
       <div className="hero-body"> 
         <div className="container has-text-centered"> 
@@ -127,7 +126,6 @@ const HomePageTemplate = ({
         </div> 
       </div> 
     </section>
-   </Reveal>
 
 
     <div className='container-full is-bg-jaune'>

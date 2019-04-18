@@ -132,7 +132,6 @@ const BusinessPageTemplate = ({
     </div>
 
 
-   <Reveal effect="fadeInUp"  duration={1400} >
     <section className="hero is-medium has-bg-img" style={{backgroundImage: `url('${forfaits}')`, backgroundPosition: 'center center', backgroundSize: 'cover'}}> 
       <div className="hero-body"> 
         <div className="container has-text-centered"> 
@@ -144,7 +143,6 @@ const BusinessPageTemplate = ({
         </div> 
       </div> 
     </section>
-   </Reveal>
 
 
 <CarouselBusiness />
@@ -237,23 +235,24 @@ const BusinessPageTemplate = ({
 <div className='section "center-v'>
 <br/>
       <div className='business-call center-v ' style={{alignItems: "center" ,justifyContent: "center"}}>
-              <div className="center-v " style={{display: 'flex', justifyContent: 'center', }}>
+              <ul className="center-v " style={{display: 'flex', justifyContent: 'center', }}>
                     <Reveal effect="fadeInUp"  duration={1400} >
-                    <div>
+                    
+                    <li>
                         <a className='title is-4' href='mailto:hello@tboutiquehotel.fr' >
                         DEMANDER NOUS UN DEVIS
                         </a>
-                    </div>
-                        <p className='title is-5 '   style={{marginBottom: "-4px"}}>
+                    </li>
+                        <li className='title is-5 '   style={{marginBottom: "-4px"}}>
                         &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
-                        </p>
-                    <div>
+                        </li>
+                    <li>
                         <a className='title is-4' href='tel:(+33)556836770' >
                         APPELLEZ-NOUS
                         </a>
-                    </div>
+                    </li>
                     </Reveal>
-            </div>
+            </ul>
       </div>
 <br/>
    </div>
