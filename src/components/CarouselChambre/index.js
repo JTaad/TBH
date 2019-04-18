@@ -38,7 +38,11 @@ class CarouselChambre extends Component {
     this.setState({ underlineHeader: !this.state.underlineHeader });
   }
 
-
+  _handleImageLoaded() {
+    setTimeout(() => {
+        window.dispatchEvent(new Event('resize'));
+      }, 0);
+  }
 
   render () {
     return (
@@ -62,7 +66,7 @@ class CarouselChambre extends Component {
             
                 >
                 {this.props.images.map(item => (
-                      <img style={{minHeight: "100%!important"}} src={item.imageSrc} />
+                      <img style={{minHeight: "100%!important"}} onLoad={this._handleImageLoaded} src={item.imageSrc} />
                 ))}
                       
                 </Carousel> 

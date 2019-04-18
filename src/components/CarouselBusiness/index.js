@@ -51,6 +51,11 @@ class CarouselBusiness extends Component {
       }, 0);
 }
 
+_handleImageLoaded() {
+  setTimeout(() => {
+      window.dispatchEvent(new Event('resize'));
+    }, 0);
+}
 
   handleImageClick() {
     this.setState({ underlineHeader: !this.state.underlineHeader });
@@ -123,7 +128,7 @@ class CarouselBusiness extends Component {
                   
                 >
                 {this.state.items.map(({image }) => (
-                  <img src={image}  style={{minHeight: "100%"}}
+                  <img src={image} onLoad={this._handleImageLoaded}   style={{minHeight: "100%"}}
                         onClick={this.handleImageClick}/>
                 ))}
                 </Carousel> 
