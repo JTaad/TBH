@@ -77,7 +77,7 @@ class TemplateWrapper extends Component {
        <div> 
 
       <div id="remise"  className={this.state.isRemise ? 'remise-on' : 'remise-off'} >
-        <div style={{fontSize: '22px', position: "relative", left: "10px", top: "35px", zIndex: '999999999', color: "#FFF", fontFamily: "Poppins", fontWeight: "bold"}} id="remise">10%</div>
+        <div style={{fontSize: '22px', position: "relative", left: "10px", top: "35px", zIndex: '999999999', color: "#FFF", fontFamily: "Poppins", fontWeight: "bold"}} id="remise">5%</div>
         <img src={Remise}/>
       </div>
 
