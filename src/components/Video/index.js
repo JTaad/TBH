@@ -52,7 +52,7 @@ class Video extends Component {
 
     return (
       <div className="video-background">
-      <div
+      <div  
         className={ this.state.onLoad == true ? 'loadVideoTrue' : 'loadVideoFalse' }  
         style={{ width: '100%', height: '100%', position: 'absolute', zIndex: '99999'}}
       >
