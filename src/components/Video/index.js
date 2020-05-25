@@ -66,7 +66,7 @@ class Video extends Component {
             className="video-iframe"  
             onReady={this._onReady}
             onEnd={this._onEnd}
-          />
+          /> 
         </div>
       </div>
     )
