@@ -113,7 +113,7 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`,
         enableIdentityWidget: true,
         htmlTitle: `TLCB Content Manager`,
-      },
+      }, 
     },
     {
       resolve: `gatsby-source-instagram`,
