@@ -1,5 +1,7 @@
 import React, {Component} from 'react'
 import favicon from './assets/img/favicon.ico'
+import { Link } from 'gatsby'
+
 
 export default class HTML extends Component {
   render () {

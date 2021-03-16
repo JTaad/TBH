@@ -59,7 +59,7 @@ class Video extends Component {
          
       </div>
         <div className="video-foreground">
-          <YouTube 
+          <YouTube  
             onPlay={this.onPlay}
             videoId="MH4pGO-KFu0"
             opts={videoOptions}

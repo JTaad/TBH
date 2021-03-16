@@ -33,8 +33,6 @@ const HomePageTemplate = ({
              <Rerservation />
       </div>
       
-
-      
     <div className='section is-marginless is-paddingless'>
         <div className=' titleTbh title is-size-2-mobile is-size-1-tablet is-size-1-desktop' style={{backgroundColor: "#FFF"}}>
        

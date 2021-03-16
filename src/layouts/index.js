@@ -9,6 +9,7 @@ import Transition from "../components/Transition"
 import Remise from "../assets/img/home_remiseHD_X2.png"
 import OpenGraph from "../assets/img/OpenGraph_TBH.jpg"
 import CookieConsent from "react-cookie-consent";
+import Modal1 from '../components/Modal1'
 
 
 class TemplateWrapper extends Component {
@@ -57,6 +58,7 @@ class TemplateWrapper extends Component {
     return (
       <div>
           <GlobalStyles />
+      <Modal1/>
   <CookieConsent
   buttonText="Accepter"
   style={{ background: "#00165F", color: "#FFF" , fontFamily: "Poppins"}}

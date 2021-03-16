@@ -531,7 +531,39 @@ p
     margin-left: auto !important
     margin-right: auto !important
     min-height: auto!important
+.reactModalO 
+  background: #FFF
 
+  
+.ReactModal__Overlay
+  text-align: center
+  z-index: 9999999999
+  .ReactModal__Content
+    border: 1px solid #00165F
+    margin-left: auto
+    margin-right: auto
+    @include from($tablet)
+      width: 70%
+      max-width: 760px
+    .modalTitle
+      padding-bottom: 15px
+    h3
+      font-size: 1.2rem
+      font-family: "MonoramaRegular"
+      font-weight: 400
+    p
+      font-weight: normal
+    .titleTbh
+      height: auto!important
+.modalButton
+  width: 100px
+  margin-left: auto
+  margin-right: auto 
+.closeModal
+  color: #00165F
+  transform: rotate(45deg)
+  cursor: pointer
+  margin-top: 40px
 .headerHome
   position: relative
   height: calc(100vh - 117px)
