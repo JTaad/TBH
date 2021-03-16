@@ -108,7 +108,7 @@ module.exports = {
     },
     `gatsby-plugin-layout`,
     {
-      resolve: 'gatsby-plugin-netlify-cms',
+      resolve: 'gatsby-plugin-netlify-cms', 
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
         enableIdentityWidget: true,
