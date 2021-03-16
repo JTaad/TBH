@@ -116,12 +116,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: `tboutiquehotel`,
-      },
-    },
-    {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
           endpoint: 'https://faakpaat.us10.list-manage.com/subscribe/post?u=e6260e9428f386b090809e69a&amp;id=872c00aa85', 

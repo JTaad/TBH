@@ -11,7 +11,6 @@ const HomePage = ({data}) => {
   const {frontmatter} = data.markdownRemark
 
 
-  var postsInstagram = data.allInstaNode.edges
 
 
   function compare(a,b) {
@@ -22,7 +21,6 @@ const HomePage = ({data}) => {
     return 0;
   }
   
-  postsInstagram = postsInstagram.sort(compare).reverse().slice(0, 3)
   
 
   return (
@@ -33,7 +31,6 @@ const HomePage = ({data}) => {
       heading={frontmatter.heading}
       description={frontmatter.description}
       bienvenue={data.concept}
-      posts_instagram={postsInstagram}
       background_header={data.background_header}
     />
   )
@@ -58,24 +55,6 @@ export const pageQuery = graphql`
       childImageSharp{
         fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
            ...GatsbyImageSharpFluid_withWebp_tracedSVG
-        }
-      }
-    }
-    allInstaNode {
-      edges {
-        node {
-          id
-          likes
-          comments
-          original
-          timestamp
-          localFile { 
-            childImageSharp {
-                fluid(maxWidth: 220, maxHeight: 210, quality: 100) {
-                    ...GatsbyImageSharpFluid_withWebp_tracedSVG
-              }
-            }
-          }
         }
       }
     }

@@ -149,8 +149,6 @@ const HomePageTemplate = ({
 
 
 
-    <Instagram gridItems={posts_instagram} />
-
 
     <div className='container-fullhd'>
         <div className='section is-paddingless  '>
