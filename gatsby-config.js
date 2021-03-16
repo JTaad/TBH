@@ -108,17 +108,17 @@ module.exports = {
     },
     `gatsby-plugin-layout`,
     {
-      resolve: 'gatsby-plugin-netlify-cms', 
+      resolve: 'gatsby-plugin-netlify-cms',
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
         enableIdentityWidget: true,
         htmlTitle: `TLCB Content Manager`,
-      }, 
+      },
     },
     {
       resolve: `gatsby-source-instagram`,
       options: {
-        username: `8556131572`,
+        username: `tboutiquehotel`,
       },
     },
     {
