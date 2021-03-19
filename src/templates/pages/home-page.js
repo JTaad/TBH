@@ -68,7 +68,7 @@ export const pageQuery = graphql`
       edges {
         node {
           localImage {
-            childImageSharp {
+            childImageSharp { 
                 fluid(maxWidth: 220, maxHeight: 210, quality: 100) {
                     ...GatsbyImageSharpFluid_withWebp_tracedSVG
               }
