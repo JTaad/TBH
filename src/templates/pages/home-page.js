@@ -67,6 +67,13 @@ export const pageQuery = graphql`
         node {
           timestamp
           id
+          localImage {
+            childImageSharp { 
+                fluid(maxWidth: 220, maxHeight: 210, quality: 100) {
+                    ...GatsbyImageSharpFluid_withWebp_tracedSVG
+              }
+            }
+          }
         }
       }
     }
