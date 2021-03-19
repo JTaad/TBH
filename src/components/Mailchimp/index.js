@@ -6,7 +6,7 @@ class Mailchimp extends Component {
   state = {
     email: '',
     msg: '',
-    loading: false
+    loading: false 
   }
 
   handleChange = e => {
