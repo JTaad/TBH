@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {graphql} from 'gatsby'
+import _get from "lodash/get";
 import HomePageTemplate from '../../components/HomePageTemplate'
 
 function sortNumber(a,b) {
@@ -12,6 +13,7 @@ const HomePage = ({data}) => {
 
 
 
+  let postsInstagram = _get(data, 'allInstagramContent.edges')
 
   function compare(a,b) {
     if (a.node.timestamp < b.node.timestamp)
@@ -21,8 +23,11 @@ const HomePage = ({data}) => {
     return 0;
   }
   
+  postsInstagram = postsInstagram.sort(compare).reverse().slice(0, 3)
   
-
+console.log("-----");
+console.log(postsInstagram);
+console.log("-----");
   return (
     <HomePageTemplate
       title={frontmatter.title}
@@ -30,6 +35,7 @@ const HomePage = ({data}) => {
       meta_description={frontmatter.meta_description}
       heading={frontmatter.heading}
       description={frontmatter.description}
+      posts_instagram={postsInstagram}
       bienvenue={data.concept}
       background_header={data.background_header}
     />
@@ -55,6 +61,19 @@ export const pageQuery = graphql`
       childImageSharp{
         fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        } 
+      }
+    }
+    allInstagramContent {
+      edges {
+        node {
+          localImage {
+            childImageSharp {
+                fluid(maxWidth: 220, maxHeight: 210, quality: 100) {
+                    ...GatsbyImageSharpFluid_withWebp_tracedSVG
+              }
+            }
+          }
         }
       }
     }

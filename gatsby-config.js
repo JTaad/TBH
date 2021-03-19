@@ -43,6 +43,12 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-source-instagram-all`,
+      options: {
+        access_token: "IGQVJWZA0sta0l3SDhFZAm95VnpPRXJpaWhIQXRPMktGRkRBdlVVTVZArQVZAjWjh1OWVLbVg4cTB2OTYySWs5ZAWQwdnhGdFFHQ20zdUlFR2hDNW5VNlJ0RllqR2xhejhsM19QUVJpUUZAFcGpILTdKWEljdwZDZD",
+      }
+    },
+    {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
       options: {

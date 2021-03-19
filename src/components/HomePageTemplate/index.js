@@ -148,6 +148,7 @@ const HomePageTemplate = ({
     </div>
 
 
+    <Instagram gridItems={posts_instagram} />
 
 
     <div className='container-fullhd'>
@@ -185,10 +186,5 @@ const HomePageTemplate = ({
 
   </div>
 )
-
-HomePageTemplate.propTypes = {
-  posts_instagram: PropTypes.array,
-
-}
 
 export default HomePageTemplate

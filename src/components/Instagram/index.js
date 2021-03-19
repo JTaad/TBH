@@ -27,7 +27,7 @@ const Instagram = ({ gridItems }) => (
           is-3-mobile
           is-paddingless is-marginless' >
               <a target='_blank' rel="noopener"href={'https://www.instagram.com/p/'+item.node.id}>
-                  <Img fluid={item.node.localFile.childImageSharp.fluid}/>
+                  <Img fluid={item.node.localImage.childImageSharp.fluid}/>
               </a>
           </div>
         ))}
