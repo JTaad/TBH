@@ -60,7 +60,7 @@ export const pageQuery = graphql`
     concept: file(relativePath: { eq: "home/home_concept.jpg" }) {
       childImageSharp{
         fluid(maxWidth: 2000,traceSVG: { background: "#fff", color: "#F8F7D6" }, quality: 100) {
-           ...GatsbyImageSharpFluid_withWebp_tracedSVG
+           ...GatsbyImageSharpFluid_withWebp_tracedSVG 
         } 
       }
     }
