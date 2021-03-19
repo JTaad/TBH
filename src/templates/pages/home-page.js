@@ -25,9 +25,7 @@ const HomePage = ({data}) => {
   
   postsInstagram = postsInstagram.sort(compare).reverse().slice(0, 3)
   
-console.log("-----");
-console.log(postsInstagram);
-console.log("-----");
+
   return (
     <HomePageTemplate
       title={frontmatter.title}
@@ -67,6 +65,8 @@ export const pageQuery = graphql`
     allInstagramContent {
       edges {
         node {
+          timestamp
+          id
           localImage {
             childImageSharp { 
                 fluid(maxWidth: 220, maxHeight: 210, quality: 100) {
