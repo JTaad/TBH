@@ -58,7 +58,6 @@ class TemplateWrapper extends Component {
     return (
       <div>
           <GlobalStyles />
-      <Modal1/>
   <CookieConsent
   buttonText="Accepter"
   style={{ background: "#00165F", color: "#FFF" , fontFamily: "Poppins"}}
